@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<title id="title">AsterSim | One scheduling epoch</title><desc id="desc">One successful event: numbered steps show order, not elapsed time. Make ordering explicit: enqueue → select → reserve → execute → release. SIMPLIFIED SYNTHETIC TEACHING EXAMPLE · NOT A RESEARCH TEMPLATE</desc>
+<defs>
+<marker id="arrow-data" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 Z" fill="#245a81"/></marker>
+<marker id="arrow-control" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 Z" fill="#7b4e90"/></marker>
+<marker id="arrow-feedback" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 Z" fill="#a15a28"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#182a3a">
+<text x="40" y="48" font-size="28" font-weight="700">AsterSim | One scheduling epoch</text>
+<text x="40" y="82" font-size="17" fill="#526271">One successful event: numbered steps show order, not elapsed time.</text>
+<text x="40" y="112" font-size="13" letter-spacing="1" fill="#697582">SIMPLIFIED SYNTHETIC TEACHING EXAMPLE · NOT A RESEARCH TEMPLATE</text>
+<g id="edge-a"><title>enqueue → choose (data)</title><path d="M 225,291.0 L 285,291.0" fill="none" stroke="#245a81" stroke-width="2.4" stroke-dasharray="" marker-end="url(#arrow-data)"/></g>
+<g id="edge-b"><title>choose → reserve (control)</title><path d="M 455,291.0 L 515,291.0" fill="none" stroke="#7b4e90" stroke-width="2.4" stroke-dasharray="7 4" marker-end="url(#arrow-control)"/></g>
+<g id="edge-c"><title>reserve → run (control)</title><path d="M 685,291.0 L 745,291.0" fill="none" stroke="#7b4e90" stroke-width="2.4" stroke-dasharray="7 4" marker-end="url(#arrow-control)"/></g>
+<g id="edge-d"><title>run → release (data)</title><path d="M 915,291.0 L 975,291.0" fill="none" stroke="#245a81" stroke-width="2.4" stroke-dasharray="" marker-end="url(#arrow-data)"/></g>
+<g id="edge-read"><title>busy → reserve (control)</title><path d="M 600.0,425 L 600.0,332" fill="none" stroke="#7b4e90" stroke-width="2.4" stroke-dasharray="7 4" marker-end="url(#arrow-control)"/></g>
+<g id="edge-free"><title>release → busy (feedback)</title><path d="M 1060.0,332 L 1060,466 L 685,466.0" fill="none" stroke="#a15a28" stroke-width="2.4" stroke-dasharray="3 4" marker-end="url(#arrow-feedback)"/></g>
+<g id="node-enqueue" data-kind="module"><rect x="55" y="250" width="170" height="82" rx="10" fill="#edf3f9" stroke="#708398" stroke-width="1.6"/>
+<text x="140.0" y="297.0" text-anchor="middle" font-size="18" font-weight="600">1  Enqueue</text>
+</g>
+<g id="node-choose" data-kind="module"><rect x="285" y="250" width="170" height="82" rx="10" fill="#edf3f9" stroke="#708398" stroke-width="1.6"/>
+<text x="370.0" y="297.0" text-anchor="middle" font-size="18" font-weight="600">2  Select</text>
+</g>
+<g id="node-reserve" data-kind="module"><rect x="515" y="250" width="170" height="82" rx="10" fill="#edf3f9" stroke="#708398" stroke-width="1.6"/>
+<text x="600.0" y="297.0" text-anchor="middle" font-size="18" font-weight="600">3  Reserve</text>
+</g>
+<g id="node-run" data-kind="module"><rect x="745" y="250" width="170" height="82" rx="10" fill="#edf3f9" stroke="#708398" stroke-width="1.6"/>
+<text x="830.0" y="297.0" text-anchor="middle" font-size="18" font-weight="600">4  Execute</text>
+</g>
+<g id="node-release" data-kind="module"><rect x="975" y="250" width="170" height="82" rx="10" fill="#edf3f9" stroke="#708398" stroke-width="1.6"/>
+<text x="1060.0" y="297.0" text-anchor="middle" font-size="18" font-weight="600">5  Release</text>
+</g>
+<g id="node-busy" data-kind="storage"><rect x="515" y="425" width="170" height="82" rx="2" fill="#fff4df" stroke="#708398" stroke-width="1.6"/>
+<text x="600.0" y="472.0" text-anchor="middle" font-size="18" font-weight="600">Capacity state</text>
+</g>
+<rect x="201.9" y="219" width="106.19999999999999" height="23" rx="4" fill="#fff"/>
+<text x="255" y="235" text-anchor="middle" font-size="14" fill="#245a81">ready event</text>
+<rect x="440.1" y="219" width="89.8" height="23" rx="4" fill="#fff"/>
+<text x="485" y="235" text-anchor="middle" font-size="14" fill="#7b4e90">selection</text>
+<rect x="686.5" y="219" width="57.0" height="23" rx="4" fill="#fff"/>
+<text x="715" y="235" text-anchor="middle" font-size="14" fill="#7b4e90">grant</text>
+<rect x="896.0" y="219" width="98.0" height="23" rx="4" fill="#fff"/>
+<text x="945" y="235" text-anchor="middle" font-size="14" fill="#245a81">completion</text>
+<rect x="580.5" y="374" width="139.0" height="23" rx="4" fill="#fff"/>
+<text x="650" y="390" text-anchor="middle" font-size="14" fill="#7b4e90">available slots</text>
+<rect x="816.9" y="439" width="106.19999999999999" height="23" rx="4" fill="#fff"/>
+<text x="870" y="455" text-anchor="middle" font-size="14" fill="#a15a28">return slot</text>
+<line x1="40" y1="584" x2="1160" y2="584" stroke="#dce3ea"/>
+<text x="40" y="613" font-size="17" font-weight="600">Make ordering explicit: enqueue → select → reserve → execute → release.</text>
+<path d="M40,648 h42" stroke="#245a81" stroke-width="2.4" stroke-dasharray="" marker-end="url(#arrow-data)"/>
+<text x="96" y="653" font-size="14">data (source → target)</text>
+<path d="M280,648 h42" stroke="#7b4e90" stroke-width="2.4" stroke-dasharray="7 4" marker-end="url(#arrow-control)"/>
+<text x="336" y="653" font-size="14">control (source → target)</text>
+<path d="M520,648 h42" stroke="#a15a28" stroke-width="2.4" stroke-dasharray="3 4" marker-end="url(#arrow-feedback)"/>
+<text x="576" y="653" font-size="14">feedback (source → target)</text>
+</g></svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<title id="title">AsterSim | Before / after decomposition</title><desc id="desc">Which responsibility changes when scheduling policy becomes a separate module? The proposal isolates policy; it does not claim a measured speedup. SIMPLIFIED SYNTHETIC TEACHING EXAMPLE · NOT A RESEARCH TEMPLATE</desc>
+<defs>
+<marker id="arrow-data" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 Z" fill="#515151"/></marker>
+<marker id="arrow-control" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 Z" fill="#5c5c5c"/></marker>
+<marker id="arrow-feedback" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 Z" fill="#656565"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#272727">
+<text x="40" y="48" font-size="28" font-weight="700">AsterSim | Before / after decomposition</text>
+<text x="40" y="82" font-size="17" fill="#606060">Which responsibility changes when scheduling policy becomes a separate module?</text>
+<text x="40" y="112" font-size="13" letter-spacing="1" fill="#737373">SIMPLIFIED SYNTHETIC TEACHING EXAMPLE · NOT A RESEARCH TEMPLATE</text>
+<rect x="40" y="155" width="520" height="395" rx="12" fill="#f9f9f9" stroke="#dcdcdc"/>
+<text x="58" y="185" font-size="17" font-weight="700">BEFORE · Responsibilities coupled</text>
+<rect x="620" y="155" width="540" height="395" rx="12" fill="#f9f9f9" stroke="#dcdcdc"/>
+<text x="638" y="185" font-size="17" font-weight="700">AFTER · Policy made explicit</text>
+<g id="edge-before"><title>bin → mono (data)</title><path d="M 205,301.0 L 275,301.0" fill="none" stroke="#515151" stroke-width="2.4" stroke-dasharray="" marker-end="url(#arrow-data)"/></g>
+<g id="edge-after"><title>ain → exec (data)</title><path d="M 795,301.0 L 885,301.0" fill="none" stroke="#515151" stroke-width="2.4" stroke-dasharray="" marker-end="url(#arrow-data)"/></g>
+<g id="edge-control"><title>policy → exec (control)</title><path d="M 995.0,425 L 995.0,357" fill="none" stroke="#5c5c5c" stroke-width="2.4" stroke-dasharray="7 4" marker-end="url(#arrow-control)"/></g>
+<g id="node-bin" data-kind="external"><rect x="70" y="260" width="135" height="82" rx="10" fill="#f3f3f3" stroke="#808080" stroke-width="1.6"/>
+<text x="137.5" y="307.0" text-anchor="middle" font-size="18" font-weight="600">Events</text>
+</g>
+<g id="node-mono" data-kind="module"><rect x="275" y="245" width="220" height="112" rx="10" fill="#f2f2f2" stroke="#808080" stroke-width="1.6"/>
+<text x="385.0" y="295.0" text-anchor="middle" font-size="18" font-weight="600">Monolithic</text>
+<text x="385.0" y="319.0" text-anchor="middle" font-size="18" font-weight="600">simulator</text>
+</g>
+<g id="node-ain" data-kind="external"><rect x="660" y="260" width="135" height="82" rx="10" fill="#f3f3f3" stroke="#808080" stroke-width="1.6"/>
+<text x="727.5" y="307.0" text-anchor="middle" font-size="18" font-weight="600">Events</text>
+</g>
+<g id="node-exec" data-kind="module"><rect x="885" y="245" width="220" height="112" rx="10" fill="#f2f2f2" stroke="#808080" stroke-width="1.6"/>
+<text x="995.0" y="295.0" text-anchor="middle" font-size="18" font-weight="600">Execution</text>
+<text x="995.0" y="319.0" text-anchor="middle" font-size="18" font-weight="600">engine</text>
+</g>
+<g id="node-policy" data-kind="new"><rect x="885" y="425" width="220" height="82" rx="10" fill="#f0f0f0" stroke="#6a6a6a" stroke-width="1.6"/>
+<text x="995.0" y="460.0" text-anchor="middle" font-size="18" font-weight="600">Scheduling</text>
+<text x="995.0" y="484.0" text-anchor="middle" font-size="18" font-weight="600">policy [NEW]</text>
+</g>
+<rect x="207.4" y="219" width="65.19999999999999" height="23" rx="4" fill="#ffffff"/>
+<text x="240" y="235" text-anchor="middle" font-size="14" fill="#515151">events</text>
+<rect x="807.4" y="219" width="65.19999999999999" height="23" rx="4" fill="#ffffff"/>
+<text x="840" y="235" text-anchor="middle" font-size="14" fill="#515151">events</text>
+<rect x="1002.8" y="379" width="114.39999999999999" height="23" rx="4" fill="#ffffff"/>
+<text x="1060" y="395" text-anchor="middle" font-size="14" fill="#5c5c5c">select event</text>
+<line x1="40" y1="584" x2="1160" y2="584" stroke="#e2e2e2"/>
+<text x="40" y="613" font-size="17" font-weight="600">The proposal isolates policy; it does not claim a measured speedup.</text>
+<path d="M40,648 h42" stroke="#515151" stroke-width="2.4" stroke-dasharray="" marker-end="url(#arrow-data)"/>
+<text x="96" y="653" font-size="14">data (source → target)</text>
+<path d="M280,648 h42" stroke="#5c5c5c" stroke-width="2.4" stroke-dasharray="7 4" marker-end="url(#arrow-control)"/>
+<text x="336" y="653" font-size="14">control (source → target)</text>
+<path d="M520,648 h42" stroke="#656565" stroke-width="2.4" stroke-dasharray="3 4" marker-end="url(#arrow-feedback)"/>
+<text x="576" y="653" font-size="14">feedback (source → target)</text>
+</g></svg>

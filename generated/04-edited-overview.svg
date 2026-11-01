@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<title id="title">Edit demonstration | Rename + reroute</title><desc id="desc">Where do events, scheduling decisions, and resource state meet? Stable node IDs preserve connections when labels and explicit routes change. SIMPLIFIED SYNTHETIC TEACHING EXAMPLE · NOT A RESEARCH TEMPLATE</desc>
+<defs>
+<marker id="arrow-data" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 Z" fill="#245a81"/></marker>
+<marker id="arrow-control" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 Z" fill="#7b4e90"/></marker>
+<marker id="arrow-feedback" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 Z" fill="#a15a28"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#182a3a">
+<text x="40" y="48" font-size="28" font-weight="700">Edit demonstration | Rename + reroute</text>
+<text x="40" y="82" font-size="17" fill="#526271">Where do events, scheduling decisions, and resource state meet?</text>
+<text x="40" y="112" font-size="13" letter-spacing="1" fill="#697582">SIMPLIFIED SYNTHETIC TEACHING EXAMPLE · NOT A RESEARCH TEMPLATE</text>
+<g id="edge-ingest"><title>trace → queue (data)</title><path d="M 220,301.0 L 300,301.0" fill="none" stroke="#245a81" stroke-width="2.4" stroke-dasharray="" marker-end="url(#arrow-data)"/></g>
+<g id="edge-dispatch"><title>queue → engine (data)</title><path d="M 470,301.0 L 560,301.0" fill="none" stroke="#245a81" stroke-width="2.4" stroke-dasharray="" marker-end="url(#arrow-data)"/></g>
+<g id="edge-access"><title>engine → model (data)</title><path d="M 790,301.0 L 880,301.0" fill="none" stroke="#245a81" stroke-width="2.4" stroke-dasharray="" marker-end="url(#arrow-data)"/></g>
+<g id="edge-select"><title>scheduler → engine (control)</title><path d="M 575.0,410 L 575,378 L 675,378 L 675.0,342" fill="none" stroke="#7b4e90" stroke-width="2.4" stroke-dasharray="7 4" marker-end="url(#arrow-control)"/></g>
+<g id="edge-feedback"><title>model → scheduler (feedback)</title><path d="M 975.0,342 L 975,451 L 660,451.0" fill="none" stroke="#a15a28" stroke-width="2.4" stroke-dasharray="3 4" marker-end="url(#arrow-feedback)"/></g>
+<g id="edge-policy"><title>state → scheduler (control)</title><path d="M 420,451.0 L 490,451.0" fill="none" stroke="#7b4e90" stroke-width="2.4" stroke-dasharray="7 4" marker-end="url(#arrow-control)"/></g>
+<g id="node-trace" data-kind="external"><rect x="50" y="260" width="170" height="82" rx="10" fill="#f2f3f5" stroke="#708398" stroke-width="1.6"/>
+<text x="135.0" y="307.0" text-anchor="middle" font-size="18" font-weight="600">Trace input</text>
+</g>
+<g id="node-queue" data-kind="storage"><rect x="300" y="260" width="170" height="82" rx="2" fill="#fff4df" stroke="#708398" stroke-width="1.6"/>
+<text x="385.0" y="307.0" text-anchor="middle" font-size="18" font-weight="600">Event queue</text>
+</g>
+<g id="node-scheduler" data-kind="module"><rect x="490" y="410" width="170" height="82" rx="10" fill="#edf3f9" stroke="#708398" stroke-width="1.6"/>
+<text x="575.0" y="457.0" text-anchor="middle" font-size="18" font-weight="600">Epoch arbiter</text>
+</g>
+<g id="node-engine" data-kind="module"><rect x="560" y="260" width="230" height="82" rx="10" fill="#edf3f9" stroke="#708398" stroke-width="1.6"/>
+<text x="675.0" y="307.0" text-anchor="middle" font-size="18" font-weight="600">Execution engine</text>
+</g>
+<g id="node-model" data-kind="module"><rect x="880" y="260" width="190" height="82" rx="10" fill="#edf3f9" stroke="#708398" stroke-width="1.6"/>
+<text x="975.0" y="307.0" text-anchor="middle" font-size="18" font-weight="600">Resource model</text>
+</g>
+<g id="node-state" data-kind="storage"><rect x="250" y="410" width="170" height="82" rx="2" fill="#fff4df" stroke="#708398" stroke-width="1.6"/>
+<text x="335.0" y="457.0" text-anchor="middle" font-size="18" font-weight="600">Policy state</text>
+</g>
+<rect x="227.4" y="230" width="65.19999999999999" height="23" rx="4" fill="#fff"/>
+<text x="260" y="246" text-anchor="middle" font-size="14" fill="#245a81">events</text>
+<rect x="466.0" y="230" width="98.0" height="23" rx="4" fill="#fff"/>
+<text x="515" y="246" text-anchor="middle" font-size="14" fill="#245a81">next event</text>
+<rect x="761.4" y="230" width="147.2" height="23" rx="4" fill="#fff"/>
+<text x="835" y="246" text-anchor="middle" font-size="14" fill="#245a81">resource request</text>
+<rect x="592.4" y="366" width="65.19999999999999" height="23" rx="4" fill="#fff"/>
+<text x="625" y="382" text-anchor="middle" font-size="14" fill="#7b4e90">select</text>
+<rect x="719.1" y="422" width="171.79999999999998" height="23" rx="4" fill="#fff"/>
+<text x="805" y="438" text-anchor="middle" font-size="14" fill="#a15a28">completion feedback</text>
+<rect x="422.4" y="380" width="65.19999999999999" height="23" rx="4" fill="#fff"/>
+<text x="455" y="396" text-anchor="middle" font-size="14" fill="#7b4e90">policy</text>
+<line x1="40" y1="584" x2="1160" y2="584" stroke="#dce3ea"/>
+<text x="40" y="613" font-size="17" font-weight="600">Stable node IDs preserve connections when labels and explicit routes change.</text>
+<path d="M40,648 h42" stroke="#245a81" stroke-width="2.4" stroke-dasharray="" marker-end="url(#arrow-data)"/>
+<text x="96" y="653" font-size="14">data (source → target)</text>
+<path d="M280,648 h42" stroke="#7b4e90" stroke-width="2.4" stroke-dasharray="7 4" marker-end="url(#arrow-control)"/>
+<text x="336" y="653" font-size="14">control (source → target)</text>
+<path d="M520,648 h42" stroke="#a15a28" stroke-width="2.4" stroke-dasharray="3 4" marker-end="url(#arrow-feedback)"/>
+<text x="576" y="653" font-size="14">feedback (source → target)</text>
+</g></svg>

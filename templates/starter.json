@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "title": "Your system | Architecture overview",
+  "question": "What is the one question this figure answers?",
+  "takeaway": "Replace with one defensible claim; never imply unmeasured results.",
+  "provenance": "SIMPLIFIED SYNTHETIC TEACHING EXAMPLE \u00b7 NOT A RESEARCH TEMPLATE",
+  "canvas": {
+    "width": 1200,
+    "height": 680
+  },
+  "panels": [],
+  "nodes": [
+    {
+      "id": "input",
+      "label": "Input",
+      "x": 160,
+      "y": 275,
+      "w": 190,
+      "h": 82,
+      "kind": "external"
+    },
+    {
+      "id": "module",
+      "label": "Core module",
+      "x": 505,
+      "y": 275,
+      "w": 190,
+      "h": 82,
+      "kind": "module"
+    },
+    {
+      "id": "output",
+      "label": "Output",
+      "x": 850,
+      "y": 275,
+      "w": 190,
+      "h": 82,
+      "kind": "external"
+    }
+  ],
+  "edges": [
+    {
+      "id": "input-flow",
+      "from": "input",
+      "to": "module",
+      "role": "data",
+      "direction": "forward",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "request",
+      "label_at": [
+        425,
+        255
+      ],
+      "via": []
+    },
+    {
+      "id": "output-flow",
+      "from": "module",
+      "to": "output",
+      "role": "data",
+      "direction": "forward",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "response",
+      "label_at": [
+        770,
+        255
+      ],
+      "via": []
+    }
+  ]
+}

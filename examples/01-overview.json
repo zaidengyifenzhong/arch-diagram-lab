@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "title": "AsterSim | Architecture overview",
+  "question": "Where do events, scheduling decisions, and resource state meet?",
+  "takeaway": "Separate the event data path from scheduling control and completion feedback.",
+  "provenance": "SIMPLIFIED SYNTHETIC TEACHING EXAMPLE \u00b7 NOT A RESEARCH TEMPLATE",
+  "canvas": {
+    "width": 1200,
+    "height": 680
+  },
+  "panels": [],
+  "nodes": [
+    {
+      "id": "trace",
+      "label": "Trace input",
+      "x": 50,
+      "y": 260,
+      "w": 170,
+      "h": 82,
+      "kind": "external"
+    },
+    {
+      "id": "queue",
+      "label": "Event queue",
+      "x": 300,
+      "y": 260,
+      "w": 170,
+      "h": 82,
+      "kind": "storage"
+    },
+    {
+      "id": "scheduler",
+      "label": "Scheduler",
+      "x": 490,
+      "y": 410,
+      "w": 170,
+      "h": 82,
+      "kind": "module"
+    },
+    {
+      "id": "engine",
+      "label": "Execution engine",
+      "x": 560,
+      "y": 260,
+      "w": 230,
+      "h": 82,
+      "kind": "module"
+    },
+    {
+      "id": "model",
+      "label": "Resource model",
+      "x": 880,
+      "y": 260,
+      "w": 190,
+      "h": 82,
+      "kind": "module"
+    },
+    {
+      "id": "state",
+      "label": "Policy state",
+      "x": 250,
+      "y": 410,
+      "w": 170,
+      "h": 82,
+      "kind": "storage"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ingest",
+      "from": "trace",
+      "to": "queue",
+      "role": "data",
+      "direction": "forward",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "events",
+      "label_at": [
+        260,
+        246
+      ],
+      "via": []
+    },
+    {
+      "id": "dispatch",
+      "from": "queue",
+      "to": "engine",
+      "role": "data",
+      "direction": "forward",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "next event",
+      "label_at": [
+        515,
+        246
+      ],
+      "via": []
+    },
+    {
+      "id": "access",
+      "from": "engine",
+      "to": "model",
+      "role": "data",
+      "direction": "forward",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "resource request",
+      "label_at": [
+        835,
+        246
+      ],
+      "via": []
+    },
+    {
+      "id": "select",
+      "from": "scheduler",
+      "to": "engine",
+      "role": "control",
+      "direction": "forward",
+      "from_side": "top",
+      "to_side": "bottom",
+      "label": "select",
+      "label_at": [
+        625,
+        382
+      ],
+      "via": [
+        [
+          575,
+          378
+        ],
+        [
+          675,
+          378
+        ]
+      ]
+    },
+    {
+      "id": "feedback",
+      "from": "model",
+      "to": "scheduler",
+      "role": "feedback",
+      "direction": "forward",
+      "from_side": "bottom",
+      "to_side": "bottom",
+      "label": "completion feedback",
+      "label_at": [
+        830,
+        532
+      ],
+      "via": [
+        [
+          975,
+          540
+        ],
+        [
+          575,
+          540
+        ]
+      ]
+    },
+    {
+      "id": "policy",
+      "from": "state",
+      "to": "scheduler",
+      "role": "control",
+      "direction": "forward",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "policy",
+      "label_at": [
+        455,
+        396
+      ],
+      "via": []
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "schema_version": "0.1.0",
+  "corpus_status": "pilot_primary_source_checked",
+  "records": [
+    {
+      "id": "firesim-isca2018-f1",
+      "paper_id": "firesim-isca2018",
+      "figure_number": "1",
+      "pdf_page_1based": 3,
+      "printed_page": "31",
+      "source_url": "https://sagark.org/assets/pubs/firesim-isca2018.pdf#page=3",
+      "kind": "target-topology",
+      "main_object": "64节点目标网络",
+      "reader_question": "目标系统有哪些层级与重复单元？",
+      "caption_paraphrase_zh": "64节点目标拓扑；与图2的宿主映射配套。",
+      "relevant_text": "§III 首段明确区分目标拓扑与目标到宿主映射。",
+      "global_organization": "根交换机→ToR→节点，纵向层级；省略号压缩重复。",
+      "explicit_semantic_mappings": [
+        "标签规定设备角色；节点编号与省略号表达重复范围。"
+      ],
+      "local_style_observations": [
+        "黑白矩形、细线；没有颜色分类。"
+      ],
+      "inferred_design_reading": [
+        "树形排布便于先读层级，再读规模；这属于标注者解读。"
+      ],
+      "pattern_applicability": [
+        "网络/存储/多级互连的逻辑拓扑。"
+      ],
+      "ambiguities": [
+        "线的几何长度不是时延；不能由位置推断物理距离。"
+      ],
+      "design_lesson": "先画被研究系统，再另画实现它的宿主；避免把逻辑与部署揉成一图。",
+      "evidence_status": {
+        "metadata": "checked_primary_sources",
+        "pixels": "rendered_and_inspected",
+        "caption": "read",
+        "relevant_text": "read",
+        "experimental_result_chart": false
+      },
+      "inspection_method": "原 PDF 用 pdftoppm 渲染到最长边1600px；查看整页像素，并与 pdftotext 和邻近正文交叉核对。"
+    },
+    {
+      "id": "firesim-isca2018-f2",
+      "paper_id": "firesim-isca2018",
+      "figure_number": "2",
+      "pdf_page_1based": 3,
+      "printed_page": "31",
+      "source_url": "https://sagark.org/assets/pubs/firesim-isca2018.pdf#page=3",
+      "kind": "target-host-mapping",
+      "main_object": "云CPU、FPGA与模拟组件",
+      "reader_question": "仿真目标的部件分别由什么执行？",
+      "caption_paraphrase_zh": "将图1的64节点仿真映射到EC2 F1。",
+      "relevant_text": "§III、§III-A.1：服务器RTL映射FPGA；交换机软件在宿主CPU执行。",
+      "global_organization": "左侧根交换机实例；右侧实例内嵌CPU/FPGA，FPGA再含目标SoC与模型；叠片和x8表达复制。",
+      "explicit_semantic_mappings": [
+        "CPU/FPGA边界和组件名称明确执行位置；x4/x8明确多重性。"
+      ],
+      "local_style_observations": [
+        "无彩色；细框套叠；小标签密度高。"
+      ],
+      "inferred_design_reading": [
+        "嵌套框像包含层级，但不同层可能分别是宿主资源与模拟模型，需读标签。"
+      ],
+      "pattern_applicability": [
+        "模拟器、虚拟化、软硬件协同；尤其有目标/宿主双重层次。"
+      ],
+      "ambiguities": [
+        "不能把全部连线都称为目标网络；含宿主传输与模型内部连接。"
+      ],
+      "design_lesson": "用边界与标签明确抽象层；放大图必须解释是目标、模型还是执行宿主。",
+      "evidence_status": {
+        "metadata": "checked_primary_sources",
+        "pixels": "rendered_and_inspected",
+        "caption": "read",
+        "relevant_text": "read",
+        "experimental_result_chart": false
+      },
+      "inspection_method": "原 PDF 用 pdftoppm 渲染到最长边1600px；查看整页像素，并与 pdftotext 和邻近正文交叉核对。"
+    },
+    {
+      "id": "firesim-isca2018-f3",
+      "paper_id": "firesim-isca2018",
+      "figure_number": "3",
+      "pdf_page_1based": 4,
+      "printed_page": "32",
+      "source_url": "https://sagark.org/assets/pubs/firesim-isca2018.pdf#page=4",
+      "kind": "component-datapath",
+      "main_object": "NIC发送/接收路径与控制器",
+      "reader_question": "包与控制信息分别经过哪些模块？",
+      "caption_paraphrase_zh": "NIC内部设计。",
+      "relevant_text": "§III-A.2：发送经reader、reservation buffer、aligner、rate limiter；接收由packet buffer和writer处理。",
+      "global_organization": "左右两条路径，中央CPU/控制器/内存；路径边界分组。",
+      "explicit_semantic_mappings": [
+        "Send Path/Receive Path分组；Network In/Out规定外部端口；MMIO/Interrupts标明控制接口。"
+      ],
+      "local_style_observations": [
+        "黑白小矩形；虚线外围框；折线路由。"
+      ],
+      "inferred_design_reading": [
+        "中央控制与两侧数据处理的空间分离帮助理解职责。"
+      ],
+      "pattern_applicability": [
+        "网络/存储控制器的模块机制。"
+      ],
+      "ambiguities": [
+        "不等于逐周期时序；图中位置不能证明流水级延迟。"
+      ],
+      "design_lesson": "机制图保留入口、出口、状态/缓冲与控制边；不要只画模块名清单。",
+      "evidence_status": {
+        "metadata": "checked_primary_sources",
+        "pixels": "rendered_and_inspected",
+        "caption": "read",
+        "relevant_text": "read",
+        "experimental_result_chart": false
+      },
+      "inspection_method": "原 PDF 用 pdftoppm 渲染到最长边1600px；查看整页像素，并与 pdftotext 和邻近正文交叉核对。"
+    },
+    {
+      "id": "ray-osdi2018-f4",
+      "paper_id": "ray-osdi2018",
+      "figure_number": "4",
+      "pdf_page_1based": 6,
+      "printed_page": "565",
+      "source_url": "https://www.usenix.org/system/files/osdi18-moritz.pdf#page=6",
+      "kind": "typed-dependency-graph",
+      "main_object": "任务、对象、actor状态依赖",
+      "reader_question": "无状态任务与有状态actor怎样共存？",
+      "caption_paraphrase_zh": "训练调用的任务图，用两个actor说明数据、控制和状态依赖。",
+      "relevant_text": "§3.2 与图4图注：同一actor的方法之间通过stateful edges联系。",
+      "global_organization": "中央策略更新链，两侧actor链；上到下展示展开，底部省略延续。",
+      "explicit_semantic_mappings": [
+        "图例：矩形=对象，椭圆=任务/方法；实心箭头=data，虚线=control，空心粗箭头=stateful。"
+      ],
+      "local_style_observations": [
+        "黑白依靠形状与线型区分；对象标签贴近依赖。"
+      ],
+      "inferred_design_reading": [
+        "对称列突出两个actor的同构，不表示实际线程布局。"
+      ],
+      "pattern_applicability": [
+        "混合依赖、工作流、状态与数据同时重要的机制。"
+      ],
+      "ambiguities": [
+        "纵向不是标定时间轴；边类不能混称数据流。"
+      ],
+      "design_lesson": "有多种边语义就给图例；否则整齐的DAG也可能讲错机制。",
+      "evidence_status": {
+        "metadata": "checked_primary_sources",
+        "pixels": "rendered_and_inspected",
+        "caption": "read",
+        "relevant_text": "read",
+        "experimental_result_chart": false
+      },
+      "inspection_method": "原 PDF 用 pdftoppm 渲染到最长边1600px；查看整页像素，并与 pdftotext 和邻近正文交叉核对。"
+    },
+    {
+      "id": "ray-osdi2018-f5",
+      "paper_id": "ray-osdi2018",
+      "figure_number": "5",
+      "pdf_page_1based": 7,
+      "printed_page": "566",
+      "source_url": "https://www.usenix.org/system/files/osdi18-moritz.pdf#page=7",
+      "kind": "layered-system-overview",
+      "main_object": "节点组件与全局控制状态",
+      "reader_question": "应用API与系统职责如何分层、哪些部分分布式？",
+      "caption_paraphrase_zh": "应用层实现计算接口；系统层承担调度与数据管理。",
+      "relevant_text": "§4、§4.1、§4.2.1：GCS保存控制状态并支持组件独立扩展。",
+      "global_organization": "顶部重复节点；左括号跨行分层；下部GCS与调度器，右侧工具。",
+      "explicit_semantic_mappings": [
+        "App Layer/System Layer括号明确分层；每节点包含object store和local scheduler。"
+      ],
+      "local_style_observations": [
+        "灰阶分组，叠片表现多实例；大框突出GCS。"
+      ],
+      "inferred_design_reading": [
+        "GCS视觉中心强调共享控制状态，不代表所有数据都经过它。"
+      ],
+      "pattern_applicability": [
+        "分布式系统总览；组件职责与部署同时需要交代时。"
+      ],
+      "ambiguities": [
+        "本图没有完整边图例；不要仅凭实虚线推导所有协议。"
+      ],
+      "design_lesson": "总览先回答边界与职责；精确路径另用机制图。",
+      "evidence_status": {
+        "metadata": "checked_primary_sources",
+        "pixels": "rendered_and_inspected",
+        "caption": "read",
+        "relevant_text": "read",
+        "experimental_result_chart": false
+      },
+      "inspection_method": "原 PDF 用 pdftoppm 渲染到最长边1600px；查看整页像素，并与 pdftotext 和邻近正文交叉核对。"
+    },
+    {
+      "id": "ray-osdi2018-f6",
+      "paper_id": "ray-osdi2018",
+      "figure_number": "6",
+      "pdf_page_1based": 8,
+      "printed_page": "567",
+      "source_url": "https://www.usenix.org/system/files/osdi18-moritz.pdf#page=8",
+      "kind": "hierarchical-control-flow",
+      "main_object": "局部与全局调度器",
+      "reader_question": "为什么不是每个任务都交给全局调度？",
+      "caption_paraphrase_zh": "任务先交局部，必要时转全局；箭头粗细与请求率成比例。",
+      "relevant_text": "§4.2.2：局部过载或不满足资源要求时上送；全局考虑负载和约束。",
+      "global_organization": "节点在上，全局调度器在下，GCS居中；双向任务关系分色。",
+      "explicit_semantic_mappings": [
+        "黑=提交，蓝=调度，红虚线=负载信息（图例）；粗细=请求率（图注）。"
+      ],
+      "local_style_observations": [
+        "颜色配合线型/方向；粗细不是纯装饰。"
+      ],
+      "inferred_design_reading": [
+        "粗局部边与细跨层边突出常用局部路径。"
+      ],
+      "pattern_applicability": [
+        "常见路径与回退路径、分层控制；非实验结果图。"
+      ],
+      "ambiguities": [
+        "没有数值比例尺，不可据像素线宽计算真实吞吐量；不可把粗线一概解释为带宽。"
+      ],
+      "design_lesson": "样式可能承担论证：审图先问作者是否明确赋予粗细/颜色含义。",
+      "evidence_status": {
+        "metadata": "checked_primary_sources",
+        "pixels": "rendered_and_inspected",
+        "caption": "read",
+        "relevant_text": "read",
+        "experimental_result_chart": false
+      },
+      "inspection_method": "原 PDF 用 pdftoppm 渲染到最长边1600px；查看整页像素，并与 pdftotext 和邻近正文交叉核对。"
+    },
+    {
+      "id": "aifm-osdi2020-f3",
+      "paper_id": "aifm-osdi2020",
+      "figure_number": "3",
+      "pdf_page_1based": 4,
+      "printed_page": "317",
+      "source_url": "https://www.usenix.org/system/files/osdi20-ruan.pdf#page=4",
+      "kind": "layered-api-overview",
+      "main_object": "应用、数据结构、运行时与远端",
+      "reader_question": "哪个接口给应用，哪个能力留给数据结构实现者？",
+      "caption_paraphrase_zh": "应用通过可远程数据结构访问；运行时负责内存，远端可运行数据结构代码。",
+      "relevant_text": "§4.1：应用开发者与数据结构开发者是两种受众。",
+      "global_organization": "上到下API层；底部左右分本地与远端；API小标签压在层间。",
+      "explicit_semantic_mappings": [
+        "图注明确灰=数据结构、黄=运行时；Remote Server括号标注远端。"
+      ],
+      "local_style_observations": [
+        "浅填充、少量框、接口短标签；波浪连接。"
+      ],
+      "inferred_design_reading": [
+        "垂直分层强调抽象，水平分开强调位置；波浪线仅可谨慎读作连接。"
+      ],
+      "pattern_applicability": [
+        "库/运行时、端云、应用与系统的接口边界。"
+      ],
+      "ambiguities": [
+        "波浪线无协议或延迟图例；不要自行解释为异步、加密或慢链路。"
+      ],
+      "design_lesson": "颜色可编码责任归属，不必编码机器；空间位置与颜色是不同维度。",
+      "evidence_status": {
+        "metadata": "checked_primary_sources",
+        "pixels": "rendered_and_inspected",
+        "caption": "read",
+        "relevant_text": "read",
+        "experimental_result_chart": false
+      },
+      "inspection_method": "原 PDF 用 pdftoppm 渲染到最长边1600px；查看整页像素，并与 pdftotext 和邻近正文交叉核对。"
+    },
+    {
+      "id": "aifm-osdi2020-f4",
+      "paper_id": "aifm-osdi2020",
+      "figure_number": "4",
+      "pdf_page_1based": 5,
+      "printed_page": "318",
+      "source_url": "https://www.usenix.org/system/files/osdi20-ruan.pdf#page=5",
+      "kind": "paired-bitfield-layout",
+      "main_object": "本地/远端64位remoteable unique pointer",
+      "reader_question": "同一指针空间如何支持两种对象位置？",
+      "caption_paraphrase_zh": "本地与换出对象使用不同位域表示；部分标志位用反向含义。",
+      "relevant_text": "§4.2.1 Memory representation：本地低47位地址；远端存数据结构ID、大小和对象ID。",
+      "global_organization": "上下两条格式；两者共享位编号方向；(a)/(b)标明状态。",
+      "explicit_semantic_mappings": [
+        "位号与字段宽度明确；H/P/D的0值语义由图注明确。"
+      ],
+      "local_style_observations": [
+        "白/灰块分割；字段直接写入框；无流程箭头。"
+      ],
+      "inferred_design_reading": [
+        "并排比较可压缩文字，但需保持同一位序基准。"
+      ],
+      "pattern_applicability": [
+        "协议头、指令编码、地址/元数据格式；表示变化是贡献时。"
+      ],
+      "ambiguities": [
+        "块的绘制宽度不宜当精确比例，必须读位号；灰块含义不从颜色单独推断。"
+      ],
+      "design_lesson": "位域图用数值边界作证据；不能用普通流程图代替格式解释。",
+      "evidence_status": {
+        "metadata": "checked_primary_sources",
+        "pixels": "rendered_and_inspected",
+        "caption": "read",
+        "relevant_text": "read",
+        "experimental_result_chart": false
+      },
+      "inspection_method": "原 PDF 用 pdftoppm 渲染到最长边1600px；查看整页像素，并与 pdftotext 和邻近正文交叉核对。"
+    },
+    {
+      "id": "aifm-osdi2020-f5",
+      "paper_id": "aifm-osdi2020",
+      "figure_number": "5",
+      "pdf_page_1based": 8,
+      "printed_page": "321",
+      "source_url": "https://www.usenix.org/system/files/osdi20-ruan.pdf#page=8",
+      "kind": "memory-layout-with-zoom",
+      "main_object": "全局链表、每核日志与对象头",
+      "reader_question": "分配粒度如何从全局到每核再到对象？",
+      "caption_paraphrase_zh": "全局有三类日志链表，每核缓存两种日志，底部展示对象内部结构。",
+      "relevant_text": "§5.2：日志式内存、每核PCAB、对象头及remoteable pointer关联。",
+      "global_organization": "上=global链表；虚线分隔per-core；底部斜线引出对象细节。",
+      "explicit_semantic_mappings": [
+        "文字区分temporal/non-temporal/free；图注解释每核两个日志；引线连接对象区域与字段展开。"
+      ],
+      "local_style_observations": [
+        "黑白矩形、斜线纹理局部高亮；虚线边界与省略号。"
+      ],
+      "inferred_design_reading": [
+        "这是全局组织+局部放大的组合，不是一次操作的时间线。"
+      ],
+      "pattern_applicability": [
+        "分配器、缓存索引、页表等多尺度结构。"
+      ],
+      "ambiguities": [
+        "箭头在链表、引出细节和指针关联中承担不同角色；不可套一个数据流图例。"
+      ],
+      "design_lesson": "主结构与局部格式分尺度呈现；放大连接线不要误画成执行顺序。",
+      "evidence_status": {
+        "metadata": "checked_primary_sources",
+        "pixels": "rendered_and_inspected",
+        "caption": "read",
+        "relevant_text": "read",
+        "experimental_result_chart": false
+      },
+      "inspection_method": "原 PDF 用 pdftoppm 渲染到最长边1600px；查看整页像素，并与 pdftotext 和邻近正文交叉核对。"
+    }
+  ]
+}

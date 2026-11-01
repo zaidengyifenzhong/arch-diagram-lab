@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "title": "AsterSim | Before / after decomposition",
+  "question": "Which responsibility changes when scheduling policy becomes a separate module?",
+  "takeaway": "The proposal isolates policy; it does not claim a measured speedup.",
+  "provenance": "SIMPLIFIED SYNTHETIC TEACHING EXAMPLE \u00b7 NOT A RESEARCH TEMPLATE",
+  "canvas": {
+    "width": 1200,
+    "height": 680
+  },
+  "panels": [
+    {
+      "x": 40,
+      "y": 155,
+      "w": 520,
+      "h": 395,
+      "label": "BEFORE \u00b7 Responsibilities coupled"
+    },
+    {
+      "x": 620,
+      "y": 155,
+      "w": 540,
+      "h": 395,
+      "label": "AFTER \u00b7 Policy made explicit"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bin",
+      "label": "Events",
+      "x": 70,
+      "y": 260,
+      "w": 135,
+      "h": 82,
+      "kind": "external"
+    },
+    {
+      "id": "mono",
+      "label": "Monolithic\nsimulator",
+      "x": 275,
+      "y": 245,
+      "w": 220,
+      "h": 112,
+      "kind": "module"
+    },
+    {
+      "id": "ain",
+      "label": "Events",
+      "x": 660,
+      "y": 260,
+      "w": 135,
+      "h": 82,
+      "kind": "external"
+    },
+    {
+      "id": "exec",
+      "label": "Execution\nengine",
+      "x": 885,
+      "y": 245,
+      "w": 220,
+      "h": 112,
+      "kind": "module"
+    },
+    {
+      "id": "policy",
+      "label": "Scheduling\npolicy [NEW]",
+      "x": 885,
+      "y": 425,
+      "w": 220,
+      "h": 82,
+      "kind": "new"
+    }
+  ],
+  "edges": [
+    {
+      "id": "before",
+      "from": "bin",
+      "to": "mono",
+      "role": "data",
+      "direction": "forward",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "events",
+      "label_at": [
+        240,
+        235
+      ],
+      "via": []
+    },
+    {
+      "id": "after",
+      "from": "ain",
+      "to": "exec",
+      "role": "data",
+      "direction": "forward",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "events",
+      "label_at": [
+        840,
+        235
+      ],
+      "via": []
+    },
+    {
+      "id": "control",
+      "from": "policy",
+      "to": "exec",
+      "role": "control",
+      "direction": "forward",
+      "from_side": "top",
+      "to_side": "bottom",
+      "label": "select event",
+      "label_at": [
+        1060,
+        395
+      ],
+      "via": []
+    }
+  ]
+}

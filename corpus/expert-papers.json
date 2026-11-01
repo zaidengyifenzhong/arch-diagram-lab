@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "scope_note": "Small purposive sample, not universal norms; affiliations provide provenance only. Observations are not verified author intent. Color descriptions refer to visible panels, not claimed global author rules.",
+  "papers": [
+    {
+      "id": "eyeriss-isca2016",
+      "title": "Eyeriss: A Spatial Architecture for Energy-Efficient Dataflow for Convolutional Neural Networks",
+      "venue": "ISCA",
+      "year": 2016,
+      "authors": [
+        "Yu-Hsin Chen",
+        "Joel Emer",
+        "Vivienne Sze"
+      ],
+      "affiliations_as_printed": [
+        "EECS, MIT",
+        "NVIDIA Research, NVIDIA"
+      ],
+      "source_url": "https://d1qx31qr3h6wln.cloudfront.net/publications/ISCA_2016_Eyeriss.pdf",
+      "record_url": "https://dspace.mit.edu/entities/publication/f6342515-2b7d-411c-a8ad-a9edb23dd394",
+      "figures": [
+        {
+          "number": 1,
+          "pdf_page": 2,
+          "type": "hierarchical system overview with zoom",
+          "context": "Section II Spatial Architecture",
+          "observation": "黑白系统图连接DRAM、buffer和PE阵列，局部放大展示RF和运算部件。",
+          "hierarchy": "系统关系→PE内部",
+          "not_shown": "完整物理布局与详细NoC实现",
+          "baseline_vs_novelty": "通用背景架构，不应把所有模块视为本论文新增",
+          "encoding": "包含框、箭头、重复单元、局部放大关联",
+          "revision_advice": "总览保留位置关系，内部实现集中到一个带关联的局部图。",
+          "source_anchor": "https://d1qx31qr3h6wln.cloudfront.net/publications/ISCA_2016_Eyeriss.pdf#page=2",
+          "pixel_inspected": true
+        },
+        {
+          "number": 5,
+          "pdf_page": 6,
+          "type": "execution timeline",
+          "context": "Section V row-stationary dataflow, primitive processing",
+          "observation": "时间横轴与operand类型分行展示一次一维卷积示例。",
+          "hierarchy": "操作顺序→输入索引→psum位置",
+          "not_shown": "全PE阵列与全网络执行",
+          "baseline_vs_novelty": "解释原语，不是测量结果或完整对照实验",
+          "encoding": "时间、数字索引、数据类别颜色",
+          "revision_advice": "数据复用需要可追踪的值和时序，不只写reuse标签。",
+          "source_anchor": "https://d1qx31qr3h6wln.cloudfront.net/publications/ISCA_2016_Eyeriss.pdf#page=6",
+          "pixel_inspected": true
+        },
+        {
+          "number": 6,
+          "pdf_page": 7,
+          "type": "three-panel logical dataflow",
+          "context": "Section V-B Logical Mapping; V-E architectural features",
+          "observation": "三面板重复同一PE网格，分别画横向filter、斜向ifmap和纵向psum关系。",
+          "hierarchy": "共同网格→每类数据路径",
+          "not_shown": "物理NoC所有连线与控制",
+          "baseline_vs_novelty": "通过流向显示机制而非新增盒子",
+          "encoding": "标签、三种颜色、方向；相同节点位置",
+          "revision_advice": "多种流遮挡时拆成对齐面板；注明逻辑映射不等于物理结构。",
+          "source_anchor": "https://d1qx31qr3h6wln.cloudfront.net/publications/ISCA_2016_Eyeriss.pdf#page=7",
+          "pixel_inspected": true
+        }
+      ],
+      "pdf_sha256": "e511a4330dc98610a477d6aee2a886e0df5c92cfe824a3820b2f67766fc591b5",
+      "inspection": {
+        "date": "2026-11-01",
+        "method": "downloaded original PDF; extracted text; rendered indicated pages at 1.5x using PyMuPDF; inspected actual pixels plus captions and surrounding prose",
+        "page_convention": "one-based PDF page index",
+        "raw_material_policy": "PDFs and page renders are /tmp-only, excluded from public repository",
+        "scope": "selected conceptual diagrams only; experimental results excluded"
+      }
+    },
+    {
+      "id": "rowclone-micro2013",
+      "title": "RowClone: Fast and Energy-Efficient In-DRAM Bulk Data Copy and Initialization",
+      "venue": "MICRO",
+      "year": 2013,
+      "authors": [
+        "Vivek Seshadri",
+        "Yoongu Kim",
+        "Chris Fallin",
+        "Donghyuk Lee",
+        "Rachata Ausavarungnirun",
+        "Gennady Pekhimenko",
+        "Yixin Luo",
+        "Onur Mutlu",
+        "Phillip B. Gibbons",
+        "Michael A. Kozuch",
+        "Todd C. Mowry"
+      ],
+      "affiliations_as_printed": [
+        "Carnegie Mellon University",
+        "Intel Pittsburgh"
+      ],
+      "source_url": "https://www.pdl.cmu.edu/PDL-FTP/NVM/rowclone_micro13.pdf",
+      "record_url": "https://www.pdl.cmu.edu/PDL-FTP/NVM/rowclone_micro13_abs.shtml",
+      "figures": [
+        {
+          "number": 1,
+          "pdf_page": 2,
+          "type": "hierarchical memory overview",
+          "context": "Introduction DRAM hierarchy",
+          "observation": "由chip逐级放大bank和subarray，row buffer在末级出现。",
+          "hierarchy": "chip→bank→subarray",
+          "not_shown": "CPU、OS与完整内存系统",
+          "baseline_vs_novelty": "提供机制使用的既有结构背景",
+          "encoding": "灰度、包含边界、虚线放大关联",
+          "revision_advice": "只展开与论点相关的一份重复结构，避免复制每个bank全部细节。",
+          "source_anchor": "https://www.pdl.cmu.edu/PDL-FTP/NVM/rowclone_micro13.pdf#page=2",
+          "pixel_inspected": true
+        },
+        {
+          "number": 4,
+          "pdf_page": 4,
+          "type": "state transition mechanism",
+          "context": "Section 3.1 Fast Parallel Mode",
+          "observation": "同一局部结构的两个状态，由降低src、抬高dst的字线操作连接。",
+          "hierarchy": "变化动作→前后状态→位线/单元",
+          "not_shown": "ISA与OS改动；其他访问状态由前图承接",
+          "baseline_vs_novelty": "复用现有结构的操作变化，而非新增复制引擎",
+          "encoding": "状态编号4/5、源目的标签、值、虚实线",
+          "revision_advice": "前后状态保持位置一致；独立展示时解释编号上下文，不把两状态误作两模块。",
+          "source_anchor": "https://www.pdl.cmu.edu/PDL-FTP/NVM/rowclone_micro13.pdf#page=4",
+          "pixel_inspected": true
+        },
+        {
+          "number": 5,
+          "pdf_page": 5,
+          "type": "data path comparison",
+          "context": "Section 3.2 Pipelined Serial Mode",
+          "observation": "两bank、内部总线与chip I/O共同底图上标出TRANSFER、READ、WRITE路径。",
+          "hierarchy": "芯片边界→内部/外部路径",
+          "not_shown": "bank内细电路与完整软件栈",
+          "baseline_vs_novelty": "新旧命令路径共用底图，边界穿越不同",
+          "encoding": "命令名、虚线路径、方向、芯片边界",
+          "revision_advice": "比较路径时固定系统底图，标明边的语义，不用红色替代操作名称。",
+          "source_anchor": "https://www.pdl.cmu.edu/PDL-FTP/NVM/rowclone_micro13.pdf#page=5",
+          "pixel_inspected": true
+        }
+      ],
+      "pdf_sha256": "94b98bc8f442c76ec45b94154478262164012fc913925a42a204e57cb86c499b",
+      "inspection": {
+        "date": "2026-11-01",
+        "method": "downloaded original PDF; extracted text; rendered indicated pages at 1.5x using PyMuPDF; inspected actual pixels plus captions and surrounding prose",
+        "page_convention": "one-based PDF page index",
+        "raw_material_policy": "PDFs and page renders are /tmp-only, excluded from public repository",
+        "scope": "selected conceptual diagrams only; experimental results excluded"
+      }
+    },
+    {
+      "id": "plasticine-isca2017",
+      "title": "Plasticine: A Reconfigurable Architecture For Parallel Patterns",
+      "venue": "ISCA",
+      "year": 2017,
+      "authors": [
+        "Raghu Prabhakar",
+        "Yaqi Zhang",
+        "David Koeplinger",
+        "Matt Feldman",
+        "Tian Zhao",
+        "Stefan Hadjis",
+        "Ardavan Pedram",
+        "Christos Kozyrakis",
+        "Kunle Olukotun"
+      ],
+      "affiliations_as_printed": [
+        "Stanford University"
+      ],
+      "source_url": "https://csl.stanford.edu/~christos/publications/2017.plasticine.isca.pdf",
+      "record_url": "https://mast.stanford.edu/pubs/plasticine_a_reconfigurable_accelerator_for_parallel_patterns/",
+      "figures": [
+        {
+          "number": 3,
+          "pdf_page": 5,
+          "type": "PCU microarchitecture",
+          "context": "Section 3.1 Pattern Compute Unit",
+          "observation": "输入在左，SIMD pipeline居中，输出在右，控制集中在下。",
+          "hierarchy": "输入输出关系→各lane/stage细节",
+          "not_shown": "图注明确只画4stage和4lane，省略部分控制信号",
+          "baseline_vs_novelty": "展示提出的单元组织，不是baseline双栏对照",
+          "encoding": "蓝色数据部分、橙色控制部分由标签支持；流水线方向",
+          "revision_advice": "允许机制所需的细节密度，但须明确示意规模与省略项。",
+          "source_anchor": "https://csl.stanford.edu/~christos/publications/2017.plasticine.isca.pdf#page=5",
+          "pixel_inspected": true
+        },
+        {
+          "number": 4,
+          "pdf_page": 5,
+          "type": "PMU microarchitecture",
+          "context": "Section 3.2 Pattern Memory Unit",
+          "observation": "复用图3的输入与控制视觉组织，右部突出scratchpad。",
+          "hierarchy": "计算/存储分工→地址与bank接口",
+          "not_shown": "芯片级网络在后图单列",
+          "baseline_vs_novelty": "与PCU共享组织方式便于识别单元差异",
+          "encoding": "蓝橙角色分组、左到右数据路线、接口名",
+          "revision_advice": "相邻单元图保持共同接口位置，让不同点可比较而不是重学布局。",
+          "source_anchor": "https://csl.stanford.edu/~christos/publications/2017.plasticine.isca.pdf#page=5",
+          "pixel_inspected": true
+        },
+        {
+          "number": 5,
+          "pdf_page": 5,
+          "type": "chip-level topology",
+          "context": "Sections 3.3 Interconnect and 3.4 DRAM Interface",
+          "observation": "PCU/PMU与switch形成规则阵列，边缘放AG及coalescing units。",
+          "hierarchy": "阵列组织→单元种类→边缘接口",
+          "not_shown": "不重复单元内部；以一拓扑代表三种同构网络；图注明确真实16×8",
+          "baseline_vs_novelty": "表达单元组合，不给全部单元标new",
+          "encoding": "规则位置、模块缩写、图注解释与颜色分组",
+          "revision_advice": "升到总览层时隐藏单元内部；说明画出的规模和真实规格差别。",
+          "source_anchor": "https://csl.stanford.edu/~christos/publications/2017.plasticine.isca.pdf#page=5",
+          "pixel_inspected": true
+        }
+      ],
+      "pdf_sha256": "f5eef0521d18d9ca3661c3ba498f731ad7b3919d1660b9575fb2e49fe6698bbf",
+      "inspection": {
+        "date": "2026-11-01",
+        "method": "downloaded original PDF; extracted text; rendered indicated pages at 1.5x using PyMuPDF; inspected actual pixels plus captions and surrounding prose",
+        "page_convention": "one-based PDF page index",
+        "raw_material_policy": "PDFs and page renders are /tmp-only, excluded from public repository",
+        "scope": "selected conceptual diagrams only; experimental results excluded"
+      }
+    }
+  ]
+}

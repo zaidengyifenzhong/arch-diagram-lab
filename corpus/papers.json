@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "corpus_status": "pilot_primary_source_checked",
+  "records": [
+    {
+      "id": "firesim-isca2018",
+      "title": "FireSim: FPGA-Accelerated Cycle-Exact Scale-Out System Simulation in the Public Cloud",
+      "venue": "ISCA",
+      "year": 2018,
+      "official_url": "https://fires.im/publications/",
+      "pdf_url": "https://sagark.org/assets/pubs/firesim-isca2018.pdf",
+      "pdf_page_count": 14,
+      "pdf_sha256": "1b084a30064987269dda52a6a737c7d0d82e3be23052bc233464b89d64e8ed1c",
+      "inspected_figure_numbers": [
+        1,
+        2,
+        3
+      ],
+      "is_simulator_paper": true,
+      "metadata_verification": "项目官方出版记录与作者 PDF 交叉核对；会议官网核对届次年份。IEEE 页面触发 JavaScript 验证，未绕过，也未声称读取其全文。",
+      "inspected_at": "2026-11-01",
+      "selection_reason": "有可合法访问的原文；提供不同层次的结构/机制示例，不按引用量或图形美观选取。"
+    },
+    {
+      "id": "ray-osdi2018",
+      "title": "Ray: A Distributed Framework for Emerging AI Applications",
+      "venue": "OSDI",
+      "year": 2018,
+      "official_url": "https://www.usenix.org/conference/osdi18/presentation/moritz",
+      "pdf_url": "https://www.usenix.org/system/files/osdi18-moritz.pdf",
+      "pdf_page_count": 18,
+      "pdf_sha256": "066fecee9604ca232b5fbaeaa7dd260c88149a1be6dd4357ef16705986b99290",
+      "inspected_figure_numbers": [
+        4,
+        5,
+        6
+      ],
+      "is_simulator_paper": false,
+      "metadata_verification": "USENIX 官方 BibTeX 与 PDF 核对；PDF 第1页是封面，不是正文第1页。",
+      "inspected_at": "2026-11-01",
+      "selection_reason": "有可合法访问的原文；提供不同层次的结构/机制示例，不按引用量或图形美观选取。"
+    },
+    {
+      "id": "aifm-osdi2020",
+      "title": "AIFM: High-Performance, Application-Integrated Far Memory",
+      "venue": "OSDI",
+      "year": 2020,
+      "official_url": "https://www.usenix.org/conference/osdi20/presentation/ruan",
+      "pdf_url": "https://www.usenix.org/system/files/osdi20-ruan.pdf",
+      "pdf_page_count": 19,
+      "pdf_sha256": "a3ecc1a1ae9d02decb6ff11516b8e810ffd788d233fb84a9fe856817a7065bc2",
+      "inspected_figure_numbers": [
+        3,
+        4,
+        5
+      ],
+      "is_simulator_paper": false,
+      "metadata_verification": "USENIX 官方 BibTeX 与 PDF 核对；PDF 第1页是封面。",
+      "inspected_at": "2026-11-01",
+      "selection_reason": "有可合法访问的原文；提供不同层次的结构/机制示例，不按引用量或图形美观选取。"
+    }
+  ]
+}

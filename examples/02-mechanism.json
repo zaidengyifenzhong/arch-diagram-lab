@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "title": "AsterSim | One scheduling epoch",
+  "question": "One successful event: numbered steps show order, not elapsed time.",
+  "takeaway": "Make ordering explicit: enqueue \u2192 select \u2192 reserve \u2192 execute \u2192 release.",
+  "provenance": "SIMPLIFIED SYNTHETIC TEACHING EXAMPLE \u00b7 NOT A RESEARCH TEMPLATE",
+  "canvas": {
+    "width": 1200,
+    "height": 680
+  },
+  "panels": [],
+  "nodes": [
+    {
+      "id": "enqueue",
+      "label": "1  Enqueue",
+      "x": 55,
+      "y": 250,
+      "w": 170,
+      "h": 82,
+      "kind": "module"
+    },
+    {
+      "id": "choose",
+      "label": "2  Select",
+      "x": 285,
+      "y": 250,
+      "w": 170,
+      "h": 82,
+      "kind": "module"
+    },
+    {
+      "id": "reserve",
+      "label": "3  Reserve",
+      "x": 515,
+      "y": 250,
+      "w": 170,
+      "h": 82,
+      "kind": "module"
+    },
+    {
+      "id": "run",
+      "label": "4  Execute",
+      "x": 745,
+      "y": 250,
+      "w": 170,
+      "h": 82,
+      "kind": "module"
+    },
+    {
+      "id": "release",
+      "label": "5  Release",
+      "x": 975,
+      "y": 250,
+      "w": 170,
+      "h": 82,
+      "kind": "module"
+    },
+    {
+      "id": "busy",
+      "label": "Capacity state",
+      "x": 515,
+      "y": 425,
+      "w": 170,
+      "h": 82,
+      "kind": "storage"
+    }
+  ],
+  "edges": [
+    {
+      "id": "a",
+      "from": "enqueue",
+      "to": "choose",
+      "role": "data",
+      "direction": "forward",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "ready event",
+      "label_at": [
+        255,
+        235
+      ],
+      "via": []
+    },
+    {
+      "id": "b",
+      "from": "choose",
+      "to": "reserve",
+      "role": "control",
+      "direction": "forward",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "selection",
+      "label_at": [
+        485,
+        235
+      ],
+      "via": []
+    },
+    {
+      "id": "c",
+      "from": "reserve",
+      "to": "run",
+      "role": "control",
+      "direction": "forward",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "grant",
+      "label_at": [
+        715,
+        235
+      ],
+      "via": []
+    },
+    {
+      "id": "d",
+      "from": "run",
+      "to": "release",
+      "role": "data",
+      "direction": "forward",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "completion",
+      "label_at": [
+        945,
+        235
+      ],
+      "via": []
+    },
+    {
+      "id": "read",
+      "from": "busy",
+      "to": "reserve",
+      "role": "control",
+      "direction": "forward",
+      "from_side": "top",
+      "to_side": "bottom",
+      "label": "available slots",
+      "label_at": [
+        650,
+        390
+      ],
+      "via": []
+    },
+    {
+      "id": "free",
+      "from": "release",
+      "to": "busy",
+      "role": "feedback",
+      "direction": "forward",
+      "from_side": "bottom",
+      "to_side": "right",
+      "label": "return slot",
+      "label_at": [
+        870,
+        455
+      ],
+      "via": [
+        [
+          1060,
+          466
+        ]
+      ]
+    }
+  ]
+}
