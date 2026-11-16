@@ -1,6 +1,6 @@
 # 体系结构与系统非实验原图图库
 
-**36篇 / 172个非实验图示条目（170个原图条目＋2个机制子区域／非整图）**。仅收录系统抽象、架构、机制、数据/控制流、示意时序与形式定义；排除实验结果、测量照片和未分离的混合图。
+**38篇 / 180个非实验图示条目（178个原图条目＋2个机制子区域／非整图）**。仅收录系统抽象、架构、机制、数据/控制流、示意时序与形式定义；排除实验结果、测量照片和未分离的混合图。
 
 完整下载仓库，保持 JS、CSS、assets 的相对目录，再在浏览器打开 [gallery/index.html](index.html)；不能仅下载 HTML。GitHub文件预览不执行HTML。[100篇来源目录](../catalog/README.md)不代表全部原图已获许可或研究全部完成。[逐图署名与许可](licenses.json)。
 
@@ -193,5 +193,19 @@ EDA工具与电路设计表示 · TRACE电路图表示学习模型 · 3张
 专用加速器与可重构/存内计算平台 · 基因图查询计算型SSD · 1张非实验图
 
 [![图 6：计算型SSD系统总览与数据流图。GRAINS · arXiv v1，PDF 第 7 页。](assets/arxiv-2606.26468v1-grains-F6-f5465aed3651a526.png)](papers/isca-2026-grains.md)
+
+固定arXiv版本，不声称出版商版本一致。
+
+## [BP-SF · arXiv v3](papers/hpca-2026-bpsf.md)
+量子纠错解码算法与软件 · BP-SF量子LDPC解码器 · 2张非实验图
+
+[![图 1：译码振荡与校验子翻转机制图。BP-SF · arXiv v3，PDF 第 3 页。](assets/arxiv-2507.00254v3-bpsf-F1-a8407122abc1d8dd.png)](papers/hpca-2026-bpsf.md)
+
+固定arXiv版本，不声称出版商版本一致。
+
+## [Revelator · arXiv v2](papers/isca-2026-revelator.md)
+缓存、地址转换与DRAM系统 · 软硬协同虚拟地址翻译子系统 · 6张非实验图
+
+[![图 1：传统与推测地址转换时序对比图。Revelator · arXiv v2，PDF 第 3 页。](assets/arxiv-2508.02007v2-revelator-F1-73854cf4cb16f63f.png)](papers/isca-2026-revelator.md)
 
 固定arXiv版本，不声称出版商版本一致。

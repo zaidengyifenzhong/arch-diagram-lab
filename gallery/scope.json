@@ -172,7 +172,15 @@
     "arxiv-2511.15503v5-dcc-F5-d874d8c17610b446",
     "arxiv-2504.17584v2-chime-F6-1ef61890f453e99e",
     "arxiv-2504.17584v2-chime-F7-15d3ad473023bbc0",
-    "arxiv-2606.26468v1-grains-F6-f5465aed3651a526"
+    "arxiv-2606.26468v1-grains-F6-f5465aed3651a526",
+    "arxiv-2507.00254v3-bpsf-F1-a8407122abc1d8dd",
+    "arxiv-2507.00254v3-bpsf-F4-919d277f6fa24f4c",
+    "arxiv-2508.02007v2-revelator-F1-73854cf4cb16f63f",
+    "arxiv-2508.02007v2-revelator-F4-ef9471b6a055c395",
+    "arxiv-2508.02007v2-revelator-F5-4c7caf69d3e0d7a7",
+    "arxiv-2508.02007v2-revelator-F6-45f9d830f0301332",
+    "arxiv-2508.02007v2-revelator-F8-52898d8cfcb00fef",
+    "arxiv-2508.02007v2-revelator-F9-61a156f25332de9d"
   ],
   "excluded_content": "Experimental results, measurement photographs and unresolved mixed figures are outside this release. Future additions need independent scope and rights clearance.",
   "approved_subregions": [
@@ -203,9 +211,9 @@
     "ipdps2026-uctrace-F3-1bcd9130beee896a"
   ],
   "coverage": {
-    "papers": 36,
-    "entries": 172,
-    "original_figure_entries": 170,
+    "papers": 38,
+    "entries": 180,
+    "original_figure_entries": 178,
     "mechanism_subregions": 2
   }
 }

@@ -3,17 +3,17 @@
   "title": "体系结构与系统论文来源目录",
   "counts": {
     "papers": 100,
-    "papers_with_selected_figures": 36,
-    "selected_figures": 172,
-    "papers_without_public_figures": 64,
-    "original_figure_entries": 170,
+    "papers_with_selected_figures": 38,
+    "selected_figures": 180,
+    "papers_without_public_figures": 62,
+    "original_figure_entries": 178,
     "mechanism_subregions": 2
   },
   "scope": [
     "这是100篇目的性样本的来源目录，不是100篇深读完成证明，也不是领域全量或随机样本。",
     "研究对象分类用于浏览，不是仅凭会议或图型自动判定的必备图模板。",
-    "仅本仓库实际收录的36篇172个非实验图示条目（含2个机制子区域／非整图）属于本次公开图片选择；其许可和署名须逐图查看。",
-    "另外64篇当前不收录原图，原因包括许可未确认或不符合非实验范围；可读取不等于可再分发。",
+    "仅本仓库实际收录的38篇180个非实验图示条目（含2个机制子区域／非整图）属于本次公开图片选择；其许可和署名须逐图查看。",
+    "另外62篇当前不收录原图，原因包括许可未确认或不符合非实验范围；可读取不等于可再分发。",
     "不分发论文PDF；来源链接内容可能更新，目录ID中的会议年份不独立证明正式发表身份。"
   ],
   "papers": [
@@ -1112,15 +1112,20 @@
       "source_urls": [
         "https://arxiv.org/pdf/2507.00254v3"
       ],
-      "source_version": "2507.00254v3",
+      "source_version": "arXiv:2507.00254v3, 10 February 2026; not asserted publisher-identical",
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "BP-SF · arXiv v3固定版本；不独立断言正式会议身份或出版商版本一致。本轮仅F1/F4，其余图未在本轮审核范围。v3不是最新版。",
       "public_gallery": {
-        "status": "not_in_current_selection",
-        "figure_count": 0,
-        "figure_numbers": [],
-        "license_status": "not_asserted_for_unselected_figures",
-        "figure_licenses": []
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 2,
+        "figure_numbers": [
+          1,
+          4
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
       }
     },
     {
@@ -1651,17 +1656,26 @@
       "specific_object": "软硬协同虚拟地址翻译子系统",
       "source_title": "Revelator: Rapid Data Fetching via System-Software-Guided Hash-based Speculative Address Translation",
       "source_urls": [
-        "https://arxiv.org/pdf/2508.02007"
+        "https://arxiv.org/pdf/2508.02007v2"
       ],
-      "source_version": null,
+      "source_version": "arXiv:2508.02007v2, 25 June 2026; not asserted publisher-identical",
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版商版本一致。本轮仅F1/F4/F5/F6/F8/F9，其余图未在本轮审核范围。许可为CC0 1.0，不是CC BY。",
       "public_gallery": {
-        "status": "not_in_current_selection",
-        "figure_count": 0,
-        "figure_numbers": [],
-        "license_status": "not_asserted_for_unselected_figures",
-        "figure_licenses": []
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 6,
+        "figure_numbers": [
+          1,
+          4,
+          5,
+          6,
+          8,
+          9
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC0 1.0"
+        ]
       }
     },
     {

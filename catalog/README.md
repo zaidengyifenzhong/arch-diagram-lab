@@ -1,8 +1,8 @@
 # 100篇论文来源目录
 
-当前收录36篇论文的172个非实验图示条目（170个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。
+当前收录38篇论文的180个非实验图示条目（178个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。
 
-另64篇未收录原图，不代表所有来源与权利证据已穷尽。
+另62篇未收录原图，不代表所有来源与权利证据已穷尽。
 
 ## Target-Aware Implementation of Real Expressions
 研究对象：编译器、语言与中间表示 / Chassis目标感知数值表达式编译器
@@ -326,7 +326,9 @@
 研究对象：量子纠错解码算法与软件 / BP-SF量子LDPC解码器
 
 [原文来源](https://arxiv.org/pdf/2507.00254v3)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+BP-SF · arXiv v3固定版本；不独立断言正式会议身份或出版商版本一致。本轮仅F1/F4，其余图未在本轮审核范围。v3不是最新版。
+
+[查看2个已收录图示条目](../gallery/papers/hpca-2026-bpsf.md)
 
 ## DSAssassin: Cross-VM Side-Channel Attacks by Exploiting Intel Data Streaming Accelerator
 研究对象：内存保护与资源隔离构件 / DSA共享资源隔离边界
@@ -489,8 +491,10 @@ GRAINS · arXiv v1固定版本；不独立断言正式会议身份或出版商�
 ## Revelator: Rapid Data Fetching via System-Software-Guided Hash-based Speculative Address Translation
 研究对象：缓存、地址转换与DRAM系统 / 软硬协同虚拟地址翻译子系统
 
-[原文来源](https://arxiv.org/pdf/2508.02007)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+[原文来源](https://arxiv.org/pdf/2508.02007v2)
+Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版商版本一致。本轮仅F1/F4/F5/F6/F8/F9，其余图未在本轮审核范围。许可为CC0 1.0，不是CC BY。
+
+[查看6个已收录图示条目](../gallery/papers/isca-2026-revelator.md)
 
 ## RHODES: Robust Optimization for Uncertainty-Aware Design of CO2-Efficient Computing Systems
 研究对象：EDA工具与电路设计表示 / 异构SoC设计空间优化工具

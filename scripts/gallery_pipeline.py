@@ -15,6 +15,7 @@ LICENSES = {
     'CC BY 4.0': 'https://creativecommons.org/licenses/by/4.0/',
     'CC BY 2.5': 'https://creativecommons.org/licenses/by/2.5/',
     'CC0': 'https://creativecommons.org/publicdomain/zero/1.0/',
+    'CC0 1.0': 'https://creativecommons.org/publicdomain/zero/1.0/',
 }
 REQUIRED = ('id', 'paper_id', 'paper_title', 'asset', 'figure_type', 'category',
             'attribution', 'modifications', 'source_url', 'source_page_url',
