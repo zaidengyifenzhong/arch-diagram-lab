@@ -1,8 +1,8 @@
 # 100篇论文来源目录
 
-当前收录34篇论文的169个非实验图示条目（167个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。
+当前收录36篇论文的172个非实验图示条目（170个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。
 
-另66篇未收录原图，不代表所有来源与权利证据已穷尽。
+另64篇未收录原图，不代表所有来源与权利证据已穷尽。
 
 ## Target-Aware Implementation of Real Expressions
 研究对象：编译器、语言与中间表示 / Chassis目标感知数值表达式编译器
@@ -419,8 +419,10 @@
 ## CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM
 研究对象：专用加速器与可重构/存内计算平台 / CHIME GPU–DIMM-PIM推理平台
 
-[原文来源](https://arxiv.org/pdf/2504.17584)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+[原文来源](https://arxiv.org/pdf/2504.17584v2)
+CHIME · arXiv v2固定版本；不独立断言正式会议身份或出版商版本一致。本轮仅F6/F7，其余图未在本轮审核范围。
+
+[查看2个已收录图示条目](../gallery/papers/isca-2026-chime.md)
 
 ## DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures
 研究对象：编译器、语言与中间表示 / DCC PIM内核编译器
@@ -453,8 +455,10 @@
 ## GRAINS: Storage-Aware Algorithm-Architecture Co-Design Enabling High-Performance and Low-Cost Graph-Based Genome Analysis
 研究对象：专用加速器与可重构/存内计算平台 / 基因图查询计算型SSD
 
-[原文来源](https://arxiv.org/pdf/2606.26468)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+[原文来源](https://arxiv.org/pdf/2606.26468v1)
+GRAINS · arXiv v1固定版本；不独立断言正式会议身份或出版商版本一致。本轮仅F6，其余图未在本轮审核范围。
+
+[查看1个已收录图示条目](../gallery/papers/isca-2026-grains.md)
 
 ## HartBreaker: Deterministic Fuzzing of Multi-Hart RISC-V CPUs with Non-Deterministic Programs
 研究对象：RTL验证、生成与修复工具 / 多hart RISC-V RTL模糊测试框架

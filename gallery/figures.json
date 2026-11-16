@@ -3749,6 +3749,75 @@
       "source_note": "图 3 的 (a)–(c) 结构子区域（非整图）。保留完整 (a) Toom-2、(b) Toom-3 与 (c) Hybrid Toom-2+3 结构。排除 (d) 面积开销比较、百分比标注及绿色面积结论条。基于留存原PNG与整页证据重建；原PDF摘要仅继承历史记录，本次未重新读取或渲染原PDF。",
       "attribution": "Adiwena Putra, Cuong Manh Duong, Anh Quang Pham, Joo-Young Kim. ZK-Flex: A Flexible and Scalable Framework for Accelerating Zero-Knowledge Proofs. DAC 2026. arXiv:2606.03046v1, 2 June 2026. DOI: https://doi.org/10.1145/3770743.3803941. © 2026 the owner/authors. Source: https://arxiv.org/pdf/2606.03046v1. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Figure 3 subregion only, not the whole figure. Reconstructed by an integer-pixel boundary crop of a retained whole-figure PNG previously rasterized at 240 dpi. Retains panels (a)–(c); removes panel (d), area-comparison values and the bottom conclusion banner. No resampling, redrawing, recoloring or relabeling. This reconstruction did not render or newly hash the original PDF. No endorsement implied.",
       "modifications": "Figure 3 subregion only, not the whole figure. Reconstructed by an integer-pixel boundary crop of a retained whole-figure PNG previously rasterized at 240 dpi. Retains panels (a)–(c); removes panel (d), area-comparison values and the bottom conclusion banner. No resampling, redrawing, recoloring or relabeling. This reconstruction did not render or newly hash the original PDF."
+    },
+    {
+      "id": "arxiv-2504.17584v2-chime-F6-1ef61890f453e99e",
+      "asset": "assets/arxiv-2504.17584v2-chime-F6-1ef61890f453e99e.png",
+      "paper_id": "isca-2026-chime",
+      "paper_short": "CHIME · arXiv v2",
+      "paper_title": "CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM",
+      "figure_number": 6,
+      "figure_title": "图 6",
+      "figure_type": "GPU–DIMM-PIM系统总览图",
+      "category": "非实验图",
+      "pdf_page": 6,
+      "width": 781,
+      "height": 414,
+      "source_url": "https://arxiv.org/abs/2504.17584v2",
+      "source_page_url": "https://arxiv.org/pdf/2504.17584v2#page=6",
+      "source_version": "arXiv:2504.17584v2, 7 August 2026; not asserted publisher-identical",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Cropped from the exact arXiv version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged.",
+      "attribution": "Qingyuan Liu, Liyan Chen, Haocheng Wang, Yanning Yang, Dong Du, Zhigang Mao, Naifeng Jing, Yubin Xia, and Haibo Chen. CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM. arXiv:2504.17584v2, 7 August 2026. Source: https://arxiv.org/abs/2504.17584v2. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped from the exact arXiv version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged. No endorsement implied.",
+      "alt_text": "图 6：GPU–DIMM-PIM系统总览图。CHIME · arXiv v2，PDF 第 6 页。",
+      "source_note": "调度与请求映射模块连接 CPU、DIMM-PIM 和 GPU/NPU；局部放大展示 DIMM 芯片与处理单元。 将解码注意力分配到 DIMM-PIM，将 FC 与预填充注意力分配到 xPU，PCIe 路径连接设备。 是逻辑系统架构，不是芯片版图或实验吞吐量结果。 固定arXiv版本，不声称与出版社版一致；仅收录本页指定图，不代表其余图已审核或可再分发。"
+    },
+    {
+      "id": "arxiv-2504.17584v2-chime-F7-15d3ad473023bbc0",
+      "asset": "assets/arxiv-2504.17584v2-chime-F7-15d3ad473023bbc0.png",
+      "paper_id": "isca-2026-chime",
+      "paper_short": "CHIME · arXiv v2",
+      "paper_title": "CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM",
+      "figure_number": 7,
+      "figure_title": "图 7",
+      "figure_type": "PIM处理单元设计与无气泡流水机制图",
+      "category": "非实验图",
+      "pdf_page": 7,
+      "width": 1626,
+      "height": 321,
+      "source_url": "https://arxiv.org/abs/2504.17584v2",
+      "source_page_url": "https://arxiv.org/pdf/2504.17584v2#page=7",
+      "source_version": "arXiv:2504.17584v2, 7 August 2026; not asserted publisher-identical",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Cropped from the exact arXiv version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged.",
+      "attribution": "Qingyuan Liu, Liyan Chen, Haocheng Wang, Yanning Yang, Dong Du, Zhigang Mao, Naifeng Jing, Yubin Xia, and Haibo Chen. CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM. arXiv:2504.17584v2, 7 August 2026. Source: https://arxiv.org/abs/2504.17584v2. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped from the exact arXiv version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged. No endorsement implied.",
+      "alt_text": "图 7：PIM处理单元设计与无气泡流水机制图。CHIME · arXiv v2，PDF 第 7 页。",
+      "source_note": "子图 a 展开 rank PU、bank PU、共享缓冲和控制路径；子图 b 展示单头计算的无气泡流水。 外部和内部总线分别承担跨芯片传输与 bank 计算访存，分块 softmax 与 context 计算构成流水。 包含机制性的通信与计算时间关系，不是实测性能图；两个子图整体保留。 固定arXiv版本，不声称与出版社版一致；仅收录本页指定图，不代表其余图已审核或可再分发。"
+    },
+    {
+      "id": "arxiv-2606.26468v1-grains-F6-f5465aed3651a526",
+      "asset": "assets/arxiv-2606.26468v1-grains-F6-f5465aed3651a526.png",
+      "paper_id": "isca-2026-grains",
+      "paper_short": "GRAINS · arXiv v1",
+      "paper_title": "GRAINS: Storage-Aware Algorithm-Architecture Co-Design Enabling High-Performance and Low-Cost Graph-Based Genome Analysis",
+      "figure_number": 6,
+      "figure_title": "图 6",
+      "figure_type": "计算型SSD系统总览与数据流图",
+      "category": "非实验图",
+      "pdf_page": 7,
+      "width": 832,
+      "height": 409,
+      "source_url": "https://arxiv.org/abs/2606.26468v1",
+      "source_page_url": "https://arxiv.org/pdf/2606.26468v1#page=7",
+      "source_version": "arXiv:2606.26468v1, 25 June 2026; not asserted publisher-identical",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Cropped from the exact arXiv version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged.",
+      "attribution": "Nika Mansouri Ghiasi, Harun Mustafa, Talu Güloglu, Rakesh Nadig, Konstantina Koliogeorgi, Susana Rebolledo Ruiz, Marc Rautmann, Furkan Eris, Mohammad Sadrosadati, Jisung Park, and Onur Mutlu. GRAINS: Storage-Aware Algorithm-Architecture Co-Design Enabling High-Performance and Low-Cost Graph-Based Genome Analysis. arXiv:2606.26468v1, 25 June 2026. Source: https://arxiv.org/abs/2606.26468v1. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped from the exact arXiv version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged. No endorsement implied.",
+      "alt_text": "图 6：计算型SSD系统总览与数据流图。GRAINS · arXiv v1，PDF 第 7 页。",
+      "source_note": "主机输入查询连接包含 DRAM、FTL、调度器、ISP PE 和各 NAND die 内 PE 的 SSD。 编号箭头依次连接启动、元数据准备、查询传输、图查询、存内处理与结果返回，突出主机/控制器/闪存边界。 这是算法与架构协同的系统示意，不是实际 SSD 布线或实验结果。 固定arXiv版本，不声称与出版社版一致；仅收录本页指定图，不代表其余图已审核或可再分发。"
     }
   ],
   "paper_objects": [
@@ -3921,6 +3990,16 @@
       "paper_id": "isca-2026-dcc",
       "object_group": "编译器、语言与中间表示",
       "specific_object": "DCC PIM内核编译器"
+    },
+    {
+      "paper_id": "isca-2026-chime",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "CHIME GPU–DIMM-PIM推理平台"
+    },
+    {
+      "paper_id": "isca-2026-grains",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "基因图查询计算型SSD"
     }
   ],
   "reading_guides": [
@@ -5446,7 +5525,48 @@
           "url": "https://arxiv.org/pdf/2511.15503v5#page=6"
         }
       ]
+    },
+    {
+      "paper_id": "isca-2026-chime",
+      "primary_object": "专用加速器与可重构/存内计算平台",
+      "specific_object": "CHIME GPU–DIMM-PIM推理平台",
+      "conditional_design_advice": "若贡献涉及跨设备分工，可用总览图明确系统边界、数据路径与工作分配；部件或流水图用于展开关键机制。这是本篇示例，不是必备图模板。",
+      "this_paper_figure_sequence": "F6 GPU–DIMM-PIM系统总览 → F7 处理单元与无气泡流水机制",
+      "source_ambiguity_or_scope": "CHIME · arXiv v2固定版本；不独立断言正式会议身份或出版商版本一致。本轮仅F6/F7，其余图未在本轮审核范围。",
+      "source_examples": [
+        {
+          "figure_id": "F6",
+          "pdf_pages": [
+            6
+          ],
+          "url": "https://arxiv.org/pdf/2504.17584v2#page=6"
+        },
+        {
+          "figure_id": "F7",
+          "pdf_pages": [
+            7
+          ],
+          "url": "https://arxiv.org/pdf/2504.17584v2#page=7"
+        }
+      ]
+    },
+    {
+      "paper_id": "isca-2026-grains",
+      "primary_object": "专用加速器与可重构/存内计算平台",
+      "specific_object": "基因图查询计算型SSD",
+      "conditional_design_advice": "若贡献涉及跨设备分工，可用总览图明确系统边界、数据路径与工作分配；部件或流水图用于展开关键机制。这是本篇示例，不是必备图模板。",
+      "this_paper_figure_sequence": "F6 计算型SSD系统总览与编号数据流",
+      "source_ambiguity_or_scope": "GRAINS · arXiv v1固定版本；不独立断言正式会议身份或出版商版本一致。本轮仅F6，其余图未在本轮审核范围。",
+      "source_examples": [
+        {
+          "figure_id": "F6",
+          "pdf_pages": [
+            7
+          ],
+          "url": "https://arxiv.org/pdf/2606.26468v1#page=7"
+        }
+      ]
     }
   ],
-  "coverage_note": "当前收录34篇论文的169个非实验图示条目（167个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。"
+  "coverage_note": "当前收录36篇论文的172个非实验图示条目（170个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。"
 }

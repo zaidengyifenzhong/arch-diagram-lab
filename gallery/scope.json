@@ -169,7 +169,10 @@
     "arxiv-2511.15503v5-dcc-F1-91e67944f43dbbb1",
     "arxiv-2511.15503v5-dcc-F3-fd89211ea5ca3324",
     "arxiv-2511.15503v5-dcc-F4-e4433ec2827f2ad1",
-    "arxiv-2511.15503v5-dcc-F5-d874d8c17610b446"
+    "arxiv-2511.15503v5-dcc-F5-d874d8c17610b446",
+    "arxiv-2504.17584v2-chime-F6-1ef61890f453e99e",
+    "arxiv-2504.17584v2-chime-F7-15d3ad473023bbc0",
+    "arxiv-2606.26468v1-grains-F6-f5465aed3651a526"
   ],
   "excluded_content": "Experimental results, measurement photographs and unresolved mixed figures are outside this release. Future additions need independent scope and rights clearance.",
   "approved_subregions": [
@@ -200,9 +203,9 @@
     "ipdps2026-uctrace-F3-1bcd9130beee896a"
   ],
   "coverage": {
-    "papers": 34,
-    "entries": 169,
-    "original_figure_entries": 167,
+    "papers": 36,
+    "entries": 172,
+    "original_figure_entries": 170,
     "mechanism_subregions": 2
   }
 }

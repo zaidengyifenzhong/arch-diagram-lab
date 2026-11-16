@@ -1,6 +1,6 @@
 {
   "schema_version": "public-figure-provenance-1",
-  "scope": "Only these 169 nonexperimental image entries are included: 167 prior/full-figure entries and 2 explicitly marked mechanism subregions, not whole mixed figures. Licenses apply per image, not to all code or paper versions.",
+  "scope": "Only these 172 nonexperimental image entries are included: 170 prior/full-figure entries and 2 explicitly marked mechanism subregions, not whole mixed figures. Licenses apply per image, not to all code or paper versions.",
   "items": [
     {
       "id": "micro-2025-lvm-F1-9dbb3edb5652a530",
@@ -3414,6 +3414,69 @@
         808,
         308
       ]
+    },
+    {
+      "id": "arxiv-2504.17584v2-chime-F6-1ef61890f453e99e",
+      "paper_id": "isca-2026-chime",
+      "figure_number": 6,
+      "asset": "assets/arxiv-2504.17584v2-chime-F6-1ef61890f453e99e.png",
+      "pdf_page": 6,
+      "source_url": "https://arxiv.org/abs/2504.17584v2",
+      "source_page_url": "https://arxiv.org/pdf/2504.17584v2#page=6",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Qingyuan Liu, Liyan Chen, Haocheng Wang, Yanning Yang, Dong Du, Zhigang Mao, Naifeng Jing, Yubin Xia, and Haibo Chen. CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM. arXiv:2504.17584v2, 7 August 2026. Source: https://arxiv.org/abs/2504.17584v2. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped from the exact arXiv version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged. No endorsement implied.",
+      "modifications": "Cropped from the exact arXiv version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged.",
+      "width": 781,
+      "height": 414,
+      "sha256": "1ef61890f453e99ebe09a7c3ccdcae6e888964d18bf4efe6d96f1baae37536b6",
+      "source_pdf_sha256": "b8d1941104e11cb18c57cc767c788091869ab7bb4056d6ae4dbca499f0ed5f35",
+      "license_evidence_url": "https://arxiv.org/html/2504.17584v2",
+      "size_bytes": 76026,
+      "git_blob_sha": "aee59995aeaaaf398597ba73acb724c448a4fe35",
+      "source_version": "arXiv:2504.17584v2, 7 August 2026; not asserted publisher-identical"
+    },
+    {
+      "id": "arxiv-2504.17584v2-chime-F7-15d3ad473023bbc0",
+      "paper_id": "isca-2026-chime",
+      "figure_number": 7,
+      "asset": "assets/arxiv-2504.17584v2-chime-F7-15d3ad473023bbc0.png",
+      "pdf_page": 7,
+      "source_url": "https://arxiv.org/abs/2504.17584v2",
+      "source_page_url": "https://arxiv.org/pdf/2504.17584v2#page=7",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Qingyuan Liu, Liyan Chen, Haocheng Wang, Yanning Yang, Dong Du, Zhigang Mao, Naifeng Jing, Yubin Xia, and Haibo Chen. CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM. arXiv:2504.17584v2, 7 August 2026. Source: https://arxiv.org/abs/2504.17584v2. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped from the exact arXiv version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged. No endorsement implied.",
+      "modifications": "Cropped from the exact arXiv version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged.",
+      "width": 1626,
+      "height": 321,
+      "sha256": "15d3ad473023bbc00fd84546d36717505329b8cbe3ab1aa9e411cf9c46e78f07",
+      "source_pdf_sha256": "b8d1941104e11cb18c57cc767c788091869ab7bb4056d6ae4dbca499f0ed5f35",
+      "license_evidence_url": "https://arxiv.org/html/2504.17584v2",
+      "size_bytes": 131123,
+      "git_blob_sha": "2739373028693357c3fee9100f597f5e1e6f004b",
+      "source_version": "arXiv:2504.17584v2, 7 August 2026; not asserted publisher-identical"
+    },
+    {
+      "id": "arxiv-2606.26468v1-grains-F6-f5465aed3651a526",
+      "paper_id": "isca-2026-grains",
+      "figure_number": 6,
+      "asset": "assets/arxiv-2606.26468v1-grains-F6-f5465aed3651a526.png",
+      "pdf_page": 7,
+      "source_url": "https://arxiv.org/abs/2606.26468v1",
+      "source_page_url": "https://arxiv.org/pdf/2606.26468v1#page=7",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Nika Mansouri Ghiasi, Harun Mustafa, Talu Güloglu, Rakesh Nadig, Konstantina Koliogeorgi, Susana Rebolledo Ruiz, Marc Rautmann, Furkan Eris, Mohammad Sadrosadati, Jisung Park, and Onur Mutlu. GRAINS: Storage-Aware Algorithm-Architecture Co-Design Enabling High-Performance and Low-Cost Graph-Based Genome Analysis. arXiv:2606.26468v1, 25 June 2026. Source: https://arxiv.org/abs/2606.26468v1. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped from the exact arXiv version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged. No endorsement implied.",
+      "modifications": "Cropped from the exact arXiv version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged.",
+      "width": 832,
+      "height": 409,
+      "sha256": "f5465aed3651a526ba94f94170df57105379824ddfb05008d8d132caf2163edb",
+      "source_pdf_sha256": "58ca2a94883bee362ca04a52dd0e17eeb8cd975239d0f828b6ccd0476bb0df32",
+      "license_evidence_url": "https://arxiv.org/html/2606.26468v1",
+      "size_bytes": 87635,
+      "git_blob_sha": "50e35a7dafb6965858955c45c7d81a742f944a86",
+      "source_version": "arXiv:2606.26468v1, 25 June 2026; not asserted publisher-identical"
     }
   ],
   "source_hash_note": "Source PDF hashes identify the exact previously verified extraction versions. The PDF files themselves are not distributed. Current image hashes are computed from the included PNG bytes. The two ZK-Flex subregions explicitly retain historical PDF identity only; current restoration verifies original PNG/page pixels, not the original PDF anew."
