@@ -139,8 +139,10 @@
 ## LEOCraft: Towards Designing Performant LEO Networks
 研究对象：程序与网络分析、测试、追踪工具 / LEOCraft LEO星座网络设计与分析平台
 
-[原文来源](https://www.usenix.org/system/files/atc25-basak.pdf)
-仅保留目录来源链接，未确认该来源版本的正文或图组；不作为已完成论文研究。
+[原文来源](https://www.usenix.org/system/files/atc25-basak.pdf) · [正式会议记录](https://www.usenix.org/conference/atc25/presentation/basak)
+已核实USENIX ATC 2025正式会议PDF，26个物理页（含封面），论文集第789–813页。该固定版本已有29幅编号图的初研记录，分别为正文19幅（F1–F19）和附录10幅（F20–F29）；图号及物理页码已核查；不等于独立逐图复核通过或实验复现。原图公开再分发许可仍未核实，当前不收录LEOCraft原图；文中软件制品的MIT许可不等于论文图像许可。
+
+固定PDF SHA-256：`b086803f370e81b568bb83c90329d8e24ebca00bc3c2fe0c91e8982813b15dc9`。
 
 ## Emulating Space Computing Networks with RHONE
 研究对象：模拟器与仿真平台 / RHONE空间计算网络仿真平台
