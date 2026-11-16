@@ -1,0 +1,2272 @@
+{
+  "schema_version": "public-paper-catalog-1.0",
+  "title": "体系结构与系统论文来源目录",
+  "counts": {
+    "papers": 100,
+    "papers_with_selected_figures": 32,
+    "selected_figures": 157,
+    "papers_without_public_figures": 68
+  },
+  "scope": [
+    "这是100篇目的性样本的来源目录，不是100篇深读完成证明，也不是领域全量或随机样本。",
+    "研究对象分类用于浏览，不是仅凭会议或图型自动判定的必备图模板。",
+    "仅本仓库实际收录的32篇157张非实验图属于本次公开图片选择；其许可和署名须逐图查看。",
+    "另外68篇当前不收录原图，原因包括许可未确认或不符合非实验范围；可读取不等于可再分发。",
+    "不分发论文PDF；来源链接内容可能更新，目录ID中的会议年份不独立证明正式发表身份。"
+  ],
+  "papers": [
+    {
+      "paper_id": "asplos-2025-chassis",
+      "title": "Target-Aware Implementation of Real Expressions",
+      "object_group": "编译器、语言与中间表示",
+      "specific_object": "Chassis目标感知数值表达式编译器",
+      "source_title": "Target-Aware Implementation of Real Expressions",
+      "source_urls": [
+        "https://arxiv.org/pdf/2410.14025v3"
+      ],
+      "source_version": "2410.14025v3",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 6,
+        "figure_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "asplos-2025-fusion",
+      "title": "Composing Distributed Computations Through Task and Kernel Fusion",
+      "object_group": "编译器、语言与中间表示",
+      "specific_object": "Diffuse分布式任务与内核融合IR及编译系统",
+      "source_title": "Composing Distributed Computations Through Task and Kernel Fusion",
+      "source_urls": [
+        "https://rohany.github.io/publications/asplos2025-fusion.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 8,
+        "figure_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "asplos-2025-pccheck",
+      "title": "PCcheck: Persistent Concurrent Checkpointing for ML",
+      "object_group": "运行时与调度系统",
+      "specific_object": "PCcheck持久并发检查点运行时",
+      "source_title": "PCcheck: Persistent Concurrent Checkpointing for ML",
+      "source_urls": [
+        "https://anakli.inf.ethz.ch/papers/PCcheck_asplos25.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 5,
+        "figure_numbers": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "asplos-2025-tally",
+      "title": "Tally: Non-Intrusive Performance Isolation for Concurrent Deep Learning Workloads",
+      "object_group": "运行时与调度系统",
+      "specific_object": "Tally GPU共享与优先级调度运行时",
+      "source_title": "Tally: Non-Intrusive Performance Isolation for Concurrent Deep Learning Workloads",
+      "source_urls": [
+        "https://arxiv.org/pdf/2410.07381v3"
+      ],
+      "source_version": "2410.07381v3",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "部分原图待许可核验",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 3,
+        "figure_numbers": [
+          1,
+          3,
+          4
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "asplos-2025-virtuoso",
+      "title": "Virtuoso: Enabling Fast and Accurate Virtual Memory Research via an Imitation-based Operating System Simulation Methodology",
+      "object_group": "模拟器与仿真平台",
+      "specific_object": "Virtuoso操作系统与体系结构协同仿真平台",
+      "source_title": "Virtuoso: Enabling Fast and Accurate Virtual Memory Research via an Imitation-based Operating System Simulation Methodology",
+      "source_urls": [
+        "https://arxiv.org/pdf/2403.04635v2"
+      ],
+      "source_version": "2403.04635v2",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 4,
+        "figure_numbers": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC0 1.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "asplos-2026-compass",
+      "title": "Compass: Navigating the Design Space of Taint Schemes for RTL Security Verification",
+      "object_group": "RTL验证、生成与修复工具",
+      "specific_object": "Compass RTL信息流污点验证工具",
+      "source_title": "Compass: Navigating the Design Space of Taint Schemes for RTL Security Verification",
+      "source_urls": [
+        "https://people.csail.mit.edu/mengjia/data/2026.ASPLOS.Compass.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 4,
+        "figure_numbers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "asplos-2026-cxlalloc",
+      "title": "Cxlalloc: Safe and Efficient Memory Allocation for a CXL Pod",
+      "object_group": "操作系统、内存分配与硬件管理层",
+      "specific_object": "cxlalloc CXL共享内存分配器",
+      "source_title": "Cxlalloc: Safe and Efficient Memory Allocation for a CXL Pod",
+      "source_urls": [
+        "https://www.cs.utexas.edu/~witchel/pubs/ni26asplos-cxlalloc.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 6,
+        "figure_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "asplos-2026-cxlmodel",
+      "title": "A Programming Model for Disaggregated Memory over CXL",
+      "object_group": "并发与故障语义模型",
+      "specific_object": "CXL0并发与故障编程语义模型",
+      "source_title": "A Programming Model for Disaggregated Memory over CXL",
+      "source_urls": [
+        "https://www.cs.tau.ac.il/~orilahav/papers/asplos26.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 4,
+        "figure_numbers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "asplos-2026-darth",
+      "title": "DARTH-PUM: A Hybrid Processing-Using-Memory Architecture",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "DARTH-PUM模拟/数字混合存内计算平台",
+      "source_title": "DARTH-PUM: A Hybrid Processing-Using-Memory Architecture",
+      "source_urls": [
+        "https://ghose.cs.illinois.edu/papers/26asplos_darthpum.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "asplos-2026-lilac",
+      "title": "Parameterized Hardware Design with Latency-Abstract Interfaces",
+      "object_group": "编译器、语言与中间表示",
+      "specific_object": "Lilac参数化硬件描述语言与接口类型系统",
+      "source_title": "Parameterized Hardware Design with Latency-Abstract Interfaces",
+      "source_urls": [
+        "https://people.csail.mit.edu/rachit/files/pubs/lilac.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "asplos-2026-naylor",
+      "title": "CHERI-SIMT: Implementing Capability Memory Protection in GPUs",
+      "object_group": "内存保护与资源隔离构件",
+      "specific_object": "CHERI-SIMT GPU能力内存保护构件",
+      "source_title": "CHERI-SIMT: Implementing Capability Memory Protection in GPUs",
+      "source_urls": [
+        "https://www.cl.cam.ac.uk/~tmj32/papers/docs/naylor26-asplos.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "未收录图片不代表获得公开再分发许可。 本图库当前收录5张非实验图：F1、F3、F4、F8、F9。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 5,
+        "figure_numbers": [
+          1,
+          3,
+          4,
+          8,
+          9
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "asplos-2026-radshield",
+      "title": "Radshield: Software Radiation Protection for Commodity Hardware in Space",
+      "object_group": "运行时与调度系统",
+      "specific_object": "Radshield软件辐射容错运行时",
+      "source_title": "Radshield: Software Radiation Protection for Commodity Hardware in Space",
+      "source_urls": [
+        "https://www.asafcidon.com/uploads/5/9/7/0/59701649/radshield.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "未收录图片不代表获得公开再分发许可。 本图库当前收录4张非实验图：F3、F4、F7、F8。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 4,
+        "figure_numbers": [
+          3,
+          4,
+          7,
+          8
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "asplos-2026-rteaal",
+      "title": "RTeAAL Sim: Using Tensor Algebra to Represent and Accelerate RTL Simulation",
+      "object_group": "模拟器与仿真平台",
+      "specific_object": "RTeAAL Sim张量表示RTL仿真器",
+      "source_title": "RTeAAL Sim: Using Tensor Algebra to Represent and Accelerate RTL Simulation (Extended Version)",
+      "source_urls": [
+        "https://arxiv.org/pdf/2601.18140v1"
+      ],
+      "source_version": "2601.18140v1",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "未收录图片不代表获得公开再分发许可。 本图库当前收录11张非实验图：F1、F2、F3、F4、F6、F9、F10、F11、F12、F13、F14。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 11,
+        "figure_numbers": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "asplos-2026-step",
+      "title": "Streaming Tensor Programs: A Streaming Abstraction for Dynamic Parallelism",
+      "object_group": "编译器、语言与中间表示",
+      "specific_object": "STeP动态张量程序流式语言抽象",
+      "source_title": "Streaming Tensor Programs: A Streaming Abstraction for Dynamic Parallelism",
+      "source_urls": [
+        "https://weiya711.github.io/publications/asplos2026step.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 8,
+        "figure_numbers": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          11,
+          16
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "asplos-2026-xpdl",
+      "title": "Sequential Specifications for Precise Hardware Exceptions",
+      "object_group": "编译器、语言与中间表示",
+      "specific_object": "XPDL精确异常硬件描述语言",
+      "source_title": "Sequential Specifications for Precise Hardware Exceptions",
+      "source_urls": [
+        "https://www.cs.cornell.edu/andru/papers/pdl/xpdl-asplos26.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "atc2025-asterinas",
+      "title": "ASTERINAS: A Linux ABI-Compatible, Rust-Based Framekernel OS with a Small and Sound TCB",
+      "object_group": "操作系统、内存分配与硬件管理层",
+      "specific_object": "Asterinas Rust framekernel操作系统",
+      "source_title": "Asterinas: A Linux ABI-Compatible, Rust-Based Framekernel OS with a Small and Sound TCB",
+      "source_urls": [
+        "https://www.usenix.org/system/files/atc25-peng-yuke.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "atc2025-fide",
+      "title": "FiDe: Reliable and Fast Crash Failure Detection to Boost Datacenter Coordination",
+      "object_group": "分布式协议与协调构件",
+      "specific_object": "FiDe数据中心崩溃故障检测协议构件",
+      "source_title": "FiDe: Reliable and Fast Crash Failure Detection to Boost Datacenter Coordination",
+      "source_urls": [
+        "https://www.usenix.org/system/files/atc25-rovelli.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "atc2025-hotrap",
+      "title": "HotRAP: Hot Record Retention and Promotion for LSM-trees with Tiered Storage",
+      "object_group": "文件、存储与缓存软件",
+      "specific_object": "HotRAP分层存储LSM键值引擎",
+      "source_title": "HotRAP: Hot Record Retention and Promotion for LSM-trees with Tiered Storage",
+      "source_urls": [
+        "https://www.usenix.org/system/files/atc25-qiu.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "atc2025-leocraft",
+      "title": "LEOCraft: Towards Designing Performant LEO Networks",
+      "object_group": "程序与网络分析、测试、追踪工具",
+      "specific_object": "LEOCraft LEO星座网络设计与分析平台",
+      "source_title": null,
+      "source_urls": [
+        "https://www.usenix.org/system/files/atc25-basak.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "source_identity_unverified",
+      "source_note": "仅保留目录来源链接，未确认该来源版本的正文或图组；不作为已完成论文研究。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "atc2025-rhone",
+      "title": "Emulating Space Computing Networks with RHONE",
+      "object_group": "模拟器与仿真平台",
+      "specific_object": "RHONE空间计算网络仿真平台",
+      "source_title": null,
+      "source_urls": [
+        "https://www.usenix.org/system/files/atc25-wang-liying.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "source_identity_unverified",
+      "source_note": "仅保留目录来源链接，未确认该来源版本的正文或图组；不作为已完成论文研究。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "atc2025-solfs",
+      "title": "SolFS: An Operation-Log Versioning File System for Hash-free Efficient Mobile Cloud Backup",
+      "object_group": "文件、存储与缓存软件",
+      "specific_object": "SolFS操作日志版本化文件系统",
+      "source_title": "SolFS: An Operation-Log Versioning File System for Hash-free Efficient Mobile Cloud Backup",
+      "source_urls": [
+        "https://www.usenix.org/system/files/atc25-pan.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "atc2025-voltrix",
+      "title": "Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization",
+      "object_group": "矩阵与张量计算内核",
+      "specific_object": "Voltrix GPU稀疏矩阵乘法内核",
+      "source_title": "Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization",
+      "source_urls": [
+        "https://www.usenix.org/system/files/atc25-xia.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "atc2025-xrt",
+      "title": "XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors",
+      "object_group": "运行时与调度系统",
+      "specific_object": "XRT加速器感知请求调度运行时",
+      "source_title": "XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors",
+      "source_urls": [
+        "https://www.usenix.org/system/files/atc25-patel.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "dac-2024-qpilot",
+      "title": "Q-Pilot: Field Programmable Qubit Array Compilation with Flying Ancillas",
+      "object_group": "编译器、语言与中间表示",
+      "specific_object": "Q-Pilot可移动中性原子阵列量子编译器",
+      "source_title": "Q-Pilot: Field Programmable Qubit Array Compilation with Flying Ancillas",
+      "source_urls": [
+        "https://scopex-asu.github.io/files/publications/Quant_DAC2024_Gu.pdf"
+      ],
+      "source_version": "arXiv:2311.16190v3 (2024-09-11, 10 pages)",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源为十页作者扩展稿（16图），不等同六页DAC正式出版版。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 8,
+        "figure_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "dac-2025-chord",
+      "title": "CHORD: Composable Hybrid Optical Reconfigurable Diffractive Framework For Optical Neural Network",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "MDR-HDONN可重构混合衍射光学计算系统（CHORD目录的前身来源）",
+      "source_title": "Multi-Dimensional Reconfigurable, Physically Composable Hybrid Diffractive Optical Neural Network",
+      "source_urls": [
+        "https://scopex-asu.github.io/files/publications/ONN_DAC2025_Gu_DONN.pdf"
+      ],
+      "source_version": "arXiv:2411.05748v1 (2024-11-08, 7 pages)",
+      "source_identity": "predecessor_not_catalogue_publication",
+      "source_note": "链接为MDR-HDONN前身稿，并非已核实的CHORD正式出版版本；不可据此前身推定正式版的图号、配图完整性或结论相同。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "dac-2025-dco",
+      "title": "DCO-3D: Differentiable Congestion Optimization in 3D ICs",
+      "object_group": "EDA工具与电路设计表示",
+      "specific_object": "DCO-3D三维芯片拥塞预测与布局工具",
+      "source_title": "DCO-3D: Differentiable Congestion Optimization in 3D ICs",
+      "source_urls": [
+        "https://gtcad.gatech.edu/www/papers/Hsiao-DAC25-1.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "dac-2025-fastpath",
+      "title": "FastPath: A Hybrid Approach for Efficient Hardware Security Verification",
+      "object_group": "RTL验证、生成与修复工具",
+      "specific_object": "FastPath RTL硬件安全验证工具链",
+      "source_title": "FastPath: A Hybrid Approach for Efficient Hardware Security Verification",
+      "source_urls": [
+        "https://kastner.ucsd.edu/wp-content/uploads/2025/06/admin/dac25-fastpath.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "dac-2025-gem",
+      "title": "GEM: GPU-Accelerated Emulator-Inspired RTL Simulation",
+      "object_group": "模拟器与仿真平台",
+      "specific_object": "GEM GPU宿主RTL逻辑仿真器",
+      "source_title": "GEM: GPU-Accelerated Emulator-Inspired RTL Simulation",
+      "source_urls": [
+        "https://guozz.cn/publication/gemdac-25/gemdac-25.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "dac-2025-mage",
+      "title": "MAGE: A Multi-Agent Engine for Automated RTL Code Generation",
+      "object_group": "RTL验证、生成与修复工具",
+      "specific_object": "MAGE多代理RTL代码生成与调试系统",
+      "source_title": "MAGE: A Multi-Agent Engine for Automated RTL Code Generation",
+      "source_urls": [
+        "https://arxiv.org/pdf/2412.07822v1"
+      ],
+      "source_version": "2412.07822v1",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 2,
+        "figure_numbers": [
+          1,
+          3
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "dac-2025-pacq",
+      "title": "PacQ: A SIMT Microarchitecture for Efficient Dataflow in Hyper-asymmetric GEMMs",
+      "object_group": "CPU/GPU处理器与执行构件",
+      "specific_object": "PacQ低比特GEMM SIMT微架构",
+      "source_title": "PacQ: A SIMT Microarchitecture for Efficient Dataflow in Hyper-asymmetric GEMMs",
+      "source_urls": [
+        "https://arxiv.org/pdf/2502.18627v1"
+      ],
+      "source_version": "2502.18627v1",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "dac-2025-rechisel",
+      "title": "ReChisel: Effective Automatic Chisel Code Generation by LLM with Reflection",
+      "object_group": "RTL验证、生成与修复工具",
+      "specific_object": "ReChisel Chisel代码生成与反思修复工具",
+      "source_title": "ReChisel: Effective Automatic Chisel Code Generation by LLM with Reflection",
+      "source_urls": [
+        "https://arxiv.org/pdf/2505.19734v1"
+      ],
+      "source_version": "2505.19734v1",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "dac-2025-rights",
+      "title": "Insights from Rights and Wrongs: A Large Language Model for Solving Assertion Failures in RTL Design",
+      "object_group": "RTL验证、生成与修复工具",
+      "specific_object": "AssertSolver RTL断言修复模型与工具链",
+      "source_title": "Insights from Rights and Wrongs: A Large Language Model for Solving Assertion Failures in RTL Design",
+      "source_urls": [
+        "https://arxiv.org/pdf/2503.04057v1"
+      ],
+      "source_version": "2503.04057v1",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "未收录图片不代表获得公开再分发许可。 本图库当前收录1张非实验图：F1。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 1,
+        "figure_numbers": [
+          1
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 2.5"
+        ]
+      }
+    },
+    {
+      "paper_id": "dac-2025-ruplace",
+      "title": "RUPlace: Optimizing Routability via Unified Placement and Routing Formulation",
+      "object_group": "EDA工具与电路设计表示",
+      "specific_object": "RUPlace芯片全局布局工具",
+      "source_title": "RUPlace: Optimizing Routability via Unified Placement and Routing Formulation",
+      "source_urls": [
+        "https://magic3007.github.io/data/publications/PLACE_DAC2025_Chen/PLACE_DAC2025_Chen.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "dac-2025-simphony",
+      "title": "SimPhony: A Device-Circuit-Architecture Cross-Layer Modeling and Simulation Framework for Heterogeneous Electronic-Photonic AI System",
+      "object_group": "模拟器与仿真平台",
+      "specific_object": "SimPhony电子-光子系统建模平台",
+      "source_title": "SimPhony: A Device-Circuit-Architecture Cross-Layer Modeling and Simulation Framework for Heterogeneous Electronic-Photonic AI System",
+      "source_urls": [
+        "https://scopex-asu.github.io/files/publications/ONN_DAC2025_Gu_SimPhony.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "dac-2026-sandwich",
+      "title": "Sandwich: Joint Configuration Search and Hot-Switching for Efficient CPU LLM Serving",
+      "object_group": "机器学习训练与推理系统",
+      "specific_object": "Sandwich CPU LLM服务系统（暂定）",
+      "source_title": "Sandwich: Joint Configuration Search and Hot-Switching for Efficient CPU LLM Serving",
+      "source_urls": [
+        "https://i.cs.hku.hk/~cwu/papers/jtzhao-dac26.pdf"
+      ],
+      "source_version": "Author-hosted DAC 2026 formatted manuscript; seven pages",
+      "source_identity": "fixed_author_hosted_source",
+      "source_note": "固定源SHA256 fbfdbb92fe29b3860cbf7012df097e6129f6a466bb965c6bf3b266ac50304409；不声称与出版社字节一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 3,
+        "figure_numbers": [
+          1,
+          5,
+          6
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "dac-2026-sp2rint",
+      "title": "SP2RINT: Spatially-Decoupled Physics-Constrained Progressive Inverse Optimization for Diffractive Optical Neural Network Training",
+      "object_group": "光学模型训练与逆设计系统",
+      "specific_object": "SP2RINT衍射光学模型训练与逆设计框架",
+      "source_title": "SP2RINT: Spatially-Decoupled Physics-Inspired ProgRessive INverse OpTimization for Scalable, PDE-Constrained Meta-Optical Neural Network Training",
+      "source_urls": [
+        "https://scopex-asu.github.io/files/publications/ONN_DAC2026_Gu.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "dac-2026-trace",
+      "title": "TRACE: Learning to Compute on Circuit Graphs",
+      "object_group": "EDA工具与电路设计表示",
+      "specific_object": "TRACE电路图表示学习模型",
+      "source_title": "TRACE: Learning to Compute on Circuit Graphs",
+      "source_urls": [
+        "https://arxiv.org/pdf/2509.21886v3"
+      ],
+      "source_version": "arXiv:2509.21886v3 (2026-06-16, 8 pages)",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源为作者预印本，首页会议名和ACM DOI为占位符；不能据此确认正式DAC出版版。稳定目录ID并非出版资格证明。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 3,
+        "figure_numbers": [
+          1,
+          2,
+          3
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "dac-2026-zkflex",
+      "title": "ZK-Flex: A Flexible and Scalable Framework for Accelerating Zero-Knowledge Proofs",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "ZK-Flex可重构证明生成加速器",
+      "source_title": "ZK-Flex: A Flexible and Scalable Framework for Accelerating Zero-Knowledge Proofs",
+      "source_urls": [
+        "https://arxiv.org/pdf/2606.03046v1"
+      ],
+      "source_version": "2606.03046v1",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 3,
+        "figure_numbers": [
+          4,
+          6,
+          7
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "hpca-2025-concord",
+      "title": "Concord: Rethinking Distributed Coherence for Software Caches in Serverless Environments",
+      "object_group": "文件、存储与缓存软件",
+      "specific_object": "Concord分布式软件缓存",
+      "source_title": "Concord: Rethinking Distributed Coherence for Software Caches in Serverless Environments",
+      "source_urls": [
+        "https://iacoma.cs.uiuc.edu/iacoma-papers/hpca25_1.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2025-lmi",
+      "title": "Let-Me-In: (Still) Employing In-pointer Bounds Metadata for Fine-grained GPU Memory Safety",
+      "object_group": "内存保护与资源隔离构件",
+      "specific_object": "LMI GPU指针边界保护构件",
+      "source_title": "Let-Me-In: (Still) Employing In-pointer Bounds Metadata for Fine-grained GPU Memory Safety",
+      "source_urls": [
+        "https://seonjinna.github.io/assets/pdf/LMI_hpca25.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2025-mascot",
+      "title": "MASCOT: Predicting Memory Dependencies and Opportunities for Speculative Memory Bypassing",
+      "object_group": "CPU/GPU处理器与执行构件",
+      "specific_object": "MASCOT CPU内存依赖预测器",
+      "source_title": "MASCOT: Predicting Memory Dependencies and Opportunities for Speculative Memory Bypassing",
+      "source_urls": [
+        "https://webs.um.es/aros/papers/pdfs/kmose-hpca25.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2025-pimnet",
+      "title": "PIMnet: A Domain-Specific Network for Efficient Collective Communication in Scalable PIM",
+      "object_group": "互连、网络接口与数据通路",
+      "specific_object": "PIMnet分层片内/封装互连",
+      "source_title": "PIMnet: A Domain-Specific Network for Efficient Collective Communication in Scalable PIM",
+      "source_urls": [
+        "https://bu-icsg.github.io/publications/2025/PIMnet_HPCA_2025.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2025-quclear",
+      "title": "QuCLEAR: Clifford Extraction and Absorption for Quantum Circuit Optimization",
+      "object_group": "编译器、语言与中间表示",
+      "specific_object": "QuCLEAR量子电路编译工具链",
+      "source_title": "QuCLEAR: Clifford Extraction and Absorption for Quantum Circuit Optimization",
+      "source_urls": [
+        "https://arxiv.org/pdf/2408.13316v2"
+      ],
+      "source_version": "2408.13316v2",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2025-row",
+      "title": "No Rush in Executing Atomic Instructions",
+      "object_group": "CPU/GPU处理器与执行构件",
+      "specific_object": "CPU原子RMW执行与竞争预测构件",
+      "source_title": "No Rush in Executing Atomic Instructions",
+      "source_urls": [
+        "https://webs.um.es/aros/papers/pdfs/aasgharzadeh-hpca25.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2025-vrpipe",
+      "title": "VR-Pipe: Streamlining Hardware Graphics Pipeline for Volume Rendering",
+      "object_group": "CPU/GPU处理器与执行构件",
+      "specific_object": "VR-Pipe GPU固定功能图形流水线",
+      "source_title": "VR-Pipe: Streamlining Hardware Graphics Pipeline for Volume Rendering",
+      "source_urls": [
+        "https://yong2355.github.io/assets/pdf/hpca25-vr-pipe.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2026-accelflow",
+      "title": "AccelFlow: Orchestrating an On-Package Ensemble of Fine-Grained Accelerators for Microservices",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "AccelFlow封装内加速器编排平台",
+      "source_title": "AccelFlow: Orchestrating an On-Package Ensemble of Fine-Grained Accelerators for Microservices",
+      "source_urls": [
+        "https://iacoma.cs.uiuc.edu/iacoma-papers/hpca26_1.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2026-bard",
+      "title": "BARD: Reducing Write Latency of DDR5 Memory by Exploiting Bank-Parallelism",
+      "object_group": "缓存、地址转换与DRAM系统",
+      "specific_object": "BARD LLC写回管理构件",
+      "source_title": "BARD: Reducing Write Latency of DDR5 Memory by Exploiting Bank-Parallelism",
+      "source_urls": [
+        "https://fast.cc.gatech.edu/papers/HPCA_2026_3.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2026-bpsf",
+      "title": "Fully Parallelized BP Decoding for Quantum LDPC Codes Can Outperform BP-OSD",
+      "object_group": "量子纠错解码算法与软件",
+      "specific_object": "BP-SF量子LDPC解码器",
+      "source_title": "Fully Parallelized BP Decoding for Quantum LDPC Codes Can Outperform BP-OSD",
+      "source_urls": [
+        "https://arxiv.org/pdf/2507.00254v3"
+      ],
+      "source_version": "2507.00254v3",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2026-dsassassin",
+      "title": "DSAssassin: Cross-VM Side-Channel Attacks by Exploiting Intel Data Streaming Accelerator",
+      "object_group": "内存保护与资源隔离构件",
+      "specific_object": "DSA共享资源隔离边界",
+      "source_title": "DSASSASSIN: Cross-VM Side-Channel Attacks by Exploiting Intel Data Streaming Accelerator",
+      "source_urls": [
+        "https://i.benx.dev/assets/hpca26dsassassin.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2026-nugget",
+      "title": "Nugget: Portable Program Snippets",
+      "object_group": "程序与网络分析、测试、追踪工具",
+      "specific_object": "Nugget可移植程序片段工具链",
+      "source_title": "Nugget: Portable Program Snippets",
+      "source_urls": [
+        "https://arxiv.org/pdf/2509.02873v2"
+      ],
+      "source_version": "2509.02873v2",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "未收录图片不代表获得公开再分发许可。 本图库当前不收录该论文图片；只保留来源链接。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2026-sage",
+      "title": "SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "SAGe基因组数据解压加速平台",
+      "source_title": "SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis",
+      "source_urls": [
+        "https://hybol1993.github.io/assets/pdf/sage.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2026-salt",
+      "title": "SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense",
+      "object_group": "缓存、地址转换与DRAM系统",
+      "specific_object": "SALT DRAM子阵列刷新构件",
+      "source_title": "SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense",
+      "source_urls": [
+        "https://fast.cc.gatech.edu/papers/HPCA_2026_1.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "hpca-2026-tracertl",
+      "title": "TraceRTL: Agile Performance Evaluation for Microarchitecture Exploration",
+      "object_group": "模拟器与仿真平台",
+      "specific_object": "TraceRTL trace驱动RTL性能模型与加速评估平台",
+      "source_title": "TRACERTL: Agile Performance Evaluation for Microarchitecture Exploration",
+      "source_urls": [
+        "https://tutorial.xiangshan.cc/hpca26/slides/tracertl_hpca2026.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "ipdps2025-citroen",
+      "title": "Leveraging Compilation Statistics for Compiler Phase Ordering",
+      "object_group": "编译器、语言与中间表示",
+      "specific_object": "CITROEN编译遍序调优工具",
+      "source_title": "Leveraging Compilation Statistics for Compiler Phase Ordering",
+      "source_urls": [
+        "https://eprints.whiterose.ac.uk/id/eprint/224241/1/ipdps25-1.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "ipdps2025-falcon",
+      "title": "Accelerating Tensor-train Decomposition on Graph Neural Networks",
+      "object_group": "机器学习训练与推理系统",
+      "specific_object": "FALCON张量分解GNN训练框架",
+      "source_title": "Accelerating Tensor-train Decomposition on Graph Neural Networks",
+      "source_urls": [
+        "https://issl-uk.com/publication/ipdps25/ipdps25.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "ipdps2025-xtask",
+      "title": "Optimizing Fine-Grained Parallelism Through Dynamic Load Balancing on Multi-Socket Many-Core Systems",
+      "object_group": "运行时与调度系统",
+      "specific_object": "XTask/XGOMP OpenMP任务运行时",
+      "source_title": "Optimizing Fine-Grained Parallelism Through Dynamic Load Balancing on Multi-Socket Many-Core Systems",
+      "source_urls": [
+        "https://datasys.cs.iit.edu/publications/2025_IPDPS-gnu-xtask-paper.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "ipdps2026-evalnet",
+      "title": "EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects",
+      "object_group": "程序与网络分析、测试、追踪工具",
+      "specific_object": "EvalNet网络拓扑生成与分析工具链",
+      "source_title": "EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects",
+      "source_urls": [
+        "https://spcl.ethz.ch/Publications/.pdf/besta-evalnet.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "ipdps2026-move-brain",
+      "title": "I Like To Move It – Computation Instead of Data in the Brain",
+      "object_group": "模拟器与仿真平台",
+      "specific_object": "MSP分布式脑结构可塑性模拟器",
+      "source_title": "I Like To Move It – Computation Instead of Data in the Brain",
+      "source_urls": [
+        "https://arxiv.org/pdf/2509.26193v2"
+      ],
+      "source_version": "2509.26193v2",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "ipdps2026-uctrace",
+      "title": "ucTrace: A Multi-Layer Profiling Tool for UCX-driven Communication",
+      "object_group": "程序与网络分析、测试、追踪工具",
+      "specific_object": "ucTrace UCX通信剖析工具",
+      "source_title": "ucTrace: A Multi-Layer Profiling Tool for UCX-driven Communication",
+      "source_urls": [
+        "https://arxiv.org/pdf/2602.19084v1"
+      ],
+      "source_version": "2602.19084v1",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "图像来自13页arXiv v1作者稿；元数据备注写11页，但PDF含参考文献共13页。以PDF和citation_author中的5位作者署名，不使用网页简介错误的作者人数。 本图库当前收录2张非实验图：F1、F2。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 2,
+        "figure_numbers": [
+          1,
+          2
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "ipdps2026-vla-quantum",
+      "title": "High-performance Vector-length Agnostic Quantum Circuit Simulations on ARM Processors",
+      "object_group": "模拟器与仿真平台",
+      "specific_object": "Qsim-SVE量子状态向量模拟器",
+      "source_title": "High-performance Vector-length Agnostic Quantum Circuit Simulations on ARM Processors",
+      "source_urls": [
+        "https://arxiv.org/pdf/2602.09604v3"
+      ],
+      "source_version": "2602.09604v3",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 4,
+        "figure_numbers": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "isca-2026-bullettime",
+      "title": "BulletTime: Time Dilation for High-Fidelity Tracing",
+      "object_group": "程序与网络分析、测试、追踪工具",
+      "specific_object": "BulletTime行为保真追踪框架",
+      "source_title": "BULLETTIME: Time Dilation for High-Fidelity Tracing",
+      "source_urls": [
+        "https://www.anuragkhandelwal.com/papers/bullettime.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "isca-2026-bumper",
+      "title": "Bumper: Hinting Instruction Usefulness for Robust Unified Caches",
+      "object_group": "缓存、地址转换与DRAM系统",
+      "specific_object": "Bumper统一L2指令行管理构件",
+      "source_title": "Bumper: Hinting Instruction Usefulness for Robust Unified Caches",
+      "source_urls": [
+        "https://gvavou5.github.io/Documents/Bumper_ISCA26.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "isca-2026-chime",
+      "title": "CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "CHIME GPU–DIMM-PIM推理平台",
+      "source_title": "CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM",
+      "source_urls": [
+        "https://arxiv.org/pdf/2504.17584"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "isca-2026-dcc",
+      "title": "DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures",
+      "object_group": "编译器、语言与中间表示",
+      "specific_object": "DCC PIM内核编译器",
+      "source_title": "DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures",
+      "source_urls": [
+        "https://arxiv.org/pdf/2511.15503"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "isca-2026-dejavu",
+      "title": "DejaVu: Why You Should Write to Your DRAM Rows Twice, Carefully",
+      "object_group": "缓存、地址转换与DRAM系统",
+      "specific_object": "DRAM写入历史相关物理行为",
+      "source_title": "DejaVu: Why You Should Write to Your DRAM Rows Twice, Carefully",
+      "source_urls": [
+        "https://arxiv.org/pdf/2606.22297"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "isca-2026-dice",
+      "title": "DICE: Enabling Efficient General-Purpose SIMT Execution with Statically Scheduled Coarse-Grained Reconfigurable Arrays",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "DICE通用SIMT CGRA执行平台",
+      "source_title": "DICE: Enabling Efficient General-Purpose SIMT Execution with Statically Scheduled Coarse-Grained Reconfigurable Arrays",
+      "source_urls": [
+        "https://arxiv.org/pdf/2605.05496"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "isca-2026-dicephy",
+      "title": "DICE: Detailed Inter-Chiplet End-to-End PHY Modeling for Accurate Chiplet Simulation",
+      "object_group": "模拟器与仿真平台",
+      "specific_object": "芯粒互连PHY运行时模型",
+      "source_title": "DICE: Detailed Inter-Chiplet End-to-End PHY Modeling for Accurate Chiplet Simulation",
+      "source_urls": [
+        "https://arxiv.org/pdf/2607.24221v2"
+      ],
+      "source_version": "2607.24221v2",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "图7的密集网表尚未通过完整可读性审核。 本图库当前收录5张非实验图：F1、F2、F4、F6、F11。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 5,
+        "figure_numbers": [
+          1,
+          2,
+          4,
+          6,
+          11
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "isca-2026-grains",
+      "title": "GRAINS: Storage-Aware Algorithm-Architecture Co-Design Enabling High-Performance and Low-Cost Graph-Based Genome Analysis",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "基因图查询计算型SSD",
+      "source_title": "GRAINS: Storage-Aware Algorithm-Architecture Co-Design Enabling High-Performance and Low-Cost Graph-Based Genome Analysis",
+      "source_urls": [
+        "https://arxiv.org/pdf/2606.26468"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "isca-2026-hartbreaker",
+      "title": "HartBreaker: Deterministic Fuzzing of Multi-Hart RISC-V CPUs with Non-Deterministic Programs",
+      "object_group": "RTL验证、生成与修复工具",
+      "specific_object": "多hart RISC-V RTL模糊测试框架",
+      "source_title": "HartBreaker: Deterministic Fuzzing of Multi-Hart RISC-V CPUs with Non-Deterministic Programs",
+      "source_urls": [
+        "https://comsec-files.ethz.ch/papers/hartbreaker_isca26.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "isca-2026-iroknight",
+      "title": "IroKnight: Ownership-Preserving Neural Acceleration for Inference Serving",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "保密推理NPU",
+      "source_title": null,
+      "source_urls": [
+        "https://iroknight.ai/iroknight-isca-2026.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "source_identity_unverified",
+      "source_note": "仅保留目录来源链接，未确认该来源版本的正文或图组；不作为已完成论文研究。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "isca-2026-loadeddice",
+      "title": "Loaded Dice: Solving the Non-Selection Problem for Scalable Probabilistic RowHammer Defense",
+      "object_group": "缓存、地址转换与DRAM系统",
+      "specific_object": "PrISM DRAM行扰动防护构件",
+      "source_title": "Loaded Dice: Solving the Non-Selection Problem for Scalable Probabilistic RowHammer Defense",
+      "source_urls": [
+        "https://arxiv.org/pdf/2605.17358v1"
+      ],
+      "source_version": "2605.17358v1",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "图像来自17页arXiv v1作者稿；按该版本的图号、指标和设置解读，不宣称与出版社PDF字节一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 2,
+        "figure_numbers": [
+          3,
+          4
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "isca-2026-lotus",
+      "title": "Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation",
+      "object_group": "模拟器与仿真平台",
+      "specific_object": "多FPGA周期级模拟执行平台",
+      "source_title": "Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation",
+      "source_urls": [
+        "https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "isca-2026-revelator",
+      "title": "Revelator: Rapid Data Fetching via System-Software-Guided Hash-based Speculative Address Translation",
+      "object_group": "缓存、地址转换与DRAM系统",
+      "specific_object": "软硬协同虚拟地址翻译子系统",
+      "source_title": "Revelator: Rapid Data Fetching via System-Software-Guided Hash-based Speculative Address Translation",
+      "source_urls": [
+        "https://arxiv.org/pdf/2508.02007"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "isca-2026-rhodes",
+      "title": "RHODES: Robust Optimization for Uncertainty-Aware Design of CO2-Efficient Computing Systems",
+      "object_group": "EDA工具与电路设计表示",
+      "specific_object": "异构SoC设计空间优化工具",
+      "source_title": "RHODES: Robust Optimization for Uncertainty-Aware Design of CO2-Efficient Computing Systems",
+      "source_urls": [
+        "https://mariamelgamal.com/assets/pdf/RHODES_ISCA2026.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "isca-2026-tusq",
+      "title": "TUSQ: Tracking, Uncomputation, and Sampling for Noisy Quantum Simulation",
+      "object_group": "模拟器与仿真平台",
+      "specific_object": "含噪量子电路经典模拟器",
+      "source_title": "TUSQ: Tracking, Uncomputation, and Sampling for Noisy Quantum Simulation",
+      "source_urls": [
+        "https://arxiv.org/pdf/2508.04880v3"
+      ],
+      "source_version": "2508.04880v3",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "micro-2025-atr",
+      "title": "ATR: Out-of-Order Register Release Exploiting Atomic Regions",
+      "object_group": "CPU/GPU处理器与执行构件",
+      "specific_object": "乱序CPU物理寄存器管理单元",
+      "source_title": "ATR: Out-of-Order Register Release Exploiting Atomic Regions",
+      "source_urls": [
+        "https://hlitz.github.io/papers/atr.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 6,
+        "figure_numbers": [
+          2,
+          3,
+          5,
+          7,
+          8,
+          9
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "micro-2025-columndisturb",
+      "title": "ColumnDisturb: Understanding Column-based Read Disturbance in Real DRAM Chips and Implications for Future Systems",
+      "object_group": "缓存、地址转换与DRAM系统",
+      "specific_object": "真实DRAM芯片及列方向读扰动",
+      "source_title": "ColumnDisturb: Understanding Column-based Read Disturbance in Real DRAM Chips and Implications for Future Systems",
+      "source_urls": [
+        "https://arxiv.org/pdf/2510.14750"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 2,
+        "figure_numbers": [
+          1,
+          3
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "micro-2025-cxlnic",
+      "title": "Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading",
+      "object_group": "互连、网络接口与数据通路",
+      "specific_object": "CXL一致性网络接口与端主机数据通路",
+      "source_title": "Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading",
+      "source_urls": [
+        "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "micro-2025-drishti",
+      "title": "Drishti: Do Not Forget Slicing While Designing Last-Level Cache Replacement Policies for Many-Core Systems",
+      "object_group": "缓存、地址转换与DRAM系统",
+      "specific_object": "多核切片LLC替换预测子系统",
+      "source_title": "Drishti: Do Not Forget Slicing While Designing Last-Level Cache Replacement Policies for Many-Core Systems",
+      "source_urls": [
+        "https://www.cse.iitb.ac.in/~biswa/MICRO25.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "micro-2025-leakyhammer",
+      "title": "Understanding and Mitigating Covert Channel and Side Channel Vulnerabilities Introduced by RowHammer Defenses",
+      "object_group": "缓存、地址转换与DRAM系统",
+      "specific_object": "DRAM RowHammer防护构件及其时间泄漏",
+      "source_title": "Understanding and Mitigating Covert Channel and Side Channel Vulnerabilities Introduced by RowHammer Defenses",
+      "source_urls": [
+        "https://arxiv.org/pdf/2503.17891"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 1,
+        "figure_numbers": [
+          1
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "micro-2025-loopfrog",
+      "title": "LoopFrog: In-Core Hint-Based Loop Parallelization",
+      "object_group": "CPU/GPU处理器与执行构件",
+      "specific_object": "支持threadlet的单核乱序处理器",
+      "source_title": "LoopFrog: In-Core Hint-Based Loop Parallelization",
+      "source_urls": [
+        "https://www.cl.cam.ac.uk/~tmj32/papers/docs/erdos25-micro.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 4,
+        "figure_numbers": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "micro-2025-lvm",
+      "title": "Learning to Walk: Architecting Learned Virtual Memory Translation",
+      "object_group": "缓存、地址转换与DRAM系统",
+      "specific_object": "学习式虚拟内存翻译子系统",
+      "source_title": "Learning to Walk: Architecting Learned Virtual Memory Translation",
+      "source_urls": [
+        "https://www.pdl.cmu.edu/PDL-FTP/BigLearning/kzhao-MICRO25.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 6,
+        "figure_numbers": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "micro-2025-modern-gpu",
+      "title": "Dissecting and Modeling the Architecture of Modern GPU Cores",
+      "object_group": "CPU/GPU处理器与执行构件",
+      "specific_object": "现代NVIDIA GPU核心及其Accel-sim微架构模型",
+      "source_title": "Dissecting and Modeling the Architecture of Modern GPU Cores",
+      "source_urls": [
+        "https://upcommons.upc.edu/server/api/core/bitstreams/3d75bf4b-84c5-4901-a435-413ba8036f1b/content"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "micro-2025-netsparse",
+      "title": "NetSparse: In-Network Acceleration of Distributed Sparse Kernels",
+      "object_group": "互连、网络接口与数据通路",
+      "specific_object": "SNIC与交换机协同的稀疏通信数据通路",
+      "source_title": "NetSparse: In-Network Acceleration of Distributed Sparse Kernels",
+      "source_urls": [
+        "https://gergerog.github.io/files/micro25-3.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 10,
+        "figure_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "micro-2025-omnisim",
+      "title": "OmniSim: Simulating Hardware with C Speed and RTL Accuracy for High-Level Synthesis Designs",
+      "object_group": "模拟器与仿真平台",
+      "specific_object": "HLS功能与周期联合模拟器",
+      "source_title": "OmniSim: Simulating Hardware with C Speed and RTL Accuracy for High-Level Synthesis Designs",
+      "source_urls": [
+        "https://arxiv.org/pdf/2508.19299v1"
+      ],
+      "source_version": "2508.19299v1",
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "部分原图待许可核验",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 5,
+        "figure_numbers": [
+          2,
+          3,
+          4,
+          5,
+          7
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "micro-2025-quartz",
+      "title": "Quartz: A Reconfigurable, Distributed-Memory Accelerator for Sparse Applications",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "分布式SRAM可重构稀疏加速器",
+      "source_title": "Quartz: A Reconfigurable, Distributed-Memory Accelerator for Sparse Applications",
+      "source_urls": [
+        "https://people.csail.mit.edu/emer/media/papers/2020s/2025/2025.10.micro.quartz.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 11,
+        "figure_numbers": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "micro-2025-shadow",
+      "title": "SHADOW: Simultaneous Multi-Threading Architecture with Asymmetric Threads",
+      "object_group": "CPU/GPU处理器与执行构件",
+      "specific_object": "非对称SMT处理器核心",
+      "source_title": "SHADOW: Simultaneous Multi-Threading Architecture with Asymmetric Threads",
+      "source_urls": [
+        "https://tyler-utah.github.io/files/shadow.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "micro-2025-smx",
+      "title": "SMX: Heterogeneous Architecture for Universal Sequence Alignment Acceleration",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "序列比对ISA扩展与协处理器",
+      "source_title": "SMX: Heterogeneous Architecture for Universal Sequence Alignment Acceleration",
+      "source_urls": [
+        "https://www.csl.cornell.edu/~cbatten/pdfs/doblas-smx-micro2025.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "micro-2025-stackengine",
+      "title": "One Flew over the Stack Engine’s Nest: Practical Microarchitectural Attacks on the Stack Engine",
+      "object_group": "CPU/GPU处理器与执行构件",
+      "specific_object": "商用CPU栈引擎及其隐藏状态",
+      "source_title": "One Flew over the Stack Engine’s Nest: Practical Microarchitectural Attacks on the Stack Engine",
+      "source_urls": [
+        "https://comsec-files.ethz.ch/papers/stackengine_micro25.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 3,
+        "figure_numbers": [
+          1,
+          5,
+          6
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "micro-2025-streamtensor",
+      "title": "StreamTensor: Make Tensors Stream in Dataflow Accelerators for LLMs",
+      "object_group": "编译器、语言与中间表示",
+      "specific_object": "流式张量编译器与itensor IR",
+      "source_title": "StreamTensor: Make Tensors Stream in Dataflow Accelerators for LLMs",
+      "source_urls": [
+        "https://hanchenye.com/assets/pdfs/MICRO25_StreamTensor.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 8,
+        "figure_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
+      }
+    },
+    {
+      "paper_id": "osdi2026-arca",
+      "title": "Continuation-Centric Computing with Arca",
+      "object_group": "运行时与调度系统",
+      "specific_object": "continuation中心的隔离执行运行时",
+      "source_title": "Continuation-Centric Computing with Arca",
+      "source_urls": [
+        "https://www.usenix.org/system/files/osdi26-srivatsan.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "osdi2026-balboa",
+      "title": "RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs",
+      "object_group": "互连、网络接口与数据通路",
+      "specific_object": "可扩展RoCE RDMA卸载引擎",
+      "source_title": "RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs",
+      "source_urls": [
+        "https://www.usenix.org/system/files/osdi26-heer.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "osdi2026-bodega",
+      "title": "Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases",
+      "object_group": "分布式协议与协调构件",
+      "specific_object": "roster lease复制一致性协议",
+      "source_title": "Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases",
+      "source_urls": [
+        "https://www.usenix.org/system/files/osdi26-hu-guanzhou.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "osdi2026-delfs",
+      "title": "DeLFS: A Decentralized Log-Structured File System for Manycores",
+      "object_group": "文件、存储与缓存软件",
+      "specific_object": "多核日志结构文件系统",
+      "source_title": "DeLFS: A Decentralized Log-Structured File System for Manycores",
+      "source_urls": [
+        "https://www.usenix.org/system/files/osdi26-ahn.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "osdi2026-farlock",
+      "title": "FARLock: Asymmetric RDMA Locking Made Fair",
+      "object_group": "分布式协议与协调构件",
+      "specific_object": "非对称RDMA分布式锁",
+      "source_title": "FARLock: Asymmetric RDMA Locking Made Fair",
+      "source_urls": [
+        "https://www.usenix.org/system/files/osdi26-hu-yuehao.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "osdi2026-hs",
+      "title": "hS: Speculative Script Reordering at Subprocess Granularity",
+      "object_group": "运行时与调度系统",
+      "specific_object": "子进程粒度投机脚本运行时",
+      "source_title": "hS: Speculative Script Reordering at Subprocess Granularity",
+      "source_urls": [
+        "https://www.usenix.org/system/files/osdi26-liargkovas.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "osdi2026-mimesys",
+      "title": "Mimesys: Generating Realistic Executable Testing Environments from Resource Usage Traces",
+      "object_group": "程序与网络分析、测试、追踪工具",
+      "specific_object": "资源轨迹驱动的可执行负载生成器",
+      "source_title": "Mimesys: Generating Realistic Executable Testing Environments from Resource Usage Traces",
+      "source_urls": [
+        "https://www.usenix.org/system/files/osdi26-kim-donghyun.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "osdi2026-mushell",
+      "title": "μShell: A Microkernel-based FPGA Shell Architecture",
+      "object_group": "操作系统、内存分配与硬件管理层",
+      "specific_object": "模块化FPGA shell及其管理层",
+      "source_title": "μShell: A Microkernel-based FPGA Shell Architecture",
+      "source_urls": [
+        "https://www.usenix.org/system/files/osdi26-chen-jiyang.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "osdi2026-sbb",
+      "title": "SBB: Eliminating Centralized Bottlenecks in Userspace Network Runtime",
+      "object_group": "运行时与调度系统",
+      "specific_object": "去中心化用户态网络运行时",
+      "source_title": "SBB: Eliminating Centralized Bottlenecks in Userspace Network Runtime",
+      "source_urls": [
+        "https://www.usenix.org/system/files/osdi26-hu-kang.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    },
+    {
+      "paper_id": "osdi2026-vtc",
+      "title": "VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination",
+      "object_group": "编译器、语言与中间表示",
+      "specific_object": "虚拟张量DNN编译器",
+      "source_title": "VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination",
+      "source_urls": [
+        "https://www.usenix.org/system/files/osdi26-hu-muyan.pdf"
+      ],
+      "source_version": null,
+      "source_identity": "linked_source_not_asserted_publisher_identical",
+      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "public_gallery": {
+        "status": "not_in_current_selection",
+        "figure_count": 0,
+        "figure_numbers": [],
+        "license_status": "not_asserted_for_unselected_figures",
+        "figure_licenses": []
+      }
+    }
+  ]
+}

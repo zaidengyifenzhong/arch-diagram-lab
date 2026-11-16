@@ -1,94 +1,34 @@
 # Arch Diagram Lab
 
-**给体系结构新生的读图、选图、画图与改图项目。** AI 可以辅助，但人的研究判断是主线。
+体系结构与系统论文的非实验原图图库与读图研究。重点是：不同研究对象需要怎样的图组，各张图具体解释或检验什么，而不是套用统一绘图模板。
 
-我们研究的是：成熟研究者如何选择抽象、安排信息、表达机制和控制读者的误解。目标不是复制某个实验室的配色，也不是让每篇论文套同一套框图。
+## 直接看图
 
-## 从这里开始
+- **[进入原图图库：32 篇 / 157 张非实验图](gallery/README.md)**，每篇页面在 GitHub 内直接展示原图、图号、物理页来源、署名、许可及阅读注意事项。
+- 仅收录非实验图：系统抽象、架构、机制、数据/控制流、示意时序与形式定义。实验结果、测量照片和未完成子图分离的混合图不纳入。
+- 下载仓库后打开 [交互筛选页面](gallery/index.html)。GitHub 文件预览不执行 HTML；本仓库未开启 GitHub Pages。
+- [100 篇事实来源目录](catalog/README.md)用于检索。它不是 100 篇深读完成声明，也不代表 100 篇图片都可再分发。
 
-1. **先理解成熟图的判断**：[真实论文对照](corpus/expert-comparisons.md) → [跨组复核与反例](corpus/synthesis-review.md)。
-2. **不知道论文该画哪些图**：读[选图指南](docs/figure-selection.md)，先写贡献和读者问题。
-3. **刚开始学画图**：按[学习路径](docs/learning-path.md)完成[练习与答案](docs/exercises.md)。不用安装工具也能学习。
-4. **想知道默认风格与规范**：看[风格与约定](docs/style-and-conventions.md)。严格区分会务硬要求、出版指导、样本惯例与项目可选默认。
-5. **想让 AI 按规则辅助**：使用[研究 Prompt](docs/research-prompt.md)、[标注协议](docs/annotation-guide.md)和[质量检查表](docs/quality-checklist.md)。
+## 来源与权利
 
-## 研究边界
+本批只收录逐图核查后允许公开再分发的原图：152 张 CC BY 4.0、4 张 CC0、1 张 CC BY 2.5。完整署名、原文版本链接、修改说明和图像 SHA-256 见 [逐图许可清单](gallery/licenses.json)。图像经裁剪及栅格化，未重画或改写图中数据。不上传第三方论文 PDF。
 
-纳入系统与微架构、机制、数据流/控制流、逻辑时序、状态、布局、映射及设计对照等**解释性示意图**；明确包含 Simulator。
+授权不清、包含未获确认权利的第三方子图或不满足可读性要求的图不纳入。公开可读的论文不自动等于可再分发；不能把不同版本的授权互相移用。本项目不代表论文作者认可，未复现实验或验证全部科学结论。
 
-**不研究实验结果图**，不包括性能、能耗、准确率、消融曲线或统计结果图。机制图中的地址位段、步骤编号和示意时序仍可纳入。混合图按子图划界。
+## 可复用 pipeline
 
-长期来源范围为 OSDI、ISCA、MICRO、DAC、HPCA、ASPLOS、ATC、IPDPS；目前的材料不是八会代表性抽样，更不是已经完成的 100 篇综述。
+[离线候选提取、显式白名单导出和校验流程](docs/gallery-pipeline.md)把候选、审核与发布分开。新增图必须先有人核对来源版本、许可、第三方内容和图形完整性；工具不会自动给候选授予公开资格。
 
-## 第一批证据与当前限制
+## 保留的早期学习材料
 
-- 原始种子：FireSim、Ray、AIFM，**3 篇 / 9 图**，见[来源与字段说明](corpus/README.md)。
-- 对照样本：Eyeriss、RowClone、Plasticine，**3 篇 / 9 图**，见[逐图记录](corpus/expert-papers.json)。
-- 合计 **6 篇 / 18 幅**原论文非实验图经过像素、图注与相关正文检查。跨组复核另有[具体异议与修订记录](corpus/synthesis-review.md)，不以意见一致冒充实验验证。
-- 这些是有目的选择的历史样本，主要来自 ISCA、MICRO、OSDI，偏向模拟器、系统、加速器与存内操作。没有统一风格频率、阅读效果或录用率结论。
-- 公开仓库保存链接、图号和原创分析，不重新分发第三方 PDF 或论文原图。
+以下是早期 **6 篇 / 18 幅非实验图**的小样本读图研究，不与这次原图图库覆盖相加，也不代表更大的研究已完成：
 
-### 目前值得带走的判断
+- [真实论文对照](corpus/expert-comparisons.md)、[跨组复核与反例](corpus/synthesis-review.md)、[来源与字段说明](corpus/README.md)。
+- [选图指南](docs/figure-selection.md)、[学习路径](docs/learning-path.md)、[练习与答案](docs/exercises.md)、[研究 Prompt](docs/research-prompt.md)。
+- `examples/`、`generated/`、`src/arch_diagram_lab/` 保留原有教学示例和工具，示例为虚构教学内容，不是论文原图，也不是本轮新增绘图。
 
-> **专业感来自对技术信息的控制，而不只是简洁或漂亮。**
+既有案例、示例和测试未被删除或覆盖。当前主线是图库和论文读图研究，而非原创绘图或顶会风格自动生成。
 
-- 图中的方框究竟表示硬件、步骤、状态还是数据格式，必须先确定。
-- 重复的面板可能是同一阵列的不同数据流，也可能是同一电路的前后状态，不一定是多套硬件。
-- 省略细节要有理由，并说明示意规模与真实规模的区别。
-- 颜色和线宽若承担信息编码，必须先确定含义；最后调整的只是具体视觉参数。
-- 总览不必永远排在最前，少画框也不必然更专业。看它是否帮助解释当前贡献。
+## 许可边界
 
-这些判断有适用条件和反例，请结合原论文链接阅读，不把它们当无条件戒律。
-
-## 原创教学示例：用于练习，不是顶会模板
-
-同一个虚构的 AsterSim 机制分别用总览、执行步骤和前后对照表达，展示为什么一套机制需要不同视图。**不代表真实研究系统，也不声称证明性能收益。**
-
-![原创教学对照图](generated/03-before-after.png)
-
-- [总览 SVG](generated/01-overview.svg) / [PDF](generated/01-overview.pdf) / [规格](examples/01-overview.json)
-- [机制 SVG](generated/02-mechanism.svg) / [PDF](generated/02-mechanism.pdf) / [规格](examples/02-mechanism.json)
-- [对照 SVG](generated/03-before-after.svg) / [PDF](generated/03-before-after.pdf) / [规格](examples/03-before-after.json)
-- [修改示例](generated/04-edited-overview.svg)：改名称并重新布置反馈路径。
-- [单色检查](generated/05-before-after-monochrome.svg)：去除颜色后仍保留新增模块和边类型。
-
-SVG 内文字、节点和连线可分别编辑。JSON 保留语义和显式坐标；不是把 PNG 包进 SVG。
-
-## 可选工具：运行、检查、重画
-
-核心支持 Python 3.9+，本次在 Python 3.12 下测试，使用标准库。PNG/PDF 预览需要另外安装的 Inkscape；没有它仍能生成 SVG。
-
-```bash
-python -m unittest discover -s tests -v
-python scripts/validate_corpus.py
-python scripts/build_examples.py
-# 本机已有 Inkscape 时可生成 PNG/PDF：
-python scripts/build_examples.py --preview
-python scripts/mutation_demo.py --preview
-
-PYTHONPATH=src python -m arch_diagram_lab validate examples/01-overview.json
-PYTHONPATH=src python -m arch_diagram_lab render examples/01-overview.json -o generated/01-overview.svg
-PYTHONPATH=src python -m arch_diagram_lab edit examples/01-overview.json --node scheduler --label 'Epoch arbiter' -o generated/renamed.json
-```
-
-完整规格见 [templates/SPEC.md](templates/SPEC.md)，起点见 [templates/starter.json](templates/starter.json)。
-
-工具检查 ID、引用、边角色及部分几何约束；**不证明技术机制正确，不自动规划论文图组，也不提供完整的自动布局或碰撞检测。**当前教学例图采用显式坐标。原图检查、证据解释与人类评审仍不可省略。
-
-## 项目结构与下一步
-
-| 路径 | 内容 |
-|---|---|
-| `corpus/` | 可追溯原论文记录、逐图解读、对照与反例 |
-| `docs/` | 新生教程、项目方案、研究 Prompt、模式与检查规范 |
-| `examples/`、`templates/` | 原创可编辑规格和语义契约 |
-| `src/`、`scripts/`、`tests/` | 最小生成/验证工具和回归测试 |
-| `generated/` | 原创示例 SVG、PNG、PDF |
-
-[完整计划](docs/project-plan.md)：先验证小规模学习和绘制闭环，再扩展到 12–20 篇试点，之后有条件扩充至约 100 篇。重点补充 CPU/cache/coherence、不同 Simulator、编译和协议等对象，并保留不支持原假设的例子。
-
-### 贡献与权利边界
-
-新案例需要原论文来源、图号、页码、实际查看深度与明确/推断语义的区分。新增“规范”须注明是官方要求、样本观察还是建议。请不要提交未获许可的论文 PDF、裁剪原图、用户私稿或任何凭据。
-
-此版本尚未选择开源许可证；公开可见不等于授予额外再许可。第三方论文与图像的权利属于各自权利人。
+第三方图像按逐图列出的许可证使用，权利属于各自权利人。此仓库尚未为其余代码和原创文字选择统一开源许可证，公开可见本身不授予额外再许可。请勿提交论文 PDF、未获许可的图片、私稿、个人信息或凭据。
