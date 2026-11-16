@@ -478,7 +478,9 @@ GRAINS · arXiv v1固定版本；不独立断言正式会议身份或出版商�
 研究对象：专用加速器与可重构/存内计算平台 / 保密推理NPU
 
 [原文来源](https://iroknight.ai/iroknight-isca-2026.pdf)
-仅保留目录来源链接，未确认该来源版本的正文或图组；不作为已完成论文研究。
+已核实与目录标题一致的18页作者托管稿，首页以“To Appear”标注将发表于ISCA 2026。这是固定作者稿，不声称与出版社最终版在字节、图号或排版上相同。该稿14幅编号图的初研记录及图号/物理页码核查已有记录；不等于独立逐图复核通过、实验复现或独立安全性证明。原图公开再分发许可仍未核实，当前不收录IroKnight原图。
+
+固定PDF SHA-256：`49a2c1ec66b035b94a15dd1e02edb9f9f2fbcfdd9c9bf0f5ebe3d3f76e04302a`。
 
 ## Loaded Dice: Solving the Non-Selection Problem for Scalable Probabilistic RowHammer Defense
 研究对象：缓存、地址转换与DRAM系统 / PrISM DRAM行扰动防护构件

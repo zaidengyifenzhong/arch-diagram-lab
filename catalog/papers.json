@@ -1599,20 +1599,21 @@
       "title": "IroKnight: Ownership-Preserving Neural Acceleration for Inference Serving",
       "object_group": "专用加速器与可重构/存内计算平台",
       "specific_object": "保密推理NPU",
-      "source_title": null,
+      "source_title": "IroKnight: Ownership-Preserving Neural Acceleration for Inference Serving",
       "source_urls": [
         "https://iroknight.ai/iroknight-isca-2026.pdf"
       ],
-      "source_version": null,
-      "source_identity": "source_identity_unverified",
-      "source_note": "仅保留目录来源链接，未确认该来源版本的正文或图组；不作为已完成论文研究。",
+      "source_version": "Author-hosted To Appear ISCA 2026 manuscript; 18 physical PDF pages; not asserted byte-, figure-number- or layout-identical to publisher version",
+      "source_identity": "fixed_author_hosted_source",
+      "source_note": "已核实与目录标题一致的18页作者托管稿，首页以“To Appear”标注将发表于ISCA 2026。这是固定作者稿，不声称与出版社最终版在字节、图号或排版上相同。该稿14幅编号图的初研记录及图号/物理页码核查已有记录；不等于独立逐图复核通过、实验复现或独立安全性证明。原图公开再分发许可仍未核实，当前不收录IroKnight原图。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,
         "figure_numbers": [],
-        "license_status": "not_asserted_for_unselected_figures",
+        "license_status": "unconfirmed_for_public_redistribution",
         "figure_licenses": []
-      }
+      },
+      "source_sha256": "49a2c1ec66b035b94a15dd1e02edb9f9f2fbcfdd9c9bf0f5ebe3d3f76e04302a"
     },
     {
       "paper_id": "isca-2026-loadeddice",
