@@ -1,6 +1,6 @@
 # 体系结构与系统非实验原图图库
 
-**33篇 / 163张非实验图**。仅收录系统抽象、架构、机制、数据/控制流、示意时序与形式定义；排除实验结果、测量照片和未分离的混合图。
+**34篇 / 169个非实验图示条目（167个原图条目＋2个机制子区域／非整图）**。仅收录系统抽象、架构、机制、数据/控制流、示意时序与形式定义；排除实验结果、测量照片和未分离的混合图。
 
 完整下载仓库，保持 JS、CSS、assets 的相对目录，再在浏览器打开 [gallery/index.html](index.html)；不能仅下载 HTML。GitHub文件预览不执行HTML。[100篇来源目录](../catalog/README.md)不代表全部原图已获许可或研究全部完成。[逐图署名与许可](licenses.json)。
 
@@ -135,7 +135,7 @@ CPU/GPU处理器与执行构件 · 商用CPU栈引擎及其隐藏状态 · 3张
 [![图 1：芯粒体系结构示例。原论文 DICE: Detailed Inter-Chiplet End-to-End PHY Modeling for Accurate Chiplet Simulation，PDF 第 1 页。](assets/isca-2026-dicephy-F1-d575c7e9879a13b4.png)](papers/isca-2026-dicephy.md)
 
 ## [ZK-Flex · DAC 2026](papers/dac-2026-zkflex.md)
-专用加速器与可重构/存内计算平台 · ZK-Flex可重构证明生成加速器 · 3张
+专用加速器与可重构/存内计算平台 · ZK-Flex可重构证明生成加速器 · 3张原图＋2个机制子区域（F2 Step1–3、F3(a–c)，非整图；排除运行时间与面积结果）
 
 [![图 4：软硬件协同加速器架构图。原论文 ZK-Flex: A Flexible and Scalable Framework for Accelerating Zero-Knowledge Proofs，PDF 第 3 页。](assets/dac-2026-zkflex-F4-45f3915265ca78ec.png)](papers/dac-2026-zkflex.md)
 
@@ -174,3 +174,10 @@ EDA工具与电路设计表示 · TRACE电路图表示学习模型 · 3张
 互连、网络接口与数据通路 / CXL一致性网络接口与端主机数据通路 · 6张非实验图 · CC BY-NC-SA 4.0
 
 [![图 1：CXL Type 1/2 设备架构。控制器、用户设计和可选设备内存的组成；Type 1 不含设备内存。](assets/micro-2025-cxlnic-F1-166ca0ff795e8414.png)](papers/micro-2025-cxlnic.md)
+
+## [DCC · arXiv v5](papers/isca-2026-dcc.md)
+编译器、语言与中间表示 · DCC PIM内核编译器 · 4张非实验图
+
+[![图1：近存计算硬件抽象与数据重排流程图。DCC arXiv v5，PDF第3页。 固定arXiv v5，不声称出版商版本一致。](assets/arxiv-2511.15503v5-dcc-F1-91e67944f43dbbb1.png)](papers/isca-2026-dcc.md)
+
+固定arXiv v5，不声称出版商版本一致。

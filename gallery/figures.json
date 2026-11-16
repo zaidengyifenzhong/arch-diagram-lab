@@ -3617,6 +3617,138 @@
       "reuse_notice": "仅限非商业使用；改编作品须以 CC BY-NC-SA 4.0 相同许可共享。",
       "adaptation_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
       "paper_notice": "本图库当前收录6张非实验图：F1、F2、F5、F6、F8、F9。来源为15页作者托管ACM会议排版稿；不声称与出版社字节一致。仅限非商业使用，改编须以相同许可共享。"
+    },
+    {
+      "id": "arxiv-2511.15503v5-dcc-F1-91e67944f43dbbb1",
+      "asset": "assets/arxiv-2511.15503v5-dcc-F1-91e67944f43dbbb1.png",
+      "paper_id": "isca-2026-dcc",
+      "paper_short": "DCC · arXiv v5",
+      "paper_title": "DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures",
+      "figure_number": 1,
+      "figure_title": "图 1",
+      "figure_type": "近存计算硬件抽象与数据重排流程图",
+      "category": "非实验图",
+      "pdf_page": 3,
+      "width": 768,
+      "height": 265,
+      "source_url": "https://arxiv.org/abs/2511.15503v5",
+      "source_page_url": "https://arxiv.org/pdf/2511.15503v5#page=3",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Cropped from the exact arXiv v5 PDF and rasterized at 240 dpi; caption excluded and diagram content unchanged.",
+      "attribution": "Peiming Yang, Sankeerth Durvasula, Ivan Fernandez, Mohammad Sadrosadati, Onur Mutlu, Gennady Pekhimenko, and Christina Giannoula. DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures. arXiv:2511.15503v5, 28 August 2026. Source: https://arxiv.org/abs/2511.15503v5. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped and rasterized at 240 dpi; caption excluded and diagram content unchanged. No endorsement implied.",
+      "alt_text": "图1：近存计算硬件抽象与数据重排流程图。DCC arXiv v5，PDF第3页。 固定arXiv v5，不声称出版商版本一致。",
+      "source_note": "DCC · arXiv v5（2511.15503v5，2026-08-28），PDF物理页3。主机XPU和内存空间连接PIM设备；设备包含组、核心、本地bank与专用计算单元。三个编号说明输入重排、PIM计算、输出重排。 是通用近bank架构抽象，不代表某一实际设备的完整电路或实测开销。 固定版本，不声称与出版社版一致；本轮只收录F1/F3/F4/F5，F2为实验图，其余图未在本轮审核范围。"
+    },
+    {
+      "id": "arxiv-2511.15503v5-dcc-F3-fd89211ea5ca3324",
+      "asset": "assets/arxiv-2511.15503v5-dcc-F3-fd89211ea5ca3324.png",
+      "paper_id": "isca-2026-dcc",
+      "paper_short": "DCC · arXiv v5",
+      "paper_title": "DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures",
+      "figure_number": 3,
+      "figure_title": "图 3",
+      "figure_type": "编译器总体架构图",
+      "category": "非实验图",
+      "pdf_page": 4,
+      "width": 823,
+      "height": 539,
+      "source_url": "https://arxiv.org/abs/2511.15503v5",
+      "source_page_url": "https://arxiv.org/pdf/2511.15503v5#page=4",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Cropped from the exact arXiv v5 PDF and rasterized at 240 dpi; caption excluded and diagram content unchanged.",
+      "attribution": "Peiming Yang, Sankeerth Durvasula, Ivan Fernandez, Mohammad Sadrosadati, Onur Mutlu, Gennady Pekhimenko, and Christina Giannoula. DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures. arXiv:2511.15503v5, 28 August 2026. Source: https://arxiv.org/abs/2511.15503v5. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped and rasterized at 240 dpi; caption excluded and diagram content unchanged. No endorsement implied.",
+      "alt_text": "图3：编译器总体架构图。DCC arXiv v5，PDF第4页。 固定arXiv v5，不声称出版商版本一致。",
+      "source_note": "DCC · arXiv v5（2511.15503v5，2026-08-28），PDF物理页4。ML内核通过DCC API进入以数据为中心的调度生成器，形成核心级tiling drafts，经过代码优化器和耦合预测器，落到IR与多层抽象及不同PIM后端。 这是编译器工作流，不应把其中模块误画成硬件计算单元。 固定版本，不声称与出版社版一致；本轮只收录F1/F3/F4/F5，F2为实验图，其余图未在本轮审核范围。"
+    },
+    {
+      "id": "arxiv-2511.15503v5-dcc-F4-e4433ec2827f2ad1",
+      "asset": "assets/arxiv-2511.15503v5-dcc-F4-e4433ec2827f2ad1.png",
+      "paper_id": "isca-2026-dcc",
+      "paper_short": "DCC · arXiv v5",
+      "paper_title": "DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures",
+      "figure_number": 4,
+      "figure_title": "图 4",
+      "figure_type": "多层PIM硬件后端实例映射图",
+      "category": "非实验图",
+      "pdf_page": 5,
+      "width": 829,
+      "height": 287,
+      "source_url": "https://arxiv.org/abs/2511.15503v5",
+      "source_page_url": "https://arxiv.org/pdf/2511.15503v5#page=5",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Cropped from the exact arXiv v5 PDF and rasterized at 240 dpi; caption excluded and diagram content unchanged.",
+      "attribution": "Peiming Yang, Sankeerth Durvasula, Ivan Fernandez, Mohammad Sadrosadati, Onur Mutlu, Gennady Pekhimenko, and Christina Giannoula. DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures. arXiv:2511.15503v5, 28 August 2026. Source: https://arxiv.org/abs/2511.15503v5. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped and rasterized at 240 dpi; caption excluded and diagram content unchanged. No endorsement implied.",
+      "alt_text": "图4：多层PIM硬件后端实例映射图。DCC arXiv v5，PDF第5页。 固定arXiv v5，不声称出版商版本一致。",
+      "source_note": "DCC · arXiv v5（2511.15503v5，2026-08-28），PDF物理页5。共同Host Memory Space和Host XPU连接三个示例PIM设备：HBM-PIM、AttAcc与SK Hynix AiM；不同设备通过组、核心、bank和计算单元呈现共同层级。 图为抽象实例，并非厂商原始版图或全部实现细节。 固定版本，不声称与出版社版一致；本轮只收录F1/F3/F4/F5，F2为实验图，其余图未在本轮审核范围。"
+    },
+    {
+      "id": "arxiv-2511.15503v5-dcc-F5-d874d8c17610b446",
+      "asset": "assets/arxiv-2511.15503v5-dcc-F5-d874d8c17610b446.png",
+      "paper_id": "isca-2026-dcc",
+      "paper_short": "DCC · arXiv v5",
+      "paper_title": "DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures",
+      "figure_number": 5,
+      "figure_title": "图 5",
+      "figure_type": "以数据为中心的调度生成示例流程图",
+      "category": "非实验图",
+      "pdf_page": 6,
+      "width": 834,
+      "height": 499,
+      "source_url": "https://arxiv.org/abs/2511.15503v5",
+      "source_page_url": "https://arxiv.org/pdf/2511.15503v5#page=6",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Cropped from the exact arXiv v5 PDF and rasterized at 240 dpi; caption excluded and diagram content unchanged.",
+      "attribution": "Peiming Yang, Sankeerth Durvasula, Ivan Fernandez, Mohammad Sadrosadati, Onur Mutlu, Gennady Pekhimenko, and Christina Giannoula. DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures. arXiv:2511.15503v5, 28 August 2026. Source: https://arxiv.org/abs/2511.15503v5. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped and rasterized at 240 dpi; caption excluded and diagram content unchanged. No endorsement implied.",
+      "alt_text": "图5：以数据为中心的调度生成示例流程图。DCC arXiv v5，PDF第6页。 固定arXiv v5，不声称出版商版本一致。",
+      "source_note": "DCC · arXiv v5（2511.15503v5，2026-08-28），PDF物理页6。输入内核循环与张量信息进入维度集构造、数据tile构造、草案剪枝和数据到计算tile映射；下游PIM代码优化与预测评估形成反馈。 这是具体符号化算法示例，不是性能结果图，也不是固定适用于所有后端的最优配置。 固定版本，不声称与出版社版一致；本轮只收录F1/F3/F4/F5，F2为实验图，其余图未在本轮审核范围。"
+    },
+    {
+      "paper_id": "dac-2026-zkflex",
+      "paper_short": "ZK-Flex · DAC 2026",
+      "paper_title": "ZK-Flex: A Flexible and Scalable Framework for Accelerating Zero-Knowledge Proofs",
+      "figure_number": 2,
+      "pdf_page": 2,
+      "source_url": "https://doi.org/10.1145/3770743.3803941",
+      "source_page_url": "https://arxiv.org/pdf/2606.03046v1#page=2",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "id": "dac-2026-zkflex-F2-Step1-3-3a904e82ad64231e",
+      "asset": "assets/dac-2026-zkflex-F2-Step1-3-3a904e82ad64231e.png",
+      "figure_title": "图 2 的 Step 1–3 机制子区域（非整图）",
+      "figure_type": "Groth16 证明生成的三个步骤",
+      "category": "非实验图",
+      "width": 737,
+      "height": 442,
+      "alt_text": "图 2 的 Step 1–3 机制子区域（非整图）。保留完整 Step 1–3：见证生成、多项式计算与椭圆曲线计算。排除下部运行时间比例图、图例、运行时间与 GEMM 规模标签。",
+      "source_note": "图 2 的 Step 1–3 机制子区域（非整图）。保留完整 Step 1–3：见证生成、多项式计算与椭圆曲线计算。排除下部运行时间比例图、图例、运行时间与 GEMM 规模标签。基于留存原PNG与整页证据重建；原PDF摘要仅继承历史记录，本次未重新读取或渲染原PDF。",
+      "attribution": "Adiwena Putra, Cuong Manh Duong, Anh Quang Pham, Joo-Young Kim. ZK-Flex: A Flexible and Scalable Framework for Accelerating Zero-Knowledge Proofs. DAC 2026. arXiv:2606.03046v1, 2 June 2026. DOI: https://doi.org/10.1145/3770743.3803941. © 2026 the owner/authors. Source: https://arxiv.org/pdf/2606.03046v1. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Figure 2 subregion only, not the whole figure. Reconstructed by an integer-pixel boundary crop of a retained whole-figure PNG previously rasterized at 240 dpi. Retains Step 1–3; removes all runtime-distribution content. No resampling, redrawing, recoloring or relabeling. This reconstruction did not render or newly hash the original PDF. No endorsement implied.",
+      "modifications": "Figure 2 subregion only, not the whole figure. Reconstructed by an integer-pixel boundary crop of a retained whole-figure PNG previously rasterized at 240 dpi. Retains Step 1–3; removes all runtime-distribution content. No resampling, redrawing, recoloring or relabeling. This reconstruction did not render or newly hash the original PDF."
+    },
+    {
+      "paper_id": "dac-2026-zkflex",
+      "paper_short": "ZK-Flex · DAC 2026",
+      "paper_title": "ZK-Flex: A Flexible and Scalable Framework for Accelerating Zero-Knowledge Proofs",
+      "figure_number": 3,
+      "pdf_page": 2,
+      "source_url": "https://doi.org/10.1145/3770743.3803941",
+      "source_page_url": "https://arxiv.org/pdf/2606.03046v1#page=2",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "id": "dac-2026-zkflex-F3-abc-6c82b627966367e0",
+      "asset": "assets/dac-2026-zkflex-F3-abc-6c82b627966367e0.png",
+      "figure_title": "图 3 的 (a)–(c) 结构子区域（非整图）",
+      "figure_type": "多精度乘法实现结构",
+      "category": "非实验图",
+      "width": 808,
+      "height": 308,
+      "alt_text": "图 3 的 (a)–(c) 结构子区域（非整图）。保留完整 (a) Toom-2、(b) Toom-3 与 (c) Hybrid Toom-2+3 结构。排除 (d) 面积开销比较、百分比标注及绿色面积结论条。",
+      "source_note": "图 3 的 (a)–(c) 结构子区域（非整图）。保留完整 (a) Toom-2、(b) Toom-3 与 (c) Hybrid Toom-2+3 结构。排除 (d) 面积开销比较、百分比标注及绿色面积结论条。基于留存原PNG与整页证据重建；原PDF摘要仅继承历史记录，本次未重新读取或渲染原PDF。",
+      "attribution": "Adiwena Putra, Cuong Manh Duong, Anh Quang Pham, Joo-Young Kim. ZK-Flex: A Flexible and Scalable Framework for Accelerating Zero-Knowledge Proofs. DAC 2026. arXiv:2606.03046v1, 2 June 2026. DOI: https://doi.org/10.1145/3770743.3803941. © 2026 the owner/authors. Source: https://arxiv.org/pdf/2606.03046v1. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Figure 3 subregion only, not the whole figure. Reconstructed by an integer-pixel boundary crop of a retained whole-figure PNG previously rasterized at 240 dpi. Retains panels (a)–(c); removes panel (d), area-comparison values and the bottom conclusion banner. No resampling, redrawing, recoloring or relabeling. This reconstruction did not render or newly hash the original PDF. No endorsement implied.",
+      "modifications": "Figure 3 subregion only, not the whole figure. Reconstructed by an integer-pixel boundary crop of a retained whole-figure PNG previously rasterized at 240 dpi. Retains panels (a)–(c); removes panel (d), area-comparison values and the bottom conclusion banner. No resampling, redrawing, recoloring or relabeling. This reconstruction did not render or newly hash the original PDF."
     }
   ],
   "paper_objects": [
@@ -3784,6 +3916,11 @@
       "paper_id": "micro-2025-cxlnic",
       "object_group": "互连、网络接口与数据通路",
       "specific_object": "CXL一致性网络接口与端主机数据通路"
+    },
+    {
+      "paper_id": "isca-2026-dcc",
+      "object_group": "编译器、语言与中间表示",
+      "specific_object": "DCC PIM内核编译器"
     }
   ],
   "reading_guides": [
@@ -5004,9 +5141,23 @@
       "primary_object": "专用加速器与可重构/存内计算平台",
       "specific_object": "ZK-Flex可重构证明生成加速器",
       "conditional_design_advice": "按本篇贡献选择解释视图；以下是已有图例，不是每篇论文都必须具备的模板。",
-      "this_paper_figure_sequence": "F4 软硬件协同加速器架构图 → F6 数论变换与椭圆曲线映射图 → F7 链表存储与桶调度示意图",
-      "source_ambiguity_or_scope": "仅列出本图库保留的非实验图，未收录实验结果、测量照片及尚未分离的混合图。原文页链接可能包含同页其他内容，不代表那些图也已收录。",
+      "this_paper_figure_sequence": "F2 Step 1–3机制子区域（非整图，排除运行时间图） → F3(a–c)机制子区域（非整图，排除(d)面积结果） → F4 软硬件协同加速器架构图 → F6 数论变换与椭圆曲线映射图 → F7 链表存储与桶调度示意图",
+      "source_ambiguity_or_scope": "仅列出本图库保留的非实验图，未收录实验结果、测量照片及尚未分离的混合图。原文页链接可能包含同页其他内容，不代表那些图也已收录。 新增两个机制子区域均非整图，原混合整图仍暂缓；由留存原PNG整数像素裁剪重建，未重新读取或渲染原PDF。",
       "source_examples": [
+        {
+          "figure_id": "F2",
+          "pdf_pages": [
+            2
+          ],
+          "url": "https://arxiv.org/pdf/2606.03046v1#page=2"
+        },
+        {
+          "figure_id": "F3",
+          "pdf_pages": [
+            2
+          ],
+          "url": "https://arxiv.org/pdf/2606.03046v1#page=2"
+        },
         {
           "figure_id": "F4",
           "pdf_pages": [
@@ -5257,7 +5408,45 @@
           "url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf#page=9"
         }
       ]
+    },
+    {
+      "paper_id": "isca-2026-dcc",
+      "primary_object": "编译器、语言与中间表示",
+      "specific_object": "DCC PIM内核编译器",
+      "conditional_design_advice": "这四个例子解释硬件抽象、编译组织、多后端映射及调度生成；按论文贡献选择，不是必备模板。",
+      "this_paper_figure_sequence": "F1 近存硬件与数据重排 → F3 编译器架构与工作流 → F4 三类PIM后端多层硬件抽象 → F5 数据中心调度生成示例",
+      "source_ambiguity_or_scope": "仅固定arXiv:2511.15503v5，不声称出版商版本一致。F2是实验时间分解，不纳入；其他图未在本轮审核范围。",
+      "source_examples": [
+        {
+          "figure_id": "F1",
+          "pdf_pages": [
+            3
+          ],
+          "url": "https://arxiv.org/pdf/2511.15503v5#page=3"
+        },
+        {
+          "figure_id": "F3",
+          "pdf_pages": [
+            4
+          ],
+          "url": "https://arxiv.org/pdf/2511.15503v5#page=4"
+        },
+        {
+          "figure_id": "F4",
+          "pdf_pages": [
+            5
+          ],
+          "url": "https://arxiv.org/pdf/2511.15503v5#page=5"
+        },
+        {
+          "figure_id": "F5",
+          "pdf_pages": [
+            6
+          ],
+          "url": "https://arxiv.org/pdf/2511.15503v5#page=6"
+        }
+      ]
     }
   ],
-  "coverage_note": "当前收录33篇论文的163张非实验原图：系统抽象、架构、机制、数据/控制流、示意时序与形式定义。实验结果图和未完成分离复核的混合图不纳入；100篇目录不等于100篇原图收录或研究完成。"
+  "coverage_note": "当前收录34篇论文的169个非实验图示条目（167个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。"
 }

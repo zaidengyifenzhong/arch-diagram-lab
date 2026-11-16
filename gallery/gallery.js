@@ -141,7 +141,7 @@ if (typeof document !== "undefined") {
       empty.querySelector("h2").textContent = "原图准备中";
       empty.querySelector("p").textContent = "当前本地草稿尚未加入原图。";
     }
-    document.getElementById("result-count").textContent = `显示 ${filtered.length} / ${items.length} 张原图`;
+    document.getElementById("result-count").textContent = `显示 ${filtered.length} / ${items.length} 个非实验图示条目`;
     const paperNotice = document.getElementById("paper-notice");
     const selectedGroup = paperGroups.get(paper.value);
     paperNotice.textContent = selectedGroup?.notice || "";

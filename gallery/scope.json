@@ -165,7 +165,44 @@
     "micro-2025-cxlnic-F5-a255a4638b7a3451",
     "micro-2025-cxlnic-F6-ea664375c511a518",
     "micro-2025-cxlnic-F8-1dbcafa6cbbc3c33",
-    "micro-2025-cxlnic-F9-b0cd8ad2f19df922"
+    "micro-2025-cxlnic-F9-b0cd8ad2f19df922",
+    "arxiv-2511.15503v5-dcc-F1-91e67944f43dbbb1",
+    "arxiv-2511.15503v5-dcc-F3-fd89211ea5ca3324",
+    "arxiv-2511.15503v5-dcc-F4-e4433ec2827f2ad1",
+    "arxiv-2511.15503v5-dcc-F5-d874d8c17610b446"
   ],
-  "excluded_content": "Experimental results, measurement photographs and unresolved mixed figures are outside this release. Future additions need independent scope and rights clearance."
+  "excluded_content": "Experimental results, measurement photographs and unresolved mixed figures are outside this release. Future additions need independent scope and rights clearance.",
+  "approved_subregions": [
+    {
+      "id": "dac-2026-zkflex-F2-Step1-3-3a904e82ad64231e",
+      "paper_id": "dac-2026-zkflex",
+      "figure_number": 2,
+      "scope": "图 2 的 Step 1–3 机制子区域（非整图）",
+      "sha256": "3a904e82ad64231e7b40cecdf944e7bf84e562dd5f5bba9a7b518214cdb962d8",
+      "whole_figure": false
+    },
+    {
+      "id": "dac-2026-zkflex-F3-abc-6c82b627966367e0",
+      "paper_id": "dac-2026-zkflex",
+      "figure_number": 3,
+      "scope": "图 3 的 (a)–(c) 结构子区域（非整图）",
+      "sha256": "6c82b627966367e05d8828cf038d910fd231a82ed8b82a9a7ff9ae03523a56a9",
+      "whole_figure": false
+    }
+  ],
+  "held_mixed_whole_figures": [
+    "asplos-2026-naylor-F7-aae0f1179bd28a36",
+    "asplos-2026-naylor-F15-140937a2c38d5538",
+    "dac-2026-zkflex-F1-d1674fcb89d84339",
+    "dac-2026-zkflex-F2-434975153af295d8",
+    "dac-2026-zkflex-F3-31950a4a967f2f6d",
+    "dac-2026-zkflex-F5-9d9b628441ee0f57",
+    "ipdps2026-uctrace-F3-1bcd9130beee896a"
+  ],
+  "coverage": {
+    "papers": 34,
+    "entries": 169,
+    "original_figure_entries": 167,
+    "mechanism_subregions": 2
+  }
 }
