@@ -3,15 +3,15 @@
   "title": "体系结构与系统论文来源目录",
   "counts": {
     "papers": 100,
-    "papers_with_selected_figures": 32,
-    "selected_figures": 157,
-    "papers_without_public_figures": 68
+    "papers_with_selected_figures": 33,
+    "selected_figures": 163,
+    "papers_without_public_figures": 67
   },
   "scope": [
     "这是100篇目的性样本的来源目录，不是100篇深读完成证明，也不是领域全量或随机样本。",
     "研究对象分类用于浏览，不是仅凭会议或图型自动判定的必备图模板。",
-    "仅本仓库实际收录的32篇157张非实验图属于本次公开图片选择；其许可和署名须逐图查看。",
-    "另外68篇当前不收录原图，原因包括许可未确认或不符合非实验范围；可读取不等于可再分发。",
+    "仅本仓库实际收录的33篇163张非实验图属于本次公开图片选择；其许可和署名须逐图查看。",
+    "另外67篇当前不收录原图，原因包括许可未确认或不符合非实验范围；可读取不等于可再分发。",
     "不分发论文PDF；来源链接内容可能更新，目录ID中的会议年份不独立证明正式发表身份。"
   ],
   "papers": [
@@ -1747,13 +1747,22 @@
       ],
       "source_version": null,
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "本图库当前收录6张非实验图：F1、F2、F5、F6、F8、F9。来源为15页作者托管ACM会议排版稿；不声称与出版社字节一致。仅限非商业使用，改编须以相同许可共享。",
       "public_gallery": {
-        "status": "not_in_current_selection",
-        "figure_count": 0,
-        "figure_numbers": [],
-        "license_status": "not_asserted_for_unselected_figures",
-        "figure_licenses": []
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 6,
+        "figure_numbers": [
+          1,
+          2,
+          5,
+          6,
+          8,
+          9
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY-NC-SA 4.0"
+        ]
       }
     },
     {

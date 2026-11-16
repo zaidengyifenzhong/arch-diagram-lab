@@ -8,7 +8,10 @@ import shutil
 from pathlib import Path, PurePosixPath
 from urllib.parse import urlsplit
 
+NC_SA = 'CC BY-NC-SA 4.0'
+NC_NOTICE = '仅限非商业使用；改编作品须以 CC BY-NC-SA 4.0 相同许可共享。'
 LICENSES = {
+    NC_SA: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
     'CC BY 4.0': 'https://creativecommons.org/licenses/by/4.0/',
     'CC BY 2.5': 'https://creativecommons.org/licenses/by/2.5/',
     'CC0': 'https://creativecommons.org/publicdomain/zero/1.0/',
@@ -104,7 +107,7 @@ def validate_public_text(data):
                 if not isinstance(pages, list) or not pages or any(type(n) is not int or n < 1 for n in pages):
                     fail('guide PDF pages must be a nonempty positive integer array')
     for figure in data['items']:
-        strings(figure, ('paper_short', 'paper_notice', 'source_note', 'figure_title'))
+        strings(figure, ('paper_short', 'paper_notice', 'source_note', 'figure_title', 'reuse_notice', 'adaptation_license_url'))
 
 
 def validate(data, root, approvals=None):
@@ -141,6 +144,11 @@ def validate(data, root, approvals=None):
                 fail('invalid HTTPS URL: ' + k)
         if urlsplit(f['source_page_url']).fragment != 'page=' + str(f['pdf_page']):
             fail('source page URL does not match physical PDF page')
+        if f['license_name'] == NC_SA:
+            if f['license_url'] != LICENSES[NC_SA] or f.get('reuse_notice') != NC_NOTICE:
+                fail('NC-SA license URL and explicit public reuse notice required')
+            if f.get('adaptation_license_url') != LICENSES[NC_SA]:
+                fail('NC-SA same-license adaptation statement required')
         info = png_info(asset_path(root, f['asset']))
         if (info['width'], info['height']) != (f['width'], f['height']):
             fail('PNG dimensions do not match metadata')
@@ -163,6 +171,13 @@ def validate(data, root, approvals=None):
                 fail('version-specific license evidence URL required')
             if not isinstance(a.get('review_note'), str) or not a['review_note'].strip():
                 fail('review note required')
+            if f['license_name'] == NC_SA:
+                if a.get('noncommercial_use') is not True or a.get('sharealike_compliance') is not True:
+                    fail('explicit noncommercial use and share-alike approval required')
+                if a.get('adaptation_license_url') != LICENSES[NC_SA]:
+                    fail('NC-SA approval must bind same-license adaptations')
+                if a.get('source_version_license_verified') is not True:
+                    fail('exact source version NC-SA license verification required')
             if LICENSES.get(f['license_name']) != f['license_url']:
                 fail('license is not in this conservative export policy')
         results.append({'id': f['id'], 'asset': f['asset'], **info})
@@ -183,7 +198,8 @@ def export(data, root, approvals, destination):
     if target.resolve().is_relative_to(Path(root).resolve()):
         fail('export destination must be outside the source root')
     public_fields = set(REQUIRED) | {'figure_number', 'pdf_page', 'width', 'height',
-                                     'paper_short', 'paper_notice', 'source_note', 'figure_title'}
+                                     'paper_short', 'paper_notice', 'source_note', 'figure_title',
+                                     'reuse_notice', 'adaptation_license_url'}
     selected = [{k: v for k, v in f.items() if k in public_fields}
                 for f in data['items'] if f['id'] in ids]
     papers = {f['paper_id'] for f in selected}

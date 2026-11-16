@@ -55,7 +55,7 @@ python scripts/gallery_pipeline.py extract \
 }]}
 ```
 
-当前保守策略只接受 CC BY 4.0、CC BY 2.5、CC0 及对应标准链接，不自动处理 ND、NC、SA 等其他条件。CC BY 仍须保留作者、作品名、来源、许可、修改说明与源内适用权利声明。
+当前策略接受 CC BY 4.0、CC BY 2.5、CC0 及对应标准链接；唯一新增条件支持 CC BY-NC-SA 4.0，须通过下述逐图非商业与相同方式共享门控。其他 ND、NC、SA 许可或版本不自动推断支持。CC BY 仍须保留作者、作品名、来源、许可、修改说明与源内适用权利声明。
 
 ## 显式白名单导出
 
@@ -74,3 +74,9 @@ python scripts/gallery_pipeline.py export \
 ## 非实验范围门控
 
 本项目只接受 `category="非实验图"`，结果图及混合图验证失败。公开批准还须显式 `nonexperimental_clearance=true`，表示独立确认图的解释性作用和混合子图边界；仅改标签不能代替目视审查。暂缓混合图须分离机制子图、重新核对像素/署名/许可后才可加入。
+
+## CC BY-NC-SA 4.0 单图门控
+
+仅支持精确标签及 https://creativecommons.org/licenses/by-nc-sa/4.0/，不推断其他NC或SA版本。保留既有来源PDF SHA、图像SHA、版本专属许可证据URL、第三方内容与非实验图独审要求。新增逐图审批必须显式设置 `noncommercial_use: true`、`sharealike_compliance: true`、`source_version_license_verified: true` 和 `adaptation_license_url` 为上述相同许可URL。缺失、字符串形式true或false均拒绝。
+
+公开元数据须带 `reuse_notice` 精确文本“仅限非商业使用；改编作品须以 CC BY-NC-SA 4.0 相同许可共享。”及 `adaptation_license_url`；导出保留二者。署名、原始许可和修改说明不能删除。该门控不是法律意见，不自动判断用途是否商业，不为未审图片授权，也不将整个集合或代码改为NC-SA。实际商业使用应另向权利人取得许可。

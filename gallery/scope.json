@@ -159,7 +159,13 @@
   "new_figures": [
     "dac-2026-sandwich-F1-85f36f21200182ea",
     "dac-2026-sandwich-F5-bf41e80e4cbcb698",
-    "dac-2026-sandwich-F6-3795d05b686a339c"
+    "dac-2026-sandwich-F6-3795d05b686a339c",
+    "micro-2025-cxlnic-F1-166ca0ff795e8414",
+    "micro-2025-cxlnic-F2-8b68dcbaeeb2d313",
+    "micro-2025-cxlnic-F5-a255a4638b7a3451",
+    "micro-2025-cxlnic-F6-ea664375c511a518",
+    "micro-2025-cxlnic-F8-1dbcafa6cbbc3c33",
+    "micro-2025-cxlnic-F9-b0cd8ad2f19df922"
   ],
   "excluded_content": "Experimental results, measurement photographs and unresolved mixed figures are outside this release. Future additions need independent scope and rights clearance."
 }

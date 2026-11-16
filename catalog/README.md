@@ -1,6 +1,6 @@
 # 100篇来源目录
 
-当前公开图库为 **32篇 / 157张非实验原图**；另外68篇无本次收录图片。目录不是100篇深读完成或图片许可完成声明。来源身份与版本限制见 [结构化目录](papers.json)。
+当前公开图库为 **33篇 / 163张非实验原图**；另外67篇无本次收录图片。目录不是100篇深读完成或图片许可完成声明。来源身份与版本限制见 [结构化目录](papers.json)。
 
 [进入原图库](../gallery/README.md)
 
@@ -83,7 +83,7 @@
 |[TUSQ: Tracking, Uncomputation, and Sampling for Noisy Quantum Simulation](https://arxiv.org/pdf/2508.04880v3)|含噪量子电路经典模拟器|仅来源链接，未收录|
 |[ATR: Out-of-Order Register Release Exploiting Atomic Regions](https://hlitz.github.io/papers/atr.pdf)|乱序CPU物理寄存器管理单元|[6张](../gallery/papers/micro-2025-atr.md)|
 |[ColumnDisturb: Understanding Column-based Read Disturbance in Real DRAM Chips and Implications for Future Systems](https://arxiv.org/pdf/2510.14750)|真实DRAM芯片及列方向读扰动|[2张](../gallery/papers/micro-2025-columndisturb.md)|
-|[Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading](https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf)|CXL一致性网络接口与端主机数据通路|仅来源链接，未收录|
+|[Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading](https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf)|CXL一致性网络接口与端主机数据通路|[6张](../gallery/papers/micro-2025-cxlnic.md)|
 |[Drishti: Do Not Forget Slicing While Designing Last-Level Cache Replacement Policies for Many-Core Systems](https://www.cse.iitb.ac.in/~biswa/MICRO25.pdf)|多核切片LLC替换预测子系统|仅来源链接，未收录|
 |[Understanding and Mitigating Covert Channel and Side Channel Vulnerabilities Introduced by RowHammer Defenses](https://arxiv.org/pdf/2503.17891)|DRAM RowHammer防护构件及其时间泄漏|[1张](../gallery/papers/micro-2025-leakyhammer.md)|
 |[LoopFrog: In-Core Hint-Based Loop Parallelization](https://www.cl.cam.ac.uk/~tmj32/papers/docs/erdos25-micro.pdf)|支持threadlet的单核乱序处理器|[4张](../gallery/papers/micro-2025-loopfrog.md)|

@@ -156,3 +156,31 @@ class NonexperimentalGates(unittest.TestCase):
         self.approval.pop('nonexperimental_clearance')
         with self.assertRaises(ValueError): p.export(self.data,self.root,self.approvals,self.base/'out')
         self.assertFalse((self.base/'out').exists())
+
+class NoncommercialShareAlikeTests(unittest.TestCase):
+    setUp = PipelineTests.setUp
+    tearDown = PipelineTests.tearDown
+    def nc(self):
+        self.figure.update(license_name=p.NC_SA, license_url=p.LICENSES[p.NC_SA], reuse_notice=p.NC_NOTICE, adaptation_license_url=p.LICENSES[p.NC_SA])
+        self.approval.update(license_name=p.NC_SA, license_url=p.LICENSES[p.NC_SA], noncommercial_use=True, sharealike_compliance=True, source_version_license_verified=True, adaptation_license_url=p.LICENSES[p.NC_SA])
+    def test_nc_export_retains_notice(self):
+        self.nc();target=self.base/'nc';p.export(self.data,self.root,self.approvals,target)
+        out=json.loads((target/'figures.json').read_text())['items'][0]
+        self.assertEqual(out['reuse_notice'],p.NC_NOTICE)
+        self.assertEqual(out['adaptation_license_url'],p.LICENSES[p.NC_SA])
+    def test_nc_each_approval_gate(self):
+        for key in ['noncommercial_use','sharealike_compliance','source_version_license_verified']:
+            for value in [None,False,'true']:
+                with self.subTest(key=key,value=value):
+                    self.nc();self.approval[key]=value
+                    with self.assertRaises(ValueError):p.validate(self.data,self.root,self.approvals)
+    def test_nc_public_notice_required(self):
+        self.nc();self.figure.pop('reuse_notice')
+        with self.assertRaises(ValueError):p.validate(self.data,self.root,self.approvals)
+    def test_nc_no_weaker_adaptation_license(self):
+        for record in [self.figure,self.approval]:
+            self.nc();record['adaptation_license_url']=p.LICENSES['CC BY 4.0']
+            with self.assertRaises(ValueError):p.validate(self.data,self.root,self.approvals)
+    def test_nc_source_evidence_required(self):
+        self.nc();self.approval['license_evidence_url']=''
+        with self.assertRaises(ValueError):p.validate(self.data,self.root,self.approvals)

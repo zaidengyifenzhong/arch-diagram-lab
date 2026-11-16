@@ -1,8 +1,8 @@
 # 体系结构与系统非实验原图图库
 
-**32篇 / 157张非实验图**。仅收录系统抽象、架构、机制、数据/控制流、示意时序与形式定义；排除实验结果、测量照片和未分离的混合图。
+**33篇 / 163张非实验图**。仅收录系统抽象、架构、机制、数据/控制流、示意时序与形式定义；排除实验结果、测量照片和未分离的混合图。
 
-[筛选界面](index.html)可下载后在浏览器打开；GitHub文件预览不执行HTML。[100篇来源目录](../catalog/README.md)不代表全部原图已获许可或研究全部完成。[逐图署名与许可](licenses.json)。
+完整下载仓库，保持 JS、CSS、assets 的相对目录，再在浏览器打开 [gallery/index.html](index.html)；不能仅下载 HTML。GitHub文件预览不执行HTML。[100篇来源目录](../catalog/README.md)不代表全部原图已获许可或研究全部完成。[逐图署名与许可](licenses.json)。
 
 ## [LVM · MICRO 2025](papers/micro-2025-lvm.md)
 缓存、地址转换与DRAM系统 · 学习式虚拟内存翻译子系统 · 6张
@@ -164,3 +164,13 @@ EDA工具与电路设计表示 · TRACE电路图表示学习模型 · 3张
 
 [![图 1：执行时间示意对照。原论文 Sandwich: Joint Configuration Search and Hot-Switching for Efficient CPU LLM Serving，PDF 第 1 页。](assets/dac-2026-sandwich-F1-85f36f21200182ea.png)](papers/dac-2026-sandwich.md)
 
+
+## 单图复用边界
+
+单图许可分别适用，不是整个仓库的统一许可。标记 CC BY-NC-SA 4.0 的图片仅限非商业使用；改编作品须以相同许可共享，并保留署名、来源及修改说明。其他图片仍按各自 CC BY 或 CC0 许可使用。代码和原创文字未因此获得统一开源许可。
+
+## [CXL-NIC · MICRO 2025](papers/micro-2025-cxlnic.md)
+
+互连、网络接口与数据通路 / CXL一致性网络接口与端主机数据通路 · 6张非实验图 · CC BY-NC-SA 4.0
+
+[![图 1：CXL Type 1/2 设备架构。控制器、用户设计和可选设备内存的组成；Type 1 不含设备内存。](assets/micro-2025-cxlnic-F1-166ca0ff795e8414.png)](papers/micro-2025-cxlnic.md)

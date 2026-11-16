@@ -7,6 +7,7 @@ function matchesFilters(item, filters) {
     (!filters.paper || item.paper_id === filters.paper || item.paper_title === filters.paper) &&
     (!filters.category || item.category === filters.category) &&
     (!filters.type || item.figure_type === filters.type) &&
+    (!filters.license || item.license_name === filters.license) &&
     (!query || haystack.includes(query));
 }
 
@@ -36,6 +37,7 @@ if (typeof document !== "undefined") {
   const paper = document.getElementById("paper");
   const object = document.getElementById("research-object");
   const category = document.getElementById("category");
+  const license = document.getElementById("license");
   const figureType = document.getElementById("figure-type");
   const empty = document.getElementById("empty");
   const viewer = document.getElementById("viewer");
@@ -73,7 +75,7 @@ if (typeof document !== "undefined") {
     option.value = key;
     paper.append(option);
   }
-  for (const [select, key] of [[category, "category"], [figureType, "figure_type"]]) {
+  for (const [select, key] of [[category, "category"], [figureType, "figure_type"], [license, "license_name"]]) {
     for (const value of uniqueValues(items, key)) {
       const option = el("option", "", value);
       option.value = value;
@@ -88,7 +90,7 @@ if (typeof document !== "undefined") {
     img.alt = item.alt_text;
     document.getElementById("viewer-title").textContent = `${item.figure_title} · ${item.figure_type} · PDF 第 ${item.pdf_page} 页`;
     document.getElementById("viewer-paper").textContent = item.paper_title;
-    document.getElementById("viewer-attribution").textContent = `${item.attribution} · ${item.license_name} · ${item.modifications}`;
+    document.getElementById("viewer-attribution").textContent = `${item.attribution} · ${item.license_name} · ${item.modifications} · ${item.reuse_notice || ""}`;
     document.getElementById("viewer-source").href = item.source_url;
     document.getElementById("viewer-source-page").href = item.source_page_url || item.source_url;
     const note = document.getElementById("viewer-note");
@@ -99,7 +101,7 @@ if (typeof document !== "undefined") {
   }
 
   function render() {
-    const filtered = items.filter(item => matchesFilters(item, { query: search.value, paper: paper.value, object: object.value, category: category.value, type: figureType.value }));
+    const filtered = items.filter(item => matchesFilters(item, { query: search.value, paper: paper.value, object: object.value, category: category.value, type: figureType.value, license: license.value }));
     const fragment = document.createDocumentFragment();
     for (const item of filtered) {
       const card = el("article", "card");
@@ -127,6 +129,7 @@ if (typeof document !== "undefined") {
       provenance.append(el("summary", "", "署名与使用许可"), el("p", "attribution", item.attribution));
       body.append(provenance);
       const links = el("div", "card-links");
+      if (item.reuse_notice) provenance.append(el("p", "license-warning", item.reuse_notice));
       links.append(link("论文来源 ↗", item.source_url), link(item.license_name, item.license_url));
       body.append(links);
       card.append(button, body);
@@ -166,7 +169,7 @@ if (typeof document !== "undefined") {
       a.href = `#figure-${item.id}`;
       a.addEventListener("click", event => {
         event.preventDefault();
-        search.value = category.value = figureType.value = "";
+        search.value = category.value = figureType.value = license.value = "";
         render();
         const target = document.getElementById(`figure-${item.id}`);
         target.scrollIntoView({block:"center"});
@@ -188,10 +191,11 @@ if (typeof document !== "undefined") {
     if (paper.value && object.value && paperGroups.get(paper.value)?.object !== object.value) paper.value = "";
     render();
   });
+  license.addEventListener("change", render);
   category.addEventListener("change", render);
   figureType.addEventListener("change", render);
   document.getElementById("reset").addEventListener("click", () => {
-    search.value = paper.value = object.value = category.value = figureType.value = "";
+    search.value = paper.value = object.value = category.value = figureType.value = license.value = "";
     for (const option of paper.options) option.hidden = false;
     render();
     search.focus();

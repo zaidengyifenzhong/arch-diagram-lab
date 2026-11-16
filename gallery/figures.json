@@ -3401,6 +3401,222 @@
       ],
       "asset_sha256": "3795d05b686a339c442d127c2087039bdbee84ad31bc3f088befc7ac9bd6d142",
       "source_note": "左侧列出主板、SoC、NUMA、LLC cluster 和 CPU core；中部显示工具可见树、Group 加入隐藏共享层、Remove 减少用核；右侧对树取截面得到进程数与核心映射。 将真实 CPU 资源共享关系转化为可搜索对象，是该系统最重要的硬件抽象图。 叶 PU 是核／处理单元，内节点是共享资源；乘数标重复结构；Group 补充 LLC slice 层，Remove 将每组 PU 数从4变3。右侧不同横截面分别示例8与48进程方案。 树边表示层次归属／共享，不是数据流；删除节点是停用核的配置，不是物理切除硬件；示意没有画完整芯片互连。"
+    },
+    {
+      "id": "micro-2025-cxlnic-F1-166ca0ff795e8414",
+      "asset": "assets/micro-2025-cxlnic-F1-166ca0ff795e8414.png",
+      "paper_id": "micro-2025-cxlnic",
+      "paper_short": "CXL-NIC · MICRO 2025",
+      "paper_title": "Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading",
+      "figure_number": 1,
+      "figure_title": "图 1",
+      "figure_type": "CXL Type 1/2 设备架构",
+      "category": "非实验图",
+      "pdf_page": 3,
+      "width": 811,
+      "height": 274,
+      "source_url": "https://doi.org/10.1145/3725843.3756102",
+      "source_page_url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf#page=3",
+      "source_pdf_url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf",
+      "source_sha256": "9ec84fa467417d39daa8ebbec7ae15d359886b83b6064e0b8328b5b1926f8995",
+      "license_name": "CC BY-NC-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "modifications": "Boundary-cropped whole figure and rasterized at 240 dpi; overall caption excluded, figure content unchanged. Image crops remain CC BY-NC-SA 4.0.",
+      "attribution": "Houxiang Ji, Yifan Yuan, Yang Zhou, Ipoom Jeong, Ren Wang, Saksham Agarwal, and Nam Sung Kim. Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading. MICRO 2025, pp. 1809–1823. DOI: https://doi.org/10.1145/3725843.3756102. © 2025 Copyright held by the owner/author(s). Source: https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf. CC BY-NC-SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/. Whole figures boundary-cropped and rasterized at 240 dpi; overall captions excluded; internal labels unchanged. These image crops remain under CC BY-NC-SA 4.0: noncommercial use only and adaptations shared alike. No endorsement or warranties.",
+      "alt_text": "图 1：CXL Type 1/2 设备架构。控制器、用户设计和可选设备内存的组成；Type 1 不含设备内存。",
+      "content": "控制器、用户设计和可选设备内存的组成；Type 1 不含设备内存。",
+      "limitations": "仅非商业使用；改编须相同方式共享。未验证全部科学结论。",
+      "crop_box_pdf_points": [
+        53,
+        83,
+        296,
+        165
+      ],
+      "asset_sha256": "fe8264ca4e7ba219280294e1ac6999b3d229f55d2107a6e96ef05d887b568f12",
+      "source_note": "控制器、用户设计和可选设备内存的组成；Type 1 不含设备内存。",
+      "reuse_notice": "仅限非商业使用；改编作品须以 CC BY-NC-SA 4.0 相同许可共享。",
+      "adaptation_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "paper_notice": "本图库当前收录6张非实验图：F1、F2、F5、F6、F8、F9。来源为15页作者托管ACM会议排版稿；不声称与出版社字节一致。仅限非商业使用，改编须以相同许可共享。"
+    },
+    {
+      "id": "micro-2025-cxlnic-F2-8b68dcbaeeb2d313",
+      "asset": "assets/micro-2025-cxlnic-F2-8b68dcbaeeb2d313.png",
+      "paper_id": "micro-2025-cxlnic",
+      "paper_short": "CXL-NIC · MICRO 2025",
+      "paper_title": "Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading",
+      "figure_number": 2,
+      "figure_title": "图 2",
+      "figure_type": "PCIe NIC 接收与发送数据通路",
+      "category": "非实验图",
+      "pdf_page": 4,
+      "width": 797,
+      "height": 447,
+      "source_url": "https://doi.org/10.1145/3725843.3756102",
+      "source_page_url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf#page=4",
+      "source_pdf_url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf",
+      "source_sha256": "9ec84fa467417d39daa8ebbec7ae15d359886b83b6064e0b8328b5b1926f8995",
+      "license_name": "CC BY-NC-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "modifications": "Boundary-cropped whole figure and rasterized at 240 dpi; overall caption excluded, figure content unchanged. Image crops remain CC BY-NC-SA 4.0.",
+      "attribution": "Houxiang Ji, Yifan Yuan, Yang Zhou, Ipoom Jeong, Ren Wang, Saksham Agarwal, and Nam Sung Kim. Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading. MICRO 2025, pp. 1809–1823. DOI: https://doi.org/10.1145/3725843.3756102. © 2025 Copyright held by the owner/author(s). Source: https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf. CC BY-NC-SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/. Whole figures boundary-cropped and rasterized at 240 dpi; overall captions excluded; internal labels unchanged. These image crops remain under CC BY-NC-SA 4.0: noncommercial use only and adaptations shared alike. No endorsement or warranties.",
+      "alt_text": "图 2：PCIe NIC 接收与发送数据通路。左 Rx、右 Tx，MMIO 与 DMA 的步骤和数据结构；T0–T3 是打点位置，不是实测曲线。",
+      "content": "左 Rx、右 Tx，MMIO 与 DMA 的步骤和数据结构；T0–T3 是打点位置，不是实测曲线。",
+      "limitations": "仅非商业使用；改编须相同方式共享。未验证全部科学结论。",
+      "crop_box_pdf_points": [
+        54,
+        82,
+        293,
+        216
+      ],
+      "asset_sha256": "6af0b5c72fc06e2c63c97ed2e80adc89fcdeb0407540650b3f9e40f677a0d9e0",
+      "source_note": "左 Rx、右 Tx，MMIO 与 DMA 的步骤和数据结构；T0–T3 是打点位置，不是实测曲线。",
+      "reuse_notice": "仅限非商业使用；改编作品须以 CC BY-NC-SA 4.0 相同许可共享。",
+      "adaptation_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "paper_notice": "本图库当前收录6张非实验图：F1、F2、F5、F6、F8、F9。来源为15页作者托管ACM会议排版稿；不声称与出版社字节一致。仅限非商业使用，改编须以相同许可共享。"
+    },
+    {
+      "id": "micro-2025-cxlnic-F5-a255a4638b7a3451",
+      "asset": "assets/micro-2025-cxlnic-F5-a255a4638b7a3451.png",
+      "paper_id": "micro-2025-cxlnic",
+      "paper_short": "CXL-NIC · MICRO 2025",
+      "paper_title": "Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading",
+      "figure_number": 5,
+      "figure_title": "图 5",
+      "figure_type": "Type 1 CXL-NIC 架构",
+      "category": "非实验图",
+      "pdf_page": 6,
+      "width": 801,
+      "height": 271,
+      "source_url": "https://doi.org/10.1145/3725843.3756102",
+      "source_page_url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf#page=6",
+      "source_pdf_url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf",
+      "source_sha256": "9ec84fa467417d39daa8ebbec7ae15d359886b83b6064e0b8328b5b1926f8995",
+      "license_name": "CC BY-NC-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "modifications": "Boundary-cropped whole figure and rasterized at 240 dpi; overall caption excluded, figure content unchanged. Image crops remain CC BY-NC-SA 4.0.",
+      "attribution": "Houxiang Ji, Yifan Yuan, Yang Zhou, Ipoom Jeong, Ren Wang, Saksham Agarwal, and Nam Sung Kim. Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading. MICRO 2025, pp. 1809–1823. DOI: https://doi.org/10.1145/3725843.3756102. © 2025 Copyright held by the owner/author(s). Source: https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf. CC BY-NC-SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/. Whole figures boundary-cropped and rasterized at 240 dpi; overall captions excluded; internal labels unchanged. These image crops remain under CC BY-NC-SA 4.0: noncommercial use only and adaptations shared alike. No endorsement or warranties.",
+      "alt_text": "图 5：Type 1 CXL-NIC 架构。DMU、PFU、CSR/MMIO 与网络接口组成的架构及配置通路。",
+      "content": "DMU、PFU、CSR/MMIO 与网络接口组成的架构及配置通路。",
+      "limitations": "仅非商业使用；改编须相同方式共享。未验证全部科学结论。",
+      "crop_box_pdf_points": [
+        53,
+        83,
+        293,
+        164
+      ],
+      "asset_sha256": "02f065ec41ada35e3b0dc71ec7a5ca8ad75f7c0288e4eed88c213d1dd574f5b2",
+      "source_note": "DMU、PFU、CSR/MMIO 与网络接口组成的架构及配置通路。",
+      "reuse_notice": "仅限非商业使用；改编作品须以 CC BY-NC-SA 4.0 相同许可共享。",
+      "adaptation_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "paper_notice": "本图库当前收录6张非实验图：F1、F2、F5、F6、F8、F9。来源为15页作者托管ACM会议排版稿；不声称与出版社字节一致。仅限非商业使用，改编须以相同许可共享。"
+    },
+    {
+      "id": "micro-2025-cxlnic-F6-ea664375c511a518",
+      "asset": "assets/micro-2025-cxlnic-F6-ea664375c511a518.png",
+      "paper_id": "micro-2025-cxlnic",
+      "paper_short": "CXL-NIC · MICRO 2025",
+      "paper_title": "Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading",
+      "figure_number": 6,
+      "figure_title": "图 6",
+      "figure_type": "Tx 尾指针轮询时序示意",
+      "category": "非实验图",
+      "pdf_page": 6,
+      "width": 804,
+      "height": 267,
+      "source_url": "https://doi.org/10.1145/3725843.3756102",
+      "source_page_url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf#page=6",
+      "source_pdf_url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf",
+      "source_sha256": "9ec84fa467417d39daa8ebbec7ae15d359886b83b6064e0b8328b5b1926f8995",
+      "license_name": "CC BY-NC-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "modifications": "Boundary-cropped whole figure and rasterized at 240 dpi; overall caption excluded, figure content unchanged. Image crops remain CC BY-NC-SA 4.0.",
+      "attribution": "Houxiang Ji, Yifan Yuan, Yang Zhou, Ipoom Jeong, Ren Wang, Saksham Agarwal, and Nam Sung Kim. Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading. MICRO 2025, pp. 1809–1823. DOI: https://doi.org/10.1145/3725843.3756102. © 2025 Copyright held by the owner/author(s). Source: https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf. CC BY-NC-SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/. Whole figures boundary-cropped and rasterized at 240 dpi; overall captions excluded; internal labels unchanged. These image crops remain under CC BY-NC-SA 4.0: noncommercial use only and adaptations shared alike. No endorsement or warranties.",
+      "alt_text": "图 6：Tx 尾指针轮询时序示意。左 NC-read、右 CO-read，对照重复读取和缓存失效机制；无测量时间坐标，不据箭头间距推断时延。",
+      "content": "左 NC-read、右 CO-read，对照重复读取和缓存失效机制；无测量时间坐标，不据箭头间距推断时延。",
+      "limitations": "仅非商业使用；改编须相同方式共享。未验证全部科学结论。",
+      "crop_box_pdf_points": [
+        318,
+        597,
+        559,
+        677
+      ],
+      "asset_sha256": "bb3f83bb24f80d32a8c9d2d47017ab52d7ad7081c12c983a034c41399cb3dd54",
+      "source_note": "左 NC-read、右 CO-read，对照重复读取和缓存失效机制；无测量时间坐标，不据箭头间距推断时延。",
+      "reuse_notice": "仅限非商业使用；改编作品须以 CC BY-NC-SA 4.0 相同许可共享。",
+      "adaptation_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "paper_notice": "本图库当前收录6张非实验图：F1、F2、F5、F6、F8、F9。来源为15页作者托管ACM会议排版稿；不声称与出版社字节一致。仅限非商业使用，改编须以相同许可共享。"
+    },
+    {
+      "id": "micro-2025-cxlnic-F8-1dbcafa6cbbc3c33",
+      "asset": "assets/micro-2025-cxlnic-F8-1dbcafa6cbbc3c33.png",
+      "paper_id": "micro-2025-cxlnic",
+      "paper_short": "CXL-NIC · MICRO 2025",
+      "paper_title": "Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading",
+      "figure_number": 8,
+      "figure_title": "图 8",
+      "figure_type": "内存布局与请求映射",
+      "category": "非实验图",
+      "pdf_page": 8,
+      "width": 801,
+      "height": 567,
+      "source_url": "https://doi.org/10.1145/3725843.3756102",
+      "source_page_url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf#page=8",
+      "source_pdf_url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf",
+      "source_sha256": "9ec84fa467417d39daa8ebbec7ae15d359886b83b6064e0b8328b5b1926f8995",
+      "license_name": "CC BY-NC-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "modifications": "Boundary-cropped whole figure and rasterized at 240 dpi; overall caption excluded, figure content unchanged. Image crops remain CC BY-NC-SA 4.0.",
+      "attribution": "Houxiang Ji, Yifan Yuan, Yang Zhou, Ipoom Jeong, Ren Wang, Saksham Agarwal, and Nam Sung Kim. Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading. MICRO 2025, pp. 1809–1823. DOI: https://doi.org/10.1145/3725843.3756102. © 2025 Copyright held by the owner/author(s). Source: https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf. CC BY-NC-SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/. Whole figures boundary-cropped and rasterized at 240 dpi; overall captions excluded; internal labels unchanged. These image crops remain under CC BY-NC-SA 4.0: noncommercial use only and adaptations shared alike. No endorsement or warranties.",
+      "alt_text": "图 8：内存布局与请求映射。四个作者标注面板 (a)–(d) 及对应请求表必须保留。(d) 第3步原文为 Host-Bias / D2H NC-wr；保留原文，不改为 D2D。",
+      "content": "四个作者标注面板 (a)–(d) 及对应请求表必须保留。(d) 第3步原文为 Host-Bias / D2H NC-wr；保留原文，不改为 D2D。",
+      "limitations": "仅非商业使用；改编须相同方式共享。未验证全部科学结论。",
+      "crop_box_pdf_points": [
+        56,
+        505,
+        296,
+        675
+      ],
+      "asset_sha256": "27636687c8ab69566a274e1bcac72f15ca8999198faf58c4bd6d22f2116f322d",
+      "source_note": "四个作者标注面板 (a)–(d) 及对应请求表必须保留。(d) 第3步原文为 Host-Bias / D2H NC-wr；保留原文，不改为 D2D。",
+      "reuse_notice": "仅限非商业使用；改编作品须以 CC BY-NC-SA 4.0 相同许可共享。",
+      "adaptation_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "paper_notice": "本图库当前收录6张非实验图：F1、F2、F5、F6、F8、F9。来源为15页作者托管ACM会议排版稿；不声称与出版社字节一致。仅限非商业使用，改编须以相同许可共享。"
+    },
+    {
+      "id": "micro-2025-cxlnic-F9-b0cd8ad2f19df922",
+      "asset": "assets/micro-2025-cxlnic-F9-b0cd8ad2f19df922.png",
+      "paper_id": "micro-2025-cxlnic",
+      "paper_short": "CXL-NIC · MICRO 2025",
+      "paper_title": "Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading",
+      "figure_number": 9,
+      "figure_title": "图 9",
+      "figure_type": "CXL-NIC 键值存储应用架构",
+      "category": "非实验图",
+      "pdf_page": 9,
+      "width": 727,
+      "height": 334,
+      "source_url": "https://doi.org/10.1145/3725843.3756102",
+      "source_page_url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf#page=9",
+      "source_pdf_url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf",
+      "source_sha256": "9ec84fa467417d39daa8ebbec7ae15d359886b83b6064e0b8328b5b1926f8995",
+      "license_name": "CC BY-NC-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "modifications": "Boundary-cropped whole figure and rasterized at 240 dpi; overall caption excluded, figure content unchanged. Image crops remain CC BY-NC-SA 4.0.",
+      "attribution": "Houxiang Ji, Yifan Yuan, Yang Zhou, Ipoom Jeong, Ren Wang, Saksham Agarwal, and Nam Sung Kim. Re-architecting End-host Networking with CXL: Coherence, Memory, and Offloading. MICRO 2025, pp. 1809–1823. DOI: https://doi.org/10.1145/3725843.3756102. © 2025 Copyright held by the owner/author(s). Source: https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf. CC BY-NC-SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/. Whole figures boundary-cropped and rasterized at 240 dpi; overall captions excluded; internal labels unchanged. These image crops remain under CC BY-NC-SA 4.0: noncommercial use only and adaptations shared alike. No endorsement or warranties.",
+      "alt_text": "图 9：CXL-NIC 键值存储应用架构。KVS 请求处理器、设备内存与主机/设备偏置通路；这是架构，不是性能结果。",
+      "content": "KVS 请求处理器、设备内存与主机/设备偏置通路；这是架构，不是性能结果。",
+      "limitations": "仅非商业使用；改编须相同方式共享。未验证全部科学结论。",
+      "crop_box_pdf_points": [
+        63,
+        83,
+        281,
+        183
+      ],
+      "asset_sha256": "933a8ffff181bc3b9040160cc93adca5b288d10a1bfddc9b2b203362a09e65fc",
+      "source_note": "KVS 请求处理器、设备内存与主机/设备偏置通路；这是架构，不是性能结果。",
+      "reuse_notice": "仅限非商业使用；改编作品须以 CC BY-NC-SA 4.0 相同许可共享。",
+      "adaptation_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "paper_notice": "本图库当前收录6张非实验图：F1、F2、F5、F6、F8、F9。来源为15页作者托管ACM会议排版稿；不声称与出版社字节一致。仅限非商业使用，改编须以相同许可共享。"
     }
   ],
   "paper_objects": [
@@ -3563,6 +3779,11 @@
       "paper_id": "dac-2026-sandwich",
       "object_group": "运行时与调度系统",
       "specific_object": "Sandwich CPU LLM配置搜索与热切换运行时"
+    },
+    {
+      "paper_id": "micro-2025-cxlnic",
+      "object_group": "互连、网络接口与数据通路",
+      "specific_object": "CXL一致性网络接口与端主机数据通路"
     }
   ],
   "reading_guides": [
@@ -4984,7 +5205,59 @@
           "url": "https://i.cs.hku.hk/~cwu/papers/jtzhao-dac26.pdf#page=5"
         }
       ]
+    },
+    {
+      "paper_id": "micro-2025-cxlnic",
+      "primary_object": "互连、网络接口与数据通路",
+      "specific_object": "CXL一致性网络接口与端主机数据通路",
+      "conditional_design_advice": "按贡献选择解释视图，不是每篇论文必备模板。",
+      "this_paper_figure_sequence": "F1 CXL Type 1/2 设备架构 → F2 PCIe NIC 接收与发送数据通路 → F5 Type 1 CXL-NIC 架构 → F6 Tx 尾指针轮询时序示意 → F8 内存布局与请求映射 → F9 CXL-NIC 键值存储应用架构",
+      "source_ambiguity_or_scope": "仅显示已审核的非实验图；原文其他图不在当前收录范围。",
+      "source_examples": [
+        {
+          "figure_id": "F1",
+          "pdf_pages": [
+            3
+          ],
+          "url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf#page=3"
+        },
+        {
+          "figure_id": "F2",
+          "pdf_pages": [
+            4
+          ],
+          "url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf#page=4"
+        },
+        {
+          "figure_id": "F5",
+          "pdf_pages": [
+            6
+          ],
+          "url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf#page=6"
+        },
+        {
+          "figure_id": "F6",
+          "pdf_pages": [
+            6
+          ],
+          "url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf#page=6"
+        },
+        {
+          "figure_id": "F8",
+          "pdf_pages": [
+            8
+          ],
+          "url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf#page=8"
+        },
+        {
+          "figure_id": "F9",
+          "pdf_pages": [
+            9
+          ],
+          "url": "https://saksham.web.illinois.edu/assets/pdf/cxl-nic.pdf#page=9"
+        }
+      ]
     }
   ],
-  "coverage_note": "当前收录32篇论文的157张非实验原图：系统抽象、架构、机制、数据/控制流、示意时序与形式定义。实验结果图和未完成分离复核的混合图不纳入；100篇目录不等于100篇原图收录或研究完成。"
+  "coverage_note": "当前收录33篇论文的163张非实验原图：系统抽象、架构、机制、数据/控制流、示意时序与形式定义。实验结果图和未完成分离复核的混合图不纳入；100篇目录不等于100篇原图收录或研究完成。"
 }
