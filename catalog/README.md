@@ -145,8 +145,10 @@
 ## Emulating Space Computing Networks with RHONE
 研究对象：模拟器与仿真平台 / RHONE空间计算网络仿真平台
 
-[原文来源](https://www.usenix.org/system/files/atc25-wang-liying.pdf)
-仅保留目录来源链接，未确认该来源版本的正文或图组；不作为已完成论文研究。
+[原文来源](https://www.usenix.org/system/files/atc25-wang-liying.pdf) · [正式会议记录](https://www.usenix.org/conference/atc25/presentation/wang-liying)
+已核实USENIX ATC 2025正式会议PDF，18个物理页（含封面），论文集第815–831页。该固定版本15幅编号图的初步逐图研究及图号/页码核查已有记录；不等于独立逐图复核通过或实验复现。原图公开再分发许可仍未核实，当前不收录RHONE原图。
+
+固定PDF SHA-256：`14a51d95def5770a321c19ae41ec74f763fd44952269fc13592198c490f04d26`。
 
 ## SolFS: An Operation-Log Versioning File System for Hash-free Efficient Mobile Cloud Backup
 研究对象：文件、存储与缓存软件 / SolFS操作日志版本化文件系统
