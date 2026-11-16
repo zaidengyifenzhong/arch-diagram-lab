@@ -160,7 +160,7 @@ EDA工具与电路设计表示 · TRACE电路图表示学习模型 · 3张
 [![图 3：框图、队列布局图。原论文 Loaded Dice: Solving the Non-Selection Problem for Scalable Probabilistic RowHammer Defense，PDF 第 4 页。](assets/isca-2026-loadeddice-F3-5d72b06fe12d364f.png)](papers/isca-2026-loadeddice.md)
 
 ## [Sandwich · DAC 2026](papers/dac-2026-sandwich.md)
-运行时与调度系统 · Sandwich CPU LLM配置搜索与热切换运行时 · 3张
+机器学习训练与推理系统 · Sandwich CPU LLM推理服务系统（联合配置搜索、动态形状内核生成与阶段热切换） · 3张
 
 [![图 1：执行时间示意对照。原论文 Sandwich: Joint Configuration Search and Hot-Switching for Efficient CPU LLM Serving，PDF 第 1 页。](assets/dac-2026-sandwich-F1-85f36f21200182ea.png)](papers/dac-2026-sandwich.md)
 

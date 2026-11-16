@@ -3909,8 +3909,8 @@
     },
     {
       "paper_id": "dac-2026-sandwich",
-      "object_group": "运行时与调度系统",
-      "specific_object": "Sandwich CPU LLM配置搜索与热切换运行时"
+      "object_group": "机器学习训练与推理系统",
+      "specific_object": "Sandwich CPU LLM推理服务系统（联合配置搜索、动态形状内核生成与阶段热切换）"
     },
     {
       "paper_id": "micro-2025-cxlnic",
@@ -5328,8 +5328,8 @@
     },
     {
       "paper_id": "dac-2026-sandwich",
-      "primary_object": "运行时与调度系统",
-      "specific_object": "Sandwich CPU LLM配置搜索与热切换运行时",
+      "primary_object": "机器学习训练与推理系统",
+      "specific_object": "Sandwich CPU LLM推理服务系统（联合配置搜索、动态形状内核生成与阶段热切换）",
       "conditional_design_advice": "按本篇贡献选择解释视图；以下是已有图例，不是每篇论文都必须具备的模板。",
       "this_paper_figure_sequence": "F1 执行时间示意对照 → F5 离线生成与在线运行流程 → F6 硬件层次到树变换再到配置的抽象映射",
       "source_ambiguity_or_scope": "仅列出本图库保留的非实验图，未收录实验结果、测量照片及尚未分离的混合图。原文页链接可能包含同页其他内容，不代表那些图也已收录。",

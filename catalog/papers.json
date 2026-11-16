@@ -825,7 +825,7 @@
       "paper_id": "dac-2026-sandwich",
       "title": "Sandwich: Joint Configuration Search and Hot-Switching for Efficient CPU LLM Serving",
       "object_group": "机器学习训练与推理系统",
-      "specific_object": "Sandwich CPU LLM服务系统（暂定）",
+      "specific_object": "Sandwich CPU LLM推理服务系统（联合配置搜索、动态形状内核生成与阶段热切换）",
       "source_title": "Sandwich: Joint Configuration Search and Hot-Switching for Efficient CPU LLM Serving",
       "source_urls": [
         "https://i.cs.hku.hk/~cwu/papers/jtzhao-dac26.pdf"

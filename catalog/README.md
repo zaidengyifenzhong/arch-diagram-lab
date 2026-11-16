@@ -239,7 +239,7 @@
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## Sandwich: Joint Configuration Search and Hot-Switching for Efficient CPU LLM Serving
-研究对象：机器学习训练与推理系统 / Sandwich CPU LLM服务系统（暂定）
+研究对象：机器学习训练与推理系统 / Sandwich CPU LLM推理服务系统（联合配置搜索、动态形状内核生成与阶段热切换）
 
 [原文来源](https://i.cs.hku.hk/~cwu/papers/jtzhao-dac26.pdf)
 固定源SHA256 fbfdbb92fe29b3860cbf7012df097e6129f6a466bb965c6bf3b266ac50304409；不声称与出版社字节一致。

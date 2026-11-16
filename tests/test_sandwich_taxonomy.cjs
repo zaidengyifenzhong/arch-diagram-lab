@@ -1,0 +1,11 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const api=require('../gallery/gallery.js');
+const data=JSON.parse(fs.readFileSync(path.join(__dirname,'../gallery/figures.json'),'utf8'));
+const items=api.prepareItems(data),group='机器学习训练与推理系统',pid='dac-2026-sandwich';
+assert(api.uniqueValues(items,'object_group').includes(group));
+const filtered=items.filter(i=>api.matchesFilters(i,{query:'',object:group}));
+assert.equal(filtered.length,3);assert(filtered.every(i=>i.paper_id===pid));
+assert.equal(items.filter(i=>i.paper_id===pid&&api.matchesFilters(i,{query:'',object:'运行时与调度系统'})).length,0);
+assert.equal(items.filter(i=>api.matchesFilters(i,{query:'动态形状内核生成',object:group})).length,3);
+console.log('5 Sandwich dynamic option/filter model checks passed; no browser/DOM test');
