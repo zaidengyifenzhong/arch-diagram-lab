@@ -11,19 +11,19 @@ class GalleryScopeTests(unittest.TestCase):
  def setUpClass(cls):
   cls.data=json.loads((ROOT/'gallery/figures.json').read_text());cls.items=cls.data['items'];cls.ids={f['id'] for f in cls.items};cls.assets={f['asset'] for f in cls.items}
  def test_exact_coverage(self):
-  self.assertEqual(len(self.items),180);self.assertEqual(len({f['paper_id'] for f in self.items}),38);self.assertEqual(sum(f['paper_id']=='dac-2026-sandwich' for f in self.items),3);self.assertTrue(all(f['category']=='非实验图' for f in self.items))
+  self.assertEqual(len(self.items),183);self.assertEqual(len({f['paper_id'] for f in self.items}),39);self.assertEqual(sum(f['paper_id']=='dac-2026-sandwich' for f in self.items),3);self.assertTrue(all(f['category']=='非实验图' for f in self.items))
  def test_no_extra_assets(self):self.assertEqual({p.relative_to(ROOT/'gallery').as_posix() for p in (ROOT/'gallery/assets').glob('*')},self.assets)
  def test_inline_and_noscript(self):
   h=(ROOT/'gallery/index.html').read_text();m=re.search(r'<script id="gallery-data" type="application/json">(.*?)</script>',h,re.S);self.assertEqual(json.loads(m[1]),self.data)
-  n=re.search(r'<noscript>(.*?)</noscript>',h,re.S)[1];p=ImageParser();p.feed(n);self.assertEqual(set(p.images),self.assets);self.assertEqual(len(p.images),180)
+  n=re.search(r'<noscript>(.*?)</noscript>',h,re.S)[1];p=ImageParser();p.feed(n);self.assertEqual(set(p.images),self.assets);self.assertEqual(len(p.images),183)
  def test_license_byte_bindings(self):
   ls=json.loads((ROOT/'gallery/licenses.json').read_text())['items'];self.assertEqual({f['id'] for f in ls},self.ids)
   for f in ls:self.assertEqual(hashlib.sha256((ROOT/'gallery'/f['asset']).read_bytes()).hexdigest(),f['sha256'])
  def test_catalog(self):
-  c=json.loads((ROOT/'catalog/papers.json').read_text());self.assertEqual(len(c['papers']),100);self.assertEqual(sum(p['public_gallery']['figure_count'] for p in c['papers']),180)
+  c=json.loads((ROOT/'catalog/papers.json').read_text());self.assertEqual(len(c['papers']),100);self.assertEqual(sum(p['public_gallery']['figure_count'] for p in c['papers']),183)
   for p in c['papers']:self.assertEqual(set(p['public_gallery']['figure_numbers']),{f['figure_number'] for f in self.items if f['paper_id']==p['paper_id']})
  def test_paper_pages(self):
-  pages=list((ROOT/'gallery/papers').glob('*.md'));self.assertEqual(len(pages),38)
+  pages=list((ROOT/'gallery/papers').glob('*.md'));self.assertEqual(len(pages),39)
   for p in pages:
    found=re.findall(r'!\[[^\]]*\]\(\.\./(assets/[^)]+)\)',p.read_text());self.assertEqual(set(found),{f['asset'] for f in self.items if f['paper_id']==p.stem})
  def test_guides_only_selected(self):
@@ -32,7 +32,7 @@ class GalleryScopeTests(unittest.TestCase):
    for e in g['source_examples']:self.assertIn((g['paper_id'],e['figure_id']),available)
 
  def test_curated_ids(self):
-  s=json.loads((ROOT/'gallery/scope.json').read_text());self.assertEqual(len(s['retained_prior_figures']),154);self.assertEqual(len(s['new_figures']),24);self.assertEqual(set(s['retained_prior_figures']+s['new_figures']+[x['id'] for x in s['approved_subregions']]),self.ids)
+  s=json.loads((ROOT/'gallery/scope.json').read_text());self.assertEqual(len(s['retained_prior_figures']),154);self.assertEqual(len(s['new_figures']),27);self.assertEqual(set(s['retained_prior_figures']+s['new_figures']+[x['id'] for x in s['approved_subregions']]),self.ids)
 
  def test_current_display_notices(self):
   by={}
@@ -60,7 +60,7 @@ class LicensePresentationTests(unittest.TestCase):
  def test_ncsa_per_image_and_license_counts(self):
   from collections import Counter
   data=json.loads((ROOT/'gallery/figures.json').read_text())['items']
-  self.assertEqual(Counter(f['license_name'] for f in data),{'CC BY 4.0':163,'CC0 1.0':10,'CC BY 2.5':1,'CC BY-NC-SA 4.0':6})
+  self.assertEqual(Counter(f['license_name'] for f in data),{'CC BY 4.0':166,'CC0 1.0':10,'CC BY 2.5':1,'CC BY-NC-SA 4.0':6})
   licenses={f['id']:f for f in json.loads((ROOT/'gallery/licenses.json').read_text())['items']}
   for f in data:
    if f['license_name']=='CC BY-NC-SA 4.0':

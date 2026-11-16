@@ -3,17 +3,17 @@
   "title": "体系结构与系统论文来源目录",
   "counts": {
     "papers": 100,
-    "papers_with_selected_figures": 38,
-    "selected_figures": 180,
-    "papers_without_public_figures": 62,
-    "original_figure_entries": 178,
+    "papers_with_selected_figures": 39,
+    "selected_figures": 183,
+    "papers_without_public_figures": 61,
+    "original_figure_entries": 181,
     "mechanism_subregions": 2
   },
   "scope": [
     "这是100篇目的性样本的来源目录，不是100篇深读完成证明，也不是领域全量或随机样本。",
     "研究对象分类用于浏览，不是仅凭会议或图型自动判定的必备图模板。",
-    "仅本仓库实际收录的38篇180个非实验图示条目（含2个机制子区域／非整图）属于本次公开图片选择；其许可和署名须逐图查看。",
-    "另外62篇当前不收录原图，原因包括许可未确认或不符合非实验范围；可读取不等于可再分发。",
+    "仅本仓库实际收录的39篇183个非实验图示条目（含2个机制子区域／非整图）属于本次公开图片选择；其许可和署名须逐图查看。",
+    "另外61篇当前不收录原图，原因包括许可未确认或不符合非实验范围；可读取不等于可再分发。",
     "不分发论文PDF；来源链接内容可能更新，目录ID中的会议年份不独立证明正式发表身份。"
   ],
   "papers": [
@@ -1175,17 +1175,23 @@
       "specific_object": "SAGe基因组数据解压加速平台",
       "source_title": "SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis",
       "source_urls": [
-        "https://hybol1993.github.io/assets/pdf/sage.pdf"
+        "https://arxiv.org/pdf/2504.03732v4"
       ],
-      "source_version": null,
+      "source_version": "arXiv:2504.03732v4, 22 January 2026; not asserted publisher-identical",
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "SAGe · arXiv v4固定版本；不独立断言正式会议身份或出版商版本一致。本轮仅F5/F11/F12，其他图未在本轮审核范围。",
       "public_gallery": {
-        "status": "not_in_current_selection",
-        "figure_count": 0,
-        "figure_numbers": [],
-        "license_status": "not_asserted_for_unselected_figures",
-        "figure_licenses": []
+        "status": "selected_nonexperimental_figures_only",
+        "figure_count": 3,
+        "figure_numbers": [
+          5,
+          11,
+          12
+        ],
+        "license_status": "see_selected_figure_licenses",
+        "figure_licenses": [
+          "CC BY 4.0"
+        ]
       }
     },
     {

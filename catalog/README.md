@@ -1,8 +1,8 @@
 # 100篇论文来源目录
 
-当前收录38篇论文的180个非实验图示条目（178个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。
+当前收录39篇论文的183个非实验图示条目（181个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。
 
-另62篇未收录原图，不代表所有来源与权利证据已穷尽。
+另61篇未收录原图，不代表所有来源与权利证据已穷尽。
 
 ## Target-Aware Implementation of Real Expressions
 研究对象：编译器、语言与中间表示 / Chassis目标感知数值表达式编译器
@@ -345,8 +345,10 @@ BP-SF · arXiv v3固定版本；不独立断言正式会议身份或出版商版
 ## SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis
 研究对象：专用加速器与可重构/存内计算平台 / SAGe基因组数据解压加速平台
 
-[原文来源](https://hybol1993.github.io/assets/pdf/sage.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+[原文来源](https://arxiv.org/pdf/2504.03732v4)
+SAGe · arXiv v4固定版本；不独立断言正式会议身份或出版商版本一致。本轮仅F5/F11/F12，其他图未在本轮审核范围。
+
+[查看3个已收录图示条目](../gallery/papers/hpca-2026-sage.md)
 
 ## SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense
 研究对象：缓存、地址转换与DRAM系统 / SALT DRAM子阵列刷新构件

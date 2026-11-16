@@ -4002,6 +4002,75 @@
       "attribution": "Konstantinos Kanellopoulos, Konstantinos Sgouras, Harsh Songara, Andreas Kosmas Kakolyris, Vlad-Petru Nitu, Spiros Galanopoulos, Rahul Bera, Konstantina Koliogeorgi, Rakesh Kumar, and Onur Mutlu. Revelator: Rapid Data Fetching via System-Software-Guided Hash-based Speculative Address Translation. arXiv:2508.02007v2, 25 June 2026. Source: https://arxiv.org/abs/2508.02007v2. CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/. Cropped from exact version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged. No endorsement implied.",
       "alt_text": "图 9：NUMA推测与提示路径图。Revelator · arXiv v2，PDF 第 9 页。",
       "source_note": "驻留计数器估计节点概率，远程节点 Bloom filter 提供提示并引导跨节点地址推测。 编号连接概率决策、提示查询和远程数据位置；图中百分比是说明性状态。 机制或架构示意，非实测性能结果；具体效果需阅读论文评估部分。 固定arXiv版本，不声称与出版社版一致；仅收录指定图，不代表其余图已审核或可再分发。"
+    },
+    {
+      "id": "arxiv-2504.03732v4-sage-F5-933228a5d9e08968",
+      "asset": "assets/arxiv-2504.03732v4-sage-F5-933228a5d9e08968.png",
+      "paper_id": "hpca-2026-sage",
+      "paper_short": "SAGe · arXiv v4",
+      "paper_title": "SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis",
+      "figure_number": 5,
+      "figure_title": "图 5",
+      "figure_type": "数据准备与压缩存储工作流图",
+      "category": "非实验图",
+      "pdf_page": 6,
+      "width": 837,
+      "height": 226,
+      "source_url": "https://arxiv.org/abs/2504.03732v4",
+      "source_page_url": "https://arxiv.org/pdf/2504.03732v4#page=6",
+      "source_version": "arXiv:2504.03732v4, 22 January 2026; not asserted publisher-identical",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Cropped from exact version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged.",
+      "attribution": "Nika Mansouri Ghiasi, Talu Güloglu, Harun Mustafa, Can Firtina, Konstantina Koliogeorgi, Konstantinos Kanellopoulos, Haiyu Mao, Rakesh Nadig, Mohammad Sadrosadati, Jisung Park, and Onur Mutlu. SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis. arXiv:2504.03732v4, 22 January 2026. Source: https://arxiv.org/abs/2504.03732v4. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped from exact version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged. No endorsement implied.",
+      "alt_text": "图 5：数据准备与压缩存储工作流图。SAGe · arXiv v4，PDF 第 6 页。",
+      "source_note": "子图 a 表达分析系统发起请求、存储读取、硬件解压与返回；子图 b 表达主机压缩及存储。 读写方向与编号步骤区分离线压缩和在线数据准备。 机制或架构示意，非实测性能结果；具体效果需阅读论文评估部分。 固定arXiv版本，不声称与出版社版一致；仅收录指定图，不代表其余图已审核或可再分发。"
+    },
+    {
+      "id": "arxiv-2504.03732v4-sage-F11-42927f57a2dcfaf8",
+      "asset": "assets/arxiv-2504.03732v4-sage-F11-42927f57a2dcfaf8.png",
+      "paper_id": "hpca-2026-sage",
+      "paper_short": "SAGe · arXiv v4",
+      "paper_title": "SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis",
+      "figure_number": 11,
+      "figure_title": "图 11",
+      "figure_type": "流式解压硬件架构图",
+      "category": "非实验图",
+      "pdf_page": 9,
+      "width": 790,
+      "height": 465,
+      "source_url": "https://arxiv.org/abs/2504.03732v4",
+      "source_page_url": "https://arxiv.org/pdf/2504.03732v4#page=9",
+      "source_version": "arXiv:2504.03732v4, 22 January 2026; not asserted publisher-identical",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Cropped from exact version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged.",
+      "attribution": "Nika Mansouri Ghiasi, Talu Güloglu, Harun Mustafa, Can Firtina, Konstantina Koliogeorgi, Konstantinos Kanellopoulos, Haiyu Mao, Rakesh Nadig, Mohammad Sadrosadati, Jisung Park, and Onur Mutlu. SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis. arXiv:2504.03732v4, 22 January 2026. Source: https://arxiv.org/abs/2504.03732v4. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped from exact version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged. No endorsement implied.",
+      "alt_text": "图 11：流式解压硬件架构图。SAGe · arXiv v4，PDF 第 9 页。",
+      "source_note": "扫描单元、读段构建单元和控制单元连接位置数组、引导数组、共识序列与输出序列。 编号路径连接扫描、计数、匹配位置处理、读段重构和输出；寄存器与计数器显示轻量硬件组成。 机制或架构示意，非实测性能结果；具体效果需阅读论文评估部分。 固定arXiv版本，不声称与出版社版一致；仅收录指定图，不代表其余图已审核或可再分发。"
+    },
+    {
+      "id": "arxiv-2504.03732v4-sage-F12-92c826d14ac38d59",
+      "asset": "assets/arxiv-2504.03732v4-sage-F12-92c826d14ac38d59.png",
+      "paper_id": "hpca-2026-sage",
+      "paper_short": "SAGe · arXiv v4",
+      "paper_title": "SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis",
+      "figure_number": 12,
+      "figure_title": "图 12",
+      "figure_type": "基因分析加速器集成方案对比图",
+      "category": "非实验图",
+      "pdf_page": 10,
+      "width": 796,
+      "height": 384,
+      "source_url": "https://arxiv.org/abs/2504.03732v4",
+      "source_page_url": "https://arxiv.org/pdf/2504.03732v4#page=10",
+      "source_version": "arXiv:2504.03732v4, 22 January 2026; not asserted publisher-identical",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Cropped from exact version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged.",
+      "attribution": "Nika Mansouri Ghiasi, Talu Güloglu, Harun Mustafa, Can Firtina, Konstantina Koliogeorgi, Konstantinos Kanellopoulos, Haiyu Mao, Rakesh Nadig, Mohammad Sadrosadati, Jisung Park, and Onur Mutlu. SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis. arXiv:2504.03732v4, 22 January 2026. Source: https://arxiv.org/abs/2504.03732v4. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped from exact version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged. No endorsement implied.",
+      "alt_text": "图 12：基因分析加速器集成方案对比图。SAGe · arXiv v4，PDF 第 10 页。",
+      "source_note": "并列展示独立总线设备、与分析系统同芯片以及 SSD 内部集成三种 SAGe 部署。 不同系统边界体现设备之间的数据流和硬件放置选择。 机制或架构示意，非实测性能结果；具体效果需阅读论文评估部分。 固定arXiv版本，不声称与出版社版一致；仅收录指定图，不代表其余图已审核或可再分发。"
     }
   ],
   "paper_objects": [
@@ -4194,6 +4263,11 @@
       "paper_id": "isca-2026-revelator",
       "object_group": "缓存、地址转换与DRAM系统",
       "specific_object": "软硬协同虚拟地址翻译子系统"
+    },
+    {
+      "paper_id": "hpca-2026-sage",
+      "object_group": "专用加速器与可重构/存内计算平台",
+      "specific_object": "SAGe基因组数据解压加速平台"
     }
   ],
   "reading_guides": [
@@ -5836,7 +5910,38 @@
           "url": "https://arxiv.org/pdf/2508.02007v2#page=9"
         }
       ]
+    },
+    {
+      "paper_id": "hpca-2026-sage",
+      "primary_object": "专用加速器与可重构/存内计算平台",
+      "specific_object": "SAGe基因组数据解压加速平台",
+      "conditional_design_advice": "可先区分离线压缩与在线数据准备，再展开流式解压硬件，最后比较三种部署边界；示意流程解释方法，不代替实验结果，也不是必须图模板。",
+      "this_paper_figure_sequence": "F5 数据准备与压缩存储流程 → F11 流式解压架构（读段构建单元） → F12 三种加速器集成方案",
+      "source_ambiguity_or_scope": "SAGe · arXiv v4固定版本；不独立断言正式会议身份或出版商版本一致。本轮仅F5/F11/F12，其他图未在本轮审核范围。",
+      "source_examples": [
+        {
+          "figure_id": "F5",
+          "pdf_pages": [
+            6
+          ],
+          "url": "https://arxiv.org/pdf/2504.03732v4#page=6"
+        },
+        {
+          "figure_id": "F11",
+          "pdf_pages": [
+            9
+          ],
+          "url": "https://arxiv.org/pdf/2504.03732v4#page=9"
+        },
+        {
+          "figure_id": "F12",
+          "pdf_pages": [
+            10
+          ],
+          "url": "https://arxiv.org/pdf/2504.03732v4#page=10"
+        }
+      ]
     }
   ],
-  "coverage_note": "当前收录38篇论文的180个非实验图示条目（178个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。"
+  "coverage_note": "当前收录39篇论文的183个非实验图示条目（181个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。"
 }

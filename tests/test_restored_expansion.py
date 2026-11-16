@@ -7,8 +7,8 @@ class RestoredExpansionTests(unittest.TestCase):
  def setUpClass(c):
   c.d=json.loads((R/'gallery/figures.json').read_text());c.fs=c.d['items'];c.scope=json.loads((R/'gallery/scope.json').read_text());c.cat=json.loads((R/'catalog/papers.json').read_text())
  def test_exact_new_scope(self):
-  self.assertEqual(len(self.fs),180);self.assertEqual(len({f['paper_id'] for f in self.fs}),38);self.assertEqual(len(self.scope['approved_subregions']),2)
-  self.assertEqual(Counter(f['license_name'] for f in self.fs),{'CC BY 4.0':163,'CC0 1.0':10,'CC BY 2.5':1,'CC BY-NC-SA 4.0':6})
+  self.assertEqual(len(self.fs),183);self.assertEqual(len({f['paper_id'] for f in self.fs}),39);self.assertEqual(len(self.scope['approved_subregions']),2)
+  self.assertEqual(Counter(f['license_name'] for f in self.fs),{'CC BY 4.0':166,'CC0 1.0':10,'CC BY 2.5':1,'CC BY-NC-SA 4.0':6})
  def test_held_whole_figures_stay_out(self):
   self.assertEqual(len(self.scope['held_mixed_whole_figures']),7);self.assertFalse(set(self.scope['held_mixed_whole_figures'])&{f['id'] for f in self.fs})
  def test_subregions_clear_everywhere(self):
