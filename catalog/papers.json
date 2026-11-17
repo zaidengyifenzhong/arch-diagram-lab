@@ -858,18 +858,74 @@
       "specific_object": "SP2RINT衍射光学模型训练与逆设计框架",
       "source_title": "SP2RINT: Spatially-Decoupled Physics-Inspired ProgRessive INverse OpTimization for Scalable, PDE-Constrained Meta-Optical Neural Network Training",
       "source_urls": [
-        "https://scopex-asu.github.io/files/publications/ONN_DAC2026_Gu.pdf"
+        "https://scopex-asu.github.io/files/publications/ONN_DAC2026_Gu.pdf",
+        "https://arxiv.org/pdf/2505.18377v2",
+        "https://tsung-wei-huang.github.io/papers/2026-DAC-SP2RINT.pdf"
       ],
-      "source_version": null,
-      "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_version": "Three separately fingerprinted editions: 8-page author manuscript; arXiv:2505.18377v2 (16 pages); 7-page conference-title author manuscript",
+      "source_identity": "multiple_fixed_source_editions_not_asserted_publisher_identical",
+      "source_note": "已区分三份固定来源：8页作者稿与16页arXiv v2使用Physics-Inspired长标题，7页合作者稿使用目录中的Physics-Constrained会议标题。合作者出版列表将7页稿关联到会议DOI，但未核实与出版社最终版字节、图号或排版相同。仅arXiv v2已核实CC BY 4.0；两份作者稿的原图再分发许可未确认，不移用许可。此项仅核对版本、图注页与许可边界，不代表逐图独审通过或全篇研究完成。三版F3均保留暂缓：机制示意与传输矩阵训练/投影数值示例混合，不能因无坐标轴而判定为纯非实验图。F1/F2及第三方元素也未在此项中获准公开，当前不收录SP2RINT原图。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,
         "figure_numbers": [],
-        "license_status": "not_asserted_for_unselected_figures",
+        "license_status": "edition_specific_rights_recorded_figure_clearance_pending",
         "figure_licenses": []
-      }
+      },
+      "source_editions": [
+        {
+          "edition": "author",
+          "title": "SP2RINT: Spatially-Decoupled Physics-Inspired ProgRessive INverse OpTimization for Scalable, PDE-Constrained Meta-Optical Neural Network Training",
+          "source_url": "https://scopex-asu.github.io/files/publications/ONN_DAC2026_Gu.pdf",
+          "pdf_pages": 8,
+          "sha256": "2d7fb0a954ef4fd670b204989e2cc2f0f5bb67139e633e51255e622f1bc0a215",
+          "figure_pdf_pages": {
+            "F1": 2,
+            "F2": 4,
+            "F3": 5
+          },
+          "author_name_as_printed": "Rena Huang",
+          "source_version": "Fixed 8-page author-hosted manuscript",
+          "license": "unconfirmed_for_public_redistribution",
+          "version_boundary": "No explicit redistribution license identified in this PDF; publisher version-of-record byte, figure-number and layout identity not established."
+        },
+        {
+          "edition": "arxiv-v2",
+          "title": "SP2RINT: Spatially-Decoupled Physics-Inspired ProgRessive INverse OpTimization for Scalable, PDE-Constrained Meta-Optical Neural Network Training",
+          "source_url": "https://arxiv.org/pdf/2505.18377v2",
+          "pdf_pages": 16,
+          "sha256": "436959b85f444c52532879c8adaba8e86525e0c7f27a104be20daae1dec6a463",
+          "figure_pdf_pages": {
+            "F1": 3,
+            "F2": 7,
+            "F3": 8
+          },
+          "author_name_as_printed": "Zhaoran Huang",
+          "source_version": "arXiv:2505.18377v2",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "license_evidence_url": "https://arxiv.org/abs/2505.18377v2",
+          "version_boundary": "License evidence applies to this arXiv v2 edition, not automatically to the two author-hosted PDFs; figure scope and third-party elements still require clearance."
+        },
+        {
+          "edition": "conference-author",
+          "title": "SP2RINT: Spatially-Decoupled Physics-Constrained ProgRessive INverse OpTimization for Diffractive Optical Neural Network Training",
+          "source_url": "https://tsung-wei-huang.github.io/papers/2026-DAC-SP2RINT.pdf",
+          "pdf_pages": 7,
+          "sha256": "e7316b48fe9fb9ed57e2710d0bdfed28d7a0da5dbebe83949bbfccb9377b7101",
+          "figure_pdf_pages": {
+            "F1": 2,
+            "F2": 4,
+            "F3": 4
+          },
+          "author_name_as_printed": "Rena Huang",
+          "source_version": "Fixed 7-page author-hosted manuscript",
+          "license": "unconfirmed_for_public_redistribution",
+          "version_boundary": "No explicit redistribution license identified in this PDF; publisher version-of-record byte, figure-number and layout identity not established.",
+          "conference_doi": "10.1145/3770743.3804033",
+          "conference_identity_evidence_url": "https://tsung-wei-huang.github.io/publications/"
+        }
+      ]
     },
     {
       "paper_id": "dac-2026-trace",

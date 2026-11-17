@@ -253,8 +253,18 @@
 ## SP2RINT: Spatially-Decoupled Physics-Constrained Progressive Inverse Optimization for Diffractive Optical Neural Network Training
 研究对象：光学模型训练与逆设计系统 / SP2RINT衍射光学模型训练与逆设计框架
 
-[原文来源](https://scopex-asu.github.io/files/publications/ONN_DAC2026_Gu.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+已区分三份固定来源：8页作者稿与16页arXiv v2使用Physics-Inspired长标题，7页合作者稿使用目录中的Physics-Constrained会议标题。合作者出版列表将7页稿关联到会议DOI，但未核实与出版社最终版字节、图号或排版相同。仅arXiv v2已核实CC BY 4.0；两份作者稿的原图再分发许可未确认，不移用许可。此项仅核对版本、图注页与许可边界，不代表逐图独审通过或全篇研究完成。三版F3均保留暂缓：机制示意与传输矩阵训练/投影数值示例混合，不能因无坐标轴而判定为纯非实验图。F1/F2及第三方元素也未在此项中获准公开，当前不收录SP2RINT原图。
+
+- [8页作者稿](https://scopex-asu.github.io/files/publications/ONN_DAC2026_Gu.pdf)：SP2RINT: Spatially-Decoupled Physics-Inspired ProgRessive INverse OpTimization for Scalable, PDE-Constrained Meta-Optical Neural Network Training。F1/F2/F3分别位于PDF物理页2/4/5。
+  SHA-256：`2d7fb0a954ef4fd670b204989e2cc2f0f5bb67139e633e51255e622f1bc0a215`。
+- [16页 arXiv v2](https://arxiv.org/pdf/2505.18377v2)：SP2RINT: Spatially-Decoupled Physics-Inspired ProgRessive INverse OpTimization for Scalable, PDE-Constrained Meta-Optical Neural Network Training。F1/F2/F3分别位于PDF物理页3/7/8。
+  SHA-256：`436959b85f444c52532879c8adaba8e86525e0c7f27a104be20daae1dec6a463`。
+- [7页合作者会议标题稿](https://tsung-wei-huang.github.io/papers/2026-DAC-SP2RINT.pdf)：SP2RINT: Spatially-Decoupled Physics-Constrained ProgRessive INverse OpTimization for Diffractive Optical Neural Network Training。F1/F2/F3分别位于PDF物理页2/4/4。
+  SHA-256：`e7316b48fe9fb9ed57e2710d0bdfed28d7a0da5dbebe83949bbfccb9377b7101`。
+
+[arXiv v2许可来源](https://arxiv.org/abs/2505.18377v2)链接到[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)；此许可不自动覆盖另两份稿件。[合作者出版列表](https://tsung-wei-huang.github.io/publications/)关联会议DOI `10.1145/3770743.3804033`，不是出版社最终版等同性证明。
+
+作者姓名按各PDF保留：16页v2为Zhaoran Huang，8页及7页稿为Rena Huang；不据此自动合并姓名。上述页码是各PDF物理页，不可互换。
 
 ## TRACE: Learning to Compute on Circuit Graphs
 研究对象：EDA工具与电路设计表示 / TRACE电路图表示学习模型
