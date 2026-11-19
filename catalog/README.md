@@ -14,6 +14,7 @@
 - [Continuation-Centric Computing with Arca](#reading-guide-osdi2026-arca)
 - [Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases](#reading-guide-osdi2026-bodega)
 - [DeLFS: A Decentralized Log-Structured File System for Manycores](#reading-guide-osdi2026-delfs)
+- [hS: Speculative Script Reordering at Subprocess Granularity](#reading-guide-osdi2026-hs)
 - [Mimesys: Generating Realistic Executable Testing Environments from Resource Usage Traces](#reading-guide-osdi2026-mimesys)
 <!-- source-linked-guides:end -->
 
@@ -712,11 +713,21 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 [原文来源](https://www.usenix.org/system/files/osdi26-hu-yuehao.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-osdi2026-hs"></a>
+
 ## hS: Speculative Script Reordering at Subprocess Granularity
 研究对象：运行时与调度系统 / 子进程粒度投机脚本运行时
 
 [原文来源](https://www.usenix.org/system/files/osdi26-liargkovas.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+原文链接读图指南：以下图号与物理页码固定对应 USENIX 的 18 页 OSDI 正式 PDF。按图 2 → 图 3 → 图 4 阅读，先分清系统职责，再对照具体投机执行，最后抽象单次命令实例的状态转移。
+
+- [图 2：系统职责与组织（PDF 物理第 4 页）](https://www.usenix.org/system/files/osdi26-liargkovas.pdf#page=4)。先辨认解释器与程序骨架，再沿编排器和执行器之间的联系阅读：程序如何被组织、执行如何被安排、命令实例由谁执行。将这些职责分开，有助于理解后续图中编排器快照与执行顺序为何需要并排展示。
+- [图 3：控制流、执行顺序与编排器快照（PDF 物理第 5 页）](https://www.usenix.org/system/files/osdi26-liargkovas.pdf#page=5)。命令控制流图的节点表示脚本区段；执行实例则是该区段的一次具体执行。将左侧节点与时间线中的实例、相应编排器快照对齐，不要把一个节点只对应一次执行作为前提。以 h 为例并对照第 2.2 节：首次执行缺少 g 生成的索引而误投机；重新执行后还会受到 e 写数据库的影响，第三次执行才可提交。每次重新发出的是新的实例，不能把这些尝试合并为一次执行。
+- [图 4：单次命令实例的状态与转移（PDF 物理第 6 页）](https://www.usenix.org/system/files/osdi26-liargkovas.pdf#page=6)。按箭头及其条件追踪一个实例的状态变化，再回看图 3 区分失败的旧实例与重新发出的新实例。旧实例失败后新实例最终提交，不等于同一个实例从失败变成成功。
+
+读者问题：为什么同一个 h 在左边只出现一次，时间线却反复出现？左边描述脚本的一个区段，时间线记录它的多次具体执行；依赖尚未满足或执行受到先前命令写入的影响时，投机尝试不能直接作为可提交结果。
+
+读图时把执行图中的位置理解为顺序，把状态图中的箭头理解为带条件的转移；这些示意不是性能测量，也不能仅凭例子证明正确性。本次不收实验性能图，只发布原文链接与原创说明，不复制图片或 PDF，不增加原图库图数，也不据此声称已取得原图转载许可。
 
 <a id="reading-guide-osdi2026-mimesys"></a>
 
