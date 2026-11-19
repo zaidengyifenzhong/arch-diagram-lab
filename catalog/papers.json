@@ -2231,7 +2231,7 @@
       ],
       "source_version": null,
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "原文链接读图指南：以下图号与物理页码仅对应 arXiv:2509.07158v1，标题为 Bodega: Serving Linearizable Reads Locally from Anywhere at Anytime via Roster Leases，作者为 Guanzhou Hu、Andrea C. Arpaci-Dusseau、Remzi H. Arpaci-Dusseau。该版本将实现平台称为 Vineyard；本目录保留既有会议记录，不将预印本标题、实现描述、图号或许可视为正式会议版的同一内容。\n\n建议按图 3 → 图 2 → 图 5 阅读：先定位与已有方案的区别，再理解基础租约承诺，最后看多副本如何组合。\n\n- [图 3：既有线性一致读方案的分类决策图（PDF 物理第 3 页）](https://arxiv.org/pdf/2509.07158v1#page=3)。沿分类问题比较读响应可以发生在哪里、是否依赖外部成员信息，以及写干扰带来的限制。这是方案分类视图，不是册租约拓扑图。\n- [图 2：标准双节点租约（PDF 物理第 3 页）](https://arxiv.org/pdf/2509.07158v1#page=3)。顺着消息与状态变化读：guard 建立承诺，endow 维持承诺；撤销请求可以主动发起，失联时则需等待安全到期。关注两端何时承担承诺、何时可以解除，不能把时序示意的间距当成测得的延迟。\n- [图 5：多副本册租约工作例（PDF 物理第 6 页）](https://arxiv.org/pdf/2509.07158v1#page=6)。对照图注追踪多副本间的消息与状态，把图 2 的基础承诺放回多副本组合中理解。这里展示的是工作例，不是性能曲线，也不能仅凭图例证明协议正确性。\n\n可复用的读图方法：分类图回答“方案处于什么位置”，基础时序图解释“承诺怎样建立与解除”，多副本工作例再展示“承诺怎样组合”。本次只发布原文链接与原创说明，不附图片或 PDF，不增加图库图数；arXiv v1 的许可不延伸到正式会议版，也不代表本次完成原图裁剪验收。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,
@@ -2251,7 +2251,7 @@
       ],
       "source_version": null,
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "原文链接读图指南：仅对应 [OSDI 正式 PDF 的物理第 6 页](https://www.usenix.org/system/files/osdi26-ahn.pdf#page=6)。本例适合学习两张不同视角的机制图怎样用相同编号对齐，而非从图形长度估计性能。\n\n- 图 4 与图 5 用同一套红色编号表示同一次脏页刷写。先沿图 4 读操作顺序，再按相同编号到图 5 查找每一步涉及的结构与资源；两图是同一过程的互补视角，不是两条互不相关的流程。\n- 步骤 4 可作为对照练习：在操作顺序中找到它，再到结构视图查看如何从本核当前段取得可写块并推进偏移。编号把“发生什么”与“在哪些结构上发生”连接起来。\n- 图 6 另起一套编号，解释当前段耗尽、且本核没有空闲段时如何跨核找段。先确认触发条件，再沿它自己的步骤阅读，不要把其编号接在图 4、图 5 的刷写步骤之后。\n\n图 4 的横向宽度不是实测时延；这些机制示意也不替代性能评估或正确性论证。可复用的组织方式是让操作视图与结构视图共享事件编号，再把资源不足时的处理单独展开并重新编号。\n\n权利边界：尚未核实该论文原图的转载许可；本次只链接原文并提供原创读图说明，不附图片或 PDF，不增加图库图数，也不代表整篇论文逐图研究完成。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,
