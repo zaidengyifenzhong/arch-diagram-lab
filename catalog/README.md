@@ -12,6 +12,7 @@
 以下指南链接原文并提供中文读图说明；仅链接的图不计入图库图片收录。
 
 - [Continuation-Centric Computing with Arca](#reading-guide-osdi2026-arca)
+- [RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs](#reading-guide-osdi2026-balboa)
 - [Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases](#reading-guide-osdi2026-bodega)
 - [DeLFS: A Decentralized Log-Structured File System for Manycores](#reading-guide-osdi2026-delfs)
 - [hS: Speculative Script Reordering at Subprocess Granularity](#reading-guide-osdi2026-hs)
@@ -670,11 +671,23 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 
 本次只发布原文链接与原创读图说明，不附图片或 PDF，不增加原图库图数；链接不表示已取得原图转载许可，也不代表完成整篇论文逐图研究或实验复现。
 
+<a id="reading-guide-osdi2026-balboa"></a>
+
 ## RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs
 研究对象：互连、网络接口与数据通路 / 可扩展RoCE RDMA卸载引擎
 
 [原文来源](https://www.usenix.org/system/files/osdi26-heer.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+原文链接读图指南：以下图号与物理页码仅对应 16 页的 arXiv:2507.20412v1。该预印本题名为 RoCE BALBOA: Service-enhanced Data Center RDMA for SmartNICs，与本目录保留的正式会议题名不同；不混用两个版本的图号、页码或许可。预印本作者为 Maximilian Jakob Heer、Benjamin Ramhorst、Yu Zhu、Luhao Liu、Zhiyi Hu、Jonas Dann、Gustavo Alonso，来源见 [固定 v1 记录](https://arxiv.org/abs/2507.20412v1)。
+
+建议按 F1 总览 → F2 收发流水线 → F3 支撑机制阅读：先确定服务位于何处，再追踪分组如何经过收发路径，最后回看配套模块怎样支撑这些路径。
+
+- [图 1：FPGA/RoCE 总览与示例服务槽（PDF 物理第 4 页）](https://arxiv.org/pdf/2507.20412v1#page=4)。先辨认 FPGA 与 RoCE 的整体组织，再找到示例服务槽，理解服务与网络处理路径之间的位置关系。总览图交代组织方式，不直接证明吞吐率或时延收益。
+- [图 2：Rx/Tx 分组处理流水线（PDF 物理第 5 页）](https://arxiv.org/pdf/2507.20412v1#page=5)。分开追踪接收与发送方向，按分组流向阅读处理阶段；随后回到图 1，辨认流水线在整体设计中的位置。阶段的布局用于解释处理顺序，不应当作实测耗时比例。
+- [图 3：三个配套模块与支撑机制（PDF 物理第 5 页）](https://arxiv.org/pdf/2507.20412v1#page=5)。结合全部子图阅读三个模块，先看各自承担的职责，再联系图 2 的收发处理路径。不要只挑一个子图代表整幅图，也不要把模块间联系误读为实验结果。
+
+读者练习：在图 1 中定位一个服务槽，再到图 2 追踪相关收发方向，最后用图 3 的完整子图解释其配套机制。三图依次提供整体组织、处理路径和支撑机制，示意本身不替代性能评估或正确性论证。图 4 是实测／实验图，不纳入本次非实验读图指南。
+
+版本与收录边界：固定 v1 页面所列 CC BY 4.0 许可仅用于该预印本版本，不延伸到正式会议版。本次只发布原文链接与原创说明；尚未完成本轮原图裁剪与图像验收，不附 PNG 或 PDF，不增加原图库图数，也不代表其他图已获逐图审核。
 
 <a id="reading-guide-osdi2026-bodega"></a>
 
