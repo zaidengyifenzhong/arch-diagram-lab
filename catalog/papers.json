@@ -2271,7 +2271,7 @@
       ],
       "source_version": null,
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "原文链接读图指南：以下图号与物理页码固定对应 USENIX 的 16 页 OSDI 正式 PDF。按图 1 → 图 4 → 图 5 阅读，先比较队列组织的取舍，再用同一到达示例观察锁的交接，最后辨认实现所需字段。\n\n- [图 1：单队列与本地／远程双队列的取舍（PDF 物理第 4 页）](https://www.usenix.org/system/files/osdi26-hu-yuehao.pdf#page=4)。对照早期方案怎样组织等待者，辨认单队列与分开的本地、远程队列各自带来的取舍。先记下 A–E 的到达示例，作为阅读图 4 时的共同参照。\n- [图 4：双队列与全局票号下的锁交接（PDF 物理第 6 页）](https://www.usenix.org/system/files/osdi26-hu-yuehao.pdf#page=6)。图 4 保留图 1 的 A–E 场景，在本地／远程双队列之外加入全局票号，用来说明跨队列的交接次序。把等待者、所在队列与票号对齐，追踪接下来由谁获得锁；不要仅根据队列画在上方或下方推断优先级。示例中的到达顺序和等待数字不是普遍的真实时间保证，也不是实测性能结果。\n- [图 5：锁与队列节点字段（PDF 物理第 7 页）](https://www.usenix.org/system/files/osdi26-hu-yuehao.pdf#page=7)。分别找出两个队尾指针、票号和交接字段，结合源图图注核对颜色所区分的语义。这张图放大实现结构，不是 A–E 场景的又一次回放；字段的位置与分组用于理解职责，不能当成执行时间线。\n\n读者练习：在同一 A–E 场景里，图 4 增加了哪项信息来化解跨队列的顺序问题？关键是全局票号：先保留本地／远程队列的区分，再观察票号怎样为跨队列交接提供顺序信息。可与本目录的 [Bodega 指南](#reading-guide-osdi2026-bodega)对照：FARLock 解释谁接着获得锁，Bodega 解释承诺何时建立、维持和结束。\n\n图 2、图 3 是测量图，排除在本次非实验机制读图指南之外。示例与字段图不替代性能评估或正确性证明。\n\n权利边界：尚未确认会议论文图像的再分发授权。本次仅发布原文链接与原创说明，不复制图或 PDF，不增加原图库图数，也不代表整篇论文逐图研究或实验复现完成。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,
