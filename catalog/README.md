@@ -11,6 +11,7 @@
 
 以下指南链接原文并提供中文读图说明；仅链接的图不计入图库图片收录。
 
+- [Continuation-Centric Computing with Arca](#reading-guide-osdi2026-arca)
 - [Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases](#reading-guide-osdi2026-bodega)
 - [DeLFS: A Decentralized Log-Structured File System for Manycores](#reading-guide-osdi2026-delfs)
 - [Mimesys: Generating Realistic Executable Testing Environments from Resource Usage Traces](#reading-guide-osdi2026-mimesys)
@@ -650,11 +651,22 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 
 [查看8个已收录图示条目](../gallery/papers/micro-2025-streamtensor.md)
 
+<a id="reading-guide-osdi2026-arca"></a>
+
 ## Continuation-Centric Computing with Arca
 研究对象：运行时与调度系统 / continuation中心的隔离执行运行时
 
 [原文来源](https://www.usenix.org/system/files/osdi26-srivatsan.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+原文链接读图指南：以下图号与物理页码固定对应 USENIX 的 18 页正式 PDF。作者个人页另有 17 页 PDF，不能混用两个版本的物理页号。建议先看图 1 理解函数为何分段，再看图 2 追踪 I/O 请求由谁翻译和执行。
+
+- [图 1：纯计算片段与 I/O 边界（PDF 物理第 4 页）](https://www.usenix.org/system/files/osdi26-srivatsan.pdf#page=4)。阴影区域表示纯计算片段，无阴影部分表示 I/O 操作。沿一次逻辑函数的执行寻找 I/O 边界，理解它为何被分成多个计算片段。读图问题：哪一步会把函数分段？应定位到 I/O 操作，而不是把阴影变化当成测量出的耗时差异。
+- [图 2：通用接口实现示例（PDF 物理第 5 页）](https://www.usenix.org/system/files/osdi26-srivatsan.pdf#page=5)。沿 WASI → musl/POSIX → 用户态适配器 → 内核根 effect handler → VirtIO → 云提供方追踪请求，区分接口适配、内核处理与最终由云提供方执行 I/O 的职责。虚线标示用户态与内核的边界，读图时要同时看调用路径和请求跨越的边界。图 2 是通用接口实现示例，不是对图 1 模板示例的逐步回放。
+
+把两图连起来时，可以问：“图 1 的哪一步会把函数分段？图 2 里这种请求由谁翻译、最终由谁执行？”前一张解释计算与 I/O 的划分，后一张解释请求穿过的接口与执行层次；不要假定两图中的步骤一一对应。
+
+排除说明：[图 6（PDF 物理第 13 页）](https://www.usenix.org/system/files/osdi26-srivatsan.pdf#page=13)虽外形像流程图，实际是基准计时分解。该基准直接使用提供方 API，不是图 2 的 POSIX 兼容路径，因此不把它作为本次非实验机制图的阅读对象，也不将其计时用于解释图 2 各层开销。
+
+本次只发布原文链接与原创读图说明，不附图片或 PDF，不增加原图库图数；链接不表示已取得原图转载许可，也不代表完成整篇论文逐图研究或实验复现。
 
 ## RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs
 研究对象：互连、网络接口与数据通路 / 可扩展RoCE RDMA卸载引擎
