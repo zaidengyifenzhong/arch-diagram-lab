@@ -16,6 +16,7 @@
 - [DeLFS: A Decentralized Log-Structured File System for Manycores](#reading-guide-osdi2026-delfs)
 - [hS: Speculative Script Reordering at Subprocess Granularity](#reading-guide-osdi2026-hs)
 - [Mimesys: Generating Realistic Executable Testing Environments from Resource Usage Traces](#reading-guide-osdi2026-mimesys)
+- [SBB: Eliminating Centralized Bottlenecks in Userspace Network Runtime](#reading-guide-osdi2026-sbb)
 <!-- source-linked-guides:end -->
 
 ## Target-Aware Implementation of Real Expressions
@@ -751,11 +752,23 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 [原文来源](https://www.usenix.org/system/files/osdi26-chen-jiyang.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-osdi2026-sbb"></a>
+
 ## SBB: Eliminating Centralized Bottlenecks in Userspace Network Runtime
 研究对象：运行时与调度系统 / 去中心化用户态网络运行时
 
 [原文来源](https://www.usenix.org/system/files/osdi26-hu-kang.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+原文链接读图指南：以下图号与物理页码固定对应 USENIX 的 18 页 OSDI 正式 PDF。按图 1 → 图 5 → 图 6 阅读，先比较运行时的组织方式，再辨认中断来源，最后追踪请求处理阶段。
+
+- [图 1：四种用户态网络运行时的组织方式（PDF 物理第 2 页）](https://www.usenix.org/system/files/osdi26-hu-kang.pdf#page=2)。对照四种组织方式中集中组件是否存在，辨认请求处理由哪些组件承担。这张图用于理解设计差异，不能从组件数量或布局直接推断性能收益。
+- [图 5：工作者、队列与中断来源（PDF 物理第 7 页）](https://www.usenix.org/system/files/osdi26-hu-kang.pdf#page=7)。沿工作者与队列的联系阅读，并区分两类中断：网卡负责请求到达通知，定时器用于请求处理期间的抢占。先按来源和用途理解事件，再看它与请求路径的关系，避免将到达通知与抢占当作同一种控制动作。
+- [图 6：请求处理的阶段（PDF 物理第 9 页）](https://www.usenix.org/system/files/osdi26-hu-kang.pdf#page=9)。逐阶段核对中断的启用范围：网卡中断在接收阶段启用，定时器中断仅在应用处理阶段启用。不要把某一阶段的中断状态扩展到其他阶段，也不要将两类中断混读。
+
+图 5 的事件号 2、5 与图 6 的步骤编号各自局部有效，不能按相同数字跨图对齐。读者练习：用中断语义而非编号，找出两图对应的请求阶段。可先找到“到达通知”并对应接收阶段，再找到“抢占”并对应应用处理阶段；结构图解释事件来自哪里，阶段图解释它在何时启用。
+
+排除说明：同在 PDF 物理第 7 页的图 4 是仿真结果，不纳入本次非实验机制读图指南。原文页链接包含该图，不表示它也被收录；机制示意也不能代替实验性能证据。
+
+权利边界：尚未核实论文图像的转载许可。本次只发布原文链接与原创说明，不上传图像或 PDF，不增加原图库图数，不代表整篇论文逐图研究或实验复现完成。
 
 ## VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination
 研究对象：编译器、语言与中间表示 / 虚拟张量DNN编译器
