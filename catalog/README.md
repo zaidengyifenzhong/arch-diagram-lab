@@ -4,6 +4,18 @@
 
 另61篇未收录原图，不代表所有来源与权利证据已穷尽。
 
+<!-- source-linked-guides:start -->
+<a id="source-linked-reading-guides"></a>
+
+## 原文链接读图指南
+
+以下指南链接原文并提供中文读图说明；仅链接的图不计入图库图片收录。
+
+- [Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases](#reading-guide-osdi2026-bodega)
+- [DeLFS: A Decentralized Log-Structured File System for Manycores](#reading-guide-osdi2026-delfs)
+- [Mimesys: Generating Realistic Executable Testing Environments from Resource Usage Traces](#reading-guide-osdi2026-mimesys)
+<!-- source-linked-guides:end -->
+
 ## Target-Aware Implementation of Real Expressions
 研究对象：编译器、语言与中间表示 / Chassis目标感知数值表达式编译器
 
@@ -650,6 +662,8 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 [原文来源](https://www.usenix.org/system/files/osdi26-heer.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-osdi2026-bodega"></a>
+
 ## Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases
 研究对象：分布式协议与协调构件 / roster lease复制一致性协议
 
@@ -663,6 +677,8 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 - [图 5：多副本册租约工作例（PDF 物理第 6 页）](https://arxiv.org/pdf/2509.07158v1#page=6)。对照图注追踪多副本间的消息与状态，把图 2 的基础承诺放回多副本组合中理解。这里展示的是工作例，不是性能曲线，也不能仅凭图例证明协议正确性。
 
 可复用的读图方法：分类图回答“方案处于什么位置”，基础时序图解释“承诺怎样建立与解除”，多副本工作例再展示“承诺怎样组合”。本次只发布原文链接与原创说明，不附图片或 PDF，不增加图库图数；arXiv v1 的许可不延伸到正式会议版，也不代表本次完成原图裁剪验收。
+
+<a id="reading-guide-osdi2026-delfs"></a>
 
 ## DeLFS: A Decentralized Log-Structured File System for Manycores
 研究对象：文件、存储与缓存软件 / 多核日志结构文件系统
@@ -689,6 +705,8 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 
 [原文来源](https://www.usenix.org/system/files/osdi26-liargkovas.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+
+<a id="reading-guide-osdi2026-mimesys"></a>
 
 ## Mimesys: Generating Realistic Executable Testing Environments from Resource Usage Traces
 研究对象：程序与网络分析、测试、追踪工具 / 资源轨迹驱动的可执行负载生成器
