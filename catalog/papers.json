@@ -687,7 +687,7 @@
       ],
       "source_version": null,
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "原文链接读图指南：图号与物理页码对应作者提供的7页 PDF；保留本目录既有来源和版本身份，不断言与其他分发版本字节相同。阅读时分开被模拟的 RTL／电路、GEM 的 virtual Boolean processor，以及在 GPU 上解释执行的实现。\n\n- [图3：虚拟布尔处理器的执行层（PDF物理第3页）](https://guozz.cn/publication/gemdac-25/gemdac-25.pdf#page=3)。先辨认 boomerang layer 中的位排列与布尔运算，理解 GEM 如何组织映射后的逻辑执行；这不是被模拟芯片的完整拓扑，也不是 GPU 的物理结构全图。\n- [图6(4) → 图7：从连接到编码字段（PDF物理第5页）](https://guozz.cn/publication/gemdac-25/gemdac-25.pdf#page=5)。结合 §III-E，从图6(4)的虚线连接追到图7的 boomerang folding 指令布局。正文明确 OR.B 用于旁路操作数 B，以实现这些虚线连接；图7展示的是指令布局示例，并非完整 ISA 文档。\n\n读图问题：看到图6(4)这种连接，如何找到实现它的编码字段？先确认它要求旁路 B，再在图7查找 OR.B，而不是仅凭线形猜测一个新硬件部件。\n\n简短对照：[Lotus 图1／图5指南](#reading-guide-isca-2026-lotus)追踪目标电路带时序的依赖如何落到 Cycle Delta 元数据；GEM 这里追踪连接如何落到布尔运算控制字段。两者不是同一种编码，也不能据此认定被模拟电路或执行平台相同。\n\n本条仅提供原文链接与原创说明，不上传图片或PDF，不将软件许可移用于论文图，不收实验图，不增加图库或固定样本原图数量。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,

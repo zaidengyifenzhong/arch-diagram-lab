@@ -16,6 +16,7 @@
 跨论文方法：[两张机制图怎么对照读](../docs/reading-mechanism-pairs.md)。先问两图保留了什么、改变了什么。
 
 - [Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization](#reading-guide-atc2025-voltrix)
+- [GEM: GPU-Accelerated Emulator-Inspired RTL Simulation](#reading-guide-dac-2025-gem)
 - [EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects](#reading-guide-ipdps2026-evalnet)
 - [BulletTime: Time Dilation for High-Fidelity Tracing](#reading-guide-isca-2026-bullettime)
 - [Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation](#reading-guide-isca-2026-lotus)
@@ -232,11 +233,22 @@
 [原文来源](https://kastner.ucsd.edu/wp-content/uploads/2025/06/admin/dac25-fastpath.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-dac-2025-gem"></a>
+
 ## GEM: GPU-Accelerated Emulator-Inspired RTL Simulation
 研究对象：模拟器与仿真平台 / GEM GPU宿主RTL逻辑仿真器
 
 [原文来源](https://guozz.cn/publication/gemdac-25/gemdac-25.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+原文链接读图指南：图号与物理页码对应作者提供的7页 PDF；保留本目录既有来源和版本身份，不断言与其他分发版本字节相同。阅读时分开被模拟的 RTL／电路、GEM 的 virtual Boolean processor，以及在 GPU 上解释执行的实现。
+
+- [图3：虚拟布尔处理器的执行层（PDF物理第3页）](https://guozz.cn/publication/gemdac-25/gemdac-25.pdf#page=3)。先辨认 boomerang layer 中的位排列与布尔运算，理解 GEM 如何组织映射后的逻辑执行；这不是被模拟芯片的完整拓扑，也不是 GPU 的物理结构全图。
+- [图6(4) → 图7：从连接到编码字段（PDF物理第5页）](https://guozz.cn/publication/gemdac-25/gemdac-25.pdf#page=5)。结合 §III-E，从图6(4)的虚线连接追到图7的 boomerang folding 指令布局。正文明确 OR.B 用于旁路操作数 B，以实现这些虚线连接；图7展示的是指令布局示例，并非完整 ISA 文档。
+
+读图问题：看到图6(4)这种连接，如何找到实现它的编码字段？先确认它要求旁路 B，再在图7查找 OR.B，而不是仅凭线形猜测一个新硬件部件。
+
+简短对照：[Lotus 图1／图5指南](#reading-guide-isca-2026-lotus)追踪目标电路带时序的依赖如何落到 Cycle Delta 元数据；GEM 这里追踪连接如何落到布尔运算控制字段。两者不是同一种编码，也不能据此认定被模拟电路或执行平台相同。
+
+本条仅提供原文链接与原创说明，不上传图片或PDF，不将软件许可移用于论文图，不收实验图，不增加图库或固定样本原图数量。
 
 ## MAGE: A Multi-Agent Engine for Automated RTL Code Generation
 研究对象：RTL验证、生成与修复工具 / MAGE多代理RTL代码生成与调试系统
