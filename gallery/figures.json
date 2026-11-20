@@ -4203,6 +4203,50 @@
       "attribution": "Yuhan Deng, Akshay Srivatsan, Sebastian Ingino, Francis Chua, Yasmine Mitchell, Matthew Vilaysack, Keith Winstein. Fix: externalizing network I/O in serverless computing. EuroSys 2026. DOI: https://doi.org/10.1145/3767295.3769387. Copyright 2026 held by the owner/authors. Source: https://github.com/yhdengh/yhdengh.github.io/blob/a9ee71a85c58eb48c635725d2128188649144872/files/eurosys26.pdf. Version: 16-page EuroSys 2026 PDF in author repository commit a9ee71a85c58eb48c635725d2128188649144872, blob e0850a798517208e74c585615359abaa15a5480c. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram boundaries and labels retained; no redrawing. No endorsement implied.",
       "alt_text": "Fix 图 6，PDF物理第7页：在 Fixpoint 节点中找到作业队列、工作线程内的 Scheduler、用户函数与 Fixpoint API。调度器依据 Fix 语义决定求值所需的 I/O 和计算；运行时存储保存数据，网络工作者连接节点。对照 F1，问显式依赖如何成为平台可检查的对象，而非把结构框理解为实测性能。",
       "source_note": "在 Fixpoint 节点中找到作业队列、工作线程内的 Scheduler、用户函数与 Fixpoint API。调度器依据 Fix 语义决定求值所需的 I/O 和计算；运行时存储保存数据，网络工作者连接节点。对照 F1，问显式依赖如何成为平台可检查的对象，而非把结构框理解为实测性能。 样本外补充，不计入固定100篇样本或其分类覆盖完成量。"
+    },
+    {
+      "id": "ics-2025-fused3s-F3-7fcdc00083f32567",
+      "asset": "assets/ics-2025-fused3s-F3-7fcdc00083f32567.png",
+      "paper_id": "ics-2025-fused3s",
+      "paper_short": "Fused3S · ICS 2025 · 样本外补充",
+      "paper_title": "Fused3S: Fast Sparse Attention on Tensor Cores",
+      "figure_number": 3,
+      "figure_title": "图 3",
+      "figure_type": "线程块内warp任务划分示意图",
+      "category": "非实验图",
+      "pdf_page": 7,
+      "width": 811,
+      "height": 707,
+      "source_url": "https://github.com/HPCRL/ICS2025-webpage/blob/94c712ec96716e25cdea168e8e1a6e81a16dc547/program/Proceedings_ICS25/ics25-70.pdf",
+      "source_page_url": "https://raw.githubusercontent.com/HPCRL/ICS2025-webpage/94c712ec96716e25cdea168e8e1a6e81a16dc547/program/Proceedings_ICS25/ics25-70.pdf#page=7",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Whole figure cropped from the exact conference-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram boundaries and labels retained; no redrawing.",
+      "attribution": "Zitong Li, Aparna Chandramowlishwaran. Fused3S: Fast Sparse Attention on Tensor Cores. ICS 2025. DOI: https://doi.org/10.1145/3721145.3730430. Copyright 2025 held by the owner/authors. Source: https://github.com/HPCRL/ICS2025-webpage/blob/94c712ec96716e25cdea168e8e1a6e81a16dc547/program/Proceedings_ICS25/ics25-70.pdf. Version: 15-page ICS 2025 PDF in conference repository commit 94c712ec96716e25cdea168e8e1a6e81a16dc547, blob 1ba1d4710ea0c6500912e8eecba36230b1880e72. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact conference-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram boundaries and labels retained; no redrawing. No endorsement implied.",
+      "alt_text": "Fused3S 图 3，PDF物理第7页：同一 thread block 内，上排 split-column 让各 warp 独立计算输出 tile，下排 split-row 让多个 warp 协作完成 tile。先跟踪 Q、K、V 到 S、O 的对应，再用图例区分各 warp 的寄存器与所有 warp 共享的内存；这些色块不是性能测量。",
+      "source_note": "同一 thread block 内，上排 split-column 让各 warp 独立计算输出 tile，下排 split-row 让多个 warp 协作完成 tile。先跟踪 Q、K、V 到 S、O 的对应，再用图例区分各 warp 的寄存器与所有 warp 共享的内存；这些色块不是性能测量。 样本外补充，不计入固定100篇样本或其分类覆盖完成量。"
+    },
+    {
+      "id": "ics-2025-fused3s-F4-36d1adeafdee3fdb",
+      "asset": "assets/ics-2025-fused3s-F4-36d1adeafdee3fdb.png",
+      "paper_id": "ics-2025-fused3s",
+      "paper_short": "Fused3S · ICS 2025 · 样本外补充",
+      "paper_title": "Fused3S: Fast Sparse Attention on Tensor Cores",
+      "figure_number": 4,
+      "figure_title": "图 4",
+      "figure_type": "SDDMM与SpMM寄存器重映射图",
+      "category": "非实验图",
+      "pdf_page": 8,
+      "width": 1691,
+      "height": 720,
+      "source_url": "https://github.com/HPCRL/ICS2025-webpage/blob/94c712ec96716e25cdea168e8e1a6e81a16dc547/program/Proceedings_ICS25/ics25-70.pdf",
+      "source_page_url": "https://raw.githubusercontent.com/HPCRL/ICS2025-webpage/94c712ec96716e25cdea168e8e1a6e81a16dc547/program/Proceedings_ICS25/ics25-70.pdf#page=8",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Whole figure cropped from the exact conference-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram boundaries and labels retained; no redrawing.",
+      "attribution": "Zitong Li, Aparna Chandramowlishwaran. Fused3S: Fast Sparse Attention on Tensor Cores. ICS 2025. DOI: https://doi.org/10.1145/3721145.3730430. Copyright 2025 held by the owner/authors. Source: https://github.com/HPCRL/ICS2025-webpage/blob/94c712ec96716e25cdea168e8e1a6e81a16dc547/program/Proceedings_ICS25/ics25-70.pdf. Version: 15-page ICS 2025 PDF in conference repository commit 94c712ec96716e25cdea168e8e1a6e81a16dc547, blob 1ba1d4710ea0c6500912e8eecba36230b1880e72. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact conference-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram boundaries and labels retained; no redrawing. No endorsement implied.",
+      "alt_text": "Fused3S 图 4，PDF物理第8页：左半展开 SDDMM，右半展开 SpMM；分别对照上方原始布局与下方置换后布局，追踪一个线程所取的数据如何排列。寄存器重映射服务于访存与算子布局约束，不改变目标计算；图中的编号与维度不是实测吞吐或耗时。",
+      "source_note": "左半展开 SDDMM，右半展开 SpMM；分别对照上方原始布局与下方置换后布局，追踪一个线程所取的数据如何排列。寄存器重映射服务于访存与算子布局约束，不改变目标计算；图中的编号与维度不是实测吞吐或耗时。 样本外补充，不计入固定100篇样本或其分类覆盖完成量。"
     }
   ],
   "paper_objects": [
@@ -4415,6 +4459,11 @@
       "paper_id": "eurosys-2026-fix",
       "object_group": "运行时与调度系统",
       "specific_object": "Fix无服务器计算模型与Fixpoint运行时（样本外补充）"
+    },
+    {
+      "paper_id": "ics-2025-fused3s",
+      "object_group": "矩阵与张量计算内核",
+      "specific_object": "Fused3S稀疏注意力融合GPU内核（ICS 2025样本外补充）"
     }
   ],
   "reading_guides": [
@@ -6160,7 +6209,31 @@
           "url": "https://raw.githubusercontent.com/yhdengh/yhdengh.github.io/a9ee71a85c58eb48c635725d2128188649144872/files/eurosys26.pdf#page=7"
         }
       ]
+    },
+    {
+      "paper_id": "ics-2025-fused3s",
+      "primary_object": "矩阵与张量计算内核",
+      "specific_object": "Fused3S稀疏注意力融合GPU内核（ICS 2025样本外补充）",
+      "conditional_design_advice": "先区分跨CTA/SM的工作分配、同一线程块内warp的协作及寄存器布局三个层次，再追踪任务和数据；不要把不同论文的输入和分工视为相同。",
+      "this_paper_figure_sequence": "先读固定样本 Voltrix F4/F8 的均衡目标与SM分工，再读本篇 F3（物理第7页）的warp分工与 F4（物理第8页）的寄存器布局。",
+      "source_ambiguity_or_scope": "ICS 2025样本外补充，仅收F3/F4；不增加固定100篇样本或其分类覆盖完成量。Voltrix是SpMM内核，本篇融合SDDMM、softmax和SpMM，不能据机制图比较性能或假定输入一致。",
+      "source_examples": [
+        {
+          "figure_id": "F3",
+          "pdf_pages": [
+            7
+          ],
+          "url": "https://raw.githubusercontent.com/HPCRL/ICS2025-webpage/94c712ec96716e25cdea168e8e1a6e81a16dc547/program/Proceedings_ICS25/ics25-70.pdf#page=7"
+        },
+        {
+          "figure_id": "F4",
+          "pdf_pages": [
+            8
+          ],
+          "url": "https://raw.githubusercontent.com/HPCRL/ICS2025-webpage/94c712ec96716e25cdea168e8e1a6e81a16dc547/program/Proceedings_ICS25/ics25-70.pdf#page=8"
+        }
+      ]
     }
   ],
-  "coverage_note": "当前图库收录42篇论文的189个非实验图示条目（187个原图条目及2个机制子区域／非整图）。其中固定100篇样本仍为39篇／183条；样本外补充 Assassyn、HMFS、Fix 共3篇／6张，不增加固定样本或其分类覆盖完成量。实验结果、测量照片及未分离的混合整图不纳入。"
+  "coverage_note": "当前图库收录43篇论文的191个非实验图示条目（189个原图条目及2个机制子区域／非整图）。其中固定100篇样本仍为39篇／183条；样本外补充 Assassyn、HMFS、Fix、Fused3S 共4篇／8张，不增加固定样本或其分类覆盖完成量。实验结果、测量照片及未分离的混合整图不纳入。"
 }

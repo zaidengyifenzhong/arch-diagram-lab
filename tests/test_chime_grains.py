@@ -16,5 +16,5 @@ class ChimeGrainsTests(unittest.TestCase):
      s=(R/path).read_text();self.assertIn(f['attribution'],s);self.assertIn(f['source_note'],s)
  def test_coverage_presentations(self):
   for f in ['README.md','index.html','gallery/README.md','gallery/index.html','catalog/README.md']:
-   s=(R/f).read_text();self.assertIn('189',s);self.assertIn('42',s)
-  d=json.loads((R/'gallery/scope.json').read_text());self.assertEqual(d['coverage'],{'papers':42,'entries':189,'original_figure_entries':187,'mechanism_subregions':2})
+   s=(R/f).read_text();self.assertIn('191',s);self.assertIn('43',s)
+  d=json.loads((R/'gallery/scope.json').read_text());self.assertEqual(d['coverage'],{'papers':43,'entries':191,'original_figure_entries':189,'mechanism_subregions':2})

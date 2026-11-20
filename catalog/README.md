@@ -2,7 +2,7 @@
 
 当前收录39篇论文的183个非实验图示条目（181个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。
 
-全图库另含样本外补充 [Assassyn](../gallery/papers/isca-2025-assassyn.md) 与 [HMFS（SoCC 2025）](../gallery/papers/socc-2025-hmfs.md) 及 [Fix](../gallery/papers/eurosys-2026-fix.md) 共3篇／6张，合计42篇／189条；不增加本固定样本或其分类覆盖完成量。
+全图库另含样本外补充 [Assassyn](../gallery/papers/isca-2025-assassyn.md) 与 [HMFS（SoCC 2025）](../gallery/papers/socc-2025-hmfs.md) 及 [Fix](../gallery/papers/eurosys-2026-fix.md) 、[Fused3S](../gallery/papers/ics-2025-fused3s.md) 共4篇／8张，合计43篇／191条；不增加本固定样本或其分类覆盖完成量。
 
 另61篇未收录原图，不代表所有来源与权利证据已穷尽。
 
@@ -15,6 +15,7 @@
 
 跨论文方法：[两张机制图怎么对照读](../docs/reading-mechanism-pairs.md)。先问两图保留了什么、改变了什么。
 
+- [Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization](#reading-guide-atc2025-voltrix)
 - [EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects](#reading-guide-ipdps2026-evalnet)
 - [Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation](#reading-guide-isca-2026-lotus)
 - [Continuation-Centric Computing with Arca](#reading-guide-osdi2026-arca)
@@ -181,11 +182,22 @@
 [原文来源](https://www.usenix.org/system/files/atc25-pan.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-atc2025-voltrix"></a>
+
 ## Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization
 研究对象：矩阵与张量计算内核 / Voltrix GPU稀疏矩阵乘法内核
 
 [原文来源](https://www.usenix.org/system/files/atc25-xia.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+原文链接读图指南：本指南保留固定100篇样本中的 Voltrix，图号与物理页码对应 USENIX ATC 2025 的17页正式PDF（含封面）。先问工作分配要均衡什么，再问分区怎样落到 SM 与运行中的调度协调。
+
+- [图4：CTA级工作划分（PDF物理第5页）](https://www.usenix.org/system/files/atc25-xia.pdf#page=5)。对照输出均衡、输入均衡和输入／输出共同均衡三种示意，分别追踪输入块与输出范围。不要把块数相等直接读成实测耗时相等，也不要把示意尺寸当作吞吐测量。
+- [图8：与SM对齐且避免原子操作的分区（PDF物理第9页）](https://www.usenix.org/system/files/atc25-xia.pdf#page=9)。先看(a)将输出任务展开并划定起止位置，再看(b)调度器根据剩余任务协调生产者的加载量与消费者的MMA操作数。这里讨论任务分区和执行协调，不是计时结果；图框、阶段和箭头本身不提供加速比。
+
+读图练习：为什么输入任务量接近还不足以说明输出工作量也均衡？在图4找反例，再在图8寻找调度器需要跟踪的边界。阅读本页及邻近页时，将带时间、吞吐等测量单位的评估框与机制示意分开，不把实验结果移作机制步骤。
+
+可继续对照样本外 [Fused3S F3/F4](../gallery/papers/ics-2025-fused3s.md#f3)：从CTA／SM级分区深入同一thread block内的warp任务划分和寄存器布局。Voltrix是SpMM内核，Fused3S融合SDDMM、softmax和SpMM；不假定两篇的输入、分工相同，也不以此比较性能。
+
+本次只链接Voltrix原文并提供原创说明，不上传其图片或PDF，未据此认定原图转载许可。此指南不增加固定样本的原图收录数或分类覆盖完成量。
 
 ## XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors
 研究对象：运行时与调度系统 / XRT加速器感知请求调度运行时
