@@ -4159,6 +4159,50 @@
       "attribution": "Wenhao Lv, Hao Guo, Qing Wang, Youyou Lu, Jiwu Shu. Accelerating Distributed Filesystem Metadata Service via Decoupling Directory Semantics from Metadata Indexing. SoCC 2025. DOI: https://doi.org/10.1145/3772052.3772237. Copyright 2025 held by the owner/authors. Source: https://github.com/kurodes/SoCC25-HMFS/blob/f9b0759f32aaa4b0f64c3667eb25a4134c754492/Accelerating_Distributed_Filesystem_Metadata_Service_via_Decoupling_Directory_Semantics_from_Metadata_Indexing.pdf. Version: 14-page SoCC 2025 PDF in first-author repository commit f9b0759f32aaa4b0f64c3667eb25a4134c754492, blob a49547cfe340c49fc6ad139a4c152bf3d96ab138. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram content and subfigure labels retained; no redrawing. No endorsement implied.",
       "alt_text": "HMFS 图 3，PDF物理第4页：从客户端与元数据分区进入元数据服务器，在展开区域找到 Hash Table 与 Meta Object，对照 F1 的查找和链接结构；再辨认并行 ls、分配器与并发控制。数据服务器承担文件数据，不能把元数据索引当作文件内容存储。",
       "source_note": "从客户端与元数据分区进入元数据服务器，在展开区域找到 Hash Table 与 Meta Object，对照 F1 的查找和链接结构；再辨认并行 ls、分配器与并发控制。数据服务器承担文件数据，不能把元数据索引当作文件内容存储。 SoCC 2025样本外补充，不计入固定100篇样本或其分类覆盖完成量。"
+    },
+    {
+      "id": "eurosys-2026-fix-F1-3fe29338bdc030bc",
+      "asset": "assets/eurosys-2026-fix-F1-3fe29338bdc030bc.png",
+      "paper_id": "eurosys-2026-fix",
+      "paper_short": "Fix · EuroSys 2026 · 样本外补充",
+      "paper_title": "Fix: externalizing network I/O in serverless computing",
+      "figure_number": 1,
+      "figure_title": "图 1",
+      "figure_type": "调用与数据依赖的可序列化表示图",
+      "category": "非实验图",
+      "pdf_page": 5,
+      "width": 1688,
+      "height": 444,
+      "source_url": "https://github.com/yhdengh/yhdengh.github.io/blob/a9ee71a85c58eb48c635725d2128188649144872/files/eurosys26.pdf",
+      "source_page_url": "https://raw.githubusercontent.com/yhdengh/yhdengh.github.io/a9ee71a85c58eb48c635725d2128188649144872/files/eurosys26.pdf#page=5",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram boundaries and labels retained; no redrawing.",
+      "attribution": "Yuhan Deng, Akshay Srivatsan, Sebastian Ingino, Francis Chua, Yasmine Mitchell, Matthew Vilaysack, Keith Winstein. Fix: externalizing network I/O in serverless computing. EuroSys 2026. DOI: https://doi.org/10.1145/3767295.3769387. Copyright 2026 held by the owner/authors. Source: https://github.com/yhdengh/yhdengh.github.io/blob/a9ee71a85c58eb48c635725d2128188649144872/files/eurosys26.pdf. Version: 16-page EuroSys 2026 PDF in author repository commit a9ee71a85c58eb48c635725d2128188649144872, blob e0850a798517208e74c585615359abaa15a5480c. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram boundaries and labels retained; no redrawing. No endorsement implied.",
+      "alt_text": "Fix 图 1，PDF物理第5页：先区分数据 Blob/Tree 与引用它们的 Handle，再读 Object、Ref、Thunk 和 Encode。调用及数据依赖用统一可序列化格式表达；Thunk 表示延迟计算，Strict/Shallow Encode 分别要求以求值结果的 Object/Ref 替换 Thunk。图是表示规则与示例，不是执行时间线。",
+      "source_note": "先区分数据 Blob/Tree 与引用它们的 Handle，再读 Object、Ref、Thunk 和 Encode。调用及数据依赖用统一可序列化格式表达；Thunk 表示延迟计算，Strict/Shallow Encode 分别要求以求值结果的 Object/Ref 替换 Thunk。图是表示规则与示例，不是执行时间线。 样本外补充，不计入固定100篇样本或其分类覆盖完成量。"
+    },
+    {
+      "id": "eurosys-2026-fix-F6-055dbfa5f1582b84",
+      "asset": "assets/eurosys-2026-fix-F6-055dbfa5f1582b84.png",
+      "paper_id": "eurosys-2026-fix",
+      "paper_short": "Fix · EuroSys 2026 · 样本外补充",
+      "paper_title": "Fix: externalizing network I/O in serverless computing",
+      "figure_number": 6,
+      "figure_title": "图 6",
+      "figure_type": "无服务器运行时调度与网络架构图",
+      "category": "非实验图",
+      "pdf_page": 7,
+      "width": 808,
+      "height": 474,
+      "source_url": "https://github.com/yhdengh/yhdengh.github.io/blob/a9ee71a85c58eb48c635725d2128188649144872/files/eurosys26.pdf",
+      "source_page_url": "https://raw.githubusercontent.com/yhdengh/yhdengh.github.io/a9ee71a85c58eb48c635725d2128188649144872/files/eurosys26.pdf#page=7",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram boundaries and labels retained; no redrawing.",
+      "attribution": "Yuhan Deng, Akshay Srivatsan, Sebastian Ingino, Francis Chua, Yasmine Mitchell, Matthew Vilaysack, Keith Winstein. Fix: externalizing network I/O in serverless computing. EuroSys 2026. DOI: https://doi.org/10.1145/3767295.3769387. Copyright 2026 held by the owner/authors. Source: https://github.com/yhdengh/yhdengh.github.io/blob/a9ee71a85c58eb48c635725d2128188649144872/files/eurosys26.pdf. Version: 16-page EuroSys 2026 PDF in author repository commit a9ee71a85c58eb48c635725d2128188649144872, blob e0850a798517208e74c585615359abaa15a5480c. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram boundaries and labels retained; no redrawing. No endorsement implied.",
+      "alt_text": "Fix 图 6，PDF物理第7页：在 Fixpoint 节点中找到作业队列、工作线程内的 Scheduler、用户函数与 Fixpoint API。调度器依据 Fix 语义决定求值所需的 I/O 和计算；运行时存储保存数据，网络工作者连接节点。对照 F1，问显式依赖如何成为平台可检查的对象，而非把结构框理解为实测性能。",
+      "source_note": "在 Fixpoint 节点中找到作业队列、工作线程内的 Scheduler、用户函数与 Fixpoint API。调度器依据 Fix 语义决定求值所需的 I/O 和计算；运行时存储保存数据，网络工作者连接节点。对照 F1，问显式依赖如何成为平台可检查的对象，而非把结构框理解为实测性能。 样本外补充，不计入固定100篇样本或其分类覆盖完成量。"
     }
   ],
   "paper_objects": [
@@ -4366,6 +4410,11 @@
       "paper_id": "socc-2025-hmfs",
       "object_group": "文件、存储与缓存软件",
       "specific_object": "HMFS分布式文件系统元数据服务（SoCC 2025样本外补充）"
+    },
+    {
+      "paper_id": "eurosys-2026-fix",
+      "object_group": "运行时与调度系统",
+      "specific_object": "Fix无服务器计算模型与Fixpoint运行时（样本外补充）"
     }
   ],
   "reading_guides": [
@@ -6087,7 +6136,31 @@
           "url": "https://raw.githubusercontent.com/kurodes/SoCC25-HMFS/f9b0759f32aaa4b0f64c3667eb25a4134c754492/Accelerating_Distributed_Filesystem_Metadata_Service_via_Decoupling_Directory_Semantics_from_Metadata_Indexing.pdf#page=4"
         }
       ]
+    },
+    {
+      "paper_id": "eurosys-2026-fix",
+      "primary_object": "运行时与调度系统",
+      "specific_object": "Fix无服务器计算模型与Fixpoint运行时（样本外补充）",
+      "conditional_design_advice": "先找调用及数据依赖如何表示，再找谁解释这些对象并安排 I/O；区分表示图与运行时结构图，不从箭头推断性能。",
+      "this_paper_figure_sequence": "F1（物理第5页）读可序列化的调用和依赖；F6（物理第7页）定位解释这些对象的调度器及网络工作者。",
+      "source_ambiguity_or_scope": "固定100篇样本外补充，不计入样本或其分类覆盖完成量。仅收 F1/F6，F7 等实验图不收。Arca 的 effects 接口与 Fix 的依赖表示可对照阅读，但不是同一实现。",
+      "source_examples": [
+        {
+          "figure_id": "F1",
+          "pdf_pages": [
+            5
+          ],
+          "url": "https://raw.githubusercontent.com/yhdengh/yhdengh.github.io/a9ee71a85c58eb48c635725d2128188649144872/files/eurosys26.pdf#page=5"
+        },
+        {
+          "figure_id": "F6",
+          "pdf_pages": [
+            7
+          ],
+          "url": "https://raw.githubusercontent.com/yhdengh/yhdengh.github.io/a9ee71a85c58eb48c635725d2128188649144872/files/eurosys26.pdf#page=7"
+        }
+      ]
     }
   ],
-  "coverage_note": "当前图库收录41篇论文的187个非实验图示条目（185个原图条目及2个机制子区域／非整图）。其中固定100篇样本仍为39篇／183条；样本外补充 Assassyn、HMFS 共2篇／4张，不增加固定样本或其分类覆盖完成量。实验结果、测量照片及未分离的混合整图不纳入。"
+  "coverage_note": "当前图库收录42篇论文的189个非实验图示条目（187个原图条目及2个机制子区域／非整图）。其中固定100篇样本仍为39篇／183条；样本外补充 Assassyn、HMFS、Fix 共3篇／6张，不增加固定样本或其分类覆盖完成量。实验结果、测量照片及未分离的混合整图不纳入。"
 }
