@@ -17,6 +17,7 @@
 
 - [Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization](#reading-guide-atc2025-voltrix)
 - [GEM: GPU-Accelerated Emulator-Inspired RTL Simulation](#reading-guide-dac-2025-gem)
+- [PacQ: A SIMT Microarchitecture for Efficient Dataflow in Hyper-asymmetric GEMMs](#reading-guide-dac-2025-pacq)
 - [SP2RINT: Spatially-Decoupled Physics-Constrained Progressive Inverse Optimization for Diffractive Optical Neural Network Training](#reading-guide-dac-2026-sp2rint)
 - [EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects](#reading-guide-ipdps2026-evalnet)
 - [BulletTime: Time Dilation for High-Fidelity Tracing](#reading-guide-isca-2026-bullettime)
@@ -260,10 +261,23 @@
 
 [查看2个已收录图示条目](../gallery/papers/dac-2025-mage.md)
 
+<a id="reading-guide-dac-2025-pacq"></a>
+
 ## PacQ: A SIMT Microarchitecture for Efficient Dataflow in Hyper-asymmetric GEMMs
 研究对象：CPU/GPU处理器与执行构件 / PacQ低比特GEMM SIMT微架构
 
 [原文来源](https://arxiv.org/pdf/2502.18627v1)
+原文链接读图指南：独立使用 arXiv:2502.18627v1 的图号与物理页，保留既有会议身份，不断言与会议版相同。[F3／F4（PDF物理第3页）](https://arxiv.org/pdf/2502.18627v1#page=3)结合[该版 §III](https://arxiv.org/html/2502.18627v1#S3)阅读。
+
+- F3(c)先分两层：左侧块间调取是 weight-stationary，右侧块内计算是 output-stationary，不能把整个基线概括成同一种驻留方式。
+- F4沿用 F3 的 tile 大小。(a)(b) 的 P(B4)_k 把权重 B 沿输入特征／缩并维 k 打包；(a)这个例子需要4次 A 取数。(c) 的 P(B4)_n 则沿输出特征 n 打包，复用已取入的激活 A。§III 另说明方案将 tile movement 与 tile computation 都采用 output-stationary；这项整体数据流选择不能说成 F4(c)单独画出的循环。
+
+对照已有 [Fused3S F3](../gallery/papers/ics-2025-fused3s.md#f3)（[正式 PDF物理第7页](https://hpcrl.github.io/ICS2025-webpage/program/Proceedings_ICS25/ics25-70.pdf#page=7)）：split-column 让各 warp 独立计算不同的 S／O 输出分块；split-row 让多个 warp 协作同一块并汇总部分结果。这改变的是线程块内工作分配，不是 INT 权重打包，也不是 PacQ 的同一硬件实现。
+
+读图问题：变的是操作数布局和复用，还是输出分块的责任与归约？在 PacQ F4 追 B 的打包维和 A 的复用；在 Fused3S F3 追谁负责同一输出块、部分结果是否需要汇总。不要仅凭两图都有矩阵块就认定机制相同，或从示意推断性能。
+
+arXiv v1 标注的是非独占分发许可，不据此转载论文图。本条仅提供原文链接，不嵌图、不上传图片或PDF，不收实验图，图库与固定样本计数不变。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## ReChisel: Effective Automatic Chisel Code Generation by LLM with Reflection

@@ -732,7 +732,7 @@
       ],
       "source_version": "2502.18627v1",
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "原文链接读图指南：独立使用 arXiv:2502.18627v1 的图号与物理页，保留既有会议身份，不断言与会议版相同。[F3／F4（PDF物理第3页）](https://arxiv.org/pdf/2502.18627v1#page=3)结合[该版 §III](https://arxiv.org/html/2502.18627v1#S3)阅读。\n\n- F3(c)先分两层：左侧块间调取是 weight-stationary，右侧块内计算是 output-stationary，不能把整个基线概括成同一种驻留方式。\n- F4沿用 F3 的 tile 大小。(a)(b) 的 P(B4)_k 把权重 B 沿输入特征／缩并维 k 打包；(a)这个例子需要4次 A 取数。(c) 的 P(B4)_n 则沿输出特征 n 打包，复用已取入的激活 A。§III 另说明方案将 tile movement 与 tile computation 都采用 output-stationary；这项整体数据流选择不能说成 F4(c)单独画出的循环。\n\n对照已有 [Fused3S F3](../gallery/papers/ics-2025-fused3s.md#f3)（[正式 PDF物理第7页](https://hpcrl.github.io/ICS2025-webpage/program/Proceedings_ICS25/ics25-70.pdf#page=7)）：split-column 让各 warp 独立计算不同的 S／O 输出分块；split-row 让多个 warp 协作同一块并汇总部分结果。这改变的是线程块内工作分配，不是 INT 权重打包，也不是 PacQ 的同一硬件实现。\n\n读图问题：变的是操作数布局和复用，还是输出分块的责任与归约？在 PacQ F4 追 B 的打包维和 A 的复用；在 Fused3S F3 追谁负责同一输出块、部分结果是否需要汇总。不要仅凭两图都有矩阵块就认定机制相同，或从示意推断性能。\n\narXiv v1 标注的是非独占分发许可，不据此转载论文图。本条仅提供原文链接，不嵌图、不上传图片或PDF，不收实验图，图库与固定样本计数不变。\n\n来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,
