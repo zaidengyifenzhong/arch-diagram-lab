@@ -43,3 +43,15 @@ class CatalogIndexTests(unittest.TestCase):
         target = urlsplit(link)
         self.assertEqual(target.scheme, 'https')
         self.assertIn(f'<a id="{target.fragment}"></a>\n\n## 原文链接读图指南', (ROOT / 'catalog/README.md').read_text())
+
+    def test_method_page_navigation(self):
+        catalog = (ROOT / 'catalog/README.md').read_text()
+        path = ROOT / 'docs/reading-mechanism-pairs.md'
+        self.assertIn('](../docs/reading-mechanism-pairs.md)', catalog)
+        text = path.read_text()
+        targets = re.findall(r'\]\(\.\./catalog/README.md#([^)]*)\)', text)
+        self.assertEqual(set(targets), {'source-linked-reading-guides',
+                         'reading-guide-osdi2026-delfs', 'reading-guide-osdi2026-sbb',
+                         'reading-guide-osdi2026-farlock'})
+        for target in targets:
+            self.assertEqual(catalog.count(f'<a id="{target}"></a>'), 1)

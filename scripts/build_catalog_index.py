@@ -16,7 +16,8 @@ def render(text, papers):
     guides = [p for p in papers if p.get('source_note', '').startswith('原文链接读图指南')]
     lines = [START, '<a id="source-linked-reading-guides"></a>', '',
              '## 原文链接读图指南', '',
-             '以下指南链接原文并提供中文读图说明；仅链接的图不计入图库图片收录。', '']
+             '以下指南链接原文并提供中文读图说明；仅链接的图不计入图库图片收录。', '',
+             '跨论文方法：[两张机制图怎么对照读](../docs/reading-mechanism-pairs.md)。先问两图保留了什么、改变了什么。', '']
     for paper in guides:
         anchor = 'reading-guide-' + paper['paper_id']
         heading = '## ' + paper['title'] + '\n'
