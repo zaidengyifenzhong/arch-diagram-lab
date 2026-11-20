@@ -29,6 +29,7 @@
 - [hS: Speculative Script Reordering at Subprocess Granularity](#reading-guide-osdi2026-hs)
 - [Mimesys: Generating Realistic Executable Testing Environments from Resource Usage Traces](#reading-guide-osdi2026-mimesys)
 - [SBB: Eliminating Centralized Bottlenecks in Userspace Network Runtime](#reading-guide-osdi2026-sbb)
+- [VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination](#reading-guide-osdi2026-vtc)
 <!-- source-linked-guides:end -->
 
 ## Target-Aware Implementation of Real Expressions
@@ -880,9 +881,20 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 
 权利边界：尚未核实论文图像的转载许可。本次只发布原文链接与原创说明，不上传图像或 PDF，不增加原图库图数，不代表整篇论文逐图研究或实验复现完成。
 
+<a id="reading-guide-osdi2026-vtc"></a>
+
 ## VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination
 研究对象：编译器、语言与中间表示 / 虚拟张量DNN编译器
 
 [原文来源](https://www.usenix.org/system/files/osdi26-hu-muyan.pdf)
+原文链接读图指南：以 USENIX 正式18页 PDF 为主，以下物理页码含封面；保留目录原有来源与许可标签。
+
+- [F6 → F7(b)（物理第9页）](https://www.usenix.org/system/files/osdi26-hu-muyan.pdf#page=9)：先从 F6 的计算图转到虚拟张量机会图（VTOG）。节点是张量，候选边 u→v 表示 u 可成为 v 的虚拟张量；不是已经选定的实现。F7(b)另用一组冲突示例：边1与2可共存，边3分别与两者冲突，不能把它接成 F6 的下一步执行。
+- [F8（物理第10页）](https://www.usenix.org/system/files/osdi26-hu-muyan.pdf#page=10)：回到 F6 的例子，比较三个合法的 points-to 策略，而非算法已经选中的结果。策略3没有边，表示全部张量保留物理表示；K Cache 是输入，在这些策略中都保持物理表示。
+
+读图练习：从候选出边到兼容选择，为什么没有边不等于没有张量或程序没有依赖？这里选择的是虚拟指向关系；没有选择这种关系，张量仍可存放于物理内存，原计算图的依赖也没有因此消失。合法策略与最终性能选择是两个问题。
+
+版本对照：[arXiv:2604.09558v2 §5](https://arxiv.org/html/2604.09558v2#S5)中相应内容为 F7／F8／F9。只对照候选、冲突与合法策略的语义，不沿用正式版图号、页码或假定几何布局相同。本条不提取或上传任何图，不重试旧候选，图库计数不变。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
