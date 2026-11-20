@@ -185,7 +185,9 @@
     "arxiv-2504.03732v4-sage-F11-42927f57a2dcfaf8",
     "arxiv-2504.03732v4-sage-F12-92c826d14ac38d59",
     "isca-2025-assassyn-F9-23bf8e60dca171d9",
-    "isca-2025-assassyn-F10-78eb47fb1dd25852"
+    "isca-2025-assassyn-F10-78eb47fb1dd25852",
+    "socc-2025-hmfs-F1-a0ad5e8b02b6fc1f",
+    "socc-2025-hmfs-F3-746a3cf5aea89e93"
   ],
   "excluded_content": "Experimental results, measurement photographs and unresolved mixed figures are outside this release. Future additions need independent scope and rights clearance.",
   "approved_subregions": [
@@ -216,9 +218,9 @@
     "ipdps2026-uctrace-F3-1bcd9130beee896a"
   ],
   "coverage": {
-    "papers": 40,
-    "entries": 185,
-    "original_figure_entries": 183,
+    "papers": 41,
+    "entries": 187,
+    "original_figure_entries": 185,
     "mechanism_subregions": 2
   },
   "supplemental_papers": [
@@ -228,6 +230,14 @@
       "figure_numbers": [
         9,
         10
+      ]
+    },
+    {
+      "paper_id": "socc-2025-hmfs",
+      "fixed_100_sample": false,
+      "figure_numbers": [
+        1,
+        3
       ]
     }
   ]

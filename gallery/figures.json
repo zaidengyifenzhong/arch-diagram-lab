@@ -4115,6 +4115,50 @@
       "attribution": "Jian Weng, Boyang Han, Derui Gao, Ruijie Gao, Wanning Zhang, An Zhong, Ceyu Xu, Jihao Xin, Yangzhixin Luo, Lisa Wu Wills, Marco Canini. Assassyn: A Unified Abstraction for Architectural Simulation and Implementation. ISCA 2025. DOI: https://doi.org/10.1145/3695053.3731004. Source: https://github.com/were/were.github.io/blob/2b510990e04d5a7ba213af6c21049b303869dd56/pdfs/isca25-18.pdf. Version: 16-page ISCA 2025 PDF in author repository commit 2b510990e04d5a7ba213af6c21049b303869dd56, blob 8623bdf88f94c8b9584042b4c60eb7fd713d5f9c. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all subfigure labels and annotations retained; figure content unchanged. No endorsement implied.",
       "alt_text": "Assassyn 图 10，物理第8页：F10 展示生成的 SystemVerilog RTL：stage 执行逻辑配合事件计数器、寄存器读写选择与 FIFO stage buffer。它实现硬件语义，不是运行 Rust 仿真器的平台；四个子图分别展开这些结构。",
       "source_note": "F10 展示生成的 SystemVerilog RTL：stage 执行逻辑配合事件计数器、寄存器读写选择与 FIFO stage buffer。它实现硬件语义，不是运行 Rust 仿真器的平台；四个子图分别展开这些结构。"
+    },
+    {
+      "id": "socc-2025-hmfs-F1-a0ad5e8b02b6fc1f",
+      "asset": "assets/socc-2025-hmfs-F1-a0ad5e8b02b6fc1f.png",
+      "paper_id": "socc-2025-hmfs",
+      "paper_short": "HMFS · SoCC 2025 · 样本外补充",
+      "paper_title": "Accelerating Distributed Filesystem Metadata Service via Decoupling Directory Semantics from Metadata Indexing",
+      "figure_number": 1,
+      "figure_title": "图 1",
+      "figure_type": "目录语义与元数据索引解耦示意图",
+      "category": "非实验图",
+      "pdf_page": 3,
+      "width": 804,
+      "height": 327,
+      "source_url": "https://github.com/kurodes/SoCC25-HMFS/blob/f9b0759f32aaa4b0f64c3667eb25a4134c754492/Accelerating_Distributed_Filesystem_Metadata_Service_via_Decoupling_Directory_Semantics_from_Metadata_Indexing.pdf",
+      "source_page_url": "https://raw.githubusercontent.com/kurodes/SoCC25-HMFS/f9b0759f32aaa4b0f64c3667eb25a4134c754492/Accelerating_Distributed_Filesystem_Metadata_Service_via_Decoupling_Directory_Semantics_from_Metadata_Indexing.pdf#page=3",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram content and subfigure labels retained; no redrawing.",
+      "attribution": "Wenhao Lv, Hao Guo, Qing Wang, Youyou Lu, Jiwu Shu. Accelerating Distributed Filesystem Metadata Service via Decoupling Directory Semantics from Metadata Indexing. SoCC 2025. DOI: https://doi.org/10.1145/3772052.3772237. Copyright 2025 held by the owner/authors. Source: https://github.com/kurodes/SoCC25-HMFS/blob/f9b0759f32aaa4b0f64c3667eb25a4134c754492/Accelerating_Distributed_Filesystem_Metadata_Service_via_Decoupling_Directory_Semantics_from_Metadata_Indexing.pdf. Version: 14-page SoCC 2025 PDF in first-author repository commit f9b0759f32aaa4b0f64c3667eb25a4134c754492, blob a49547cfe340c49fc6ad139a4c152bf3d96ab138. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram content and subfigure labels retained; no redrawing. No endorsement implied.",
+      "alt_text": "HMFS 图 1，PDF物理第3页：沿同一目录中的文件对照 ls 与 stat：有序索引用范围查询支持目录枚举；HMFS 将单项查找交给哈希索引，将目录枚举交给元数据对象间的显式链接。图中的箭头表示查找或遍历关系，不是性能测量。",
+      "source_note": "沿同一目录中的文件对照 ls 与 stat：有序索引用范围查询支持目录枚举；HMFS 将单项查找交给哈希索引，将目录枚举交给元数据对象间的显式链接。图中的箭头表示查找或遍历关系，不是性能测量。 SoCC 2025样本外补充，不计入固定100篇样本或其分类覆盖完成量。"
+    },
+    {
+      "id": "socc-2025-hmfs-F3-746a3cf5aea89e93",
+      "asset": "assets/socc-2025-hmfs-F3-746a3cf5aea89e93.png",
+      "paper_id": "socc-2025-hmfs",
+      "paper_short": "HMFS · SoCC 2025 · 样本外补充",
+      "paper_title": "Accelerating Distributed Filesystem Metadata Service via Decoupling Directory Semantics from Metadata Indexing",
+      "figure_number": 3,
+      "figure_title": "图 3",
+      "figure_type": "分布式文件系统元数据服务架构图",
+      "category": "非实验图",
+      "pdf_page": 4,
+      "width": 808,
+      "height": 351,
+      "source_url": "https://github.com/kurodes/SoCC25-HMFS/blob/f9b0759f32aaa4b0f64c3667eb25a4134c754492/Accelerating_Distributed_Filesystem_Metadata_Service_via_Decoupling_Directory_Semantics_from_Metadata_Indexing.pdf",
+      "source_page_url": "https://raw.githubusercontent.com/kurodes/SoCC25-HMFS/f9b0759f32aaa4b0f64c3667eb25a4134c754492/Accelerating_Distributed_Filesystem_Metadata_Service_via_Decoupling_Directory_Semantics_from_Metadata_Indexing.pdf#page=4",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram content and subfigure labels retained; no redrawing.",
+      "attribution": "Wenhao Lv, Hao Guo, Qing Wang, Youyou Lu, Jiwu Shu. Accelerating Distributed Filesystem Metadata Service via Decoupling Directory Semantics from Metadata Indexing. SoCC 2025. DOI: https://doi.org/10.1145/3772052.3772237. Copyright 2025 held by the owner/authors. Source: https://github.com/kurodes/SoCC25-HMFS/blob/f9b0759f32aaa4b0f64c3667eb25a4134c754492/Accelerating_Distributed_Filesystem_Metadata_Service_via_Decoupling_Directory_Semantics_from_Metadata_Indexing.pdf. Version: 14-page SoCC 2025 PDF in first-author repository commit f9b0759f32aaa4b0f64c3667eb25a4134c754492, blob a49547cfe340c49fc6ad139a4c152bf3d96ab138. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all diagram content and subfigure labels retained; no redrawing. No endorsement implied.",
+      "alt_text": "HMFS 图 3，PDF物理第4页：从客户端与元数据分区进入元数据服务器，在展开区域找到 Hash Table 与 Meta Object，对照 F1 的查找和链接结构；再辨认并行 ls、分配器与并发控制。数据服务器承担文件数据，不能把元数据索引当作文件内容存储。",
+      "source_note": "从客户端与元数据分区进入元数据服务器，在展开区域找到 Hash Table 与 Meta Object，对照 F1 的查找和链接结构；再辨认并行 ls、分配器与并发控制。数据服务器承担文件数据，不能把元数据索引当作文件内容存储。 SoCC 2025样本外补充，不计入固定100篇样本或其分类覆盖完成量。"
     }
   ],
   "paper_objects": [
@@ -4317,6 +4361,11 @@
       "paper_id": "isca-2025-assassyn",
       "object_group": "编译器、语言与中间表示",
       "specific_object": "Assassyn统一硬件抽象与仿真／RTL代码生成工具链"
+    },
+    {
+      "paper_id": "socc-2025-hmfs",
+      "object_group": "文件、存储与缓存软件",
+      "specific_object": "HMFS分布式文件系统元数据服务（SoCC 2025样本外补充）"
     }
   ],
   "reading_guides": [
@@ -6014,7 +6063,31 @@
           "url": "https://raw.githubusercontent.com/were/were.github.io/2b510990e04d5a7ba213af6c21049b303869dd56/pdfs/isca25-18.pdf#page=8"
         }
       ]
+    },
+    {
+      "paper_id": "socc-2025-hmfs",
+      "primary_object": "文件、存储与缓存软件",
+      "specific_object": "HMFS分布式文件系统元数据服务（SoCC 2025样本外补充）",
+      "conditional_design_advice": "索引承担单项查找而另一结构保存目录关系时，可先沿同一组文件追踪两类操作，再把结构定位到整体服务中；示意箭头不说明实测延迟。",
+      "this_paper_figure_sequence": "F1（物理第3页）对照目录枚举 ls 与元数据单项查找 stat；F3（物理第4页）定位元数据服务器内的哈希表和对象链接。",
+      "source_ambiguity_or_scope": "SoCC 2025并非固定样本会议；本篇仅作100篇之外的补充，不计入该样本或其分类覆盖完成量。只收录 F1/F3，实验 F2 排除。",
+      "source_examples": [
+        {
+          "figure_id": "F1",
+          "pdf_pages": [
+            3
+          ],
+          "url": "https://raw.githubusercontent.com/kurodes/SoCC25-HMFS/f9b0759f32aaa4b0f64c3667eb25a4134c754492/Accelerating_Distributed_Filesystem_Metadata_Service_via_Decoupling_Directory_Semantics_from_Metadata_Indexing.pdf#page=3"
+        },
+        {
+          "figure_id": "F3",
+          "pdf_pages": [
+            4
+          ],
+          "url": "https://raw.githubusercontent.com/kurodes/SoCC25-HMFS/f9b0759f32aaa4b0f64c3667eb25a4134c754492/Accelerating_Distributed_Filesystem_Metadata_Service_via_Decoupling_Directory_Semantics_from_Metadata_Indexing.pdf#page=4"
+        }
+      ]
     }
   ],
-  "coverage_note": "当前图库收录40篇论文的185个非实验图示条目（183个原图条目及2个机制子区域／非整图）。其中固定100篇样本仍为39篇／183条；样本外补充 Assassyn 1篇／2张，不增加固定样本完成数。实验结果、测量照片及未分离的混合整图不纳入。"
+  "coverage_note": "当前图库收录41篇论文的187个非实验图示条目（185个原图条目及2个机制子区域／非整图）。其中固定100篇样本仍为39篇／183条；样本外补充 Assassyn、HMFS 共2篇／4张，不增加固定样本或其分类覆盖完成量。实验结果、测量照片及未分离的混合整图不纳入。"
 }
