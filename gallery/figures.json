@@ -4071,6 +4071,50 @@
       "attribution": "Nika Mansouri Ghiasi, Talu Güloglu, Harun Mustafa, Can Firtina, Konstantina Koliogeorgi, Konstantinos Kanellopoulos, Haiyu Mao, Rakesh Nadig, Mohammad Sadrosadati, Jisung Park, and Onur Mutlu. SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis. arXiv:2504.03732v4, 22 January 2026. Source: https://arxiv.org/abs/2504.03732v4. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped from exact version PDF and rasterized at 240 dpi; main caption excluded, diagram content unchanged. No endorsement implied.",
       "alt_text": "图 12：基因分析加速器集成方案对比图。SAGe · arXiv v4，PDF 第 10 页。",
       "source_note": "并列展示独立总线设备、与分析系统同芯片以及 SSD 内部集成三种 SAGe 部署。 不同系统边界体现设备之间的数据流和硬件放置选择。 机制或架构示意，非实测性能结果；具体效果需阅读论文评估部分。 固定arXiv版本，不声称与出版社版一致；仅收录指定图，不代表其余图已审核或可再分发。"
+    },
+    {
+      "id": "isca-2025-assassyn-F9-23bf8e60dca171d9",
+      "asset": "assets/isca-2025-assassyn-F9-23bf8e60dca171d9.png",
+      "paper_id": "isca-2025-assassyn",
+      "paper_short": "Assassyn · ISCA 2025",
+      "paper_title": "Assassyn: A Unified Abstraction for Architectural Simulation and Implementation",
+      "figure_number": 9,
+      "figure_title": "图 9",
+      "figure_type": "周期精确仿真调度与提交机制图",
+      "category": "非实验图",
+      "pdf_page": 8,
+      "width": 674,
+      "height": 930,
+      "source_url": "https://github.com/were/were.github.io/blob/2b510990e04d5a7ba213af6c21049b303869dd56/pdfs/isca25-18.pdf",
+      "source_page_url": "https://raw.githubusercontent.com/were/were.github.io/2b510990e04d5a7ba213af6c21049b303869dd56/pdfs/isca25-18.pdf#page=8",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all subfigure labels and annotations retained; figure content unchanged.",
+      "attribution": "Jian Weng, Boyang Han, Derui Gao, Ruijie Gao, Wanning Zhang, An Zhong, Ceyu Xu, Jihao Xin, Yangzhixin Luo, Lisa Wu Wills, Marco Canini. Assassyn: A Unified Abstraction for Architectural Simulation and Implementation. ISCA 2025. DOI: https://doi.org/10.1145/3695053.3731004. Source: https://github.com/were/were.github.io/blob/2b510990e04d5a7ba213af6c21049b303869dd56/pdfs/isca25-18.pdf. Version: 16-page ISCA 2025 PDF in author repository commit 2b510990e04d5a7ba213af6c21049b303869dd56, blob 8623bdf88f94c8b9584042b4c60eb7fd713d5f9c. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all subfigure labels and annotations retained; figure content unchanged. No endorsement implied.",
+      "alt_text": "Assassyn 图 9，物理第8页：F9 展示生成的 Rust 周期精确仿真器：先按拓扑顺序执行 stage，再提交寄存器写入。wait_until 为假时事件不出队；待写值到后半周期才生效。这是调度与提交机制，不是测量时间线。",
+      "source_note": "F9 展示生成的 Rust 周期精确仿真器：先按拓扑顺序执行 stage，再提交寄存器写入。wait_until 为假时事件不出队；待写值到后半周期才生效。这是调度与提交机制，不是测量时间线。"
+    },
+    {
+      "id": "isca-2025-assassyn-F10-78eb47fb1dd25852",
+      "asset": "assets/isca-2025-assassyn-F10-78eb47fb1dd25852.png",
+      "paper_id": "isca-2025-assassyn",
+      "paper_short": "Assassyn · ISCA 2025",
+      "paper_title": "Assassyn: A Unified Abstraction for Architectural Simulation and Implementation",
+      "figure_number": 10,
+      "figure_title": "图 10",
+      "figure_type": "RTL阶段事件与存储结构图",
+      "category": "非实验图",
+      "pdf_page": 8,
+      "width": 674,
+      "height": 1141,
+      "source_url": "https://github.com/were/were.github.io/blob/2b510990e04d5a7ba213af6c21049b303869dd56/pdfs/isca25-18.pdf",
+      "source_page_url": "https://raw.githubusercontent.com/were/were.github.io/2b510990e04d5a7ba213af6c21049b303869dd56/pdfs/isca25-18.pdf#page=8",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all subfigure labels and annotations retained; figure content unchanged.",
+      "attribution": "Jian Weng, Boyang Han, Derui Gao, Ruijie Gao, Wanning Zhang, An Zhong, Ceyu Xu, Jihao Xin, Yangzhixin Luo, Lisa Wu Wills, Marco Canini. Assassyn: A Unified Abstraction for Architectural Simulation and Implementation. ISCA 2025. DOI: https://doi.org/10.1145/3695053.3731004. Source: https://github.com/were/were.github.io/blob/2b510990e04d5a7ba213af6c21049b303869dd56/pdfs/isca25-18.pdf. Version: 16-page ISCA 2025 PDF in author repository commit 2b510990e04d5a7ba213af6c21049b303869dd56, blob 8623bdf88f94c8b9584042b4c60eb7fd713d5f9c. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all subfigure labels and annotations retained; figure content unchanged. No endorsement implied.",
+      "alt_text": "Assassyn 图 10，物理第8页：F10 展示生成的 SystemVerilog RTL：stage 执行逻辑配合事件计数器、寄存器读写选择与 FIFO stage buffer。它实现硬件语义，不是运行 Rust 仿真器的平台；四个子图分别展开这些结构。",
+      "source_note": "F10 展示生成的 SystemVerilog RTL：stage 执行逻辑配合事件计数器、寄存器读写选择与 FIFO stage buffer。它实现硬件语义，不是运行 Rust 仿真器的平台；四个子图分别展开这些结构。"
     }
   ],
   "paper_objects": [
@@ -4268,6 +4312,11 @@
       "paper_id": "hpca-2026-sage",
       "object_group": "专用加速器与可重构/存内计算平台",
       "specific_object": "SAGe基因组数据解压加速平台"
+    },
+    {
+      "paper_id": "isca-2025-assassyn",
+      "object_group": "编译器、语言与中间表示",
+      "specific_object": "Assassyn统一硬件抽象与仿真／RTL代码生成工具链"
     }
   ],
   "reading_guides": [
@@ -5941,7 +5990,31 @@
           "url": "https://arxiv.org/pdf/2504.03732v4#page=10"
         }
       ]
+    },
+    {
+      "paper_id": "isca-2025-assassyn",
+      "primary_object": "编译器、语言与中间表示",
+      "specific_object": "Assassyn统一硬件抽象与仿真／RTL代码生成工具链",
+      "conditional_design_advice": "同一硬件语义有软件仿真和RTL实现时，可分别追踪事件何时消费、寄存器何时生效及缓冲如何保存数据，不把两种执行载体混为一谈。",
+      "this_paper_figure_sequence": "F9 先读一个周期内的 stage 执行与寄存器提交；F10 再找事件计数器、寄存器和 FIFO 的 RTL 实现。",
+      "source_ambiguity_or_scope": "固定100篇样本外补充；仅收录精确作者仓库版本的 F9/F10（物理第8页）。F9 是生成的 Rust 仿真器，F10 是生成的 SystemVerilog RTL，后者不是运行前者的平台。",
+      "source_examples": [
+        {
+          "figure_id": "F9",
+          "pdf_pages": [
+            8
+          ],
+          "url": "https://raw.githubusercontent.com/were/were.github.io/2b510990e04d5a7ba213af6c21049b303869dd56/pdfs/isca25-18.pdf#page=8"
+        },
+        {
+          "figure_id": "F10",
+          "pdf_pages": [
+            8
+          ],
+          "url": "https://raw.githubusercontent.com/were/were.github.io/2b510990e04d5a7ba213af6c21049b303869dd56/pdfs/isca25-18.pdf#page=8"
+        }
+      ]
     }
   ],
-  "coverage_note": "当前收录39篇论文的183个非实验图示条目（181个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。"
+  "coverage_note": "当前图库收录40篇论文的185个非实验图示条目（183个原图条目及2个机制子区域／非整图）。其中固定100篇样本仍为39篇／183条；样本外补充 Assassyn 1篇／2张，不增加固定样本完成数。实验结果、测量照片及未分离的混合整图不纳入。"
 }

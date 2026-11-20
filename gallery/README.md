@@ -1,6 +1,6 @@
 # 体系结构与系统非实验原图图库
 
-**39篇 / 183个非实验图示条目（181个原图条目＋2个机制子区域／非整图）**。仅收录系统抽象、架构、机制、数据/控制流、示意时序与形式定义；排除实验结果、测量照片和未分离的混合图。
+**40篇 / 185个非实验图示条目（183个原图条目＋2个机制子区域／非整图）**。仅收录系统抽象、架构、机制、数据/控制流、示意时序与形式定义；排除实验结果、测量照片和未分离的混合图。
 
 完整下载仓库，保持 JS、CSS、assets 的相对目录，再在浏览器打开 [gallery/index.html](index.html)；不能仅下载 HTML。GitHub文件预览不执行HTML。[100篇来源目录](../catalog/README.md)不代表全部原图已获许可或研究全部完成。[逐图署名与许可](licenses.json)。
 
@@ -216,3 +216,8 @@ EDA工具与电路设计表示 · TRACE电路图表示学习模型 · 3张
 [![图 5：数据准备与压缩存储工作流图。SAGe · arXiv v4，PDF 第 6 页。](assets/arxiv-2504.03732v4-sage-F5-933228a5d9e08968.png)](papers/hpca-2026-sage.md)
 
 固定arXiv版本，不声称出版商版本一致。
+
+## [Assassyn · ISCA 2025](papers/isca-2025-assassyn.md)
+编译器、语言与中间表示 · Assassyn统一硬件抽象与仿真／RTL代码生成工具链 · 2张（固定100篇样本外补充）
+
+[![Assassyn F9 周期精确仿真机制](assets/isca-2025-assassyn-F9-23bf8e60dca171d9.png)](papers/isca-2025-assassyn.md)

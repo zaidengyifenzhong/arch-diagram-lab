@@ -17,7 +17,7 @@ class SageSelectionTests(unittest.TestCase):
   self.assertFalse(any('sp2rint' in p.name.lower() for p in (R/'gallery/assets').glob('*')))
   c=json.loads((R/'catalog/papers.json').read_text());p=next(p for p in c['papers'] if p['paper_id']=='dac-2026-sp2rint');self.assertEqual(p['public_gallery']['figure_count'],0)
  def test_coverage(self):
-  d=json.loads((R/'gallery/figures.json').read_text());self.assertEqual(len(d['items']),183);self.assertEqual(len({f['paper_id'] for f in d['items']}),39)
-  self.assertEqual(Counter(f['license_name'] for f in d['items']),{'CC BY 4.0':166,'CC0 1.0':10,'CC BY 2.5':1,'CC BY-NC-SA 4.0':6})
+  d=json.loads((R/'gallery/figures.json').read_text());self.assertEqual(len(d['items']),185);self.assertEqual(len({f['paper_id'] for f in d['items']}),40)
+  self.assertEqual(Counter(f['license_name'] for f in d['items']),{'CC BY 4.0':168,'CC0 1.0':10,'CC BY 2.5':1,'CC BY-NC-SA 4.0':6})
   for f in ['README.md','index.html','gallery/README.md','gallery/index.html','catalog/README.md']:
-   text=(R/f).read_text();self.assertIn('183',text);self.assertIn('39',text)
+   text=(R/f).read_text();self.assertIn('185',text);self.assertIn('40',text)

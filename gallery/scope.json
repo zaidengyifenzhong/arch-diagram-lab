@@ -183,7 +183,9 @@
     "arxiv-2508.02007v2-revelator-F9-61a156f25332de9d",
     "arxiv-2504.03732v4-sage-F5-933228a5d9e08968",
     "arxiv-2504.03732v4-sage-F11-42927f57a2dcfaf8",
-    "arxiv-2504.03732v4-sage-F12-92c826d14ac38d59"
+    "arxiv-2504.03732v4-sage-F12-92c826d14ac38d59",
+    "isca-2025-assassyn-F9-23bf8e60dca171d9",
+    "isca-2025-assassyn-F10-78eb47fb1dd25852"
   ],
   "excluded_content": "Experimental results, measurement photographs and unresolved mixed figures are outside this release. Future additions need independent scope and rights clearance.",
   "approved_subregions": [
@@ -214,9 +216,19 @@
     "ipdps2026-uctrace-F3-1bcd9130beee896a"
   ],
   "coverage": {
-    "papers": 39,
-    "entries": 183,
-    "original_figure_entries": 181,
+    "papers": 40,
+    "entries": 185,
+    "original_figure_entries": 183,
     "mechanism_subregions": 2
-  }
+  },
+  "supplemental_papers": [
+    {
+      "paper_id": "isca-2025-assassyn",
+      "fixed_100_sample": false,
+      "figure_numbers": [
+        9,
+        10
+      ]
+    }
+  ]
 }
