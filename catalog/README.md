@@ -13,6 +13,7 @@
 
 跨论文方法：[两张机制图怎么对照读](../docs/reading-mechanism-pairs.md)。先问两图保留了什么、改变了什么。
 
+- [EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects](#reading-guide-ipdps2026-evalnet)
 - [Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation](#reading-guide-isca-2026-lotus)
 - [Continuation-Centric Computing with Arca](#reading-guide-osdi2026-arca)
 - [RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs](#reading-guide-osdi2026-balboa)
@@ -414,11 +415,23 @@ SAGe · arXiv v4固定版本；不独立断言正式会议身份或出版商版�
 [原文来源](https://datasys.cs.iit.edu/publications/2025_IPDPS-gnu-xtask-paper.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-ipdps2026-evalnet"></a>
+
 ## EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects
 研究对象：程序与网络分析、测试、追踪工具 / EvalNet网络拓扑生成与分析工具链
 
 [原文来源](https://spcl.ethz.ch/Publications/.pdf/besta-evalnet.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+原文链接读图指南：保留 IPDPS 2026 正式来源（[DOI 10.1109/IPDPS65963.2026.00072](https://doi.org/10.1109/IPDPS65963.2026.00072)），另用 [arXiv:2105.12663v5](https://arxiv.org/abs/2105.12663v5) 的 55 页阅读版。以下所有图号与物理 PDF 页码仅针对 v5，未认定它与 15 页会议版相同，不混用两版图号、页码或许可。
+
+建议选 Slim Fly，按 F2 → F1 → F3 阅读：先确定网络抽象保留什么，再追踪它进入工具链的位置，最后选择一个可评估的问题。
+
+- [F2：拓扑导航（v5 物理第 3 页）](https://arxiv.org/pdf/2105.12663v5#page=3)。找到 Slim Fly，并结合本页网络模型理解输入：路由器抽象为点，路由器间全双工物理链路抽象为无向边，服务器作为端点隐含建模。问“这个点是路由器还是服务器”，避免把网络图直接当成完整机器部署图。
+- [F1：工具链总览（v5 物理第 2 页）](https://arxiv.org/pdf/2105.12663v5#page=2)。从拓扑生成开始追踪所选网络，区分直接对图进行路径分析，与通过转换接口交给外部工具进行流级或包级模拟。EvalNet 连接这些评估环节，不应把整套工具链说成一个新包级模拟器。
+- [F3：指标导航（v5 物理第 4 页）](https://arxiv.org/pdf/2105.12663v5#page=4)。先选“两个路由器之间有多少条最短路径”作为图分析问题，再与“给定工作负载下的吞吐量”区分；后者需要明确流量和评估方法，可沿 F1 的外接流级或包级模拟路径追问。F3 列出可评估指标及用途，不是各拓扑的成绩或性能排名。
+
+读者练习：为 Slim Fly 写下一个输入抽象、一个工具链入口和一个指标，并说明得到它需要图分析还是带工作负载的模拟。只有先区分问题与方法，才适合讨论结果；这些导航图本身不提供实验成绩。
+
+权利边界：arXiv 的非独占分发许可不是图库再分发许可，不能用软件许可替代论文图像授权。本条只链接原文并提供原创说明，不上传任何图片或 PDF，不增加论文条目或原图库图数。
 
 ## I Like To Move It – Computation Instead of Data in the Brain
 研究对象：模拟器与仿真平台 / MSP分布式脑结构可塑性模拟器
