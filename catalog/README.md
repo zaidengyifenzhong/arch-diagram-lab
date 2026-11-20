@@ -17,6 +17,7 @@
 
 - [Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization](#reading-guide-atc2025-voltrix)
 - [GEM: GPU-Accelerated Emulator-Inspired RTL Simulation](#reading-guide-dac-2025-gem)
+- [SP2RINT: Spatially-Decoupled Physics-Constrained Progressive Inverse Optimization for Diffractive Optical Neural Network Training](#reading-guide-dac-2026-sp2rint)
 - [EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects](#reading-guide-ipdps2026-evalnet)
 - [BulletTime: Time Dilation for High-Fidelity Tracing](#reading-guide-isca-2026-bullettime)
 - [Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation](#reading-guide-isca-2026-lotus)
@@ -298,8 +299,18 @@
 
 [查看3个已收录图示条目](../gallery/papers/dac-2026-sandwich.md)
 
+<a id="reading-guide-dac-2026-sp2rint"></a>
+
 ## SP2RINT: Spatially-Decoupled Physics-Constrained Progressive Inverse Optimization for Diffractive Optical Neural Network Training
 研究对象：光学模型训练与逆设计系统 / SP2RINT衍射光学模型训练与逆设计框架
+
+原文链接读图指南：本节独立使用 arXiv:2505.18377v2 长版，保留目录既有会议来源与各版身份，不混用短稿图号。本次依据[官方 HTML 的 §III.4、图2与 Algorithm 3](https://arxiv.org/html/2505.18377v2#S3.SS4)核对；[PDF 第7页定位链接](https://arxiv.org/pdf/2505.18377v2#page=7)沿用既有版本记录，本次未重新核验物理页。
+
+- 先看图2的局部 patch，再沿 Algorithm 3 追踪中心 meta-atom i：提取局部结构，经数值求解得到近场响应 r，计算响应对应的行范围，写入初始化为零的近似传递矩阵第 i 列的局部行段。
+- 读图问题：为什么只填一段，行与列分别代表什么？列对应被探测的输入 meta-atom i，行对应输出近场响应的采样位置。局部相互作用假设允许在可接受误差下忽略区域外响应；其余未填部分保持零是这种近似的表示，不是证明真实物理响应严格为零。
+- 图号边界：v2 图4说明误差来源，图5才评估 patch 大小对应的传递矩阵探测误差与运行时间；不要把图2的机制示意当成误差或加速效果的测量。
+
+本条仅增加原文链接与说明，不上传或提取图片，不改变图3暂缓状态，也不增加图库数量。
 
 已区分三份固定来源：8页作者稿与16页arXiv v2使用Physics-Inspired长标题，7页合作者稿使用目录中的Physics-Constrained会议标题。合作者出版列表将7页稿关联到会议DOI，但未核实与出版社最终版字节、图号或排版相同。仅arXiv v2已核实CC BY 4.0；两份作者稿的原图再分发许可未确认，不移用许可。此项仅核对版本、图注页与许可边界，不代表逐图独审通过或全篇研究完成。三版F3均保留暂缓：机制示意与传输矩阵训练/投影数值示例混合，不能因无坐标轴而判定为纯非实验图。F1/F2及第三方元素也未在此项中获准公开，当前不收录SP2RINT原图。
 
