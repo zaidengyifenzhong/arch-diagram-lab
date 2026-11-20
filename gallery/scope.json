@@ -191,7 +191,10 @@
     "eurosys-2026-fix-F1-3fe29338bdc030bc",
     "eurosys-2026-fix-F6-055dbfa5f1582b84",
     "ics-2025-fused3s-F3-7fcdc00083f32567",
-    "ics-2025-fused3s-F4-36d1adeafdee3fdb"
+    "ics-2025-fused3s-F4-36d1adeafdee3fdb",
+    "dac-2026-hypas-F1-7df1a442d4ec7b09",
+    "dac-2026-hypas-F2-8a2ef3073199dfd2",
+    "dac-2026-hypas-F3-60e6b06aaa230f94"
   ],
   "excluded_content": "Experimental results, measurement photographs and unresolved mixed figures are outside this release. Future additions need independent scope and rights clearance.",
   "approved_subregions": [
@@ -222,9 +225,9 @@
     "ipdps2026-uctrace-F3-1bcd9130beee896a"
   ],
   "coverage": {
-    "papers": 43,
-    "entries": 191,
-    "original_figure_entries": 189,
+    "papers": 44,
+    "entries": 194,
+    "original_figure_entries": 192,
     "mechanism_subregions": 2
   },
   "supplemental_papers": [
@@ -258,6 +261,15 @@
       "figure_numbers": [
         3,
         4
+      ]
+    },
+    {
+      "paper_id": "dac-2026-hypas",
+      "fixed_100_sample": false,
+      "figure_numbers": [
+        1,
+        2,
+        3
       ]
     }
   ]
