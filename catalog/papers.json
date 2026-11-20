@@ -1457,7 +1457,7 @@
       ],
       "source_version": null,
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "原文链接读图指南：以下图号与物理页码对应作者页面提供的15页 IEEE 排版 PDF，保留本目录原有来源与版本身份记录，不据此声明与其他分发版本字节相同。\n\n- [图1：追踪延迟改变交错顺序（PDF物理第1页）](https://www.anuragkhandelwal.com/papers/bullettime.pdf#page=1)。对照应用线程与系统守护进程的相对进度：追踪引入不对称、突发的延迟，会改变它们的交错，而不只是让总运行时间变长。\n- [图3：用时间膨胀恢复相对进度的目标（PDF物理第2页）](https://www.anuragkhandelwal.com/papers/bullettime.pdf#page=2)。追踪补偿延迟如何放慢应用与系统线程，使其跟上最慢线程的步调。该示意解释设计目标，不是所有实现均逐操作完全保序的证明。\n\n边界必须结合正文读：[§III-B 算法从物理第6页开始](https://www.anuragkhandelwal.com/papers/bullettime.pdf#page=6)，而[物理第7页的窗口化正确性说明](https://www.anuragkhandelwal.com/papers/bullettime.pdf#page=7)明确区分 L=1 的锁步与 L>1 的窗口：后者允许相对未追踪执行的窗内重排，算法论证把重排限制在单窗内，跨窗仍保序。不要将此算法边界扩写成实际系统无条件完全保序。\n\n对照 [Mimesys 图5读图指南](#reading-guide-osdi2026-mimesys)：移动一个块，在两篇分别破坏／保留什么？在 BulletTime 中，改变块的相对位置可能改变关键操作交错，需检查是否越过窗口边界；在 Mimesys 中，同一核同一窗口内换序而保留各 stressor 的分配时长仍符合生成安排，目标并非复现原线程事件顺序。两篇都画执行安排，但保留的约束不同。\n\n本次只链接原文与原创说明，不附图片或PDF，未认定论文图片可再分发，不增加固定样本或图库的原图收录量。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,
@@ -2311,7 +2311,7 @@
       ],
       "source_version": null,
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "原文链接读图指南（USENIX 正式 PDF）：按图 2 → 图 3 → 图 5 阅读，依次回答“谁用”“工具怎样生成中间表示”“这个表示如何落到可执行行为”。Mimesys 为真机生成测试负载，不等于模拟目标硬件。\n\n- [图 2：使用工作流（PDF 第 5 页）](https://www.usenix.org/system/files/osdi26-kim-donghyun.pdf#page=5)。先沿运营方与开发方两侧读：运营方从生产资源使用轨迹生成可执行负载，开发方按硬件条件选取负载，再让它与目标程序共同运行。关注轨迹、生成的负载和目标程序各处在哪一步，避免把整幅图误读成硬件模拟器结构图。\n- [图 3：配比生成与训练路径（PDF 第 7 页）](https://www.usenix.org/system/files/osdi26-kim-donghyun.pdf#page=7)。从当前窗口的目标资源轨迹及上一窗口的压力任务配比出发，追踪本窗口配比如何生成。图中还画出了训练路径；阅读时区分训练过程与生成本窗口配比的路径。这里的关键中间表示是压力任务配比，而非目标硬件结构。\n- [图 5：从配比到执行安排（PDF 第 9 页）](https://www.usenix.org/system/files/osdi26-kim-donghyun.pdf#page=9)。把配比矩阵与实体 CPU 各核的示例安排对应起来。数值表示压力任务占窗口时长的比例，不是资源利用率实测值；窗口内任务顺序可以打乱，而各任务的时长保持不变。\n\n可复用的图组组织方式：先交代使用者与使用流程，再展开工具如何生成中间表示，最后用具体执行安排说明表示怎样落地。三张图分别解释使用、生成和执行，不要求把它们合并成一张系统总览图。图 4 是实测分布，不纳入本次非实验读图指南；本指南也不代表实验复现或整篇论文逐图研究完成。\n\n权利边界：尚未核实论文图像的公开再分发许可；代码仓库的 Apache 2.0 许可不能据此用于会议 PDF。本条只链接原文，不附图片或 PDF，不增加图库图示条目。",
+      "source_note": "原文链接读图指南（USENIX 正式 PDF）：按图 2 → 图 3 → 图 5 阅读，依次回答“谁用”“工具怎样生成中间表示”“这个表示如何落到可执行行为”。Mimesys 为真机生成测试负载，不等于模拟目标硬件。\n\n- [图 2：使用工作流（PDF 第 5 页）](https://www.usenix.org/system/files/osdi26-kim-donghyun.pdf#page=5)。先沿运营方与开发方两侧读：运营方从生产资源使用轨迹生成可执行负载，开发方按硬件条件选取负载，再让它与目标程序共同运行。关注轨迹、生成的负载和目标程序各处在哪一步，避免把整幅图误读成硬件模拟器结构图。\n- [图 3：配比生成与训练路径（PDF 第 7 页）](https://www.usenix.org/system/files/osdi26-kim-donghyun.pdf#page=7)。从当前窗口的目标资源轨迹及上一窗口的压力任务配比出发，追踪本窗口配比如何生成。图中还画出了训练路径；阅读时区分训练过程与生成本窗口配比的路径。这里的关键中间表示是压力任务配比，而非目标硬件结构。\n- [图 5：从配比到执行安排（PDF 第 9 页）](https://www.usenix.org/system/files/osdi26-kim-donghyun.pdf#page=9)。把配比矩阵与实体 CPU 各核的示例安排对应起来。数值表示压力任务占窗口时长的比例，不是资源利用率实测值；窗口内任务顺序可以打乱，而各任务的时长保持不变。\n\n可复用的图组组织方式：先交代使用者与使用流程，再展开工具如何生成中间表示，最后用具体执行安排说明表示怎样落地。三张图分别解释使用、生成和执行，不要求把它们合并成一张系统总览图。图 4 是实测分布，不纳入本次非实验读图指南；本指南也不代表实验复现或整篇论文逐图研究完成。\n\n权利边界：尚未核实论文图像的公开再分发许可；代码仓库的 Apache 2.0 许可不能据此用于会议 PDF。本条只链接原文，不附图片或 PDF，不增加图库图示条目。\n\n对照 [BulletTime 图1／图3读图指南](#reading-guide-isca-2026-bullettime)：移动一个块，在两篇分别破坏／保留什么？图5与同页正文要求保留每核各 stressor 在窗口内的分配时长，允许窗口内打乱执行顺序；这不是重放原线程事件顺序。BulletTime 则关注追踪扰动下的相对进度与关键操作交错，并须结合其窗口化算法的保序边界阅读。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,

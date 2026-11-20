@@ -17,6 +17,7 @@
 
 - [Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization](#reading-guide-atc2025-voltrix)
 - [EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects](#reading-guide-ipdps2026-evalnet)
+- [BulletTime: Time Dilation for High-Fidelity Tracing](#reading-guide-isca-2026-bullettime)
 - [Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation](#reading-guide-isca-2026-lotus)
 - [Continuation-Centric Computing with Arca](#reading-guide-osdi2026-arca)
 - [RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs](#reading-guide-osdi2026-balboa)
@@ -469,11 +470,22 @@ SAGe · arXiv v4固定版本；不独立断言正式会议身份或出版商版�
 
 [查看4个已收录图示条目](../gallery/papers/ipdps2026-vla-quantum.md)
 
+<a id="reading-guide-isca-2026-bullettime"></a>
+
 ## BulletTime: Time Dilation for High-Fidelity Tracing
 研究对象：程序与网络分析、测试、追踪工具 / BulletTime行为保真追踪框架
 
 [原文来源](https://www.anuragkhandelwal.com/papers/bullettime.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+原文链接读图指南：以下图号与物理页码对应作者页面提供的15页 IEEE 排版 PDF，保留本目录原有来源与版本身份记录，不据此声明与其他分发版本字节相同。
+
+- [图1：追踪延迟改变交错顺序（PDF物理第1页）](https://www.anuragkhandelwal.com/papers/bullettime.pdf#page=1)。对照应用线程与系统守护进程的相对进度：追踪引入不对称、突发的延迟，会改变它们的交错，而不只是让总运行时间变长。
+- [图3：用时间膨胀恢复相对进度的目标（PDF物理第2页）](https://www.anuragkhandelwal.com/papers/bullettime.pdf#page=2)。追踪补偿延迟如何放慢应用与系统线程，使其跟上最慢线程的步调。该示意解释设计目标，不是所有实现均逐操作完全保序的证明。
+
+边界必须结合正文读：[§III-B 算法从物理第6页开始](https://www.anuragkhandelwal.com/papers/bullettime.pdf#page=6)，而[物理第7页的窗口化正确性说明](https://www.anuragkhandelwal.com/papers/bullettime.pdf#page=7)明确区分 L=1 的锁步与 L>1 的窗口：后者允许相对未追踪执行的窗内重排，算法论证把重排限制在单窗内，跨窗仍保序。不要将此算法边界扩写成实际系统无条件完全保序。
+
+对照 [Mimesys 图5读图指南](#reading-guide-osdi2026-mimesys)：移动一个块，在两篇分别破坏／保留什么？在 BulletTime 中，改变块的相对位置可能改变关键操作交错，需检查是否越过窗口边界；在 Mimesys 中，同一核同一窗口内换序而保留各 stressor 的分配时长仍符合生成安排，目标并非复现原线程事件顺序。两篇都画执行安排，但保留的约束不同。
+
+本次只链接原文与原创说明，不附图片或PDF，未认定论文图片可再分发，不增加固定样本或图库的原图收录量。
 
 ## Bumper: Hinting Instruction Usefulness for Robust Unified Caches
 研究对象：缓存、地址转换与DRAM系统 / Bumper统一L2指令行管理构件
@@ -818,6 +830,8 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 可复用的图组组织方式：先交代使用者与使用流程，再展开工具如何生成中间表示，最后用具体执行安排说明表示怎样落地。三张图分别解释使用、生成和执行，不要求把它们合并成一张系统总览图。图 4 是实测分布，不纳入本次非实验读图指南；本指南也不代表实验复现或整篇论文逐图研究完成。
 
 权利边界：尚未核实论文图像的公开再分发许可；代码仓库的 Apache 2.0 许可不能据此用于会议 PDF。本条只链接原文，不附图片或 PDF，不增加图库图示条目。
+
+对照 [BulletTime 图1／图3读图指南](#reading-guide-isca-2026-bullettime)：移动一个块，在两篇分别破坏／保留什么？图5与同页正文要求保留每核各 stressor 在窗口内的分配时长，允许窗口内打乱执行顺序；这不是重放原线程事件顺序。BulletTime 则关注追踪扰动下的相对进度与关键操作交错，并须结合其窗口化算法的保序边界阅读。
 
 ## μShell: A Microkernel-based FPGA Shell Architecture
 研究对象：操作系统、内存分配与硬件管理层 / 模块化FPGA shell及其管理层
