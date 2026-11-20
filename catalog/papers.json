@@ -1707,7 +1707,7 @@
       ],
       "source_version": null,
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "原文链接读图指南：以下图号与物理页码对应 MIT 作者提供的 14 页版本，不据此断言与出版社版本字节或排版一致。建议按 F1(a) → F1(b) → F2 → F4/F5 阅读，区分被模拟的目标电路、任务表示与实际运行模拟器的 FPGA 平台。\n\n- [图 1(a)／1(b)：目标电路到任务数据流（PDF 物理第 2 页）](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=2)。图 1(a) 是被模拟的两级电路，图 1(b) 将其表达为任务数据流模型。线与寄存器分别成为跨越 0／1 个目标仿真周期的边；这里的周期差说明目标电路的依赖关系，不是 FPGA 时钟频率。\n- [图 2／图 3：运行平台与任务代码（PDF 物理第 4 页）](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=4)。图 2 展开执行模型的 FPGA、tile 与 core，图 3 展示任务代码。它们说明任务怎样在模拟执行平台上运行，不能把这些 FPGA 或 core 当成图 1(a) 的目标电路部件。\n- [图 4／图 5：任务单元与配置映射（PDF 物理第 5 页）](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=5)。先用图 4 定位 task unit，再看图 5 如何把图 1(b) 的同一任务图映到一个 tile，展示配置时的任务和依赖元数据。可追踪从乘法任务到加法任务的一条跨周期边：output-token 元数据的 index 0 指向 taskId 2，Cycle Delta 为 1；图中 task 0 是乘法任务，此处不进一步指定它对应哪个系数。\n\n读者练习：把图 1 中的一条寄存器依赖追到图 5 的目标任务与 Cycle Delta，说明“跨一个目标仿真周期”怎样保存在配置中。再区分目标电路的寄存器与运行平台为保存跨周期输入而设置的存储：前者是被模拟的状态，后者服务于模拟执行，二者不能仅因都存数据就视为同一层硬件。\n\n简短对照：[RTeAAL Sim 图 1](../gallery/papers/asplos-2026-rteaal.md#f1)的扩展 arXiv v1 示例从 RTL 走向数据流与张量代数代码。可比较两篇怎样选择和表达中间表示，不比较性能，也不宣称两图模拟的是同一设计。\n\n权利与范围：未核实 MIT 作者版图像的再分发许可。本条仅链接原文并提供原创读图说明，不上传 Lotus 图片或 PDF，不收实验图，不增加原图库图数；示意映射不替代性能评估或正确性证明。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,
