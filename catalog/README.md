@@ -17,6 +17,7 @@
 
 - [Sequential Specifications for Precise Hardware Exceptions](#reading-guide-asplos-2026-xpdl)
 - [Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization](#reading-guide-atc2025-voltrix)
+- [XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors](#reading-guide-atc2025-xrt)
 - [GEM: GPU-Accelerated Emulator-Inspired RTL Simulation](#reading-guide-dac-2025-gem)
 - [PacQ: A SIMT Microarchitecture for Efficient Dataflow in Hyper-asymmetric GEMMs](#reading-guide-dac-2025-pacq)
 - [SP2RINT: Spatially-Decoupled Physics-Constrained Progressive Inverse Optimization for Diffractive Optical Neural Network Training](#reading-guide-dac-2026-sp2rint)
@@ -219,10 +220,24 @@
 
 本次只链接Voltrix原文并提供原创说明，不上传其图片或PDF，未据此认定原图转载许可。此指南不增加固定样本的原图收录数或分类覆盖完成量。
 
+<a id="reading-guide-atc2025-xrt"></a>
+
 ## XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors
 研究对象：运行时与调度系统 / XRT加速器感知请求调度运行时
 
 [原文来源](https://www.usenix.org/system/files/atc25-patel.pdf)
+原文链接读图指南：以下图号与物理页码对应 USENIX 的12页 ATC 2025正式 PDF，页码含封面；保留目录既有版本身份和许可标签。
+
+- [F2（物理第4页）](https://www.usenix.org/system/files/atc25-patel.pdf#page=4)：先比较 completion 的责任分工。dispatcher-centric 由 dispatcher 处理加速器完成通知；worker-centric 将完成处理留给各 worker。这是两种组织方式的比较，不等于后续 XRT 成品的数据结构。
+- [F5（物理第5页）](https://www.usenix.org/system/files/atc25-patel.pdf#page=5)结合[§5.1（物理第6页）](https://www.usenix.org/system/files/atc25-patel.pdf#page=6)：区分 Monitoring Set 与 Thread Contexts。加速器向前者写 completion record，本地 scheduler 轮询 next expected record；后者保存线程上下文指针，scheduler 利用两者的逻辑对应找到应恢复的线程。完成状态与线程身份不是同一件事。
+- [F6／§5.3（物理第6页）](https://www.usenix.org/system/files/atc25-patel.pdf#page=6)：把局部机制放回请求全程。dispatcher 仍分配请求；offload 被接受后，发起线程 yield，让 worker 执行其他请求，scheduler 确认完成后恢复它。若加速器未接受，当前 worker 执行软件实现，不等待未成功发出的任务的完成记录。
+
+对照已有 [SBB 指南](#reading-guide-osdi2026-sbb)：[SBB F5／§4.1（物理第7页）](https://www.usenix.org/system/files/osdi26-hu-kang.pdf#page=7)中的 NIC Rx 队列用户态中断用于到包通知，不是已提交加速任务的完成。[正文步骤5（物理第8页）](https://www.usenix.org/system/files/osdi26-hu-kang.pdf#page=8)则由本地 timer 在处理超过时间片时触发另一中断，保存当前请求状态并重新排队。
+
+读图问题：发出者、触发事件、接收方式分别是什么？按“加速器／任务完成／scheduler 轮询记录”“NIC／包到达／用户态中断”“本地 timer／处理超时／用户态中断”逐项对照，避免把完成、到达和抢占都写成同一种通知。
+
+本条只提供原创解读与原文链接，不写入图片或PDF，不变更许可；原文页面上的实验图不在本次读图范围内，图库与固定样本计数不变。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## Q-Pilot: Field Programmable Qubit Array Compilation with Flying Ancillas
