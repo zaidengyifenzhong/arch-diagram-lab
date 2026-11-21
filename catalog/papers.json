@@ -272,7 +272,7 @@
       ],
       "source_version": null,
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "原文链接读图指南：[Lilac 完整图组阅读案例](../docs/reading-lilac-figures.md)逐项解释作者站14页 ASPLOS 2026会议版的 F1–F13，区分机制、代码、形式规则与评估表，不混用13页 arXiv v2。先沿 F3 → F5 → F6 追踪参数来源、延迟对齐和逐拍窗口，再比较 F10 → F11/F12 → F13 的接口、实现与有条件的资源／频率证据。图号为 Figure 的 F8、F13 实际是评估表；正式 Table 1–3 另行编号。\n\n案例提供物理页深链与原创说明，不上传图片或PDF，不变更许可或图库计数。\n\n来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,

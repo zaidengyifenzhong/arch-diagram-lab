@@ -15,6 +15,7 @@
 
 跨论文方法：[两张机制图怎么对照读](../docs/reading-mechanism-pairs.md)。先问两图保留了什么、改变了什么。
 
+- [Parameterized Hardware Design with Latency-Abstract Interfaces](#reading-guide-asplos-2026-lilac)
 - [Sequential Specifications for Precise Hardware Exceptions](#reading-guide-asplos-2026-xpdl)
 - [Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization](#reading-guide-atc2025-voltrix)
 - [XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors](#reading-guide-atc2025-xrt)
@@ -108,10 +109,16 @@
 [原文来源](https://ghose.cs.illinois.edu/papers/26asplos_darthpum.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-asplos-2026-lilac"></a>
+
 ## Parameterized Hardware Design with Latency-Abstract Interfaces
 研究对象：编译器、语言与中间表示 / Lilac参数化硬件描述语言与接口类型系统
 
 [原文来源](https://people.csail.mit.edu/rachit/files/pubs/lilac.pdf)
+原文链接读图指南：[Lilac 完整图组阅读案例](../docs/reading-lilac-figures.md)逐项解释作者站14页 ASPLOS 2026会议版的 F1–F13，区分机制、代码、形式规则与评估表，不混用13页 arXiv v2。先沿 F3 → F5 → F6 追踪参数来源、延迟对齐和逐拍窗口，再比较 F10 → F11/F12 → F13 的接口、实现与有条件的资源／频率证据。图号为 Figure 的 F8、F13 实际是评估表；正式 Table 1–3 另行编号。
+
+案例提供物理页深链与原创说明，不上传图片或PDF，不变更许可或图库计数。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## CHERI-SIMT: Implementing Capability Memory Protection in GPUs
