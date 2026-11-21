@@ -21,6 +21,7 @@
 - [GEM: GPU-Accelerated Emulator-Inspired RTL Simulation](#reading-guide-dac-2025-gem)
 - [PacQ: A SIMT Microarchitecture for Efficient Dataflow in Hyper-asymmetric GEMMs](#reading-guide-dac-2025-pacq)
 - [SP2RINT: Spatially-Decoupled Physics-Constrained Progressive Inverse Optimization for Diffractive Optical Neural Network Training](#reading-guide-dac-2026-sp2rint)
+- [AccelFlow: Orchestrating an On-Package Ensemble of Fine-Grained Accelerators for Microservices](#reading-guide-hpca-2026-accelflow)
 - [EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects](#reading-guide-ipdps2026-evalnet)
 - [BulletTime: Time Dilation for High-Fidelity Tracing](#reading-guide-isca-2026-bullettime)
 - [Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation](#reading-guide-isca-2026-lotus)
@@ -428,10 +429,24 @@ arXiv v1 标注的是非独占分发许可，不据此转载论文图。本条�
 [原文来源](https://yong2355.github.io/assets/pdf/hpca25-vr-pipe.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-hpca-2026-accelflow"></a>
+
 ## AccelFlow: Orchestrating an On-Package Ensemble of Fine-Grained Accelerators for Microservices
 研究对象：专用加速器与可重构/存内计算平台 / AccelFlow封装内加速器编排平台
 
 [原文来源](https://iacoma.cs.uiuc.edu/iacoma-papers/hpca26_1.pdf)
+原文链接读图指南：使用 Illinois IACOMA 实验室的17页 HPCA 2026作者 PDF，以下为该文件物理页；保留既有来源身份与许可标签。
+
+- [F6（物理第4页）](https://iacoma.cs.uiuc.edu/iacoma-papers/hpca26_1.pdf#page=4)：辨认目标平台中的核心、加速器、队列、ATM 与 A-DMA。这是论文设想的处理器组织，不是运行模拟器的宿主硬件。
+- [F8／§V.2（物理第8页）](https://iacoma.cs.uiuc.edu/iacoma-papers/hpca26_1.pdf#page=8)：输出 dispatcher 先推进 Position Mark（PM），按需解析分支并更新 PM，再判断 End Trace?。未结束则按 PM 转发；结束但尾部含 ATM 地址时，加载后续 trace，再进入转发路径。只有结束且没有 ATM 地址，才安排 A-DMA 将结果写入内存；搬运完成后通知 CPU 并清除输出队列项。
+- [F10（同为物理第8页）](https://iacoma.cs.uiuc.edu/iacoma-papers/hpca26_1.pdf#page=8)：把 F8 的动作对应到结构，找到输出队列、output dispatcher、ATM 与 A-DMA；区分读后续 trace、移动数据和发通知的责任。
+
+读图问题：结束当下 trace 就一定通知 CPU 吗？不一定，尾部 ATM 地址可以接上后续 trace；最终返回分支也要等结果搬运完成。再结合[§IV（物理第5页）](https://iacoma.cs.uiuc.edu/iacoma-papers/hpca26_1.pdf#page=5)区分正常完成通知与异常：前者是用户级、非中断通知，不能和发生异常时中断 CPU、交给 OS 的路径混读。
+
+对照已有 [XRT 指南](#reading-guide-atc2025-xrt)：XRT 追踪单次已接受的加速任务完成记录，由本地 scheduler 找到应恢复的线程；这里追踪加速器 trace 的续接、结果写回与最终 CPU 通知。两者的完成范围和控制责任不同，不能仅因都有通知箭头就视为相同实现。
+
+本条仅增加原文链接与原创解读，不上传图片或PDF，不收实验图，不变更图库与固定样本原图计数。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## BARD: Reducing Write Latency of DDR5 Memory by Exploiting Bank-Parallelism
