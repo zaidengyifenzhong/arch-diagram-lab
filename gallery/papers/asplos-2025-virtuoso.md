@@ -8,6 +8,8 @@
 
 版本许可依据：[来源](https://arxiv.org/abs/2403.04635v2)。源PDF SHA256：`4e02b4c93066ef4891ddf3730aebb46c0caeae329b63afd72f4ca84f480b61f9`。PDF不随库分发。
 
+[整篇读图案例：机制、验证与两种运行代价](../../docs/reading-virtuoso-figures.md)（arXiv v2，F1–F21 原文页导航）
+
 ## 图号导航
 
 [F4](#f4) · [F5](#f5) · [F6](#f6) · [F7](#f7)
