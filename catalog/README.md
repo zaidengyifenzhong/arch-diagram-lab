@@ -28,6 +28,7 @@
 - [AccelFlow: Orchestrating an On-Package Ensemble of Fine-Grained Accelerators for Microservices](#reading-guide-hpca-2026-accelflow)
 - [BARD: Reducing Write Latency of DDR5 Memory by Exploiting Bank-Parallelism](#reading-guide-hpca-2026-bard)
 - [TraceRTL: Agile Performance Evaluation for Microarchitecture Exploration](#reading-guide-hpca-2026-tracertl)
+- [Leveraging Compilation Statistics for Compiler Phase Ordering](#reading-guide-ipdps2025-citroen)
 - [EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects](#reading-guide-ipdps2026-evalnet)
 - [BulletTime: Time Dilation for High-Fidelity Tracing](#reading-guide-isca-2026-bullettime)
 - [Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation](#reading-guide-isca-2026-lotus)
@@ -565,11 +566,21 @@ SAGe · arXiv v4固定版本；不独立断言正式会议身份或出版商版�
 
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-ipdps2025-citroen"></a>
+
 ## Leveraging Compilation Statistics for Compiler Phase Ordering
 研究对象：编译器、语言与中间表示 / CITROEN编译遍序调优工具
 
 [原文来源](https://eprints.whiterose.ac.uk/id/eprint/224241/1/ipdps25-1.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+原文链接读图指南：保留 IPDPS 2025 论文身份（DOI 10.1109/IPDPS64566.2025.00054）及既有 White Rose 来源。本指南另用13页作者版《Leveraging Compilation Statistics for Compiler Phase Ordering》，以下均为该版物理页；不混用带封面的14页 White Rose 文件，也不假定两者字节相同。建议 F2 → F5 → F4，先看遍序动机，再追候选与实测反馈。
+
+- [F2（作者版物理第2页）](https://zwang4.github.io/publications/ipdps25-1.pdf#page=2)：cBench 的 telecom_gsm 示例中，mem2reg 后接 SLP 可完成所示向量化，而在两者间插入 instcombine 后未向量化。它说明特定代码里 pass 的相互作用，是动机示例，不是汇总性能结果；不能推广为 instcombine 总会妨碍向量化。
+- [F5／§III-B（物理第4页）](https://zwang4.github.io/publications/ipdps25-1.pdf#page=4)：从当前已找到的最优组合 A:a、B:b 出发，一支只改 A 并固定 B，另一支只改 B 并固定 A。正文中 m 个模块各生成 q 个候选序列，m×q 描述这一轮候选配置的生成数量；不是各模块选择的笛卡尔乘积，也不是运行二进制测时的次数，不额外断言去重后的唯一组合数。
+- [F4／§III-B–C（物理第4页）](https://zwang4.github.io/publications/ipdps25-1.pdf#page=4)：把图与正文合读：候选序列先用于编译并收集统计，代价模型据统计预测性能及不确定性，acquisition function 再选择要查询的配置。被选中的配置进入 Task Function，运行生成的二进制取得执行时间，然后反馈更新训练数据、代价模型与候选生成器。编译统计是特征，预测不是测量；进入候选池不表示已逐个运行。
+
+读图问题：本轮哪条反馈路径第一次携带新测得的运行时间？从 Task Function 实际运行之后的输出开始追到 Update／Training set，而不是从 Surrogate model 的预测输出开始；模型已有训练数据不等于新候选也已测时。可对照 [DCO-3D 指南](#reading-guide-dac-2025-dco)：两者都应分清预测与观测，但 DCO-3D 把预测拥塞用于可微优化，CITROEN 用预测及不确定性挑选下一次实测配置，不能视为同一反馈机制。
+
+本条仅提供原创说明和作者原文深链，不复制代码片段、图像或 PDF，不收录实验图；原许可字段、图库计数及固定100篇身份均不变。
 
 ## Accelerating Tensor-train Decomposition on Graph Neural Networks
 研究对象：机器学习训练与推理系统 / FALCON张量分解GNN训练框架
