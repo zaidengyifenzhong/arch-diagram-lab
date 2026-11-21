@@ -412,7 +412,7 @@
       ],
       "source_version": null,
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "原文链接读图指南：使用 Cornell 作者站的15页 PDF，DOI 10.1145/3760250.3762233；图号与物理页只对应这份文件，保留目录既有来源身份。\n\n- [F2（物理第4页）](https://www.cs.cornell.edu/andru/papers/pdl/xpdl-asplos26.pdf#page=4)：先在顺序规格的 decode 中找到 throw(ERR_INV)，它表达当前指令的非法指令异常。\n- [F5 → F7（物理第6页）](https://www.cs.cornell.edu/andru/papers/pdl/xpdl-asplos26.pdf#page=6)：F5 的编译结果在 decode 设置布尔 lef 并记录 earg0=ERR_INV；lef 属于单条指令，随数据通路传递。到最终块的异常分支才设置共享一位寄存器 gef，进入异常处理模式。F7 展开观察 gef 的新控制路径，使主流水线主体与异常处理块互斥；不能概括成所有阶段立即冻结，已经进入提交的更老指令仍须完成。\n- [F6（物理第6页）](https://www.cs.cornell.edu/andru/papers/pdl/xpdl-asplos26.pdf#page=6)：有额外提交阶段时，padding 延迟 rollback，让更早进入提交的指令完成；若提交块没有新增阶段、与主体末级合并，则不添加 padding。这是逻辑安排，也可用寄存器条件门控实现，方框并不必然对应实体流水级。\n\n读图问题：哪个状态跟着单条指令，哪个表示流水线模式？为什么不能在 decode 立刻清空，方框是否必然意味着多一级硬件？沿 lef → 最终块 → gef 追踪，并检查 rollback 前较老指令的提交条件，就能把异常发现、模式切换和清空时机分开。\n\n简短对照：[GEM 指南](#reading-guide-dac-2025-gem)讨论 RTL 仿真如何在 GPU 上执行；本篇讨论顺序规格如何生成异常实现控制，不是模拟宿主硬件，也不意味着两篇采用相同实现。\n\n作者 PDF 首页是个人／课堂复制条款，不据此认定获准公开再分发。本条仅提供原创说明与原文链接，不上传图片或PDF，不收实验图，图库与固定样本计数不变。\n\n来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,
