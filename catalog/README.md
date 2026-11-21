@@ -19,8 +19,10 @@
 - [Sequential Specifications for Precise Hardware Exceptions](#reading-guide-asplos-2026-xpdl)
 - [Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization](#reading-guide-atc2025-voltrix)
 - [XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors](#reading-guide-atc2025-xrt)
+- [DCO-3D: Differentiable Congestion Optimization in 3D ICs](#reading-guide-dac-2025-dco)
 - [GEM: GPU-Accelerated Emulator-Inspired RTL Simulation](#reading-guide-dac-2025-gem)
 - [PacQ: A SIMT Microarchitecture for Efficient Dataflow in Hyper-asymmetric GEMMs](#reading-guide-dac-2025-pacq)
+- [RUPlace: Optimizing Routability via Unified Placement and Routing Formulation](#reading-guide-dac-2025-ruplace)
 - [SP2RINT: Spatially-Decoupled Physics-Constrained Progressive Inverse Optimization for Diffractive Optical Neural Network Training](#reading-guide-dac-2026-sp2rint)
 - [AccelFlow: Orchestrating an On-Package Ensemble of Fine-Grained Accelerators for Microservices](#reading-guide-hpca-2026-accelflow)
 - [BARD: Reducing Write Latency of DDR5 Memory by Exploiting Bank-Parallelism](#reading-guide-hpca-2026-bard)
@@ -265,11 +267,21 @@
 [原文来源](https://scopex-asu.github.io/files/publications/ONN_DAC2025_Gu_DONN.pdf)
 链接为MDR-HDONN前身稿，并非已核实的CHORD正式出版版本；不可据此前身推定正式版的图号、配图完整性或结论相同。
 
+<a id="reading-guide-dac-2025-dco"></a>
+
 ## DCO-3D: Differentiable Congestion Optimization in 3D ICs
 研究对象：EDA工具与电路设计表示 / DCO-3D三维芯片拥塞预测与布局工具
 
 [原文来源](https://gtcad.gatech.edu/www/papers/Hsiao-DAC25-1.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+原文链接读图指南：使用 GaTech 作者站7页 DCO-3D PDF，以下均为该文件的物理页；保留 DAC 2025 论文身份，不额外认定出版社文件等同。沿训练参照 → 优化预测 → 评估比较，辨认同样叫 post-route map 的对象在不同图中的职责。
+
+- [F3／§III（物理第3页）](https://gtcad.gatech.edu/www/papers/Hsiao-DAC25-1.pdf#page=3)：Siamese U-Net 接收布局特征；从 post-route layout 提取的拥塞 map 是训练目标，用来约束预测。先分清输入特征、标签与网络输出，不把预测结果称为已经完成布线的观测。
+- [F4／§IV（物理第4页）](https://gtcad.gatech.edu/www/papers/Hsiao-DAC25-1.pdf#page=4)：从 GNN 给出的 soft 单元位置走到 soft 特征图，再到预测拥塞；拥塞与位移、重叠、cutsize 等 loss 一起指导优化。soft 跨层位置表达可微优化中的分配，不等于最终合法化后的物理单元同时占据两层；这条回路也不是每一步都执行完整布线。
+- [F5（物理第5页）](https://gtcad.gatech.edu/www/papers/Hsiao-DAC25-1.pdf#page=5)：学习曲线、NRMSE／SSIM 的测试结果分布，以及 ground truth、网络预测与传统方法的拥塞图比较，属于预测器评估。误差、结构相似度和空间图各回答不同问题；它们不替代最终设计的布线与质量检查，也不作为非实验原图收录。
+
+读图问题：post-route 在哪里是训练参照，哪里是优化预测，哪里用于评估？在 F3 找标签与输出的区别，在 F4 找预测到 loss 的反馈，在 F5 找实际参照与预测的并列比较。对照 [RUPlace 指南](#reading-guide-dac-2025-ruplace)，先核对图的生成阶段与含义，再比较优化方式；不能仅凭都画拥塞区域就认定两者观测的是同一种结果。
+
+本条只有原创说明和原文链接，不提取、上传任何整图、子图或 PDF，不沿用此前暂缓的裁图流程；保留现有许可记录，图库与固定样本原图计数不变。
 
 ## FastPath: A Hybrid Approach for Efficient Hardware Security Verification
 研究对象：RTL验证、生成与修复工具 / FastPath RTL硬件安全验证工具链
@@ -335,11 +347,22 @@ arXiv v1 标注的是非独占分发许可，不据此转载论文图。本条�
 
 [查看1个已收录图示条目](../gallery/papers/dac-2025-rights.md)
 
+<a id="reading-guide-dac-2025-ruplace"></a>
+
 ## RUPlace: Optimizing Routability via Unified Placement and Routing Formulation
 研究对象：EDA工具与电路设计表示 / RUPlace芯片全局布局工具
 
 [原文来源](https://magic3007.github.io/data/publications/PLACE_DAC2025_Chen/PLACE_DAC2025_Chen.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+原文链接读图指南：使用作者站7页 RUPlace PDF，以下为该文件的物理页；保留 DAC 2025 论文身份，不据此断言与出版社文件字节或排版一致。先看流程，再区分动机示意、聚类机制和最终评估。
+
+- [F1／§III-A（物理第2页）](https://magic3007.github.io/data/publications/PLACE_DAC2025_Chen/PLACE_DAC2025_Chen.pdf#page=2)：从初始全局布局进入粗粒度 cell inflation，再用 incremental placement 分散单元；密度约束满足后，进入统一布局与布线 formulation 的 ADMM 优化，最后合法化和详细布局。这里的粗粒度改进不意味着把聚类直接当成全局布局对象。
+- [F2／F3（物理第3页）](https://magic3007.github.io/data/publications/PLACE_DAC2025_Chen/PLACE_DAC2025_Chen.pdf#page=3)：F2 用位移目标的示意解释动机，不是 benchmark 成绩。F3 中实线表示走线，箭头表示单元移动，红区表示拥塞；先识别各类标记在解释什么，再追移动如何改变走线。
+- [F4／§III-D（物理第4页）](https://magic3007.github.io/data/publications/PLACE_DAC2025_Chen/PLACE_DAC2025_Chen.pdf#page=4)：红虚线标示高连接度单元的逐层合并。虚拟聚类为 cell inflation 提供分组，正文明确它不用于全局布局过程；不要把层级树读成待放置的粗粒度芯片结构。
+- [F5（物理第6页）](https://magic3007.github.io/data/publications/PLACE_DAC2025_Chen/PLACE_DAC2025_Chen.pdf#page=6)：同一 VORTEX_S 上比较不同工具的拥塞分布，图例量是 routing demand 减 capacity，蓝色较低、白色较高。它是评估图，不收进原图库，也不能单独证明某一个组件造成全部改善。
+
+读图问题：F3 红区、F4 红虚线、F5 浅色分别是什么？依次是拥塞示意、聚类合并关系和按本图图例编码的高 overflow；颜色跨图没有统一含义。对照 [DCO-3D 指南](#reading-guide-dac-2025-dco)：那里把预测拥塞反馈给可微优化；这里先辨认布局／布线联合优化与 inflation 的职责，不能将两篇的拥塞图视为同一阶段或同一算法。
+
+本条只有原创说明和原文链接，不上传图像或 PDF，不复刻评估图；原许可字段及图库计数不变。
 
 ## SimPhony: A Device-Circuit-Architecture Cross-Layer Modeling and Simulation Framework for Heterogeneous Electronic-Photonic AI System
 研究对象：模拟器与仿真平台 / SimPhony电子-光子系统建模平台
