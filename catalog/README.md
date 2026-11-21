@@ -568,6 +568,8 @@ SAGe · arXiv v4固定版本；不独立断言正式会议身份或出版商版�
 
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+整篇延伸：[TraceRTL F1–F16：接口、验证与设计趋势](../docs/reading-tracertl-figures.md)。使用同一15页会议版；保留上面的 F2／F7 短读，并明确本次逐图渲染核验的限制。
+
 <a id="reading-guide-ipdps2025-citroen"></a>
 
 ## Leveraging Compilation Statistics for Compiler Phase Ordering
