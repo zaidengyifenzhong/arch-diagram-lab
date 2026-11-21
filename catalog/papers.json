@@ -1285,7 +1285,7 @@
       ],
       "source_version": null,
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "原文链接读图指南：以下使用 XiangShan 站的15页 HPCA 2026版，图号与物理页仅对应这份文件；不与另一个17页 TBench 期刊版混用，也不声称两版字节相同。\n\n- [F2／§IV-A（物理第4页）](https://tutorial.xiangshan.cc/hpca26/slides/tracertl_hpca2026.pdf#page=4)：目标 RTL 的分支预测器提出请求区间 [0x100,0x110)，TraceReader 从记录中提供连续区间 [0x100,0x10c)。取交集后送往 RTL backend 的是 PC 0x100、0x104、0x108；记录中的下一条 0x200 不在请求范围内。这个基础示例不表示能模拟任意错误路径；正文指出起点不匹配时交集为空，并在 §IV-A3 给出改进。\n- [F7／§V（物理第8页）](https://tutorial.xiangshan.cc/hpca26/slides/tracertl_hpca2026.pdf#page=8)：区分较早的原型、trace-driven 仿真与性能反馈循环，以及后续功能验证、execution-driven 仿真与进一步迭代。早期性能探索不等于完整功能正确性验证，F7 是开发流程示意而非性能结果图。\n\n读图问题：哪一部分决定请求区间，哪一部分供应数据？沿分支预测器 → 取指请求 → TraceReader → 区间交集追踪，再检查 backend 实际收到哪些指令；不要把记录中“下一条”直接当作当前请求内的指令。\n\n对照 [Assassyn F9](../gallery/papers/isca-2025-assassyn.md#f9)／[F10](../gallery/papers/isca-2025-assassyn.md#f10)：那里区分生成的 Rust 仿真器与 SystemVerilog RTL；这里区分目标 RTL 的请求行为、trace 数据供应和评估流程，不把 RTL 当作模拟器的宿主，也不暗示两篇使用相同实现。\n\n本条只提供原创说明与原文链接，不上传图片或PDF。期刊版的文章与单图许可须按各自范围独立核验，不能移用于本 HPCA 版；本条不作新的图片再分发授权判断，图库与固定样本原图计数不变。\n\n来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,

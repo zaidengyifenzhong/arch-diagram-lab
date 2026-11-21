@@ -23,6 +23,7 @@
 - [SP2RINT: Spatially-Decoupled Physics-Constrained Progressive Inverse Optimization for Diffractive Optical Neural Network Training](#reading-guide-dac-2026-sp2rint)
 - [AccelFlow: Orchestrating an On-Package Ensemble of Fine-Grained Accelerators for Microservices](#reading-guide-hpca-2026-accelflow)
 - [BARD: Reducing Write Latency of DDR5 Memory by Exploiting Bank-Parallelism](#reading-guide-hpca-2026-bard)
+- [TraceRTL: Agile Performance Evaluation for Microarchitecture Exploration](#reading-guide-hpca-2026-tracertl)
 - [EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects](#reading-guide-ipdps2026-evalnet)
 - [BulletTime: Time Dilation for High-Fidelity Tracing](#reading-guide-isca-2026-bullettime)
 - [Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation](#reading-guide-isca-2026-lotus)
@@ -502,10 +503,23 @@ SAGe · arXiv v4固定版本；不独立断言正式会议身份或出版商版�
 [原文来源](https://fast.cc.gatech.edu/papers/HPCA_2026_1.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-hpca-2026-tracertl"></a>
+
 ## TraceRTL: Agile Performance Evaluation for Microarchitecture Exploration
 研究对象：模拟器与仿真平台 / TraceRTL trace驱动RTL性能模型与加速评估平台
 
 [原文来源](https://tutorial.xiangshan.cc/hpca26/slides/tracertl_hpca2026.pdf)
+原文链接读图指南：以下使用 XiangShan 站的15页 HPCA 2026版，图号与物理页仅对应这份文件；不与另一个17页 TBench 期刊版混用，也不声称两版字节相同。
+
+- [F2／§IV-A（物理第4页）](https://tutorial.xiangshan.cc/hpca26/slides/tracertl_hpca2026.pdf#page=4)：目标 RTL 的分支预测器提出请求区间 [0x100,0x110)，TraceReader 从记录中提供连续区间 [0x100,0x10c)。取交集后送往 RTL backend 的是 PC 0x100、0x104、0x108；记录中的下一条 0x200 不在请求范围内。这个基础示例不表示能模拟任意错误路径；正文指出起点不匹配时交集为空，并在 §IV-A3 给出改进。
+- [F7／§V（物理第8页）](https://tutorial.xiangshan.cc/hpca26/slides/tracertl_hpca2026.pdf#page=8)：区分较早的原型、trace-driven 仿真与性能反馈循环，以及后续功能验证、execution-driven 仿真与进一步迭代。早期性能探索不等于完整功能正确性验证，F7 是开发流程示意而非性能结果图。
+
+读图问题：哪一部分决定请求区间，哪一部分供应数据？沿分支预测器 → 取指请求 → TraceReader → 区间交集追踪，再检查 backend 实际收到哪些指令；不要把记录中“下一条”直接当作当前请求内的指令。
+
+对照 [Assassyn F9](../gallery/papers/isca-2025-assassyn.md#f9)／[F10](../gallery/papers/isca-2025-assassyn.md#f10)：那里区分生成的 Rust 仿真器与 SystemVerilog RTL；这里区分目标 RTL 的请求行为、trace 数据供应和评估流程，不把 RTL 当作模拟器的宿主，也不暗示两篇使用相同实现。
+
+本条只提供原创说明与原文链接，不上传图片或PDF。期刊版的文章与单图许可须按各自范围独立核验，不能移用于本 HPCA 版；本条不作新的图片再分发授权判断，图库与固定样本原图计数不变。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## Leveraging Compilation Statistics for Compiler Phase Ordering
