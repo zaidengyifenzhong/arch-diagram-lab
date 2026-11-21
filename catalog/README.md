@@ -22,6 +22,7 @@
 - [PacQ: A SIMT Microarchitecture for Efficient Dataflow in Hyper-asymmetric GEMMs](#reading-guide-dac-2025-pacq)
 - [SP2RINT: Spatially-Decoupled Physics-Constrained Progressive Inverse Optimization for Diffractive Optical Neural Network Training](#reading-guide-dac-2026-sp2rint)
 - [AccelFlow: Orchestrating an On-Package Ensemble of Fine-Grained Accelerators for Microservices](#reading-guide-hpca-2026-accelflow)
+- [BARD: Reducing Write Latency of DDR5 Memory by Exploiting Bank-Parallelism](#reading-guide-hpca-2026-bard)
 - [EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects](#reading-guide-ipdps2026-evalnet)
 - [BulletTime: Time Dilation for High-Fidelity Tracing](#reading-guide-isca-2026-bullettime)
 - [Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation](#reading-guide-isca-2026-lotus)
@@ -449,10 +450,22 @@ arXiv v1 标注的是非独占分发许可，不据此转载论文图。本条�
 
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-hpca-2026-bard"></a>
+
 ## BARD: Reducing Write Latency of DDR5 Memory by Exploiting Bank-Parallelism
 研究对象：缓存、地址转换与DRAM系统 / BARD LLC写回管理构件
 
 [原文来源](https://fast.cc.gatech.edu/papers/HPCA_2026_3.pdf)
+原文链接读图指南：使用 GaTech 作者实验室的15页 HPCA 2026 PDF，以下为该文件物理页；机制正文是 §IV「Bank-Aware Replacement Decisions (BARD)」，保留既有来源身份。
+
+- [F7(a)(b)（物理第6页）](https://fast.cc.gatech.edu/papers/HPCA_2026_3.pdf#page=6)：先由地址映射得到 DRAM bank ID，再索引 LLC 内的 BLP-Tracker 位。LLC 发出写回后置位；子通道所有位均为1时自清零。它据近期写回估计 bank 是否有待处理写请求，不是读取内存控制器 WRQ 得到的精确状态。
+- [F8：BARD-E（同页）](https://fast.cc.gatech.edu/papers/HPCA_2026_3.pdf#page=6)：原 LRU 是红色脏行，按 tracker 跳过红、蓝两行，选择绿色脏行为 victim。绿色行离开 LLC，并作为写回进入 WRQ；找不到合适的替代脏行时，回到原 LRU victim。
+- [F9：BARD-C（同页）](https://fast.cc.gatech.edu/papers/HPCA_2026_3.pdf#page=6)结合[物理第7页的 §IV-C 正文](https://fast.cc.gatech.edu/papers/HPCA_2026_3.pdf#page=7)：红色干净 victim 静默驱逐，不触发 DRAM 写。绿色脏行则复制内容形成另一个写回请求，清除 dirty bit 后仍留在 LLC；不能把“写回”一律理解为“驱逐”。第7页的实验图不在本指南范围内。
+
+读图练习：哪一行离开 LLC，哪一行写回后仍保留？分别标出 F8 的绿色 victim、F9 的红色 victim 与绿色清洗对象，再检查哪一个动作产生 WRQ 请求。这里讨论的是 LLC／DRAM 的硬件缓存行，不是文件系统缓存或文件持久化。
+
+本条仅提供原创说明与原文链接，不上传图片或PDF，不更改许可、图库或固定样本计数。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## Fully Parallelized BP Decoding for Quantum LDPC Codes Can Outperform BP-OSD

@@ -1154,7 +1154,7 @@
       ],
       "source_version": null,
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "原文链接读图指南：使用 GaTech 作者实验室的15页 HPCA 2026 PDF，以下为该文件物理页；机制正文是 §IV「Bank-Aware Replacement Decisions (BARD)」，保留既有来源身份。\n\n- [F7(a)(b)（物理第6页）](https://fast.cc.gatech.edu/papers/HPCA_2026_3.pdf#page=6)：先由地址映射得到 DRAM bank ID，再索引 LLC 内的 BLP-Tracker 位。LLC 发出写回后置位；子通道所有位均为1时自清零。它据近期写回估计 bank 是否有待处理写请求，不是读取内存控制器 WRQ 得到的精确状态。\n- [F8：BARD-E（同页）](https://fast.cc.gatech.edu/papers/HPCA_2026_3.pdf#page=6)：原 LRU 是红色脏行，按 tracker 跳过红、蓝两行，选择绿色脏行为 victim。绿色行离开 LLC，并作为写回进入 WRQ；找不到合适的替代脏行时，回到原 LRU victim。\n- [F9：BARD-C（同页）](https://fast.cc.gatech.edu/papers/HPCA_2026_3.pdf#page=6)结合[物理第7页的 §IV-C 正文](https://fast.cc.gatech.edu/papers/HPCA_2026_3.pdf#page=7)：红色干净 victim 静默驱逐，不触发 DRAM 写。绿色脏行则复制内容形成另一个写回请求，清除 dirty bit 后仍留在 LLC；不能把“写回”一律理解为“驱逐”。第7页的实验图不在本指南范围内。\n\n读图练习：哪一行离开 LLC，哪一行写回后仍保留？分别标出 F8 的绿色 victim、F9 的红色 victim 与绿色清洗对象，再检查哪一个动作产生 WRQ 请求。这里讨论的是 LLC／DRAM 的硬件缓存行，不是文件系统缓存或文件持久化。\n\n本条仅提供原创说明与原文链接，不上传图片或PDF，不更改许可、图库或固定样本计数。\n\n来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,
