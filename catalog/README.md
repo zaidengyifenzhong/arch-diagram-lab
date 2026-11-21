@@ -28,6 +28,7 @@
 - [EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects](#reading-guide-ipdps2026-evalnet)
 - [BulletTime: Time Dilation for High-Fidelity Tracing](#reading-guide-isca-2026-bullettime)
 - [Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation](#reading-guide-isca-2026-lotus)
+- [TUSQ: Tracking, Uncomputation, and Sampling for Noisy Quantum Simulation](#reading-guide-isca-2026-tusq)
 - [Continuation-Centric Computing with Arca](#reading-guide-osdi2026-arca)
 - [RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs](#reading-guide-osdi2026-balboa)
 - [Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases](#reading-guide-osdi2026-bodega)
@@ -708,10 +709,23 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 [原文来源](https://mariamelgamal.com/assets/pdf/RHODES_ISCA2026.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-isca-2026-tusq"></a>
+
 ## TUSQ: Tracking, Uncomputation, and Sampling for Noisy Quantum Simulation
 研究对象：模拟器与仿真平台 / 含噪量子电路经典模拟器
 
 [原文来源](https://arxiv.org/pdf/2508.04880v3)
+原文链接读图指南：以下使用15页 arXiv:2508.04880v3（2026年5月16日）；图号和物理页仅对应这一版本，不与 IEEE 会议版混用，也不认定两版相同。按 F5 的可逆回溯 → F6 的非可逆边与缓存阅读。
+
+- [F5 A/B（物理第5页）](https://arxiv.org/pdf/2508.04880v3#page=5)：A 是经 ECM 处理、采样后待模拟的含噪线路实例；B 把共同前缀组织成树，边对应门，节点对应该处的仿真状态向量，不是硬件互连。绿色深度优先路线从 S1 沿逆门回到共享节点 d，再走向 S6，复用根到 d 的前缀计算；金色路线则对各叶子多次从根执行。回退是模拟器对状态向量的操作，不是让真实量子硬件倒流。
+- [F6 A/B（物理第7页）](https://arxiv.org/pdf/2508.04880v3#page=7)：把电路中途测量对应到树中红色、标有 ≈ 的非可逆边。这种边不能靠逆门恢复；进入前保存状态，需要跨它回溯时从 LIFO 缓存恢复。A 的线路与 B 的遍历是两种视角，不要把测量画成普通可逆门。
+- [F6 C 与 §III-B2（图在物理第7页）](https://arxiv.org/pdf/2508.04880v3#page=7)，续见[物理第8页正文](https://arxiv.org/pdf/2508.04880v3#page=8)：例子有两层测量却只有一个缓存槽，因此选择各分支离叶最近的合适测量前节点；例如保存 S2 而非 S0。在能够缓存的节点处对子树使用 DFTT+Caching，其余前缀仍需从根走到该子树。不能据此推断一个槽总能达到某种性能。
+- [F6 D/E（物理第7页）](https://arxiv.org/pdf/2508.04880v3#page=7)：D 才是随缓存容量变化的性能恢复评估，正文说明其按所需操作数估算，并非实际执行全部遍历的计时；E 则是有余量内存时并行处理子树的机制。两者分别回答“评估怎样变化”和“怎样组织并行”，不把整幅混合图当作纯机制图。
+
+读图问题：从 S1 回到 d 用什么，跨非可逆边时为什么不同，恢复所需信息在哪里？前者沿路径应用逆门，后者无法从测量后状态直接逆推，须取回测量前保存的状态向量。先在 F5 找共享前缀，再在 F6 找缓存的保存／恢复位置，区分树中计算状态与宿主上的存储。
+
+权利与范围：arXiv 的分发许可不等于本图库的公开图像再分发授权。本条只有原创说明和原文链接；混合图整图及子图均不提取、不上传，不保存 PDF，不增加图片或固定样本原图覆盖计数。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## ATR: Out-of-Order Register Release Exploiting Atomic Regions
