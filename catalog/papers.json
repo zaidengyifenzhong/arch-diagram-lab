@@ -1074,7 +1074,7 @@
       ],
       "source_version": "2408.13316v2",
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "原文链接读图指南：使用15页 arXiv:2408.13316v2（2025年2月22日），保留 HPCA 2025 目录身份；下列图号与物理页只针对 v2，不认定与会议文件排版或字节相同。按电路示例 → 吸收条件 → 工具链分工阅读。\n\n- [F2（物理第3页）](https://arxiv.org/pdf/2408.13316v2#page=3)，配合[§III 续文（物理第4页）](https://arxiv.org/pdf/2408.13316v2#page=4)：同一四量子比特例子最初测量 XXZZ。Clifford extraction 使第二个 Pauli rotation 的字符串 YYXX 变为 YYII，正文给出的 CNOT 数由12减到8；再把尾部 Clifford 吸收到观测量中，改测 ZIXZ，示例剩4个 CNOT。12→8→4 只是这些示例电路的计数，不是普遍性能保证。提取后若保留尾部 Clifford，完整电路仍保持原酉变换；吸收并省去尾部后，保留的是相应目标观测量的期望，不要求剩余电路产生相同状态向量。\n- [F5（物理第4页）](https://arxiv.org/pdf/2408.13316v2#page=4)：上部 (a) 将尾部 Clifford 对 Pauli observable 的作用写成共轭变换，改测新的 observable；下部 (b) 针对尾部 CNOT network，用经典映射处理计算基测量概率。两种读出任务的条件不同，不能把概率重新映射说成任意量子全态都可由测量结果恢复。\n- [F6／§IV（物理第5页）](https://arxiv.org/pdf/2408.13316v2#page=5)：沿 CE → CA-Pre → 量子设备执行／测量 → CA-Post 分清责任。CE 把输入拆成优化后的电路及尾部 Clifford；CA-Pre 根据读出任务更新 observable 并准备测量基；执行后的 CA-Post 对应原／新 observable，或处理尾部 CNOT network 导致的概率映射。图示的是编译与执行前后处理的工作流，不是量子设备内部硬件拓扑。\n\n读图问题：少做的设备门去了哪里，为什么要换 observable？在 F2/F5 中分别找电路化简和尾部操作的经典吸收；不能只删除尾部而保持所有读出解释不变。再对照 [TUSQ F5 指南](#reading-guide-isca-2026-tusq)：TUSQ 在经典模拟器中沿状态树应用逆门、复用共享前缀；QuCLEAR 则改写交给量子设备的电路与读出处理。两者都减少重复或可转移的工作，但操作层次不同，不是同一种状态恢复，也不能直接比较示例门数与模拟器运行时间。\n\n本条仅提供原创说明与原文深链，不上传图像、PDF 或实验图，不把代码许可用于论文图像。保留原有许可字段与版本身份，不增加图库条目或固定样本原图覆盖数。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,
