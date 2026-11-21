@@ -2094,7 +2094,7 @@
       ],
       "source_version": null,
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。",
+      "source_note": "原文链接读图指南：使用作者站14页 SHADOW PDF，保留 MICRO 2025 目录身份；以下是该文件物理页，不额外认定与出版社文件相同。先看同核流水线，再用小例子区分执行完成与释放队列槽位。\n\n- [F5（物理第4页）](https://tyler-utah.github.io/files/shadow.pdf#page=4)：示例配置为同一核心中的1个乱序（OoO）线程与4个顺序（InO）线程。沿流水线辨认乱序路径的重命名／ROB，与顺序路径的 FIFO；这是所建模的硬件组织，不是运行模拟器的宿主结构。\n- [F9（物理第6页）](https://tyler-utah.github.io/files/shadow.pdf#page=6)，配合[§3.12（物理第8页）](https://tyler-utah.github.io/files/shadow.pdf#page=8)：这里缩小为仅乱序与1乱序＋1顺序的对照，不沿用 F5 的线程数量。(a) 中年轻指令即使执行完，仍须等较老指令按序提交后才能释放自己的 ROB 槽位；ROB 内箭头是唤醒所用的数据依赖，head 指最老提交槽，tail 指下一分配槽。(b) 中乱序线程仍用 ROB，顺序线程从循环 FIFO 发射并绕过 ROB。它是解释资源占用的指令示例，不是实测性能结果。\n- [§4 与 Table 1（物理第8页）](https://tyler-utah.github.io/files/shadow.pdf#page=8)：gem5 是模型工具，F5 是被建模的硬件。阅读后续结果时保留模拟条件，不能改称真机测量；本指南不展示或复刻结果图表。\n\n配对练习：格子装什么、哪一事件让格子腾空、线表示什么？先对 F9 回答：ROB 格子跟踪指令，按序提交使槽位可释放，箭头表达数据依赖；InO FIFO 则服务于按序发射，不占用 ROB。再读 [XTask／XGOMP 图2指南](#reading-guide-ipdps2025-xtask)：那里队列装跨 worker 传递的软件任务指针，消费者先查自己的 Master、再查自己的 Auxiliary，取出后立即执行；任务出队不等于任务完成，也不遵循 ROB 中老指令先提交的槽位释放规则。XTask 图中的生产／消费关系不能当成 SHADOW 的指令数据依赖。\n\n本条只含原创说明和原文链接，不上传图像、表格或 PDF，不改变许可字段、图库数量或固定样本原图覆盖。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,
