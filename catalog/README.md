@@ -30,6 +30,7 @@
 - [EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects](#reading-guide-ipdps2026-evalnet)
 - [BulletTime: Time Dilation for High-Fidelity Tracing](#reading-guide-isca-2026-bullettime)
 - [Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation](#reading-guide-isca-2026-lotus)
+- [RHODES: Robust Optimization for Uncertainty-Aware Design of CO2-Efficient Computing Systems](#reading-guide-isca-2026-rhodes)
 - [TUSQ: Tracking, Uncomputation, and Sampling for Noisy Quantum Simulation](#reading-guide-isca-2026-tusq)
 - [Continuation-Centric Computing with Arca](#reading-guide-osdi2026-arca)
 - [RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs](#reading-guide-osdi2026-balboa)
@@ -726,11 +727,25 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 
 [查看6个已收录图示条目](../gallery/papers/isca-2026-revelator.md)
 
+<a id="reading-guide-isca-2026-rhodes"></a>
+
 ## RHODES: Robust Optimization for Uncertainty-Aware Design of CO2-Efficient Computing Systems
 研究对象：EDA工具与电路设计表示 / 异构SoC设计空间优化工具
 
 [原文来源](https://mariamelgamal.com/assets/pdf/RHODES_ISCA2026.pdf)
-来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+原文链接读图指南：保留 ISCA 2026 目录身份，本次实际核验作者站仓库固定提交中的15页 PDF；首页题名为 RHODES: Robust Optimization for Uncertainty-Aware Design of CO2-Efficient Computing Systems，作者为 Mariam Elgamal、Abdulrahman Mahmoud、Gu-Yeon Wei、David Brooks、Gage Hills。不额外断言与出版社文件相同。
+
+版本依据：[固定 GitHub PDF](https://github.com/mariamelgamal/mariamelgamal.github.io/blob/606ec1de136d059e1100e26b882bfd329ed5e16b/assets/pdf/RHODES_ISCA2026.pdf)，blob `63dc7a18a3a3b39d2157e93795a2fde15a20418c`，PDF SHA-256 `f0db5c923cab881ada8f1660bcc827c9dc2522de803f7b660caf7e3ca6dfe478`。下列作者站深链用于打开原页，页码按已核验快照的物理页记录；若作者站更新，以固定 Git 文件为版本参照。
+
+- [F4 与 Table I（物理第4页）](https://mariamelgamal.com/assets/pdf/RHODES_ISCA2026.pdf#page=4)：先沿输入参数、不确定性分类与集合、鲁棒优化、求解器追到设计结果，再辨认右侧 Monte Carlo 评估区。Table I 区分输入、决策变量与输出；框架同时接收设计约束和优化目标。F4 是总体框架，但也含结果示意，不把整个面板当作纯硬件架构或纯机制原图。
+- [F8／§III-D（物理第8页）](https://mariamelgamal.com/assets/pdf/RHODES_ISCA2026.pdf#page=8)：这幅 Figure 实际是三种优化目标及约束的公式概览，不是连线图。分别识别最小总碳、碳约束下的执行时间优化、以及碳延迟积优化；目标与约束会交换角色，不能把三种问题统称为“最小功耗”。
+- [Table III、F9、F10（物理第9页）](https://mariamelgamal.com/assets/pdf/RHODES_ISCA2026.pdf#page=9)，续见[§V-A（物理第10页）](https://mariamelgamal.com/assets/pdf/RHODES_ISCA2026.pdf#page=10)：Table III 交代评估口径，F9 展示 Monte Carlo 使用的合成参数分布，F10 在 lavaMD 场景下对照已选 nominal 与 robust SoC。先固定设计身份，再看纳入不确定性后的评估，不能理解为每抽一个参数样本就重新优化硬件；正文说明两种优化都未接触这些验证用 Monte Carlo。这里比较的是模型假设下的设计，不是实机碳排放测量。
+
+读图问题：F4 中哪些信息决定“选哪个设计”，哪些步骤回答“选好之后表现怎样”？用 F8 写清目标和约束，再到 F9/F10 检查验证分布、工作负载与指标。论文以 Monte Carlo 的 p95 总碳评估设计；本文不把图中的改善倍数解释为逐样本配对比值的95分位，也不借作者 artifact 的独立实现替代本图定义。对未证实的比值计算细节不作延伸。
+
+可对照 [RUPlace](#reading-guide-dac-2025-ruplace) 与 [DCO-3D](#reading-guide-dac-2025-dco)：同样先分清优化机制和评估，但 RHODES 在不确定碳参数下选择系统设计，另两篇处理布局与拥塞；对象、约束和验证量均不同。
+
+本条仅提供原创说明和链接，不上传 PDF、图像、混合图或实验面板，不复刻结果表。许可字段、固定100篇身份及图库原图计数均不变。
 
 <a id="reading-guide-isca-2026-tusq"></a>
 
