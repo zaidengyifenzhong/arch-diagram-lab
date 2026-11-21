@@ -2,7 +2,7 @@
 
 当前收录39篇论文的183个非实验图示条目（181个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。
 
-全图库另含样本外补充 [Assassyn](../gallery/papers/isca-2025-assassyn.md) 与 [HMFS（SoCC 2025）](../gallery/papers/socc-2025-hmfs.md) 及 [Fix](../gallery/papers/eurosys-2026-fix.md) 、[Fused3S](../gallery/papers/ics-2025-fused3s.md) 、[HyPAS](../gallery/papers/dac-2026-hypas.md) 共5篇／11张，合计44篇／194条；不增加本固定样本或其分类覆盖完成量。
+全图库另含样本外补充 [Assassyn](../gallery/papers/isca-2025-assassyn.md) 与 [HMFS（SoCC 2025）](../gallery/papers/socc-2025-hmfs.md) 及 [Fix](../gallery/papers/eurosys-2026-fix.md) 、[Fused3S](../gallery/papers/ics-2025-fused3s.md) 、[HyPAS](../gallery/papers/dac-2026-hypas.md) 、[LDC](../gallery/papers/eurosys-2026-ldc.md) 共6篇／13张，合计45篇／196条；不增加本固定样本或其分类覆盖完成量。
 
 另61篇未收录原图，不代表所有来源与权利证据已穷尽。
 
