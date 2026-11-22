@@ -11,7 +11,7 @@
 
 ## 从一个问题开始
 
-- **模拟器怎样表达目标硬件？** 先看 Assassyn 原图 [F9](gallery/papers/isca-2025-assassyn.md#f9) 与 [F10](gallery/papers/isca-2025-assassyn.md#f10)：Rust 调度与生成的 SystemVerilog RTL 是两个实现视角，RTL 不是仿真宿主。再读 [Lotus](catalog/README.md#reading-guide-isca-2026-lotus) 的目标电路与任务模型。
+- **模拟器怎样表达目标硬件？** 先看 Assassyn 原图 [F9](gallery/papers/isca-2025-assassyn.md#f9) 与 [F10](gallery/papers/isca-2025-assassyn.md#f10)：Rust 调度与生成的 SystemVerilog RTL 是两个实现视角，RTL 不是仿真宿主。再读 [Lotus](catalog/README.md#reading-guide-isca-2026-lotus) 的目标电路与任务模型。 接着问：[怎样判断模拟器的抽象经得住检验？](docs/check-simulator-evidence.md)
 - **数据换了表示，怎样继续追踪？** 从[跨图追踪同一数据](docs/tracing-data-across-figures.md)入手，看 RTeAAL 的矩阵元素如何对应到 fibertree。
 - **设备做完后谁接手？** 对照 [XRT](catalog/README.md#reading-guide-atc2025-xrt) 的完成记录与线程恢复，以及 [AccelFlow](catalog/README.md#reading-guide-hpca-2026-accelflow) 的 trace 尾如何决定继续执行或通知 CPU。
 
