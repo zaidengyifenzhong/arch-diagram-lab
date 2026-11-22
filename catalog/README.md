@@ -17,6 +17,7 @@
 
 - [Parameterized Hardware Design with Latency-Abstract Interfaces](#reading-guide-asplos-2026-lilac)
 - [Sequential Specifications for Precise Hardware Exceptions](#reading-guide-asplos-2026-xpdl)
+- [Emulating Space Computing Networks with RHONE](#reading-guide-atc2025-rhone)
 - [Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization](#reading-guide-atc2025-voltrix)
 - [XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors](#reading-guide-atc2025-xrt)
 - [DCO-3D: Differentiable Congestion Optimization in 3D ICs](#reading-guide-dac-2025-dco)
@@ -208,10 +209,18 @@
 
 固定PDF SHA-256：`b086803f370e81b568bb83c90329d8e24ebca00bc3c2fe0c91e8982813b15dc9`。
 
+<a id="reading-guide-atc2025-rhone"></a>
+
 ## Emulating Space Computing Networks with RHONE
 研究对象：模拟器与仿真平台 / RHONE空间计算网络仿真平台
 
 [原文来源](https://www.usenix.org/system/files/atc25-wang-liying.pdf) · [正式会议记录](https://www.usenix.org/conference/atc25/presentation/wang-liying)
+原文链接读图指南：仅采用18页 USENIX ATC 2025正式版。
+
+[RHONE：温度、容器份额与验证参照](../docs/reading-rhone-figures.md)沿 F2（物理p6）→ F9／§5.2（p10）→ F8（p9）／F13（p12）阅读。15 °C 是目标芯片温度，3.0 s 是目标应用预期耗时，§5.2 例子的90%是地面容器份额；不要混成卫星 CPU 使用率或宿主耗时。另以 F12 温度验证和 Table 2 宿主开销区分证据角色。
+
+本轮官方 PDF 读取超时，采用既有初读记录与提供的核对信息，不声称本轮完成新视觉核验；只提供原创文字和原文链接。
+
 已核实USENIX ATC 2025正式会议PDF，18个物理页（含封面），论文集第815–831页。该固定版本15幅编号图的初步逐图研究及图号/页码核查已有记录；不等于独立逐图复核通过或实验复现。原图公开再分发许可仍未核实，当前不收录RHONE原图。
 
 固定PDF SHA-256：`14a51d95def5770a321c19ae41ec74f763fd44952269fc13592198c490f04d26`。
