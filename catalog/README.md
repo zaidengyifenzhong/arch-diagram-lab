@@ -17,6 +17,7 @@
 
 - [Parameterized Hardware Design with Latency-Abstract Interfaces](#reading-guide-asplos-2026-lilac)
 - [Sequential Specifications for Precise Hardware Exceptions](#reading-guide-asplos-2026-xpdl)
+- [LEOCraft: Towards Designing Performant LEO Networks](#reading-guide-atc2025-leocraft)
 - [Emulating Space Computing Networks with RHONE](#reading-guide-atc2025-rhone)
 - [Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization](#reading-guide-atc2025-voltrix)
 - [XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors](#reading-guide-atc2025-xrt)
@@ -201,10 +202,16 @@
 [原文来源](https://www.usenix.org/system/files/atc25-qiu.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-atc2025-leocraft"></a>
+
 ## LEOCraft: Towards Designing Performant LEO Networks
 研究对象：程序与网络分析、测试、追踪工具 / LEOCraft LEO星座网络设计与分析平台
 
 [原文来源](https://www.usenix.org/system/files/atc25-basak.pdf) · [正式会议记录](https://www.usenix.org/conference/atc25/presentation/basak)
+原文链接读图指南：[LEOCraft：比较条件、目标 RTT 与宿主成本](../docs/reading-leocraft-figures.md)。沿正式版 F11→F12→F13（物理p11／印刷798）区分总卫星数、轨道数和相位；再对照 F3／F17 的单壳与多壳条件，以及 F18／F19 的目标 RTT 和另一合成规模工作负载的宿主用时。
+
+本次采用既有初读记录与提供的核对信息；网页工具因文件大小上限未能打开正式 PDF，不声称新完成视觉审核。仅原创文字与原文链接，不新增原图。
+
 已核实USENIX ATC 2025正式会议PDF，26个物理页（含封面），论文集第789–813页。该固定版本已有29幅编号图的初研记录，分别为正文19幅（F1–F19）和附录10幅（F20–F29）；图号及物理页码已核查；不等于独立逐图复核通过或实验复现。原图公开再分发许可仍未核实，当前不收录LEOCraft原图；文中软件制品的MIT许可不等于论文图像许可。
 
 固定PDF SHA-256：`b086803f370e81b568bb83c90329d8e24ebca00bc3c2fe0c91e8982813b15dc9`。

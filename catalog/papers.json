@@ -493,7 +493,7 @@
       ],
       "source_version": "USENIX ATC 2025 official proceedings PDF; 26 physical PDF pages including cover; proceedings pp.789–813",
       "source_identity": "fixed_official_proceedings_source",
-      "source_note": "已核实USENIX ATC 2025正式会议PDF，26个物理页（含封面），论文集第789–813页。该固定版本已有29幅编号图的初研记录，分别为正文19幅（F1–F19）和附录10幅（F20–F29）；图号及物理页码已核查；不等于独立逐图复核通过或实验复现。原图公开再分发许可仍未核实，当前不收录LEOCraft原图；文中软件制品的MIT许可不等于论文图像许可。",
+      "source_note": "原文链接读图指南：[LEOCraft：比较条件、目标 RTT 与宿主成本](../docs/reading-leocraft-figures.md)。沿正式版 F11→F12→F13（物理p11／印刷798）区分总卫星数、轨道数和相位；再对照 F3／F17 的单壳与多壳条件，以及 F18／F19 的目标 RTT 和另一合成规模工作负载的宿主用时。\n\n本次采用既有初读记录与提供的核对信息；网页工具因文件大小上限未能打开正式 PDF，不声称新完成视觉审核。仅原创文字与原文链接，不新增原图。\n\n已核实USENIX ATC 2025正式会议PDF，26个物理页（含封面），论文集第789–813页。该固定版本已有29幅编号图的初研记录，分别为正文19幅（F1–F19）和附录10幅（F20–F29）；图号及物理页码已核查；不等于独立逐图复核通过或实验复现。原图公开再分发许可仍未核实，当前不收录LEOCraft原图；文中软件制品的MIT许可不等于论文图像许可。",
       "public_gallery": {
         "status": "not_in_current_selection",
         "figure_count": 0,
