@@ -23,6 +23,7 @@
 - [GEM: GPU-Accelerated Emulator-Inspired RTL Simulation](#reading-guide-dac-2025-gem)
 - [PacQ: A SIMT Microarchitecture for Efficient Dataflow in Hyper-asymmetric GEMMs](#reading-guide-dac-2025-pacq)
 - [RUPlace: Optimizing Routability via Unified Placement and Routing Formulation](#reading-guide-dac-2025-ruplace)
+- [SimPhony: A Device-Circuit-Architecture Cross-Layer Modeling and Simulation Framework for Heterogeneous Electronic-Photonic AI System](#reading-guide-dac-2025-simphony)
 - [SP2RINT: Spatially-Decoupled Physics-Constrained Progressive Inverse Optimization for Diffractive Optical Neural Network Training](#reading-guide-dac-2026-sp2rint)
 - [QuCLEAR: Clifford Extraction and Absorption for Quantum Circuit Optimization](#reading-guide-hpca-2025-quclear)
 - [AccelFlow: Orchestrating an On-Package Ensemble of Fine-Grained Accelerators for Microservices](#reading-guide-hpca-2026-accelflow)
@@ -369,10 +370,18 @@ arXiv v1 标注的是非独占分发许可，不据此转载论文图。本条�
 
 本条只有原创说明和原文链接，不上传图像或 PDF，不复刻评估图；原许可字段及图库计数不变。
 
+<a id="reading-guide-dac-2025-simphony"></a>
+
 ## SimPhony: A Device-Circuit-Architecture Cross-Layer Modeling and Simulation Framework for Heterogeneous Electronic-Photonic AI System
 研究对象：模拟器与仿真平台 / SimPhony电子-光子系统建模平台
 
 [原文来源](https://scopex-asu.github.io/files/publications/ONN_DAC2025_Gu_SimPhony.pdf)
+原文链接读图指南：阅读版本为实验室8页 PDF（首页标 arXiv:2411.13715v1），并参照[该版官方 HTML](https://arxiv.org/html/2411.13715v1)。实验室版署名含 Amir Begovic，DAC 正式记录列 Nicholas Gangi；保留本目录会议身份，不认定版次、作者列表或排版一致。
+
+[完整导读与 F1–F11 角色索引](../docs/reading-simphony-figures.md)：从 F2／F3（物理p3）的累计插入损耗路径，到 F4（p4）的 GEMM 分层累加，再读 F9（p6）的波长／位宽探索；另沿 F6（p5）到 F10(a)（p6）核对面积估算参照。关键路径服务于激光功率需求，不是最长时延；F7／F8 的先前架构模型参照也不同于实际布局面积。
+
+只提供原创文字和原文链接；本次正文／图注核验与未完成的视觉复核范围见完整导读，不新增任何图片或改变许可标签。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## Sandwich: Joint Configuration Search and Hot-Switching for Efficient CPU LLM Serving
