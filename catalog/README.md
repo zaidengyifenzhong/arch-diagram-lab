@@ -43,6 +43,7 @@
 - [AccelFlow: Orchestrating an On-Package Ensemble of Fine-Grained Accelerators for Microservices](#reading-guide-hpca-2026-accelflow)
 - [BARD: Reducing Write Latency of DDR5 Memory by Exploiting Bank-Parallelism](#reading-guide-hpca-2026-bard)
 - [DSAssassin: Cross-VM Side-Channel Attacks by Exploiting Intel Data Streaming Accelerator](#reading-guide-hpca-2026-dsassassin)
+- [Nugget: Portable Program Snippets](#reading-guide-hpca-2026-nugget)
 - [SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense](#reading-guide-hpca-2026-salt)
 - [TraceRTL: Agile Performance Evaluation for Microarchitecture Exploration](#reading-guide-hpca-2026-tracertl)
 - [Leveraging Compilation Statistics for Compiler Phase Ordering](#reading-guide-ipdps2025-citroen)
@@ -59,6 +60,7 @@
 - [RHODES: Robust Optimization for Uncertainty-Aware Design of CO2-Efficient Computing Systems](#reading-guide-isca-2026-rhodes)
 - [TUSQ: Tracking, Uncomputation, and Sampling for Noisy Quantum Simulation](#reading-guide-isca-2026-tusq)
 - [Drishti: Do Not Forget Slicing While Designing Last-Level Cache Replacement Policies for Many-Core Systems](#reading-guide-micro-2025-drishti)
+- [Dissecting and Modeling the Architecture of Modern GPU Cores](#reading-guide-micro-2025-modern-gpu)
 - [OmniSim: Simulating Hardware with C Speed and RTL Accuracy for High-Level Synthesis Designs](#reading-guide-micro-2025-omnisim)
 - [SHADOW: Simultaneous Multi-Threading Architecture with Asymmetric Threads](#reading-guide-micro-2025-shadow)
 - [SMX: Heterogeneous Architecture for Universal Sequence Alignment Acceleration](#reading-guide-micro-2025-smx)
@@ -667,10 +669,19 @@ BP-SF · arXiv v3固定版本；不独立断言正式会议身份或出版商版
 
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-hpca-2026-nugget"></a>
+
 ## Nugget: Portable Program Snippets
 研究对象：程序与网络分析、测试、追踪工具 / Nugget可移植程序片段工具链
 
 [原文来源](https://arxiv.org/pdf/2509.02873v2)
+原文链接读图指南：本小节只使用 arXiv:2509.02873v2 的 [§3 与 F1 图注](https://arxiv.org/html/2509.02873v2#S3)，保留目录的正式 HPCA 论文身份；不把 arXiv 页首元数据题名替换为正式题名，也不据此认定两版排版或字节相同。
+
+- F1 是程序片段采样工作流：先区分通常只需一次的准备与区间分析，以及可以重复的样本生成与验证。验证不理想时回到样本重选，不把每次验证都画成必然重跑准备阶段，也不把这张流程图当作仿真器硬件结构或性能曲线。
+- 读图问题：如果当前样本未通过所需验证，应回到哪一段，哪些前期工作通常可以保留？沿图中的反馈关系回答，再用 §3 的说明核对。
+
+本轮使用已核验的图注与出处编写静态入口，未下载PDF或重新视觉审核，不嵌入图片，不改变第三方素材的暂缓审核状态或现有许可记录，也不增加原图数量。
+
 未收录图片不代表获得公开再分发许可。 本图库当前不收录该论文图片；只保留来源链接。
 
 ## SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis
@@ -1058,10 +1069,19 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 
 [查看6个已收录图示条目](../gallery/papers/micro-2025-lvm.md)
 
+<a id="reading-guide-micro-2025-modern-gpu"></a>
+
 ## Dissecting and Modeling the Architecture of Modern GPU Cores
 研究对象：CPU/GPU处理器与执行构件 / 现代NVIDIA GPU核心及其Accel-sim微架构模型
 
 [原文来源](https://upcommons.upc.edu/server/api/core/bitstreams/3d75bf4b-84c5-4901-a435-413ba8036f1b/content)
+原文链接读图指南：本小节使用作者预印本 arXiv:2503.20481v1，题名为 Analyzing Modern NVIDIA GPU cores；目录保留正式 MICRO 论文的身份与题名。以下物理页只属于该预印本，不移用旧 UPC 存档页码，也不声称两版字节或图号一致。
+
+- [F1：Accel-Sim 基线（v1 PDF物理p2）](https://arxiv.org/pdf/2503.20481v1#page=2) → [F3：作者推断的 SM 设计（v1 PDF物理p5）](https://arxiv.org/pdf/2503.20481v1#page=5)：从共享 L1 继续追踪到每个子核心各自的 L0 指令缓存与 stream buffer，区分共享资源和子核心局部资源。F3 是作者提出的微架构解释，不把它当作厂商公开的完整内部设计。
+- 可直接打开作者原生图稿：[F1](https://arxiv.org/html/2503.20481v1/Rev_literature.png)、[F3](https://arxiv.org/html/2503.20481v1/Rev_ourCore.png)，并到 [§6](https://arxiv.org/html/2503.20481v1#S6) 对照模拟器实现。读图问题：请求经过哪些共享结构，哪些状态在各子核心分别维护？先沿资源归属作答，再用实现文字核对，不从方框大小推断容量或性能。
+
+本轮使用已核验的出处编写静态链接，未重新下载或开展新的视觉审核。原生图链接不等于本仓库已收录或已确认单图转载条件；不嵌入图片，不增加原图数量。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## NetSparse: In-Network Acceleration of Distributed Sparse Kernels
