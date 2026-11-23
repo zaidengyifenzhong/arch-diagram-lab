@@ -1,5 +1,7 @@
 # 100篇论文来源目录
 
+入口核算与未完成清单：[固定100篇原图／图号级导读覆盖](../docs/catalog-access-coverage.md)。这不是全篇完成率。
+
 当前收录39篇论文的183个非实验图示条目（181个原图条目及2个明确标注的机制子区域／非整图）。实验结果、测量照片及未分离的混合整图不纳入；100篇目录不等于100篇研究或授权完成。
 
 全图库另含样本外补充 [Assassyn](../gallery/papers/isca-2025-assassyn.md) 与 [HMFS（SoCC 2025）](../gallery/papers/socc-2025-hmfs.md) 及 [Fix](../gallery/papers/eurosys-2026-fix.md) 、[Fused3S](../gallery/papers/ics-2025-fused3s.md) 、[HyPAS](../gallery/papers/dac-2026-hypas.md) 、[LDC](../gallery/papers/eurosys-2026-ldc.md) 共6篇／13张，合计45篇／196条；不增加本固定样本或其分类覆盖完成量。
@@ -15,8 +17,10 @@
 
 跨论文方法：[两张机制图怎么对照读](../docs/reading-mechanism-pairs.md)。先问两图保留了什么、改变了什么。
 
+- [DARTH-PUM: A Hybrid Processing-Using-Memory Architecture](#reading-guide-asplos-2026-darth)
 - [Parameterized Hardware Design with Latency-Abstract Interfaces](#reading-guide-asplos-2026-lilac)
 - [Sequential Specifications for Precise Hardware Exceptions](#reading-guide-asplos-2026-xpdl)
+- [FiDe: Reliable and Fast Crash Failure Detection to Boost Datacenter Coordination](#reading-guide-atc2025-fide)
 - [LEOCraft: Towards Designing Performant LEO Networks](#reading-guide-atc2025-leocraft)
 - [Emulating Space Computing Networks with RHONE](#reading-guide-atc2025-rhone)
 - [Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization](#reading-guide-atc2025-voltrix)
@@ -47,6 +51,7 @@
 - [FARLock: Asymmetric RDMA Locking Made Fair](#reading-guide-osdi2026-farlock)
 - [hS: Speculative Script Reordering at Subprocess Granularity](#reading-guide-osdi2026-hs)
 - [Mimesys: Generating Realistic Executable Testing Environments from Resource Usage Traces](#reading-guide-osdi2026-mimesys)
+- [μShell: A Microkernel-based FPGA Shell Architecture](#reading-guide-osdi2026-mushell)
 - [SBB: Eliminating Centralized Bottlenecks in Userspace Network Runtime](#reading-guide-osdi2026-sbb)
 - [VTC: DNN Compilation with Virtual Tensors for Data Movement Elimination](#reading-guide-osdi2026-vtc)
 <!-- source-linked-guides:end -->
@@ -115,10 +120,19 @@
 
 [查看4个已收录图示条目](../gallery/papers/asplos-2026-cxlmodel.md)
 
+<a id="reading-guide-asplos-2026-darth"></a>
+
 ## DARTH-PUM: A Hybrid Processing-Using-Memory Architecture
 研究对象：专用加速器与可重构/存内计算平台 / DARTH-PUM模拟/数字混合存内计算平台
 
 [原文来源](https://ghose.cs.illinois.edu/papers/26asplos_darthpum.pdf)
+原文链接读图指南：采用作者站20页 ASPLOS 2026排版稿，DOI 10.1145/3779212.3790151；不据作者托管地址断言与出版商文件字节相同。页码为该文件物理页。
+
+- [F5：数字 PUM 数据布局（物理p5）](https://ghose.cs.illinois.edu/papers/26asplos_darthpum.pdf#page=5)：追踪一个向量元素的不同位如何分布到不同阵列；这是位流水线的表示示例，不是吞吐测量。
+- [F6：动机架构（同页p5）](https://ghose.cs.illinois.edu/papers/26asplos_darthpum.pdf#page=5)：对照数字 PUM、模拟 PUM 与朴素混合方案，先问非 MVM 运算放在哪里。这里展示的是动机比较对象，不应直接当作最终 DARTH-PUM 完整实现；相邻 F7 是吞吐实验，不纳入非实验入口。
+
+本轮依据作者稿可读图注及正文核对图号、页码与作用，未完成新视觉审核，不描述未经核验的配色。只提供原创说明与链接，不上传图像/PDF，也不开展新一轮授权搜索。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 <a id="reading-guide-asplos-2026-lilac"></a>
@@ -191,10 +205,18 @@
 [原文来源](https://www.usenix.org/system/files/atc25-peng-yuke.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-atc2025-fide"></a>
+
 ## FiDe: Reliable and Fast Crash Failure Detection to Boost Datacenter Coordination
 研究对象：分布式协议与协调构件 / FiDe数据中心崩溃故障检测协议构件
 
 [原文来源](https://www.usenix.org/system/files/atc25-rovelli.pdf)
+原文链接读图指南：采用25页 USENIX ATC 2025正式 PDF（含封面），页码为该文件物理页。
+
+- [F1：架构与进程交互（物理p4）](https://www.usenix.org/system/files/atc25-rovelli.pdf#page=4)：在简化 fat-tree 中区分应用进程、FiDe 进程、控制器与 SDN 交换机，沿多播树追监测通信，再问谁配置网络、谁监测应用。它是部署与交互示意，不是检测时延测量，也不单独证明故障检测可靠性。
+
+本轮依据正式来源可读图注和 §3.1 核对图号、页码与作用，未完成新视觉审核，不描述配色或线型。仅链接原文，不上传图片/PDF，不作新的再分发许可判断。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## HotRAP: Hot Record Retention and Promotion for LSM-trees with Tiered Storage
@@ -1078,10 +1100,18 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 
 对照 [BulletTime 图1／图3读图指南](#reading-guide-isca-2026-bullettime)：移动一个块，在两篇分别破坏／保留什么？图5与同页正文要求保留每核各 stressor 在窗口内的分配时长，允许窗口内打乱执行顺序；这不是重放原线程事件顺序。BulletTime 则关注追踪扰动下的相对进度与关键操作交错，并须结合其窗口化算法的保序边界阅读。
 
+<a id="reading-guide-osdi2026-mushell"></a>
+
 ## μShell: A Microkernel-based FPGA Shell Architecture
 研究对象：操作系统、内存分配与硬件管理层 / 模块化FPGA shell及其管理层
 
 [原文来源](https://www.usenix.org/system/files/osdi26-chen-jiyang.pdf)
+原文链接读图指南：采用25页 USENIX OSDI 2026正式 PDF（含封面），页码为该文件物理页。
+
+- [F7：系统总览（物理p6）](https://www.usenix.org/system/files/osdi26-chen-jiyang.pdf#page=6)：从 guest 应用和 μShell API 找到特权 μShell OS，再定位 FPGA 内各 vFPGA 与 CEU，区分软件配置职责和硬件能力检查。读图问题：应用要连接两块硬件逻辑时，由谁安排连接、由谁执行访问限制？结合 §3.1 阅读，不把总览框图当作隔离正确性的证明。F3–F6 的测量／分析结果不作为本入口的非实验图。
+
+本轮依据正式来源可读图注和正文核对图号、页码与角色，未完成新视觉审核，不猜配色或箭头几何。仅链接原文，不上传图片/PDF，不改变许可标签。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 <a id="reading-guide-osdi2026-sbb"></a>
