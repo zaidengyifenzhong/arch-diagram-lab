@@ -20,30 +20,48 @@
 - [DARTH-PUM: A Hybrid Processing-Using-Memory Architecture](#reading-guide-asplos-2026-darth)
 - [Parameterized Hardware Design with Latency-Abstract Interfaces](#reading-guide-asplos-2026-lilac)
 - [Sequential Specifications for Precise Hardware Exceptions](#reading-guide-asplos-2026-xpdl)
+- [ASTERINAS: A Linux ABI-Compatible, Rust-Based Framekernel OS with a Small and Sound TCB](#reading-guide-atc2025-asterinas)
 - [FiDe: Reliable and Fast Crash Failure Detection to Boost Datacenter Coordination](#reading-guide-atc2025-fide)
 - [LEOCraft: Towards Designing Performant LEO Networks](#reading-guide-atc2025-leocraft)
 - [Emulating Space Computing Networks with RHONE](#reading-guide-atc2025-rhone)
 - [Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization](#reading-guide-atc2025-voltrix)
 - [XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors](#reading-guide-atc2025-xrt)
 - [DCO-3D: Differentiable Congestion Optimization in 3D ICs](#reading-guide-dac-2025-dco)
+- [FastPath: A Hybrid Approach for Efficient Hardware Security Verification](#reading-guide-dac-2025-fastpath)
 - [GEM: GPU-Accelerated Emulator-Inspired RTL Simulation](#reading-guide-dac-2025-gem)
 - [PacQ: A SIMT Microarchitecture for Efficient Dataflow in Hyper-asymmetric GEMMs](#reading-guide-dac-2025-pacq)
+- [ReChisel: Effective Automatic Chisel Code Generation by LLM with Reflection](#reading-guide-dac-2025-rechisel)
 - [RUPlace: Optimizing Routability via Unified Placement and Routing Formulation](#reading-guide-dac-2025-ruplace)
 - [SimPhony: A Device-Circuit-Architecture Cross-Layer Modeling and Simulation Framework for Heterogeneous Electronic-Photonic AI System](#reading-guide-dac-2025-simphony)
 - [SP2RINT: Spatially-Decoupled Physics-Constrained Progressive Inverse Optimization for Diffractive Optical Neural Network Training](#reading-guide-dac-2026-sp2rint)
+- [Let-Me-In: (Still) Employing In-pointer Bounds Metadata for Fine-grained GPU Memory Safety](#reading-guide-hpca-2025-lmi)
+- [MASCOT: Predicting Memory Dependencies and Opportunities for Speculative Memory Bypassing](#reading-guide-hpca-2025-mascot)
+- [PIMnet: A Domain-Specific Network for Efficient Collective Communication in Scalable PIM](#reading-guide-hpca-2025-pimnet)
 - [QuCLEAR: Clifford Extraction and Absorption for Quantum Circuit Optimization](#reading-guide-hpca-2025-quclear)
+- [No Rush in Executing Atomic Instructions](#reading-guide-hpca-2025-row)
+- [VR-Pipe: Streamlining Hardware Graphics Pipeline for Volume Rendering](#reading-guide-hpca-2025-vrpipe)
 - [AccelFlow: Orchestrating an On-Package Ensemble of Fine-Grained Accelerators for Microservices](#reading-guide-hpca-2026-accelflow)
 - [BARD: Reducing Write Latency of DDR5 Memory by Exploiting Bank-Parallelism](#reading-guide-hpca-2026-bard)
+- [DSAssassin: Cross-VM Side-Channel Attacks by Exploiting Intel Data Streaming Accelerator](#reading-guide-hpca-2026-dsassassin)
+- [SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense](#reading-guide-hpca-2026-salt)
 - [TraceRTL: Agile Performance Evaluation for Microarchitecture Exploration](#reading-guide-hpca-2026-tracertl)
 - [Leveraging Compilation Statistics for Compiler Phase Ordering](#reading-guide-ipdps2025-citroen)
+- [Accelerating Tensor-train Decomposition on Graph Neural Networks](#reading-guide-ipdps2025-falcon)
 - [Optimizing Fine-Grained Parallelism Through Dynamic Load Balancing on Multi-Socket Many-Core Systems](#reading-guide-ipdps2025-xtask)
 - [EvalNet: A Practical Toolchain for Generation and Analysis of Extreme-Scale Interconnects](#reading-guide-ipdps2026-evalnet)
+- [I Like To Move It – Computation Instead of Data in the Brain](#reading-guide-ipdps2026-move-brain)
 - [BulletTime: Time Dilation for High-Fidelity Tracing](#reading-guide-isca-2026-bullettime)
+- [Bumper: Hinting Instruction Usefulness for Robust Unified Caches](#reading-guide-isca-2026-bumper)
+- [DICE: Enabling Efficient General-Purpose SIMT Execution with Statically Scheduled Coarse-Grained Reconfigurable Arrays](#reading-guide-isca-2026-dice)
+- [HartBreaker: Deterministic Fuzzing of Multi-Hart RISC-V CPUs with Non-Deterministic Programs](#reading-guide-isca-2026-hartbreaker)
+- [IroKnight: Ownership-Preserving Neural Acceleration for Inference Serving](#reading-guide-isca-2026-iroknight)
 - [Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation](#reading-guide-isca-2026-lotus)
 - [RHODES: Robust Optimization for Uncertainty-Aware Design of CO2-Efficient Computing Systems](#reading-guide-isca-2026-rhodes)
 - [TUSQ: Tracking, Uncomputation, and Sampling for Noisy Quantum Simulation](#reading-guide-isca-2026-tusq)
+- [Drishti: Do Not Forget Slicing While Designing Last-Level Cache Replacement Policies for Many-Core Systems](#reading-guide-micro-2025-drishti)
 - [OmniSim: Simulating Hardware with C Speed and RTL Accuracy for High-Level Synthesis Designs](#reading-guide-micro-2025-omnisim)
 - [SHADOW: Simultaneous Multi-Threading Architecture with Asymmetric Threads](#reading-guide-micro-2025-shadow)
+- [SMX: Heterogeneous Architecture for Universal Sequence Alignment Acceleration](#reading-guide-micro-2025-smx)
 - [Continuation-Centric Computing with Arca](#reading-guide-osdi2026-arca)
 - [RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs](#reading-guide-osdi2026-balboa)
 - [Bodega: Localized Linearizable Reads at Anywhere Anytime via Roster Leases](#reading-guide-osdi2026-bodega)
@@ -199,10 +217,18 @@
 
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-atc2025-asterinas"></a>
+
 ## ASTERINAS: A Linux ABI-Compatible, Rust-Based Framekernel OS with a Small and Sound TCB
 研究对象：操作系统、内存分配与硬件管理层 / Asterinas Rust framekernel操作系统
 
 [原文来源](https://www.usenix.org/system/files/atc25-peng-yuke.pdf)
+原文链接读图指南：以下图号与物理页仅针对18页USENIX正式PDF，不推定与其他版次相同。
+
+- [F1（物理p3）](https://www.usenix.org/system/files/atc25-peng-yuke.pdf#page=3)：对照单体内核、微内核和 framekernel：后者仍在同一地址空间，以受信框架的安全接口承接服务与底层资源之间的交互。问哪些操作必须经过框架；这幅架构比较不是性能或安全性证明。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 <a id="reading-guide-atc2025-fide"></a>
@@ -328,10 +354,18 @@
 
 本条只有原创说明和原文链接，不提取、上传任何整图、子图或 PDF，不沿用此前暂缓的裁图流程；保留现有许可记录，图库与固定样本原图计数不变。
 
+<a id="reading-guide-dac-2025-fastpath"></a>
+
 ## FastPath: A Hybrid Approach for Efficient Hardware Security Verification
 研究对象：RTL验证、生成与修复工具 / FastPath RTL硬件安全验证工具链
 
 [原文来源](https://kastner.ucsd.edu/wp-content/uploads/2025/06/admin/dac25-fastpath.pdf)
+原文链接读图指南：以下图号与物理页仅针对7页作者PDF，不推定与其他版次相同。
+
+- [F1（物理p4）](https://kastner.ucsd.edu/wp-content/uploads/2025/06/admin/dac25-fastpath.pdf#page=4)：沿验证流程区分结构分析、带信息流跟踪的仿真与形式验证各自检查什么。仿真未发现问题不等于形式性质已经成立；这幅图给出方法的组织关系，不是实验结果。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 <a id="reading-guide-dac-2025-gem"></a>
@@ -378,10 +412,18 @@ arXiv v1 标注的是非独占分发许可，不据此转载论文图。本条�
 
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-dac-2025-rechisel"></a>
+
 ## ReChisel: Effective Automatic Chisel Code Generation by LLM with Reflection
 研究对象：RTL验证、生成与修复工具 / ReChisel Chisel代码生成与反思修复工具
 
 [原文来源](https://arxiv.org/pdf/2505.19734v1)
+原文链接读图指南：以下图号与物理页仅针对7页arXiv:2505.19734v1，不推定与其他版次相同。
+
+- [F2（物理p3）](https://arxiv.org/pdf/2505.19734v1#page=3)：沿规格与测试平台、生成器、编译和仿真，再到检查与反馈，找出驱动下一轮修改的信息。流程图展示生成与修订职责，不把测试通过当作所有输入上的正确性证明。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## Insights from Rights and Wrongs: A Large Language Model for Solving Assertion Failures in RTL Design
@@ -479,22 +521,46 @@ arXiv v1 标注的是非独占分发许可，不据此转载论文图。本条�
 [原文来源](https://iacoma.cs.uiuc.edu/iacoma-papers/hpca25_1.pdf)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-hpca-2025-lmi"></a>
+
 ## Let-Me-In: (Still) Employing In-pointer Bounds Metadata for Fine-grained GPU Memory Safety
 研究对象：内存保护与资源隔离构件 / LMI GPU指针边界保护构件
 
 [原文来源](https://seonjinna.github.io/assets/pdf/LMI_hpca25.pdf)
+原文链接读图指南：以下图号与物理页仅针对14页作者PDF，不推定与其他版次相同。
+
+- [F3（物理p6）](https://seonjinna.github.io/assets/pdf/LMI_hpca25.pdf#page=6)：先看同一 warp 的不同线程如何请求不同大小的堆空间，再问分配器必须保留哪一线程对应哪一段空间。这是变长分配的代码／行为示例，不是分配开销测量。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+
+<a id="reading-guide-hpca-2025-mascot"></a>
 
 ## MASCOT: Predicting Memory Dependencies and Opportunities for Speculative Memory Bypassing
 研究对象：CPU/GPU处理器与执行构件 / MASCOT CPU内存依赖预测器
 
 [原文来源](https://webs.um.es/aros/papers/pdfs/kmose-hpca25.pdf)
+原文链接读图指南：以下图号与物理页仅针对13页作者PDF，不推定与其他版次相同。
+
+- [F3（物理p4）](https://webs.um.es/aros/papers/pdfs/kmose-hpca25.pdf#page=4)：沿错误依赖预测后的非依赖条目分配，追踪更高上下文如何改变下一次预测。区分预测器状态更新与准确率评估；示例不是对任意程序的准确率保证。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+
+<a id="reading-guide-hpca-2025-pimnet"></a>
 
 ## PIMnet: A Domain-Specific Network for Efficient Collective Communication in Scalable PIM
 研究对象：互连、网络接口与数据通路 / PIMnet分层片内/封装互连
 
 [原文来源](https://bu-icsg.github.io/publications/2025/PIMnet_HPCA_2025.pdf)
+原文链接读图指南：以下图号与物理页仅针对16页作者PDF，不推定与其他版次相同。
+
+- [F1（物理p2）](https://bu-icsg.github.io/publications/2025/PIMnet_HPCA_2025.pdf#page=2)：先认普通 DIMM、PIM DIMM 与内部 PIM bank 的层级，定位主机参与的通信路径。这是背景 UPMEM 系统，不把它误称为论文提出的 PIMnet 完整互连。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 <a id="reading-guide-hpca-2025-quclear"></a>
@@ -513,16 +579,32 @@ arXiv v1 标注的是非独占分发许可，不据此转载论文图。本条�
 
 本条仅提供原创说明与原文深链，不上传图像、PDF 或实验图，不把代码许可用于论文图像。保留原有许可字段与版本身份，不增加图库条目或固定样本原图覆盖数。
 
+<a id="reading-guide-hpca-2025-row"></a>
+
 ## No Rush in Executing Atomic Instructions
 研究对象：CPU/GPU处理器与执行构件 / CPU原子RMW执行与竞争预测构件
 
 [原文来源](https://webs.um.es/aros/papers/pdfs/aasgharzadeh-hpca25.pdf)
+原文链接读图指南：以下图号与物理页仅针对13页作者PDF，不推定与其他版次相同。
+
+- [F3（物理p3）](https://webs.um.es/aros/papers/pdfs/aasgharzadeh-hpca25.pdf#page=3)：沿无栅栏原子 fetch-and-increment 的队列与执行路径，区分指令提交和内存侧操作。图注明确这是 Free Atomics 参考机制，不是 ROW 最终设计的完整图或实测时间线。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+
+<a id="reading-guide-hpca-2025-vrpipe"></a>
 
 ## VR-Pipe: Streamlining Hardware Graphics Pipeline for Volume Rendering
 研究对象：CPU/GPU处理器与执行构件 / VR-Pipe GPU固定功能图形流水线
 
 [原文来源](https://yong2355.github.io/assets/pdf/hpca25-vr-pipe.pdf)
+原文链接读图指南：以下图号与物理页仅针对14页作者PDF，不推定与其他版次相同。
+
+- [F2（物理p2）](https://yong2355.github.io/assets/pdf/hpca25-vr-pipe.pdf#page=2)：沿顶点着色、光栅化、片段着色与光栅操作识别渲染阶段，问哪些工作可编程、哪些由固定功能承担。这是 OpenGL 背景流水线，不把全部阶段当成 VR-Pipe 新增模块。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 <a id="reading-guide-hpca-2026-accelflow"></a>
@@ -571,10 +653,18 @@ BP-SF · arXiv v3固定版本；不独立断言正式会议身份或出版商版
 
 [查看2个已收录图示条目](../gallery/papers/hpca-2026-bpsf.md)
 
+<a id="reading-guide-hpca-2026-dsassassin"></a>
+
 ## DSAssassin: Cross-VM Side-Channel Attacks by Exploiting Intel Data Streaming Accelerator
 研究对象：内存保护与资源隔离构件 / DSA共享资源隔离边界
 
 [原文来源](https://i.benx.dev/assets/hpca26dsassassin.pdf)
+原文链接读图指南：以下图号与物理页仅针对15页作者PDF，不推定与其他版次相同。
+
+- [F1（物理p3）](https://i.benx.dev/assets/hpca26dsassassin.pdf#page=3)：先定位 CPU、DSA、地址翻译与 PCIe 路径，区分提交描述符和处理内存请求的角色。架构概览用于认识组件边界，不是攻击成功率或安全性验证。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## Nugget: Portable Program Snippets
@@ -591,10 +681,18 @@ SAGe · arXiv v4固定版本；不独立断言正式会议身份或出版商版�
 
 [查看3个已收录图示条目](../gallery/papers/hpca-2026-sage.md)
 
+<a id="reading-guide-hpca-2026-salt"></a>
+
 ## SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense
 研究对象：缓存、地址转换与DRAM系统 / SALT DRAM子阵列刷新构件
 
 [原文来源](https://fast.cc.gatech.edu/papers/HPCA_2026_1.pdf)
+原文链接读图指南：以下图号与物理页仅针对16页作者PDF，不推定与其他版次相同。
+
+- [F4（物理p6）](https://fast.cc.gatech.edu/papers/HPCA_2026_1.pdf#page=6)：沿单个子阵列的 ACtr、BPtr 与刷新动作，追问收到 ABO 后由哪个状态选择待刷新的 bundle、哪个状态继续推进。这里是控制机制示意，不是防护效果测量。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 <a id="reading-guide-hpca-2026-tracertl"></a>
@@ -634,10 +732,18 @@ SAGe · arXiv v4固定版本；不独立断言正式会议身份或出版商版�
 
 本条仅提供原创说明和作者原文深链，不复制代码片段、图像或 PDF，不收录实验图；原许可字段、图库计数及固定100篇身份均不变。
 
+<a id="reading-guide-ipdps2025-falcon"></a>
+
 ## Accelerating Tensor-train Decomposition on Graph Neural Networks
 研究对象：机器学习训练与推理系统 / FALCON张量分解GNN训练框架
 
 [原文来源](https://issl-uk.com/publication/ipdps25/ipdps25.pdf)
+原文链接读图指南：以下图号与物理页仅针对12页作者PDF，不推定与其他版次相同。
+
+- [F6（物理p4）](https://issl-uk.com/publication/ipdps25/ipdps25.pdf#page=4)：先区分一次性的图预处理与反复运行的训练流程，再定位 TT 嵌入表及其更新。问重排输入与训练梯度分别发生在哪里；流程中的数据变换不是性能曲线。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 <a id="reading-guide-ipdps2025-xtask"></a>
@@ -674,10 +780,18 @@ Ci 取任务时先查自己的 Master，空了才查自己的 Auxiliary，取到
 
 权利边界：arXiv 的非独占分发许可不是图库再分发许可，不能用软件许可替代论文图像授权。本条只链接原文并提供原创说明，不上传任何图片或 PDF，不增加论文条目或原图库图数。
 
+<a id="reading-guide-ipdps2026-move-brain"></a>
+
 ## I Like To Move It – Computation Instead of Data in the Brain
 研究对象：模拟器与仿真平台 / MSP分布式脑结构可塑性模拟器
 
 [原文来源](https://arxiv.org/pdf/2509.26193v2)
+原文链接读图指南：以下图号与物理页仅针对12页arXiv:2509.26193v2，不推定与其他版次相同。
+
+- [F1（物理p3）](https://arxiv.org/pdf/2509.26193v2#page=3)：从第一个进程的视角辨认分布式树如何组织，区分树节点及其进程归属。图用简化的二叉树说明数据结构，不应按题名把它读成生物神经元连接图。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## ucTrace: A Multi-Layer Profiling Tool for UCX-driven Communication
@@ -713,10 +827,18 @@ Ci 取任务时先查自己的 Master，空了才查自己的 Auxiliary，取到
 
 本次只链接原文与原创说明，不附图片或PDF，未认定论文图片可再分发，不增加固定样本或图库的原图收录量。
 
+<a id="reading-guide-isca-2026-bumper"></a>
+
 ## Bumper: Hinting Instruction Usefulness for Robust Unified Caches
 研究对象：缓存、地址转换与DRAM系统 / Bumper统一L2指令行管理构件
 
 [原文来源](https://gvavou5.github.io/Documents/Bumper_ISCA26.pdf)
+原文链接读图指南：以下图号与物理页仅针对17页作者PDF，不推定与其他版次相同。
+
+- [F9（物理p7）](https://gvavou5.github.io/Documents/Bumper_ISCA26.pdf#page=7)：跟随提交产生的提示，经 L1I 的 send_hint 状态到 L2C 的提升动作，问为什么不必对同一行的每条指令都发送提示。此图是微架构控制路径，不是缓存命中率结果。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM
@@ -741,10 +863,18 @@ CHIME · arXiv v2固定版本；不独立断言正式会议身份或出版商版
 [原文来源](https://arxiv.org/pdf/2606.22297)
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+<a id="reading-guide-isca-2026-dice"></a>
+
 ## DICE: Enabling Efficient General-Purpose SIMT Execution with Statically Scheduled Coarse-Grained Reconfigurable Arrays
 研究对象：专用加速器与可重构/存内计算平台 / DICE通用SIMT CGRA执行平台
 
 [原文来源](https://arxiv.org/pdf/2605.05496)
+原文链接读图指南：以下图号与物理页仅针对16页arXiv:2605.05496v1（本次所读页脚标明版本），不推定与其他版次相同。
+
+- [F1（物理p2）](https://arxiv.org/pdf/2605.05496v1#page=2)：比较 GPU SIMD 与 CGRA 中线程和计算资源的对应：前者线程绑定 lane，后者线程经过执行不同操作的 PE。读的是执行组织方式，不把示意排布当成实测周期。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## DICE: Detailed Inter-Chiplet End-to-End PHY Modeling for Accurate Chiplet Simulation
@@ -763,16 +893,32 @@ GRAINS · arXiv v1固定版本；不独立断言正式会议身份或出版商�
 
 [查看1个已收录图示条目](../gallery/papers/isca-2026-grains.md)
 
+<a id="reading-guide-isca-2026-hartbreaker"></a>
+
 ## HartBreaker: Deterministic Fuzzing of Multi-Hart RISC-V CPUs with Non-Deterministic Programs
 研究对象：RTL验证、生成与修复工具 / 多hart RISC-V RTL模糊测试框架
 
 [原文来源](https://comsec-files.ethz.ch/papers/hartbreaker_isca26.pdf)
+原文链接读图指南：以下图号与物理页仅针对16页作者PDF，不推定与其他版次相同。
+
+- [F1（物理p2）](https://comsec-files.ethz.ch/papers/hartbreaker_isca26.pdf#page=2)：对照各 hart 的程序顺序与一个可能的全局内存顺序，问哪些局部先后关系必须保留。该 RVWMO 示例说明允许的排序，不是多核性能测量，也不是唯一的全局顺序。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
+
+<a id="reading-guide-isca-2026-iroknight"></a>
 
 ## IroKnight: Ownership-Preserving Neural Acceleration for Inference Serving
 研究对象：专用加速器与可重构/存内计算平台 / 保密推理NPU
 
 [原文来源](https://iroknight.ai/iroknight-isca-2026.pdf)
+原文链接读图指南：以下图号与物理页仅针对18页作者托管 To Appear ISCA 2026 稿，不推定与其他版次相同。
+
+- [F2（物理p3）](https://iroknight.ai/iroknight-isca-2026.pdf#page=3)：从自注意力、专家路由和专家前馈网络识别 MoE 层的运算组成，再区分矩阵与向量操作。此图给出设计要处理的计算对象，不把它当作密码机制实现图或安全性证明。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 已核实与目录标题一致的18页作者托管稿，首页以“To Appear”标注将发表于ISCA 2026。这是固定作者稿，不声称与出版社最终版在字节、图号或排版上相同。该稿14幅编号图的初研记录及图号/物理页码核查已有记录；不等于独立逐图复核通过、实验复现或独立安全性证明。原图公开再分发许可仍未核实，当前不收录IroKnight原图。
 
 固定PDF SHA-256：`49a2c1ec66b035b94a15dd1e02edb9f9f2fbcfdd9c9bf0f5ebe3d3f76e04302a`。
@@ -874,10 +1020,18 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 
 [查看6个已收录图示条目](../gallery/papers/micro-2025-cxlnic.md)
 
+<a id="reading-guide-micro-2025-drishti"></a>
+
 ## Drishti: Do Not Forget Slicing While Designing Last-Level Cache Replacement Policies for Many-Core Systems
 研究对象：缓存、地址转换与DRAM系统 / 多核切片LLC替换预测子系统
 
 [原文来源](https://www.cse.iitb.ac.in/~biswa/MICRO25.pdf)
+原文链接读图指南：以下图号与物理页仅针对14页作者PDF，不推定与其他版次相同。
+
+- [F1（物理p3）](https://www.cse.iitb.ac.in/~biswa/MICRO25.pdf#page=3)：沿同一 PC 的访问分散到不同 LLC slice，再看各 slice 的 sampled cache 如何训练自己的预测器。这是 Mockingjay 的背景组织与局部视角示例，不是 Drishti 完整方案；同页相邻实验图不属于本入口。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## Understanding and Mitigating Covert Channel and Side Channel Vulnerabilities Introduced by RowHammer Defenses
@@ -954,10 +1108,18 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 
 本条只含原创说明和原文链接，不上传图像、表格或 PDF，不改变许可字段、图库数量或固定样本原图覆盖。
 
+<a id="reading-guide-micro-2025-smx"></a>
+
 ## SMX: Heterogeneous Architecture for Universal Sequence Alignment Acceleration
 研究对象：专用加速器与可重构/存内计算平台 / 序列比对ISA扩展与协处理器
 
 [原文来源](https://www.csl.cornell.edu/~cbatten/pdfs/doblas-smx-micro2025.pdf)
+原文链接读图指南：以下图号与物理页仅针对16页作者PDF，不推定与其他版次相同。
+
+- [F3（物理p3）](https://www.csl.cornell.edu/~cbatten/pdfs/doblas-smx-micro2025.pdf#page=3)：对照序列对齐结果、DP 矩阵、回溯矩阵与替换评分矩阵，区分求分数和追出对齐路径。它是小规模算法示例，不是 SMX 硬件拓扑或数据集上的准确率结果。
+
+本轮核对可读正文、图注与PDF页定位，未完成新的逐图视觉审核；这里只提供非实验图的入口，不表示全篇已审，不收录图片或PDF，也不改变许可记录。
+
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
 ## One Flew over the Stack Engine’s Nest: Practical Microarchitectural Attacks on the Stack Engine

@@ -9,45 +9,27 @@
 | 口径 | 篇数 |
 |---|---:|
 | 至少一个原图条目 A | 39 |
-| 至少一个图号级专门导读 B | 43 |
+| 至少一个图号级专门导读 B | 61 |
 | 两者重叠 A∩B | 4 |
 | 只有原图 | 35 |
-| 只有导读 | 39 |
-| 至少一种入口 A∪B | 78 |
-| 两者均无 | 22 |
+| 只有导读 | 57 |
+| 至少一种入口 A∪B | 96 |
+| 两者均无 | 4 |
 
 ## 本批变化
 
-本批新增 FiDe F1（正式PDF物理p4）、μShell F7（正式PDF物理p6）、DARTH-PUM F5/F6（作者稿物理p5）的目录直达说明；依据可读图注与正文核对，未完成新视觉审核，不上传图片或PDF。
+本批从22篇缺口补入18篇：Asterinas、FastPath、ReChisel、LMI、Mascot、PIMnet、ROW、VR-Pipe、DSAssassin、SALT、FALCON、Move the Brain、Bumper、DICE、HARTBREAKER、IroKnight、Drishti、SMX。每篇仅新增一个非实验图号、物理页及作用说明，详见下表的专门导读链接。依据可读图注与正文核对，未完成新视觉审核，不上传图片或PDF。
 
-批前：A=39、B=40、交集4、并集75、两者均无25。批后数字见上表。已有 Concord／HotRAP／SolFS 跨论文指南和 Virtuoso／VLA Quantum／RTeAAL 练习已计入批前，不冒充本批新增覆盖。
+批前：A=39、B=43、交集4、并集78、两者均无22。批后数字见上表。既有跨论文指南、独立案例及上一批 FiDe／μShell／DARTH-PUM 均计入批前，不冒充本批新增覆盖。原图库保持整体45篇196条、固定样本39篇183条；样本外6篇13条不计入固定100篇覆盖。
 
 ## 仍无两类入口：精确缺口
 
-以下只表示仓库尚无所定义的入口，不表示论文没有非实验图或禁止转载；未核实的仍留作未完成。本批未重新访问这些来源，也未重试此前被拒绝的下载。
+以下只表示仓库尚无所定义的入口，不表示论文没有非实验图或禁止转载；未核实的仍留作未完成。以下分别记录本轮读取阻碍与沿用的既有缺口，未重试此前被拒绝的下载。
 
-- `atc2025-asterinas` — ASTERINAS: A Linux ABI-Compatible, Rust-Based Framekernel OS with a Small and Sound TCB
-- `dac-2025-chord` — CHORD: Composable Hybrid Optical Reconfigurable Diffractive Framework For Optical Neural Network
-- `dac-2025-fastpath` — FastPath: A Hybrid Approach for Efficient Hardware Security Verification
-- `dac-2025-rechisel` — ReChisel: Effective Automatic Chisel Code Generation by LLM with Reflection
-- `hpca-2025-lmi` — Let-Me-In: (Still) Employing In-pointer Bounds Metadata for Fine-grained GPU Memory Safety
-- `hpca-2025-mascot` — MASCOT: Predicting Memory Dependencies and Opportunities for Speculative Memory Bypassing
-- `hpca-2025-pimnet` — PIMnet: A Domain-Specific Network for Efficient Collective Communication in Scalable PIM
-- `hpca-2025-row` — No Rush in Executing Atomic Instructions
-- `hpca-2025-vrpipe` — VR-Pipe: Streamlining Hardware Graphics Pipeline for Volume Rendering
-- `hpca-2026-dsassassin` — DSAssassin: Cross-VM Side-Channel Attacks by Exploiting Intel Data Streaming Accelerator
-- `hpca-2026-nugget` — Nugget: Portable Program Snippets
-- `hpca-2026-salt` — SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense
-- `ipdps2025-falcon` — Accelerating Tensor-train Decomposition on Graph Neural Networks
-- `ipdps2026-move-brain` — I Like To Move It – Computation Instead of Data in the Brain
-- `isca-2026-bumper` — Bumper: Hinting Instruction Usefulness for Robust Unified Caches
-- `isca-2026-dejavu` — DejaVu: Why You Should Write to Your DRAM Rows Twice, Carefully
-- `isca-2026-dice` — DICE: Enabling Efficient General-Purpose SIMT Execution with Statically Scheduled Coarse-Grained Reconfigurable Arrays
-- `isca-2026-hartbreaker` — HartBreaker: Deterministic Fuzzing of Multi-Hart RISC-V CPUs with Non-Deterministic Programs
-- `isca-2026-iroknight` — IroKnight: Ownership-Preserving Neural Acceleration for Inference Serving
-- `micro-2025-drishti` — Drishti: Do Not Forget Slicing While Designing Last-Level Cache Replacement Policies for Many-Core Systems
-- `micro-2025-modern-gpu` — Dissecting and Modeling the Architecture of Modern GPU Cores
-- `micro-2025-smx` — SMX: Heterogeneous Architecture for Universal Sequence Alignment Acceleration
+- `dac-2025-chord` — CHORD: Composable Hybrid Optical Reconfigurable Diffractive Framework For Optical Neural Network：既有链接是 MDR-HDONN 前身稿，尚不能核定为 CHORD 的相应图；本轮未请求，不转用前身图号。
+- `hpca-2026-nugget` — Nugget: Portable Program Snippets：精确 arXiv v2 的先前下载已返回403；本轮未重试，也无新增可核验素材。
+- `isca-2026-dejavu` — DejaVu: Why You Should Write to Your DRAM Rows Twice, Carefully：本轮正常网页读取失败：文件长度16087357字节，超过工具大小上限；未换路线获取。
+- `micro-2025-modern-gpu` — Dissecting and Modeling the Architecture of Modern GPU Cores：本轮既有机构来源返回403 Forbidden；已停止该路线，未找替代地址。
 
 ## 逐 ID 明细
 
@@ -68,7 +50,7 @@
 | `asplos-2026-rteaal` | [已发布](../gallery/papers/asplos-2026-rteaal.md) | [图号级导读](../docs/tracing-data-across-figures.md) |
 | `asplos-2026-step` | [已发布](../gallery/papers/asplos-2026-step.md) | — |
 | `asplos-2026-xpdl` | — | [图号级导读](../catalog/README.md#reading-guide-asplos-2026-xpdl) |
-| `atc2025-asterinas` | — | — |
+| `atc2025-asterinas` | — | [图号级导读](../catalog/README.md#reading-guide-atc2025-asterinas) |
 | `atc2025-fide` | — | [图号级导读](../catalog/README.md#reading-guide-atc2025-fide) |
 | `atc2025-hotrap` | — | [图号级导读](../docs/reading-storage-figures.md) |
 | `atc2025-leocraft` | — | [图号级导读](../catalog/README.md#reading-guide-atc2025-leocraft) |
@@ -79,11 +61,11 @@
 | `dac-2024-qpilot` | [已发布](../gallery/papers/dac-2024-qpilot.md) | — |
 | `dac-2025-chord` | — | — |
 | `dac-2025-dco` | — | [图号级导读](../catalog/README.md#reading-guide-dac-2025-dco) |
-| `dac-2025-fastpath` | — | — |
+| `dac-2025-fastpath` | — | [图号级导读](../catalog/README.md#reading-guide-dac-2025-fastpath) |
 | `dac-2025-gem` | — | [图号级导读](../catalog/README.md#reading-guide-dac-2025-gem) |
 | `dac-2025-mage` | [已发布](../gallery/papers/dac-2025-mage.md) | — |
 | `dac-2025-pacq` | — | [图号级导读](../catalog/README.md#reading-guide-dac-2025-pacq) |
-| `dac-2025-rechisel` | — | — |
+| `dac-2025-rechisel` | — | [图号级导读](../catalog/README.md#reading-guide-dac-2025-rechisel) |
 | `dac-2025-rights` | [已发布](../gallery/papers/dac-2025-rights.md) | — |
 | `dac-2025-ruplace` | — | [图号级导读](../catalog/README.md#reading-guide-dac-2025-ruplace) |
 | `dac-2025-simphony` | — | [图号级导读](../catalog/README.md#reading-guide-dac-2025-simphony) |
@@ -92,37 +74,37 @@
 | `dac-2026-trace` | [已发布](../gallery/papers/dac-2026-trace.md) | — |
 | `dac-2026-zkflex` | [已发布](../gallery/papers/dac-2026-zkflex.md) | — |
 | `hpca-2025-concord` | — | [图号级导读](../docs/reading-storage-figures.md) |
-| `hpca-2025-lmi` | — | — |
-| `hpca-2025-mascot` | — | — |
-| `hpca-2025-pimnet` | — | — |
+| `hpca-2025-lmi` | — | [图号级导读](../catalog/README.md#reading-guide-hpca-2025-lmi) |
+| `hpca-2025-mascot` | — | [图号级导读](../catalog/README.md#reading-guide-hpca-2025-mascot) |
+| `hpca-2025-pimnet` | — | [图号级导读](../catalog/README.md#reading-guide-hpca-2025-pimnet) |
 | `hpca-2025-quclear` | — | [图号级导读](../catalog/README.md#reading-guide-hpca-2025-quclear) |
-| `hpca-2025-row` | — | — |
-| `hpca-2025-vrpipe` | — | — |
+| `hpca-2025-row` | — | [图号级导读](../catalog/README.md#reading-guide-hpca-2025-row) |
+| `hpca-2025-vrpipe` | — | [图号级导读](../catalog/README.md#reading-guide-hpca-2025-vrpipe) |
 | `hpca-2026-accelflow` | — | [图号级导读](../catalog/README.md#reading-guide-hpca-2026-accelflow) |
 | `hpca-2026-bard` | — | [图号级导读](../catalog/README.md#reading-guide-hpca-2026-bard) |
 | `hpca-2026-bpsf` | [已发布](../gallery/papers/hpca-2026-bpsf.md) | — |
-| `hpca-2026-dsassassin` | — | — |
+| `hpca-2026-dsassassin` | — | [图号级导读](../catalog/README.md#reading-guide-hpca-2026-dsassassin) |
 | `hpca-2026-nugget` | — | — |
 | `hpca-2026-sage` | [已发布](../gallery/papers/hpca-2026-sage.md) | — |
-| `hpca-2026-salt` | — | — |
+| `hpca-2026-salt` | — | [图号级导读](../catalog/README.md#reading-guide-hpca-2026-salt) |
 | `hpca-2026-tracertl` | — | [图号级导读](../catalog/README.md#reading-guide-hpca-2026-tracertl) |
 | `ipdps2025-citroen` | — | [图号级导读](../catalog/README.md#reading-guide-ipdps2025-citroen) |
-| `ipdps2025-falcon` | — | — |
+| `ipdps2025-falcon` | — | [图号级导读](../catalog/README.md#reading-guide-ipdps2025-falcon) |
 | `ipdps2025-xtask` | — | [图号级导读](../catalog/README.md#reading-guide-ipdps2025-xtask) |
 | `ipdps2026-evalnet` | — | [图号级导读](../catalog/README.md#reading-guide-ipdps2026-evalnet) |
-| `ipdps2026-move-brain` | — | — |
+| `ipdps2026-move-brain` | — | [图号级导读](../catalog/README.md#reading-guide-ipdps2026-move-brain) |
 | `ipdps2026-uctrace` | [已发布](../gallery/papers/ipdps2026-uctrace.md) | — |
 | `ipdps2026-vla-quantum` | [已发布](../gallery/papers/ipdps2026-vla-quantum.md) | [图号级导读](../docs/tracing-data-across-figures.md) |
 | `isca-2026-bullettime` | — | [图号级导读](../catalog/README.md#reading-guide-isca-2026-bullettime) |
-| `isca-2026-bumper` | — | — |
+| `isca-2026-bumper` | — | [图号级导读](../catalog/README.md#reading-guide-isca-2026-bumper) |
 | `isca-2026-chime` | [已发布](../gallery/papers/isca-2026-chime.md) | — |
 | `isca-2026-dcc` | [已发布](../gallery/papers/isca-2026-dcc.md) | — |
 | `isca-2026-dejavu` | — | — |
-| `isca-2026-dice` | — | — |
+| `isca-2026-dice` | — | [图号级导读](../catalog/README.md#reading-guide-isca-2026-dice) |
 | `isca-2026-dicephy` | [已发布](../gallery/papers/isca-2026-dicephy.md) | — |
 | `isca-2026-grains` | [已发布](../gallery/papers/isca-2026-grains.md) | — |
-| `isca-2026-hartbreaker` | — | — |
-| `isca-2026-iroknight` | — | — |
+| `isca-2026-hartbreaker` | — | [图号级导读](../catalog/README.md#reading-guide-isca-2026-hartbreaker) |
+| `isca-2026-iroknight` | — | [图号级导读](../catalog/README.md#reading-guide-isca-2026-iroknight) |
 | `isca-2026-loadeddice` | [已发布](../gallery/papers/isca-2026-loadeddice.md) | — |
 | `isca-2026-lotus` | — | [图号级导读](../catalog/README.md#reading-guide-isca-2026-lotus) |
 | `isca-2026-revelator` | [已发布](../gallery/papers/isca-2026-revelator.md) | — |
@@ -131,7 +113,7 @@
 | `micro-2025-atr` | [已发布](../gallery/papers/micro-2025-atr.md) | — |
 | `micro-2025-columndisturb` | [已发布](../gallery/papers/micro-2025-columndisturb.md) | — |
 | `micro-2025-cxlnic` | [已发布](../gallery/papers/micro-2025-cxlnic.md) | — |
-| `micro-2025-drishti` | — | — |
+| `micro-2025-drishti` | — | [图号级导读](../catalog/README.md#reading-guide-micro-2025-drishti) |
 | `micro-2025-leakyhammer` | [已发布](../gallery/papers/micro-2025-leakyhammer.md) | — |
 | `micro-2025-loopfrog` | [已发布](../gallery/papers/micro-2025-loopfrog.md) | — |
 | `micro-2025-lvm` | [已发布](../gallery/papers/micro-2025-lvm.md) | — |
@@ -140,7 +122,7 @@
 | `micro-2025-omnisim` | [已发布](../gallery/papers/micro-2025-omnisim.md) | [图号级导读](../catalog/README.md#reading-guide-micro-2025-omnisim) |
 | `micro-2025-quartz` | [已发布](../gallery/papers/micro-2025-quartz.md) | — |
 | `micro-2025-shadow` | — | [图号级导读](../catalog/README.md#reading-guide-micro-2025-shadow) |
-| `micro-2025-smx` | — | — |
+| `micro-2025-smx` | — | [图号级导读](../catalog/README.md#reading-guide-micro-2025-smx) |
 | `micro-2025-stackengine` | [已发布](../gallery/papers/micro-2025-stackengine.md) | — |
 | `micro-2025-streamtensor` | [已发布](../gallery/papers/micro-2025-streamtensor.md) | — |
 | `osdi2026-arca` | — | [图号级导读](../catalog/README.md#reading-guide-osdi2026-arca) |
