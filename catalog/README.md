@@ -38,6 +38,7 @@
 - [Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation](#reading-guide-isca-2026-lotus)
 - [RHODES: Robust Optimization for Uncertainty-Aware Design of CO2-Efficient Computing Systems](#reading-guide-isca-2026-rhodes)
 - [TUSQ: Tracking, Uncomputation, and Sampling for Noisy Quantum Simulation](#reading-guide-isca-2026-tusq)
+- [OmniSim: Simulating Hardware with C Speed and RTL Accuracy for High-Level Synthesis Designs](#reading-guide-micro-2025-omnisim)
 - [SHADOW: Simultaneous Multi-Threading Architecture with Asymmetric Threads](#reading-guide-micro-2025-shadow)
 - [Continuation-Centric Computing with Arca](#reading-guide-osdi2026-arca)
 - [RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs](#reading-guide-osdi2026-balboa)
@@ -895,10 +896,14 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 
 [查看10个已收录图示条目](../gallery/papers/micro-2025-netsparse.md)
 
+<a id="reading-guide-micro-2025-omnisim"></a>
+
 ## OmniSim: Simulating Hardware with C Speed and RTL Accuracy for High-Level Synthesis Designs
 研究对象：模拟器与仿真平台 / HLS功能与周期联合模拟器
 
 [原文来源](https://arxiv.org/pdf/2508.19299v1)
+原文链接读图指南：[OmniSim 八图导读：图复用、编译复用与时间口径](../docs/reading-omnisim-figures.md)。仅用13页 arXiv:2508.19299v1 作者稿，不断言与会议版字节相同。沿 F4例5（p4）→ §7.2（p10）→ Table 6（p12）区分查询约束、旧图与已编译程序的复用，再由 F2 到 F8 区分输出、目标周期和宿主耗时；保留 F8 标签不一致及本轮视觉核验范围说明。
+
 部分原图待许可核验
 
 [查看5个已收录图示条目](../gallery/papers/micro-2025-omnisim.md)

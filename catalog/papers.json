@@ -2032,7 +2032,7 @@
       ],
       "source_version": "2508.19299v1",
       "source_identity": "linked_source_not_asserted_publisher_identical",
-      "source_note": "部分原图待许可核验",
+      "source_note": "原文链接读图指南：[OmniSim 八图导读：图复用、编译复用与时间口径](../docs/reading-omnisim-figures.md)。仅用13页 arXiv:2508.19299v1 作者稿，不断言与会议版字节相同。沿 F4例5（p4）→ §7.2（p10）→ Table 6（p12）区分查询约束、旧图与已编译程序的复用，再由 F2 到 F8 区分输出、目标周期和宿主耗时；保留 F8 标签不一致及本轮视觉核验范围说明。\n\n部分原图待许可核验",
       "public_gallery": {
         "status": "selected_nonexperimental_figures_only",
         "figure_count": 5,
