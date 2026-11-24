@@ -595,6 +595,8 @@ arXiv v1 标注的是非独占分发许可，不据此转载论文图。本条�
 
 来源链接用于定位；不据此声称与出版社版本字节、图号或排版一致。
 
+图级练习补充：[Free Atomics（ISCA 2022）F11，物理p8](https://webs.um.es/aros/papers/pdfs/aasgharzadeh-isca22.pdf#page=8) 先认出 AQ → [RoW（HPCA 2025）F3，物理p3](https://webs.um.es/aros/papers/pdfs/aasgharzadeh-hpca25.pdf#page=3) 看加锁／解锁路径 → [F7，物理p6](https://webs.um.es/aros/papers/pdfs/aasgharzadeh-hpca25.pdf#page=6) 追锁定与就绪检测窗口 → [F8 与 §IV-C，物理p7](https://webs.um.es/aros/papers/pdfs/aasgharzadeh-hpca25.pdf#page=7) 检查 Core 0 在 T4 收到失效时 AQ 已空的示例。问：队列是否还有条目，与此时是否仍需要处理一致性事件，是同一个判断吗？用图中事件与正文回答，不把示意的 T4 当成普遍时延保证。两篇来源分别保留，采用此前已核验的图级记录；本补记未重新下载、未新增视觉审核或收录图片。
+
 <a id="reading-guide-hpca-2025-vrpipe"></a>
 
 ## VR-Pipe: Streamlining Hardware Graphics Pipeline for Volume Rendering
@@ -1192,6 +1194,8 @@ Revelator · arXiv v2固定版本；不独立断言正式会议身份或出版�
 读者练习：在图 1 中定位一个服务槽，再到图 2 追踪相关收发方向，最后用图 3 的完整子图解释其配套机制。三图依次提供整体组织、处理路径和支撑机制，示意本身不替代性能评估或正确性论证。图 4 是实测／实验图，不纳入本次非实验读图指南。
 
 版本与收录边界：固定 v1 页面所列 CC BY 4.0 许可仅用于该预印本版本，不延伸到正式会议版。本次只发布原文链接与原创说明；尚未完成本轮原图裁剪与图像验收，不附 PNG 或 PDF，不增加原图库图数，也不代表其他图已获逐图审核。
+
+正式版补充阅读（独立于上述 arXiv v1）：[OSDI F2（物理p7）](https://www.usenix.org/system/files/osdi26-heer.pdf#page=7) → [F3（物理p8）](https://www.usenix.org/system/files/osdi26-heer.pdf#page=8)。先沿 RX 分组与控制信息追到作者 artifact 的 `roce_stack.sv`，再把 F3 的流控、重传与校验职责分别对照 `rdma_flow.sv`、`rdma_mux_retrans.sv`、`icrc.sv`。[仓库结构说明](https://github.com/fpgasystems/BALBOA_AE#repo-structure)仍沿用 CREED 名称；这是实现职责对照，不表示预印本和正式版的图号、页码或许可通用。本补记采用已核验的出处，未重新下载或收录 BALBOA 图片。
 
 <a id="reading-guide-osdi2026-bodega"></a>
 

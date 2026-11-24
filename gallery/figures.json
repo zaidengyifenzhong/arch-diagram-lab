@@ -4357,6 +4357,50 @@
       "attribution": "Kiran Hombal, Henry Zhu, Shreesha G. Bhat, Neil Kaushikkar, Ramnatthan Alagappan, Aishwarya Ganesan. A Logically Disaggregated Cache for Replicated Storage Systems. EuroSys 2026. DOI: https://doi.org/10.1145/3767295.3803608. Copyright 2026 held by the owner/authors. Source: https://github.com/shreesha00/shreesha00.github.io/blob/9541333a7c61ead35ae2af0d5ad12de6d7e01f60/assets/papers/ldc_eurosys26.pdf. Version: 18-page EuroSys 2026 PDF in author repository commit 9541333a7c61ead35ae2af0d5ad12de6d7e01f60, blob 237975d1776e471c120c094009c3327fb0bd253c. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact author-hosted PDF and rasterized at 240 dpi; main caption excluded, all subfigures, legends, labels and replica boundaries retained; no redrawing. No endorsement implied.",
       "alt_text": "LDC 图 4，PDF物理第6页：先沿 A 在 R1 的本地命中，再沿 R2 读取 E、经 RDMA 从 R3 取回的远程命中。写 F 的分流取决于写入前各副本主缓存是否已有 F：例中 R3 已有，直接更新主缓存；R1/R2 没有，加入各自 tiny queue 以便快速降级。tiny queue 从主缓存空间划出、各副本私有，队列对象周期性逐出并写盘。按图例区分读写路径与组件修改范围；这些箭头不是时延测量。",
       "source_note": "先沿 A 在 R1 的本地命中，再沿 R2 读取 E、经 RDMA 从 R3 取回的远程命中。写 F 的分流取决于写入前各副本主缓存是否已有 F：例中 R3 已有，直接更新主缓存；R1/R2 没有，加入各自 tiny queue 以便快速降级。tiny queue 从主缓存空间划出、各副本私有，队列对象周期性逐出并写盘。按图例区分读写路径与组件修改范围；这些箭头不是时延测量。 样本外补充，不计入固定100篇样本或其分类覆盖完成量。"
+    },
+    {
+      "id": "asplos-2026-vcxlgen-F4-59777761ef8bdad6",
+      "asset": "assets/asplos-2026-vcxlgen-F4-59777761ef8bdad6.png",
+      "paper_id": "asplos-2026-vcxlgen",
+      "paper_short": "vCXLGen · ASPLOS 2026 · 样本外补充",
+      "paper_title": "vCXLGen: Automated Synthesis and Verification of CXL Bridges for Heterogeneous Architectures",
+      "figure_number": 4,
+      "figure_title": "图 4",
+      "figure_type": "事务消息时序图",
+      "category": "非实验图",
+      "pdf_page": 5,
+      "width": 1000,
+      "height": 410,
+      "source_url": "https://github.com/NicCarp11/niccarp11.github.io/blob/7d759dda2b5628601d8338c563449a7fbd31edeb/papers/vcxlgen-asplos26-preprint.pdf",
+      "source_page_url": "https://raw.githubusercontent.com/NicCarp11/niccarp11.github.io/7d759dda2b5628601d8338c563449a7fbd31edeb/papers/vcxlgen-asplos26-preprint.pdf#page=5",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Whole figure cropped from the exact author preprint and rasterized at 300 dpi; caption excluded, all protocol labels, states, message arrows and action annotations retained; no redrawing or recoloring.",
+      "attribution": "Anatole Lefort, Julian Pritzi, Nicolò Carpentieri, David Schall, Simon Dittrich, Soham Chakraborty, Nicolai Oswald, Pramod Bhatotia. vCXLGen: Automated Synthesis and Verification of CXL Bridges for Heterogeneous Architectures. ASPLOS 2026. DOI: https://doi.org/10.1145/3779212.3790245. Copyright 2026 held by the owner/authors. Source: https://github.com/NicCarp11/niccarp11.github.io/blob/7d759dda2b5628601d8338c563449a7fbd31edeb/papers/vcxlgen-asplos26-preprint.pdf. Version: 20-page ASPLOS 2026 author preprint in Git commit 7d759dda2b5628601d8338c563449a7fbd31edeb, blob 155054ad656dec2d65d69f81d3c4b57b7660d60c; not asserted publisher-byte-identical. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact author preprint and rasterized at 300 dpi; caption excluded, all protocol labels, states, message arrows and action annotations retained; no redrawing or recoloring. No endorsement implied.",
+      "alt_text": "vCXLGen 图4，作者稿物理第5页：共享状态下的 store miss 先触发本地 GetM，再由桥发送全局 MemRd_A；沿另一主机的失效及响应路径返回，最后本地 Ack 才让请求完成。纵向位置示意消息先后，不是实测时间刻度；图中桥状态同时包含本地与全局协议状态。",
+      "source_note": "共享状态下的 store miss 先触发本地 GetM，再由桥发送全局 MemRd_A；沿另一主机的失效及响应路径返回，最后本地 Ack 才让请求完成。纵向位置示意消息先后，不是实测时间刻度；图中桥状态同时包含本地与全局协议状态。 样本外补充，不计入固定100篇样本或其分类覆盖完成量。"
+    },
+    {
+      "id": "asplos-2026-vcxlgen-F6-098feee83088faff",
+      "asset": "assets/asplos-2026-vcxlgen-F6-098feee83088faff.png",
+      "paper_id": "asplos-2026-vcxlgen",
+      "paper_short": "vCXLGen · ASPLOS 2026 · 样本外补充",
+      "paper_title": "vCXLGen: Automated Synthesis and Verification of CXL Bridges for Heterogeneous Architectures",
+      "figure_number": 6,
+      "figure_title": "图 6",
+      "figure_type": "协议状态转换图",
+      "category": "非实验图",
+      "pdf_page": 7,
+      "width": 1000,
+      "height": 334,
+      "source_url": "https://github.com/NicCarp11/niccarp11.github.io/blob/7d759dda2b5628601d8338c563449a7fbd31edeb/papers/vcxlgen-asplos26-preprint.pdf",
+      "source_page_url": "https://raw.githubusercontent.com/NicCarp11/niccarp11.github.io/7d759dda2b5628601d8338c563449a7fbd31edeb/papers/vcxlgen-asplos26-preprint.pdf#page=7",
+      "license_name": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Whole figure cropped from the exact author preprint and rasterized at 300 dpi; caption excluded, all protocol labels, states, message arrows and action annotations retained; no redrawing or recoloring.",
+      "attribution": "Anatole Lefort, Julian Pritzi, Nicolò Carpentieri, David Schall, Simon Dittrich, Soham Chakraborty, Nicolai Oswald, Pramod Bhatotia. vCXLGen: Automated Synthesis and Verification of CXL Bridges for Heterogeneous Architectures. ASPLOS 2026. DOI: https://doi.org/10.1145/3779212.3790245. Copyright 2026 held by the owner/authors. Source: https://github.com/NicCarp11/niccarp11.github.io/blob/7d759dda2b5628601d8338c563449a7fbd31edeb/papers/vcxlgen-asplos26-preprint.pdf. Version: 20-page ASPLOS 2026 author preprint in Git commit 7d759dda2b5628601d8338c563449a7fbd31edeb, blob 155054ad656dec2d65d69f81d3c4b57b7660d60c; not asserted publisher-byte-identical. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole figure cropped from the exact author preprint and rasterized at 300 dpi; caption excluded, all protocol labels, states, message arrows and action annotations retained; no redrawing or recoloring. No endorsement implied.",
+      "alt_text": "vCXLGen 图6，作者稿物理第7页：把 (S,S)+GetM 展开成桥的转换图，沿 Cmp-E、Data 以及可能到来的 BISnpInv 追踪不同分支；动作注释分别说明发出全局请求和向本地回复。该图展示合成结果的一部分，不是仅靠这张图就证明整个协议正确。",
+      "source_note": "把 (S,S)+GetM 展开成桥的转换图，沿 Cmp-E、Data 以及可能到来的 BISnpInv 追踪不同分支；动作注释分别说明发出全局请求和向本地回复。该图展示合成结果的一部分，不是仅靠这张图就证明整个协议正确。 样本外补充，不计入固定100篇样本或其分类覆盖完成量。"
     }
   ],
   "paper_objects": [
@@ -4584,6 +4628,11 @@
       "paper_id": "eurosys-2026-ldc",
       "object_group": "文件、存储与缓存软件",
       "specific_object": "LDC复制存储系统中的逻辑分离缓存（EuroSys 2026样本外补充）"
+    },
+    {
+      "paper_id": "asplos-2026-vcxlgen",
+      "object_group": "RTL验证、生成与修复工具",
+      "specific_object": "vCXLGen异构缓存一致性协议桥的自动合成与验证（样本外补充）"
     }
   ],
   "reading_guides": [
@@ -6408,7 +6457,31 @@
           "url": "https://raw.githubusercontent.com/shreesha00/shreesha00.github.io/9541333a7c61ead35ae2af0d5ad12de6d7e01f60/assets/papers/ldc_eurosys26.pdf#page=6"
         }
       ]
+    },
+    {
+      "paper_id": "asplos-2026-vcxlgen",
+      "primary_object": "RTL验证、生成与修复工具",
+      "specific_object": "vCXLGen异构缓存一致性协议桥的自动合成与验证（样本外补充）",
+      "conditional_design_advice": "把一次事务的消息交互与协议状态转换分开读，再用相同请求标签连接两者；状态图的分支不是时间线上的并发执行。",
+      "this_paper_figure_sequence": "F4（物理p5）追一次跨域事务 → 原文F5（物理p7，仅链接）看桥合成过程 → F6（物理p7）追 (S,S)+GetM 的状态分支。",
+      "source_ambiguity_or_scope": "20页作者Git稿，样本外补充，不计入固定100篇；仅收完整非实验F4/F6，不上传PDF，不声称与出版社文件字节一致。",
+      "source_examples": [
+        {
+          "figure_id": "F4",
+          "pdf_pages": [
+            5
+          ],
+          "url": "https://raw.githubusercontent.com/NicCarp11/niccarp11.github.io/7d759dda2b5628601d8338c563449a7fbd31edeb/papers/vcxlgen-asplos26-preprint.pdf#page=5"
+        },
+        {
+          "figure_id": "F6",
+          "pdf_pages": [
+            7
+          ],
+          "url": "https://raw.githubusercontent.com/NicCarp11/niccarp11.github.io/7d759dda2b5628601d8338c563449a7fbd31edeb/papers/vcxlgen-asplos26-preprint.pdf#page=7"
+        }
+      ]
     }
   ],
-  "coverage_note": "当前图库收录45篇论文的196个非实验图示条目（194个原图条目及2个机制子区域／非整图）。其中固定100篇样本仍为39篇／183条；样本外补充 Assassyn、HMFS、Fix、Fused3S、HyPAS、LDC 共6篇／13张，不增加固定样本或其分类覆盖完成量。实验结果、测量照片及未分离的混合整图不纳入。"
+  "coverage_note": "当前图库收录46篇论文的198个非实验图示条目（196个原图条目及2个机制子区域／非整图）。其中固定100篇样本仍为39篇／183条；样本外补充 Assassyn、HMFS、Fix、Fused3S、HyPAS、LDC、vCXLGen 共7篇／15张，不增加固定样本或其分类覆盖完成量。实验结果、测量照片及未分离的混合整图不纳入。"
 }
