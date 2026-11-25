@@ -22,6 +22,10 @@
 
 先区分保存锁与版本的 Coordination Directory 和存放应用数据、索引及 redo 日志的非硬件缓存一致性区域，再追踪主机中的并发控制与缓存一致性如何复用版本变化。结合图注与§3：CXL 3.0 的目录同步使用 HCC 原子操作；CXL 2.0 则以软件互斥维持同一抽象，不能把整池都当成硬件一致性内存。此图是架构关系，不是性能或正确性证明。 样本外补充，不计入固定100篇或其分类覆盖完成量。
 
+文档练习：先在 F3 找到保存锁与版本的 Coordination Directory，再去[作者 artifact 的实验配置表](https://github.com/cszjyang/xtra#experimental-configuration)核对两个容量分别属于谁。答案：200 MiB 是 Coordination Directory / HCC 的预算，128 GiB 是共享 CXL 内存。图表达同步元数据与应用数据如何组织；这些容量属于具体实验配置，不是图中架构必须采用的固定大小。
+
+读到评审徽章时还要核对环境要求：[SOSP 2026 官方结果](https://sysartifacts.github.io/sosp2026/results)为 XTRA 列出 Available、Functional 和 Results Reproduced，但这不保证普通机器就能复现。作为对照，[hS 正式论文附录（物理第 17 页）](https://www.usenix.org/system/files/osdi26-liargkovas.pdf#page=17)报告只获 Available，同时仍提供可选的功能检查和复现路径；徽章范围不等于有没有复现说明。本练习只阅读文档，不运行 artifact。
+
 署名：Zhijun Yang, Yu Hua, Ming Zhang, Menglei Chen, Xumin Chen, Aoyang Tong. XTRA: Unifying Cache Coherence and Concurrency Control for Distributed Transactions in a CXL Pod. SOSP 2026. DOI: https://doi.org/10.1145/3830418.3843888. Copyright 2026 held by the owner/authors. Source: https://github.com/cszjyang/cszjyang.github.io/blob/0e6058eb31c7321ad89b619a6b7bc3ff02622b8f/publications/2026/xtra/SOSP26-XTRA-paper.pdf. Version: 17-page SOSP 2026 author-hosted PDF, Git commit 0e6058eb31c7321ad89b619a6b7bc3ff02622b8f, blob aa0c709a68468b07bcfb868ceaa3f4b4046976f0; not asserted publisher-byte-identical. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Whole Figure 3 cropped from the exact author-hosted PDF and rasterized at 300 dpi; caption excluded, all host/pool boundaries, component labels and arrows retained; no redrawing or recoloring. No endorsement implied.
 
 修改说明：Whole Figure 3 cropped from the exact author-hosted PDF and rasterized at 300 dpi; caption excluded, all host/pool boundaries, component labels and arrows retained; no redrawing or recoloring.
