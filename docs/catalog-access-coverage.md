@@ -16,11 +16,34 @@
 | 至少一种入口 A∪B | 98 |
 | 两者均无 | 2 |
 
-## 本批变化
+<a id="gallery-summary"></a>
+
+## 全图库数量与许可汇总
+
+数量按 gallery/figures.json 的唯一条目及论文ID核算，许可分布取自 gallery/licenses.json；两份清单的条目ID和许可必须一致。这里统计图示条目，包含明确标注的机制子区域，不表示全篇完成。
+
+| 范围 | 论文数 | 图示条目数 |
+|---|---:|---:|
+| 全图库 | 47 | 200 |
+| 固定100篇样本内 | 39 | 183 |
+| 样本外补充 | 8 | 17 |
+
+| 单条许可 | 条目数 |
+|---|---:|
+| CC BY 2.5 | 1 |
+| CC BY 4.0 | 183 |
+| CC BY-NC-SA 4.0 | 6 |
+| CC0 1.0 | 10 |
+
+单图许可与署名仍以[逐图清单](../gallery/licenses.json)为准，许可汇总不改变任何条目的适用条件。样本外论文不计入固定100篇入口覆盖。
+
+样本外图页：[asplos-2026-vcxlgen](../gallery/papers/asplos-2026-vcxlgen.md) · [dac-2026-hypas](../gallery/papers/dac-2026-hypas.md) · [eurosys-2026-fix](../gallery/papers/eurosys-2026-fix.md) · [eurosys-2026-ldc](../gallery/papers/eurosys-2026-ldc.md) · [ics-2025-fused3s](../gallery/papers/ics-2025-fused3s.md) · [isca-2025-assassyn](../gallery/papers/isca-2025-assassyn.md) · [socc-2025-hmfs](../gallery/papers/socc-2025-hmfs.md) · [taco-2026-looppoint](../gallery/papers/taco-2026-looppoint.md)。
+
+## 最近一次入口扩充
 
 本批新增 Modern GPU 作者预印本 arXiv:2503.20481v1 的 F1/F3（物理p2/p5）及 Nugget arXiv:2509.02873v2 的 F1（官方HTML §3）静态入口。沿用已核验出处，未下载来源、未进行新的视觉审核，不上传或嵌入图片。既有版本、许可与素材暂缓审核状态保持不变。
 
-批前：A=39、B=61、交集4、并集96、两者均无4。批后数字见上表。入口覆盖不表示全篇完成；原图库仍为整体47篇200条、固定样本39篇183条，样本外8篇17条。
+该次入口扩充前：A=39、B=61、交集4、并集96、两者均无4。当前入口与图库数量见上述自动汇总；入口覆盖不表示全篇完成。
 
 ## 仍无两类入口：精确缺口
 
