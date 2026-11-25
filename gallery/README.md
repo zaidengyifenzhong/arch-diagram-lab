@@ -1,6 +1,6 @@
 # 体系结构与系统非实验原图图库
 
-**46篇 / 198个非实验图示条目（196个原图条目＋2个机制子区域／非整图）**。仅收录系统抽象、架构、机制、数据/控制流、示意时序与形式定义；排除实验结果、测量照片和未分离的混合图。
+**47篇 / 200个非实验图示条目（198个原图条目＋2个机制子区域／非整图）**。仅收录系统抽象、架构、机制、数据/控制流、示意时序与形式定义；排除实验结果、测量照片和未分离的混合图。
 
 完整下载仓库，保持 JS、CSS、assets 的相对目录，再在浏览器打开 [gallery/index.html](index.html)；不能仅下载 HTML。GitHub文件预览不执行HTML。[100篇来源目录](../catalog/README.md)不代表全部原图已获许可或研究全部完成。[逐图署名与许可](licenses.json)。
 
@@ -252,3 +252,9 @@ EDA工具与电路设计表示 · HyPAS增量布局与单元尺寸协同优化�
 RTL验证、生成与修复工具 / vCXLGen异构缓存一致性协议桥的自动合成与验证（样本外补充） · F4（p5）→ F6（p7）；不计入固定100篇。
 
 [![vCXLGen F4 事务消息时序](assets/asplos-2026-vcxlgen-F4-59777761ef8bdad6.png)](papers/asplos-2026-vcxlgen.md)
+
+## [LoopPoint · TACO 2026 · 样本外补充](papers/taco-2026-looppoint.md)
+
+模拟器与仿真平台 / LoopPoint多线程工作负载抽样模拟与ROIperf硬件验证（TACO扩展版，样本外） · F2（p5）→ F4（p13）；不计入固定100篇。
+
+[![LoopPoint F2 区间选择与模拟流程](assets/taco-2026-looppoint-F2-b5924a78d7c491e0.png)](papers/taco-2026-looppoint.md)

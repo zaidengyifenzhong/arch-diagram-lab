@@ -686,6 +686,8 @@ BP-SF · arXiv v3固定版本；不独立断言正式会议身份或出版商版
 
 未收录图片不代表获得公开再分发许可。 本图库当前不收录该论文图片；只保留来源链接。
 
+跨论文对照：[LoopPoint TACO 2026扩展版原图F2/F4](../gallery/papers/taco-2026-looppoint.md)。Nugget F1 先问样本如何生成、验证及重选；LoopPoint F2 区分代表区间选择与模拟执行，F4 则说明 ROIperf 如何在真实机器上划定测量起止。两者不是同一工具，也不假定验证对象与指标相同；测量边界示意不等于性能结果。LoopPoint 为固定100篇之外的补充，本篇仍未收录原图。
+
 ## SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis
 研究对象：专用加速器与可重构/存内计算平台 / SAGe基因组数据解压加速平台
 

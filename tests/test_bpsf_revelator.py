@@ -17,10 +17,10 @@ class NewPaperTests(unittest.TestCase):
     for key in ['decision','sha256','asset_sha256','crop_box_pdf_points','review_note','public_redistribution']:self.assertNotIn(key,f)
    if 'bpsf' in pid:self.assertIn('不是最新版',guide['source_ambiguity_or_scope'])
  def test_counts(self):
-  d=json.loads((R/'gallery/figures.json').read_text());self.assertEqual(len(d['items']),198);self.assertEqual(len({x['paper_id'] for x in d['items']}),46)
-  self.assertEqual(Counter(x['license_name'] for x in d['items']),{'CC BY 4.0':181,'CC0 1.0':10,'CC BY 2.5':1,'CC BY-NC-SA 4.0':6})
+  d=json.loads((R/'gallery/figures.json').read_text());self.assertEqual(len(d['items']),200);self.assertEqual(len({x['paper_id'] for x in d['items']}),47)
+  self.assertEqual(Counter(x['license_name'] for x in d['items']),{'CC BY 4.0':183,'CC0 1.0':10,'CC BY 2.5':1,'CC BY-NC-SA 4.0':6})
   for file in ['README.md','index.html','gallery/README.md','gallery/index.html','catalog/README.md']:
-   text=(R/file).read_text();self.assertIn('198',text);self.assertIn('46',text)
+   text=(R/file).read_text();self.assertIn('200',text);self.assertIn('47',text)
 class CC0GateTests(unittest.TestCase):
  def setUp(self):
   from PIL import Image
