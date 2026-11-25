@@ -20,6 +20,10 @@ F4（物理p5）追一次跨域事务 → 原文F5（物理p7，仅链接）看�
 
 ## F4
 
+读图练习：本地 Ack 等哪条跨域响应？结合 §5.2，桥须收到嵌套全局事务的 Cmp-E 后才向本地回复；F4 的具体路径还画出了 Data 返回，再到 Ack。按事件依赖读，不把消息间距读成延迟。
+
+对照 Avicenna 作者版 [F2（物理p5）](https://khiemn.com/publication/avicenna/avicenna-eurosys26.pdf#page=5)：同样先读事件顺序，间距不代表耗时。再看 [F4 与 §4.4（物理p9）](https://khiemn.com/publication/avicenna/avicenna-eurosys26.pdf#page=9)，从发请求到 RealCommitted 是提交延迟，到 ProposeReply 才是端到端延迟；必须先确定终点，才能比较“完成”。[F5（物理p10）](https://khiemn.com/publication/avicenna/avicenna-eurosys26.pdf#page=10)才是有数轴的观测延迟分布，仅作为原文证据链接，不收入非实验原图库。两篇处理的问题不同，不能把协议响应与事务提交事件视为同一实现。
+
 **非实验图 · 事务消息时序图**
 
 ![vCXLGen 图4，作者稿物理第5页：共享状态下的 store miss 先触发本地 GetM，再由桥发送全局 MemRd_A；沿另一主机的失效及响应路径返回，最后本地 Ack 才让请求完成。纵向位置示意消息先后，不是实测时间刻度；图中桥状态同时包含本地与全局协议状态。](../assets/asplos-2026-vcxlgen-F4-59777761ef8bdad6.png)

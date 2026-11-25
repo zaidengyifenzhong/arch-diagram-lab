@@ -80,3 +80,7 @@ python scripts/gallery_pipeline.py export \
 仅支持精确标签及 https://creativecommons.org/licenses/by-nc-sa/4.0/，不推断其他NC或SA版本。保留既有来源PDF SHA、图像SHA、版本专属许可证据URL、第三方内容与非实验图独审要求。新增逐图审批必须显式设置 `noncommercial_use: true`、`sharealike_compliance: true`、`source_version_license_verified: true` 和 `adaptation_license_url` 为上述相同许可URL。缺失、字符串形式true或false均拒绝。
 
 公开元数据须带 `reuse_notice` 精确文本“仅限非商业使用；改编作品须以 CC BY-NC-SA 4.0 相同许可共享。”及 `adaptation_license_url`；导出保留二者。署名、原始许可和修改说明不能删除。该门控不是法律意见，不自动判断用途是否商业，不为未审图片授权，也不将整个集合或代码改为NC-SA。实际商业使用应另向权利人取得许可。
+
+## 无脚本回退列表
+
+`python scripts/build_gallery_fallback.py` 从 `gallery/figures.json` 重生成 `gallery/index.html` 的完整 noscript 区块；提示不重复数量，顶栏统计保留。新增条目后运行此命令，再用 `python scripts/build_gallery_fallback.py --check` 验证同步。该脚本不修改图像、许可、顶栏或交互导读，也不联网。
