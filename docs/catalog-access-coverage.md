@@ -24,20 +24,20 @@
 
 | 范围 | 论文数 | 图示条目数 |
 |---|---:|---:|
-| 全图库 | 48 | 201 |
+| 全图库 | 49 | 203 |
 | 固定100篇样本内 | 39 | 183 |
-| 样本外补充 | 9 | 18 |
+| 样本外补充 | 10 | 20 |
 
 | 单条许可 | 条目数 |
 |---|---:|
 | CC BY 2.5 | 1 |
-| CC BY 4.0 | 184 |
+| CC BY 4.0 | 186 |
 | CC BY-NC-SA 4.0 | 6 |
 | CC0 1.0 | 10 |
 
 单图许可与署名仍以[逐图清单](../gallery/licenses.json)为准，许可汇总不改变任何条目的适用条件。样本外论文不计入固定100篇入口覆盖。
 
-样本外图页：[asplos-2026-vcxlgen](../gallery/papers/asplos-2026-vcxlgen.md) · [dac-2026-hypas](../gallery/papers/dac-2026-hypas.md) · [eurosys-2026-fix](../gallery/papers/eurosys-2026-fix.md) · [eurosys-2026-ldc](../gallery/papers/eurosys-2026-ldc.md) · [ics-2025-fused3s](../gallery/papers/ics-2025-fused3s.md) · [isca-2025-assassyn](../gallery/papers/isca-2025-assassyn.md) · [socc-2025-hmfs](../gallery/papers/socc-2025-hmfs.md) · [sosp-2026-xtra](../gallery/papers/sosp-2026-xtra.md) · [taco-2026-looppoint](../gallery/papers/taco-2026-looppoint.md)。
+样本外图页：[asplos-2026-crest](../gallery/papers/asplos-2026-crest.md) · [asplos-2026-vcxlgen](../gallery/papers/asplos-2026-vcxlgen.md) · [dac-2026-hypas](../gallery/papers/dac-2026-hypas.md) · [eurosys-2026-fix](../gallery/papers/eurosys-2026-fix.md) · [eurosys-2026-ldc](../gallery/papers/eurosys-2026-ldc.md) · [ics-2025-fused3s](../gallery/papers/ics-2025-fused3s.md) · [isca-2025-assassyn](../gallery/papers/isca-2025-assassyn.md) · [socc-2025-hmfs](../gallery/papers/socc-2025-hmfs.md) · [sosp-2026-xtra](../gallery/papers/sosp-2026-xtra.md) · [taco-2026-looppoint](../gallery/papers/taco-2026-looppoint.md)。
 
 ## 最近一次入口扩充
 

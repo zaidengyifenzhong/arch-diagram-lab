@@ -201,7 +201,9 @@
     "asplos-2026-vcxlgen-F6-098feee83088faff",
     "taco-2026-looppoint-F2-b5924a78d7c491e0",
     "taco-2026-looppoint-F4-6a46b5b60e86c39a",
-    "sosp-2026-xtra-F3-8a43d513a34f2413"
+    "sosp-2026-xtra-F3-8a43d513a34f2413",
+    "asplos-2026-crest-F5-63832b623bf1967b",
+    "asplos-2026-crest-F6-076281c78a2ca002"
   ],
   "excluded_content": "Experimental results, measurement photographs and unresolved mixed figures are outside this release. Future additions need independent scope and rights clearance.",
   "approved_subregions": [
@@ -232,9 +234,9 @@
     "ipdps2026-uctrace-F3-1bcd9130beee896a"
   ],
   "coverage": {
-    "papers": 48,
-    "entries": 201,
-    "original_figure_entries": 199,
+    "papers": 49,
+    "entries": 203,
+    "original_figure_entries": 201,
     "mechanism_subregions": 2
   },
   "supplemental_papers": [
@@ -308,6 +310,14 @@
       "fixed_100_sample": false,
       "figure_numbers": [
         3
+      ]
+    },
+    {
+      "paper_id": "asplos-2026-crest",
+      "fixed_100_sample": false,
+      "figure_numbers": [
+        5,
+        6
       ]
     }
   ]
