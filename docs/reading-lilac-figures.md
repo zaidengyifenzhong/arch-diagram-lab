@@ -4,6 +4,12 @@
 
 本案例使用作者站的 **14页 ASPLOS 2026会议版**《Parameterized Hardware Design with Latency-Abstract Interfaces》，DOI [10.1145/3779212.3790199](https://doi.org/10.1145/3779212.3790199)。下列页码均为这份 PDF 的物理页，不混用13页 arXiv v2。这里研究图组怎样支撑论证，不复刻代码、结果表或图像。
 
+## 可选预读：这里约束的是时间窗口
+
+先读 Filament 官方教程的[时序检查](https://filamenthdl.com/docs/lang/tutorial.html#checking-timing-behavior)与[正确实现](https://filamenthdl.com/docs/lang/tutorial.html#a-correct-implementation)。问：乘积到 G+2 才有效；把 mux 移到 G+2、保存加法结果后，为什么还不能结束修正？答：选择信号也必须在 mux 使用时有效，接口承诺的输出窗口也须与实际结果一致。教程的具体修正要求 op 在半开区间 [G, G+3) 内有效，并把输出窗口声明为 [G+2, G+3)；这不是只移动一个方框就能完成的对齐。
+
+再看 Lilac [F4/F5（正式作者版物理 p5）](https://people.csail.mit.edu/rachit/files/pubs/lilac.pdf#page=5)与 [F6（p6）](https://people.csail.mit.edu/rachit/files/pubs/lilac.pdf#page=6)：父模块按哪个时刻对齐加法、乘法和选择信号三条路径，`G:1` 又说明什么？以 Max 为两种运算延迟的最大值，父模块在 G+Max 使用三路信号，给两条数据路径补足差值、给选择信号补 Max，并声明相应结果窗口。`G:1` 表示相邻输入启动至少间隔一拍，可每拍接收新输入；它不表示结果一拍就到。F6 让你逐级核查窗口如何平移。教学例子的固定常数不能搬作 Lilac 的生成器延迟；本练习只读接口与图，不运行编译器。
+
 ## 先用一个问题串起 F3 → F5 → F6
 
 **问：生成器换了加法器或乘法器的延迟，父模块怎样继续把同一次运算的数据和选择信号对齐？**
