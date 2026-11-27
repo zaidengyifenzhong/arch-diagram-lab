@@ -12,6 +12,16 @@ F4（物理p5）追一次跨域事务 → 原文F5（物理p7，仅链接）看�
 
 [F5：合成流程与输入事务（原文物理p7，仅链接）](https://raw.githubusercontent.com/NicCarp11/niccarp11.github.io/7d759dda2b5628601d8338c563449a7fbd31edeb/papers/vcxlgen-asplos26-preprint.pdf#page=7)。它解释如何把本地和全局输入协议组合成桥，不把生成的 SLICC 模型称作运行生成器的宿主硬件。
 
+<a id="synapse-followup"></a>
+
+### 后续阅读：SYNAPSE 的策略如何约束协议
+
+SYNAPSE（MICRO 2026）是另一个控制器合成工作；以下只链接 TUM 的16页 PDF，不将其当作 vCXLGen 的同一工具。先沿 [F4(a)（物理p5）](https://dse.in.tum.de/wp-content/uploads/2026/10/Synapse_MICRO26.pdf#page=5)读 inclusive LLC 的读缺失：来自下层的 GetS 在数据或权限不足时经 client 向上继续请求。再到 [F5–F7 与 §VI-B（物理p8）](https://dse.in.tum.de/wp-content/uploads/2026/10/Synapse_MICRO26.pdf#page=8)，分别找到 coherence protocol、cache policy、system topology 三项独立输入。
+
+练习：用 F6 的抽象策略去匹配 F7 的 MESIF 事务，为什么 F、E 两个终态都能留下？§VI-B 的例子要求最终可读且数据存在；F 提供读权限，E 提供读写权限，两者的标签都与策略要求兼容，所以合成保留两条结束路径。这不是同一次事务同时停在两个状态，也不是按性能选择胜者。
+
+分开看三层证据：控制器 FSM 合成产生状态机；Murφ 检查生成的有限系统模型中的安全性与活性；SLICC 后端让控制器进入 gem5 模拟。后两者不等于 RTL 生成或真实硬件实测，也不把有限模型检查推广为任意规模系统的保证。此处核对正文、图注与页码，未新作视觉审核；不描述字体、画法或布局，不复制图，不据代码许可证推断图的转载权。
+
 来源：[精确作者Git文件](https://github.com/NicCarp11/niccarp11.github.io/blob/7d759dda2b5628601d8338c563449a7fbd31edeb/papers/vcxlgen-asplos26-preprint.pdf)。首页可见 CC BY 4.0、DOI 10.1145/3779212.3790245；20页作者稿，不推定与正式出版社文件字节相同。源PDF SHA-256：`7b94d57e9f5e67e92cf3acf554c45b77e9877838ada07aeaad484acf32228113`；Git blob：`155054ad656dec2d65d69f81d3c4b57b7660d60c`。已目视核对首页、图页、图注和最终裁图，未发现这两图的第三方署名或许可例外。PDF不随库分发。
 
 ## 图号导航

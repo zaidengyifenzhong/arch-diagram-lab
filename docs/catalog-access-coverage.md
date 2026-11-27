@@ -49,8 +49,8 @@
 
 以下只表示仓库尚无所定义的入口，不表示论文没有非实验图或禁止转载；未核实的仍留作未完成。以下分别记录本轮读取阻碍与沿用的既有缺口，未重试此前被拒绝的下载。
 
-- `dac-2025-chord` — CHORD: Composable Hybrid Optical Reconfigurable Diffractive Framework For Optical Neural Network：既有链接是 MDR-HDONN 前身稿，尚不能核定为 CHORD 的相应图；本轮未请求，不转用前身图号。
-- `isca-2026-dejavu` — DejaVu: Why You Should Write to Your DRAM Rows Twice, Carefully：本轮正常网页读取失败：文件长度16087357字节，超过工具大小上限；未换路线获取。
+- `dac-2025-chord` — CHORD: Composable Hybrid Optical Reconfigurable Diffractive Framework For Optical Neural Network：既有链接是 MDR-HDONN 前身稿，尚不能核定为 CHORD 的相应图。[正式 DOI](https://doi.org/10.1109/DAC63849.2025.11133168)提供检索入口；同作者的[DAC 2025 会议议程](https://62dac.conference-program.com/presentation/?id=RESEARCH147&sess=sess110)沿用 MDR-HDONN 标题，仅作演讲别名（talk alias），不能证明 arXiv 前序版与正式论文图相同，不转用前身图号。
+- `isca-2026-dejavu` — DejaVu: Why You Should Write to Your DRAM Rows Twice, Carefully：此前正式论文网页读取因文件长度16087357字节超过工具上限而失败，未换路线获取。[作者 ISCA 演讲物理p5](https://people.inf.ethz.ch/omutlu/pub/DejaVu-isca26-talk.pdf#page=5)介绍普通 DRAM 单元与行，[演讲p6](https://people.inf.ethz.ch/omutlu/pub/DejaVu-isca26-talk.pdf#page=6)介绍访问命令及时序背景；只作背景检索入口，不涉及攻击细节，也不计为正式论文图号级导读或补齐覆盖。
 
 ## 逐 ID 明细
 
