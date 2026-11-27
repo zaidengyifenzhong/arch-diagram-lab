@@ -12,6 +12,12 @@
 
 再读 [F4（p4）](https://scopex-asu.github.io/files/publications/ONN_DAC2025_Gu_SimPhony.pdf#page=4)：沿一个分块 GEMM 的部分和，依次辨认波长并行求和、核间光电流聚合、模拟时间积分和数字累加。问每一层“结果在哪个域累积、哪些工作并行、哪些要等后续周期”。这里建模的是目标系统的执行周期，不是运行 SimPhony 的宿主耗时。
 
+<a id="loss-power-cycles-exercise"></a>
+
+**短题：其他入参不变，核心插入损耗增加 3 dB，为何估算激光功率约乘二？F4 的周期又从哪里来？** 对照作者代码固定提交 `0bdc10df6fe50051769016614b04400d0a92d631` 的 [`cal_laser_power`（energy.py L102–119）](https://github.com/ScopeX-ASU/SimPhony/blob/0bdc10df6fe50051769016614b04400d0a92d631/onnarchsim/workflow/energy.py#L102-L119)：损耗加进 dBm 链路预算，再经指数换成线性功率。保持探测灵敏度、分配因子、位宽、墙插效率和消光比等其余输入不变，前后比值为 `10^(3/10) ≈ 1.995`，约为二倍。这是假设计算，不是实测功率。
+
+周期走另一条链：分层工作负载、分块和架构映射等输入经 [`simu_partition_cycles`（simulator.py L179–249）](https://github.com/ScopeX-ASU/SimPhony/blob/0bdc10df6fe50051769016614b04400d0a92d631/onnarchsim/simulator.py#L179-L249)得到 partition cycles；[`simu_energy` 调用（L313–331）](https://github.com/ScopeX-ASU/SimPhony/blob/0bdc10df6fe50051769016614b04400d0a92d631/onnarchsim/simulator.py#L313-L331)将它作为 `cycles`，另将核心损耗作为 `insertion_loss` 传给 `energy_calculator`。回 F4 核对 GEMM 的分块、并行与累加安排：损耗路径不替代这条周期建模链。上述假设不支持整体能耗翻倍，也不意味着周期改变。代码仅作固定版本的实现对照，不声称该提交与论文版本完全一致；未执行代码。
+
 最后读 [F9（p6）](https://scopex-asu.github.io/files/publications/ONN_DAC2025_Gu_SimPhony.pdf#page=6)。F9(a) 增加波长时也按波长数扩展调制器和激光源数量，不能解释为固定器件数量下只改变光的参数；这是模型设计探索，不是原 TeMPO 芯片的实测。F9(b) 另扫位宽，不与 (a) 合成“所有参数同时改变”的实验。
 
 **练习：增加波长后，能否只凭更高并行度断言所有部件能耗都会下降？** 不能。先列出同时增多的器件和保持不变的器件，再分开看功率需求、执行周期与累计能量。也不能用 F2 的损耗路径直接代替 F4 的周期模型。
