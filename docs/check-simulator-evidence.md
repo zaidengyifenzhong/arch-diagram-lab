@@ -37,3 +37,17 @@
 **参考答案：** 第一条跳过了样本选择与汇总口径；先区分门槛筛出的单项和套件汇总，再只谈所测设置中的证据。第二条把面积验证扩成性能验证；将结论收回到 F10(a) 的 TeMPO 布局案例，并另找周期或能量的独立验证。第三条跳过了模型部件和输出检查；F8 不能替代 F12 的温度验证或 F13 的任务时延对照。修正措辞后，还应问原图是否足以排除其他解释，而非把这三条答案当作正确性证明。
 
 进一步阅读：[TraceRTL 整篇导读](reading-tracertl-figures.md) · [SimPhony 导读](reading-simphony-figures.md) · [RHONE 导读](reading-rhone-figures.md)。这些页面保留各自版本与核验限制；实验图仅作原文证据链接，不进入非实验原图库。本次不新增图片、数据表或 PDF，计数与许可不变。
+
+<a id="lotus-design-evidence"></a>
+
+## Lotus：从设计定位评估对照
+
+仅用 [MIT 作者14页版](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf)的物理页；返回 [Lotus 导读](../catalog/README.md#reading-guide-isca-2026-lotus)。以下依据正文与图注，不推断版式或字体；评估图仅链接，不成为图库资产。
+
+**核心练习：** 从 [F6 p6](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=6) 的分层 bitmap，结合 [F10 p8](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=8) 的编译流程，追到 [F17 p13](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=13)：实验究竟改了什么？分派器按 task ID 的优先次序选已就绪任务；F17 保留这一机制，比较编译器分配优先级与随机优先级。因此它支持所测负载上的优先级分配效果，缺少替换队列实现的对照，不能证明 bitmap 比其他队列硬件更快。
+
+| 设计 → 评估原页 | 可以检查什么／不能外推什么 |
+|---|---|
+| [F4 p5](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=5)、[§III-D p6](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=6) → [F12 p10](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=10) | 对照选择性执行启用／禁用及执行模拟的 Lotus 核周期拆解；不是被模拟目标核的周期分布，少执行指令也不自动等于同比加速。 |
+| [F11 p9](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=9) → [F15 p11](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=11)、[§VII-E p12](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=12) | 比较时间展开及其支持的任务合并与不展开。Multicore 未采用展开，因为跨周期合并会增大任务并增加指令；不能归纳所有负载都受益。 |
+| [F2 p4](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=4)、[F10 p8](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=8) → [F16 p12](https://people.csail.mit.edu/sanchez/papers/2026.lotus.isca.pdf#page=12) | 比较映射性能与通信字节在本 tile、同 FPGA 其他 tile、跨 FPGA 的比例。支持所测映射方案的局部性分析，不能据此宣称对任意拓扑最优。 |

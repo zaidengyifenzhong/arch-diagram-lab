@@ -960,7 +960,9 @@ GRAINS · arXiv v1固定版本；不独立断言正式会议身份或出版商�
 
 读者练习：把图 1 中的一条寄存器依赖追到图 5 的目标任务与 Cycle Delta，说明“跨一个目标仿真周期”怎样保存在配置中。再区分目标电路的寄存器与运行平台为保存跨周期输入而设置的存储：前者是被模拟的状态，后者服务于模拟执行，二者不能仅因都存数据就视为同一层硬件。
 
-简短对照：[RTeAAL Sim 图 1](../gallery/papers/asplos-2026-rteaal.md#f1)的扩展 arXiv v1 示例从 RTL 走向数据流与张量代数代码。可比较两篇怎样选择和表达中间表示，不比较性能，也不宣称两图模拟的是同一设计。
+简短对照：按 [RTeAAL Sim exact arXiv v1](https://arxiv.org/html/2601.18140v1)，[F1](../gallery/papers/asplos-2026-rteaal.md#f1)是传统 CPU 编译式 RTL 模拟基线：RTL → 数据流图 → C++ next-state code；提出的方法见已收录的 [F14](../gallery/papers/asplos-2026-rteaal.md#f14)，由 FIRRTL 与 kernel 配置生成 OIM 张量和可执行模拟 kernel。比较的是表示选择，不是性能，也不假定两篇模拟同一设计。
+
+继续阅读：[Lotus：从设计定位评估对照](../docs/check-simulator-evidence.md#lotus-design-evidence)。
 
 权利与范围：未核实 MIT 作者版图像的再分发许可。本条仅链接原文并提供原创读图说明，不上传 Lotus 图片或 PDF，不收实验图，不增加原图库图数；示意映射不替代性能评估或正确性证明。
 
