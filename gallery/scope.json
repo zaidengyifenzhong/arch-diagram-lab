@@ -203,7 +203,9 @@
     "taco-2026-looppoint-F4-6a46b5b60e86c39a",
     "sosp-2026-xtra-F3-8a43d513a34f2413",
     "asplos-2026-crest-F5-63832b623bf1967b",
-    "asplos-2026-crest-F6-076281c78a2ca002"
+    "asplos-2026-crest-F6-076281c78a2ca002",
+    "todaes-2026-redon-F2-c604ae5143df274d",
+    "todaes-2026-redon-F5-0355ff0c7c3ab802"
   ],
   "excluded_content": "Experimental results, measurement photographs and unresolved mixed figures are outside this release. Future additions need independent scope and rights clearance.",
   "approved_subregions": [
@@ -234,9 +236,9 @@
     "ipdps2026-uctrace-F3-1bcd9130beee896a"
   ],
   "coverage": {
-    "papers": 49,
-    "entries": 203,
-    "original_figure_entries": 201,
+    "papers": 50,
+    "entries": 205,
+    "original_figure_entries": 203,
     "mechanism_subregions": 2
   },
   "supplemental_papers": [
@@ -318,6 +320,14 @@
       "figure_numbers": [
         5,
         6
+      ]
+    },
+    {
+      "paper_id": "todaes-2026-redon",
+      "fixed_100_sample": false,
+      "figure_numbers": [
+        2,
+        5
       ]
     }
   ]
